@@ -1,0 +1,10 @@
+evidence_level,raw_condition,action_type,role_rule,double_count_rule,protocol_version,frozen_date
+event,type == pickoff,pickoff_throw,fromCatcher true=>catcher; false=>pitcher; missing=>unknown,linked movement attaches; no duplicate,1.1,2026-11-15
+event,type == stepoff or code == PSO,step_off,pitcher,not a throw,1.1,2026-11-15
+event/movement,eventType starts pickoff_,pickoff_throw,position-1/2 credit when fromCatcher absent,linked event and movement are one action,1.1,2026-11-15
+event/movement,eventType starts stolen_base_,steal_attempt,runner,one row per distinct runner path,1.1,2026-11-15
+event/movement,eventType starts caught_stealing_,steal_attempt,runner,"caught outcome; fielding throw is evidence, not another action",1.1,2026-11-15
+event/movement,eventType == balk,balk,pitcher,all tied advances attach to one event,1.1,2026-11-15
+event/movement,eventType == forced_balk and violation.type == pitcher_disengagement,disengagement_violation,pitcher,forced advance is the outcome,1.1,2026-11-15
+event,no-pitch code VP / VC / AC,timer_violation,pitcher / catcher / batter,not a pitch,1.1,2026-11-15
+text candidate,runner-control term without mapped field,unknown_candidate,unknown,review; never coerced,1.1,2026-11-15

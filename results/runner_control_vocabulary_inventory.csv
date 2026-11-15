@@ -1,0 +1,409 @@
+record_source,event_record_type,event_type,event_name,code,description,is_pitch,from_catcher,disengagement_num,movement_event_type,movement_origin,movement_start,movement_end,movement_out_base,movement_is_out,record_count,game_count,representative_example
+play_event,pickoff,,,1,Pickoff Attempt 1B,False,False,1.0,,,,,,,645,201,745682:2:3
+play_event,stepoff,,,PSO,Pitcher Step Off,False,False,1.0,,,,,,,336,151,747224:11:4
+play_event,pickoff,,,1,Pickoff Attempt 1B,False,False,2.0,,,,,,,89,67,745682:16:6
+play_event,no_pitch,,,VP,Automatic Ball - Pitcher Pitch Timer Violation,False,,,,,,,,,34,33,746409:3:0
+play_event,pickoff,,,2,Pickoff Attempt 2B,False,False,1.0,,,,,,,34,29,746655:9:2
+play_event,pickoff,,,1,Pickoff Attempt 1B,False,True,,,,,,,,24,21,746493:53:3
+play_event,stepoff,,,PSO,Pitcher Step Off,False,False,2.0,,,,,,,16,13,745682:31:5
+play_event,pickoff,,,3,Pickoff Attempt 3B,False,True,,,,,,,,10,10,747220:8:3
+play_event,no_pitch,,,AC,Automatic Strike - Batter Pitch Timer Violation,False,,,,,,,,,8,8,745651:58:0
+play_event,pickoff,,,2,Pickoff Attempt 2B,False,True,,,,,,,,8,8,746242:67:2
+play_event,pickoff,,,1,Pickoff Attempt 1B,False,True,1.0,,,,,,,5,5,745915:32:3
+play_event,pickoff,,,1,Pickoff Attempt 1B,False,False,,pickoff_1b,1B,1B,,1B,True,3,3,746655:13:6
+play_event,no_pitch,,,AC,Automatic Strike - Batter Pitch Timer Violation,False,,,strikeout,,,,1B,True,2,2,746332:1:3
+play_event,no_pitch,,,VP,Automatic Ball - Pitcher Pitch Timer Violation,False,,1.0,,,,,,,2,2,747216:40:3
+play_event,no_pitch,,,VP,Automatic Ball - Pitcher Pitch Timer Violation,False,,,walk,,,1B,,False,2,2,745915:37:6
+play_event,pickoff,,,1,Pickoff Attempt 1B,False,False,1.0,pickoff_1b,1B,1B,,1B,True,2,2,746276:70:0
+play_event,action,balk,Balk,,"With Bo Naylor batting, Josh Naylor scores on a balk. Tyler Freeman advances to 2nd on a balk.",False,,,balk,1B,1B,2B,,False,1,1,745682:6:3
+play_event,action,balk,Balk,,"With Bo Naylor batting, Josh Naylor scores on a balk. Tyler Freeman advances to 2nd on a balk.",False,,,balk,3B,3B,score,,False,1,1,745682:6:3
+play_event,action,balk,Balk,,"With Connor Wong batting, Tyler O'Neill scores on a balk. Masataka Yoshida advances to 3rd on a balk.",False,,,balk,2B,2B,3B,,False,1,1,746907:68:4
+play_event,action,balk,Balk,,"With Connor Wong batting, Tyler O'Neill scores on a balk. Masataka Yoshida advances to 3rd on a balk.",False,,,balk,3B,3B,score,,False,1,1,746907:68:4
+play_event,action,balk,Balk,,"With Ildemaro Vargas batting, CJ Abrams advances to 2nd on a balk.",False,,,balk,1B,1B,2B,,False,1,1,745577:64:4
+play_event,action,balk,Balk,,"With Kevin Newman batting, Josh Bell scores on a balk. Corbin Carroll advances to 2nd on a balk.",False,,,balk,1B,1B,2B,,False,1,1,747156:34:6
+play_event,action,balk,Balk,,"With Kevin Newman batting, Josh Bell scores on a balk. Corbin Carroll advances to 2nd on a balk.",False,,,balk,3B,3B,score,,False,1,1,747156:34:6
+play_event,action,balk,Balk,,"With Kris Bryant batting, Brendan Rodgers advances to 2nd on a balk.",False,,,balk,1B,1B,2B,,False,1,1,745661:5:6
+play_event,action,balk,Balk,,"With Kyle Isbel batting, Freddy Fermin advances to 2nd on a balk.",False,,,balk,1B,1B,2B,,False,1,1,746332:25:6
+play_event,action,balk,Balk,,"With Mark Vientos batting, Francisco Lindor advances to 2nd on a balk.",False,,,balk,1B,1B,2B,,False,1,1,745783:64:6
+play_event,action,balk,Balk,,"With Masyn Winn batting, Michael Siani advances to 2nd on a balk.",False,,,balk,1B,1B,2B,,False,1,1,745280:34:9
+play_event,action,balk,Balk,,"With Nick Castellanos batting, Alec Bohm advances to 3rd on a balk. Bryson Stott advances to 2nd on a balk.",False,,,balk,1B,1B,2B,,False,1,1,744874:71:2
+play_event,action,balk,Balk,,"With Nick Castellanos batting, Alec Bohm advances to 3rd on a balk. Bryson Stott advances to 2nd on a balk.",False,,,balk,2B,2B,3B,,False,1,1,744874:71:2
+play_event,action,balk,Balk,,"With Rafael Devers batting, Rob Refsnyder advances to 3rd on a balk.",False,,,balk,2B,2B,3B,,False,1,1,744987:61:5
+play_event,action,balk,Balk,,"With Riley Greene batting, Matt Vierling advances to 2nd on a balk.",False,,,balk,1B,1B,2B,,False,1,1,745890:65:4
+play_event,action,balk,Balk,,"With Triston Casas batting, Jarren Duran scores on a balk.",False,,,balk,3B,3B,score,,False,1,1,746970:55:6
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Andrés Giménez caught stealing 2nd base, catcher Shea Langeliers to shortstop Nick Allen.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,745682:70:1
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Anthony Volpe caught stealing 2nd base, catcher Alejandro Kirk to shortstop Bo Bichette.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,745764:14:4
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Brett Harris caught stealing 2nd base, catcher Logan O'Hoppe to second baseman Luis Guillorme.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,745638:15:4
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Connor Norby caught stealing 2nd base, catcher Ryan Jeffers to shortstop Carlos Correa.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,745851:57:4
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Esteury Ruiz caught stealing 2nd base, catcher Victor Caratini to shortstop Jeremy Peña.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,746393:51:3
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"James Wood caught stealing 2nd base, catcher J. T. Realmuto to second baseman Bryson Stott.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,745542:45:5
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Jazz Chisholm Jr. caught stealing 2nd base, catcher Reese McGuire to shortstop Ceddanne Rafaela.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,746043:26:3
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Joey Loperfido caught stealing 2nd base, catcher Carson Kelly to second baseman Marcus Semien.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,744962:57:2
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Johan Rojas caught stealing 2nd base, catcher Francisco Alvarez to shortstop Francisco Lindor.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,745529:20:3
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Jose Miranda caught stealing 2nd base, catcher César Salazar to shortstop Jeremy Peña.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,745883:56:2
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Jose Siri caught stealing 2nd base, catcher Adley Rutschman to second baseman Jorge Mateo.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,747032:55:3
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"José Caballero caught stealing 2nd base, catcher Reese McGuire to shortstop Ceddanne Rafaela.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,746959:50:2
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Kyle Stowers caught stealing 2nd base, catcher Alejandro Kirk to shortstop Bo Bichette.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,744927:11:6
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Marlins challenged (tag play), call on the field was overturned: Cedric Mullins caught stealing 2nd base, catcher Ali Sánchez to second baseman Otto Lopez.",False,,1.0,caught_stealing_2b,1B,1B,,2B,True,1,1,746036:12:4
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Marlins challenged (tag play), call on the field was overturned: Wilyer Abreu caught stealing 2nd base, pitcher Kyle Tyler to shortstop Xavier Edwards.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,746043:23:2
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Mike Trout caught stealing 2nd base, catcher Christian Vázquez to shortstop Willi Castro.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,746243:25:5
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Nick Gordon caught stealing 2nd base, catcher Kyle McCann to shortstop Darell Hernaiz.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,745667:24:3
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Phillies challenged (tag play), call on the field was upheld: Trea Turner caught stealing 2nd base, catcher Drew Millas to second baseman Luis García Jr.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,744798:55:2
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Rays challenged (tag play), call on the field was overturned: Romy Gonzalez caught stealing 2nd base, catcher Logan Driscoll to second baseman Brandon Lowe.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,745040:62:2
+play_event,action,caught_stealing_2b,Caught Stealing 2B,,"Trey Lipscomb caught stealing 2nd base, catcher Shea Langeliers to second baseman Zack Gelof.",False,,,caught_stealing_2b,1B,1B,,2B,True,1,1,745681:16:3
+play_event,action,caught_stealing_3b,Caught Stealing 3B,,"Ha-Seong Kim caught stealing 3rd base, catcher James McCann to third baseman Jordan Westburg.",False,,,caught_stealing_3b,2B,2B,,3B,True,1,1,747008:17:1
+play_event,action,caught_stealing_3b,Caught Stealing 3B,,"Nick Gordon caught stealing 3rd base, catcher Gabriel Moreno to third baseman Eugenio Suárez.",False,,,caught_stealing_3b,2B,2B,,3B,True,1,1,747200:28:5
+play_event,action,caught_stealing_3b,Caught Stealing 3B,,"Twins challenged (tag play), call on the field was upheld: Willi Castro caught stealing 3rd base, catcher Korey Lee to third baseman Danny Mendick.",False,,,caught_stealing_3b,2B,2B,,3B,True,1,1,746800:63:4
+play_event,action,caught_stealing_home,Caught Stealing Home,,"Bryce Harper caught stealing home, pitcher Patrick Corbin to first baseman Joey Gallo to second baseman Luis García Jr. to pitcher Patrick Corbin to third baseman Trey Lipscomb to catcher Keibert Ruiz to first baseman Joey Gallo. J.T. Realmuto to 2nd.",False,,2.0,caught_stealing_home,1B,1B,2B,,False,1,1,744874:20:7
+play_event,action,caught_stealing_home,Caught Stealing Home,,"Bryce Harper caught stealing home, pitcher Patrick Corbin to first baseman Joey Gallo to second baseman Luis García Jr. to pitcher Patrick Corbin to third baseman Trey Lipscomb to catcher Keibert Ruiz to first baseman Joey Gallo. J.T. Realmuto to 2nd.",False,,2.0,caught_stealing_home,3B,3B,,4B,True,1,1,744874:20:7
+play_event,action,caught_stealing_home,Caught Stealing Home,,"Dylan Crews caught stealing home, catcher Garrett Stubbs to second baseman Bryson Stott to catcher Garrett Stubbs. Drew Millas to 2nd.",False,,1.0,caught_stealing_home,1B,1B,2B,,False,1,1,744798:16:4
+play_event,action,caught_stealing_home,Caught Stealing Home,,"Dylan Crews caught stealing home, catcher Garrett Stubbs to second baseman Bryson Stott to catcher Garrett Stubbs. Drew Millas to 2nd.",False,,1.0,caught_stealing_home,3B,3B,,4B,True,1,1,744798:16:4
+play_event,action,forced_balk,Disengagement Violation,,"With Ian Happ batting, Nico Hoerner advances to 2nd on a disengagement violation.",False,,,forced_balk,1B,1B,2B,,False,1,1,747011:3:4
+play_event,action,pickoff_1b,Pickoff 1B,,"Athletics challenged (tag play), call on the field was upheld: pitcher James McArthur picks off Max Schuemann at on throw to first baseman Vinnie Pasquantino.",False,,,pickoff_1b,1B,1B,,1B,True,1,1,745645:60:9
+play_event,action,pickoff_1b,Pickoff 1B,,Catcher Connor Wong picks off Luis Guillorme at on throw to first baseman Triston Casas.,False,,,pickoff_1b,1B,1B,,1B,True,1,1,746917:32:3
+play_event,action,pickoff_1b,Pickoff 1B,,Catcher Korey Lee picks off Rob Refsnyder at on throw to first baseman Andrew Vaughn.,False,,,pickoff_1b,1B,1B,,1B,True,1,1,746785:19:3
+play_event,action,pickoff_1b,Pickoff 1B,,"Orioles challenged (tag play), call on the field was upheld: pitcher Luke Weaver picks off Ramón Urías at on throw to first baseman DJ LeMahieu.",False,,,pickoff_1b,1B,1B,,1B,True,1,1,745733:64:2
+play_event,action,pickoff_1b,Pickoff 1B,,Pitcher Brennan Bernardino picks off Tyler Freeman at on throw to first baseman Triston Casas.,False,,,pickoff_1b,1B,1B,,1B,True,1,1,746970:12:1
+play_event,action,pickoff_1b,Pickoff 1B,,Pitcher Brent Suter picks off Anthony Santander at on throw to first baseman Christian Encarnacion-Strand.,False,,,pickoff_1b,1B,1B,,1B,True,1,1,746719:40:3
+play_event,action,pickoff_1b,Pickoff 1B,,Pitcher Corbin Burnes picks off JJ Bleday at on throw to first baseman Ryan Mountcastle.,False,,,pickoff_1b,1B,1B,,1B,True,1,1,747050:27:1
+play_event,action,pickoff_1b,Pickoff 1B,,Pitcher Ryan Walker picks off Tyler Wade at on throw to first baseman Jerar Encarnacion.,False,,,pickoff_1b,1B,1B,,1B,True,1,1,745368:70:9
+play_event,action,pickoff_1b,Pickoff 1B,,"Twins challenged (tag play), call on the field was overturned: pitcher Bailey Ober picks off Julio Rodríguez at on throw to first baseman Carlos Santana.",False,,,pickoff_1b,1B,1B,,1B,True,1,1,745238:6:6
+play_event,action,pickoff_2b,Pickoff 2B,,"Mets challenged (tag play), call on the field was overturned: pitcher Jake Diekman picks off Kyle Schwarber at on throw to shortstop Francisco Lindor.",False,,1.0,pickoff_2b,2B,2B,,2B,True,1,1,745821:48:2
+play_event,action,pickoff_2b,Pickoff 2B,,"Rockies challenged (tag play), call on the field was overturned: pitcher Ty Blach picks off Romy Gonzalez at on throw to second baseman Brendan Rodgers.",False,,,pickoff_2b,2B,2B,,2B,True,1,1,746524:12:4
+play_event,action,pickoff_3b,Pickoff 3B,,Catcher Jonah Heim picks off Tyler Soderstrom at on throw to third baseman Jonathan Ornelas.,False,,,pickoff_3b,3B,3B,,3B,True,1,1,745605:52:2
+play_event,action,pickoff_caught_stealing_2b,Pickoff Caught Stealing 2B,,"With Geraldo Perdomo batting, Jake McCarthy picked off and caught stealing 2nd base, shortstop Anthony Volpe.",False,,1.0,pickoff_caught_stealing_2b,1B,1B,,2B,True,1,1,747220:48:2
+play_event,action,pickoff_caught_stealing_2b,Pickoff Caught Stealing 2B,,"With Jacob Young batting, Victor Robles picked off and caught stealing 2nd base, second baseman David Hamilton.",False,,,pickoff_caught_stealing_2b,1B,1B,,2B,True,1,1,746963:53:3
+play_event,action,pickoff_caught_stealing_2b,Pickoff Caught Stealing 2B,,"With Jasson Domínguez batting, Jazz Chisholm Jr. picked off and caught stealing 2nd base, first baseman Connor Wong.",False,,,pickoff_caught_stealing_2b,1B,1B,,2B,True,1,1,745695:47:5
+play_event,action,pickoff_caught_stealing_2b,Pickoff Caught Stealing 2B,,"With Jorge Mateo batting, Jordan Westburg picked off and caught stealing 2nd base, first baseman Christian Encarnacion-Strand.",False,,,pickoff_caught_stealing_2b,1B,1B,,2B,True,1,1,746719:55:4
+play_event,action,pickoff_caught_stealing_2b,Pickoff Caught Stealing 2B,,"With Luke Raley batting, Randy Arozarena picked off and caught stealing 2nd base, pitcher Joe Boyle.",False,,,pickoff_caught_stealing_2b,1B,1B,,2B,True,1,1,745201:37:3
+play_event,action,pickoff_caught_stealing_2b,Pickoff Caught Stealing 2B,,"With Masyn Winn batting, Victor Scott II picked off and caught stealing 2nd base, shortstop Ezequiel Tovar.",False,,,pickoff_caught_stealing_2b,1B,1B,,2B,True,1,1,746495:34:4
+play_event,action,pickoff_caught_stealing_2b,Pickoff Caught Stealing 2B,,"With Ramón Urías batting, Colton Cowser picked off and caught stealing 2nd base, second baseman Jonathan India.",False,,,pickoff_caught_stealing_2b,1B,1B,,2B,True,1,1,746719:11:7
+play_event,action,pickoff_caught_stealing_2b,Pickoff Caught Stealing 2B,,"With Reese McGuire batting, Enmanuel Valdez picked off and caught stealing 2nd base, first baseman Miguel Sanó.",False,,,pickoff_caught_stealing_2b,1B,1B,,2B,True,1,1,746979:51:2
+play_event,action,pickoff_error_1b,Pickoff Error 1B,,Missed catch error by first baseman Carlos Santana on the pickoff attempt. Reese McGuire to 2nd.,False,,,pickoff_error_1b,1B,1B,2B,,False,1,1,745913:32:1
+play_event,action,pickoff_error_1b,Pickoff Error 1B,,Throwing error by pitcher Craig Kimbrel on the pickoff attempt.,False,,,pickoff_error_1b,1B,1B,2B,,False,1,1,744927:68:5
+play_event,action,pickoff_error_1b,Pickoff Error 1B,,Throwing error by pitcher Lance Lynn on the pickoff attempt.,False,,,pickoff_error_1b,1B,1B,2B,,False,1,1,745196:19:3
+play_event,action,pickoff_error_1b,Pickoff Error 1B,,Throwing error by pitcher Osvaldo Bido on the pickoff attempt.,False,,,pickoff_error_1b,1B,1B,3B,,False,1,1,747186:57:3
+play_event,action,pickoff_error_1b,Pickoff Error 1B,,Throwing error by pitcher Patrick Sandoval on the pickoff attempt.,False,,,pickoff_error_1b,1B,1B,2B,,False,1,1,746243:15:2
+play_event,action,pickoff_error_1b,Pickoff Error 1B,,Throwing error by pitcher Simeon Woods Richardson on the pickoff attempt.,False,,,pickoff_error_1b,1B,1B,2B,,False,1,1,745892:30:1
+play_event,action,pickoff_error_2b,Pickoff Error 2B,,Throwing error by pitcher Ben Joyce on the pickoff attempt.,False,,,pickoff_error_2b,2B,2B,3B,,False,1,1,746213:69:4
+play_event,action,pickoff_error_2b,Pickoff Error 2B,,Throwing error by pitcher Brennan Bernardino on the pickoff attempt.,False,,,pickoff_error_2b,1B,1B,2B,,False,1,1,744987:52:1
+play_event,action,pickoff_error_2b,Pickoff Error 2B,,Throwing error by pitcher Brennan Bernardino on the pickoff attempt.,False,,,pickoff_error_2b,2B,2B,3B,,False,1,1,744987:52:1
+play_event,action,pickoff_error_2b,Pickoff Error 2B,,Throwing error by pitcher Dean Kremer on the pickoff attempt.,False,,,pickoff_error_2b,2B,2B,3B,,False,1,1,747042:21:1
+play_event,action,pickoff_error_2b,Pickoff Error 2B,,Throwing error by pitcher Hogan Harris on the pickoff attempt.,False,,,pickoff_error_2b,2B,2B,3B,,False,1,1,745639:11:3
+play_event,action,pickoff_error_3b,Pickoff Error 3B,,Throwing error by catcher Jose Trevino on the pickoff attempt. Jarren Duran scores.,False,,,pickoff_error_3b,3B,3B,score,,False,1,1,746946:76:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Abraham Toro steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746393:37:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Alec Bohm steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744874:70:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Alec Bohm steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746458:38:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Andrés Giménez steals (17) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745927:49:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Andrés Giménez steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746655:61:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Andrés Giménez steals (30) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746582:38:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Andy Ibáñez steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745613:2:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Anthony Volpe steals (19) 2nd base. Anthony Volpe to 3rd. Anthony Volpe advances to 3rd, on a throwing error by catcher J. T. Realmuto.",False,,,error,1B,2B,3B,,False,1,1,745546:48:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Anthony Volpe steals (19) 2nd base. Anthony Volpe to 3rd. Anthony Volpe advances to 3rd, on a throwing error by catcher J. T. Realmuto.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745546:48:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,Austin Barnes steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746126:35:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Austin Martin steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746243:65:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Austin Slater steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746999:65:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,Blaze Alexander steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747220:7:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Bo Naylor steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746600:20:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Bobby Dalbec steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746968:57:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Brandon Lowe steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745057:63:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Brandon Marsh steals (12) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745877:58:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Brandon Marsh steals (15) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745540:32:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Brandon Marsh steals (19) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744798:62:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Brandon Marsh steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745588:11:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Brandon Marsh steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745589:32:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,Brent Rooker steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745673:29:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Brent Rooker steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745262:55:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,Brent Rooker steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745647:42:7
+play_event,action,stolen_base_2b,Stolen Base 2B,,Brent Rooker steals (7) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746203:57:7
+play_event,action,stolen_base_2b,Stolen Base 2B,,Brent Rooker steals (9) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746337:2:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Brenton Doyle steals (11) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746556:15:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Brenton Doyle steals (12) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746556:55:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Brice Turang steals (45) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745933:5:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Brooks Lee steals (3) 2nd base. Brooks Lee to 3rd. Brooks Lee advances to 3rd, on a throwing error by pitcher Touki Toussaint.",False,,,error,1B,2B,3B,,False,1,1,745876:39:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Brooks Lee steals (3) 2nd base. Brooks Lee to 3rd. Brooks Lee advances to 3rd, on a throwing error by pitcher Touki Toussaint.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745876:39:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,Bryson Stott steals (17) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745570:42:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Bryson Stott steals (19) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746458:22:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Bryson Stott steals (21) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747097:60:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Bryson Stott steals (22) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745549:60:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Bryson Stott steals (25) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745542:15:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,Bryson Stott steals (29) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745536:68:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Bryson Stott steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745597:38:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,Bryson Stott steals (6) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745589:69:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Byron Buxton steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745491:82:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Byron Buxton steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745895:60:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Byron Buxton steals (7) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746905:54:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,Carlos Santana steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745895:46:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Carlos Santana steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744980:57:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Ceddanne Rafaela steals (11) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746043:88:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Ceddanne Rafaela steals (6) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745090:54:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Ceddanne Rafaela steals (8) 2nd base. Ceddanne Rafaela to 3rd. Ceddanne Rafaela advances to 3rd, on a throwing error by catcher Jake Rogers.",False,,,error,1B,2B,3B,,False,1,1,746952:63:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Ceddanne Rafaela steals (8) 2nd base. Ceddanne Rafaela to 3rd. Ceddanne Rafaela advances to 3rd, on a throwing error by catcher Jake Rogers.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746952:63:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Cedric Mullins steals (12) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744927:12:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Cedric Mullins steals (21) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747001:34:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Cedric Mullins steals (22) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746999:20:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Cedric Mullins steals (26) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746990:13:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Cedric Mullins steals (27) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746907:71:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Cedric Mullins steals (29) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746987:39:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Cedric Mullins steals (5) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746242:66:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Cedric Mullins steals (6) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747045:14:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Cedric Mullins steals (8) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745181:19:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Charlie Blackmon steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745661:3:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Colton Cowser steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747049:53:7
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Connor Wong steals (2) 2nd base. Connor Wong to 3rd. Connor Wong advances to 3rd, on a missed catch error by shortstop Javier Báez.",False,,,error,1B,2B,3B,,False,1,1,746952:45:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Connor Wong steals (2) 2nd base. Connor Wong to 3rd. Connor Wong advances to 3rd, on a missed catch error by shortstop Javier Báez.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746952:45:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Connor Wong steals (7) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746905:50:7
+play_event,action,stolen_base_2b,Stolen Base 2B,,Corbin Carroll steals (15) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746126:38:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Corbin Carroll steals (25) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745290:14:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Corbin Carroll steals (26) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745290:63:7
+play_event,action,stolen_base_2b,Stolen Base 2B,,Corbin Carroll steals (27) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747152:56:9
+play_event,action,stolen_base_2b,Stolen Base 2B,,Corbin Carroll steals (28) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747151:77:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Corbin Carroll steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746569:3:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Corbin Carroll steals (5) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747216:40:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,"D-backs challenged (tag play), call on the field was upheld: Alex Call steals (2) 2nd base.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747170:29:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Dansby Swanson steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746900:12:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,David Fry steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746642:41:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,David Hamilton steals (10) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746785:25:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,David Hamilton steals (14) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746944:40:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,"David Hamilton steals (2) 2nd base. David Hamilton to 3rd. David Hamilton advances to 3rd, on a throwing error by catcher Logan O'Hoppe.",False,,,error,1B,2B,3B,,False,1,1,746979:37:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,"David Hamilton steals (2) 2nd base. David Hamilton to 3rd. David Hamilton advances to 3rd, on a throwing error by catcher Logan O'Hoppe.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746979:37:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,David Hamilton steals (31) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747001:90:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,David Hamilton steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746963:36:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Daz Cameron steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746203:29:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Daz Cameron steals (5) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745611:51:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,Dylan Crews steals (12) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744798:15:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Dylan Moore steals (20) 2nd base. Jorge Polanco scores. Dylan Moore to 3rd. Throwing error by catcher Connor Wong.,False,,,error,3B,3B,score,,False,1,1,746926:56:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Dylan Moore steals (20) 2nd base. Jorge Polanco scores. Dylan Moore to 3rd. Throwing error by catcher Connor Wong.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746926:56:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Dylan Moore steals (20) 2nd base. Jorge Polanco scores. Dylan Moore to 3rd. Throwing error by catcher Connor Wong.,False,,,stolen_base_2b,1B,2B,3B,,False,1,1,746926:56:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Dylan Moore steals (9) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745656:29:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Edmundo Sosa steals (5) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745481:79:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Edouard Julien steals (5) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744941:53:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Enmanuel Valdez steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746946:65:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Ernie Clement steals (11) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745861:59:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Estevan Florial steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745682:62:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Eugenio Suárez steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745819:49:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Francisco Lindor steals (7) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745819:5:8
+play_event,action,stolen_base_2b,Stolen Base 2B,,Freddy Fermin steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746276:35:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,Gabriel Moreno steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746126:48:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Gavin Sheets steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746655:41:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,George Springer steals (6) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745584:16:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,George Springer steals (8) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745651:10:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Geraldo Perdomo steals (2) 2nd base. Geraldo Perdomo to 3rd. Geraldo Perdomo advances to 3rd, on a throwing error by catcher Riley Adams.",False,,,error,1B,2B,3B,,False,1,1,747170:50:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Geraldo Perdomo steals (2) 2nd base. Geraldo Perdomo to 3rd. Geraldo Perdomo advances to 3rd, on a throwing error by catcher Riley Adams.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747170:50:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Grant McCray steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746987:26:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Grant McCray steals (5) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746987:63:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Guardians challenged (tag play), call on the field was upheld: Robbie Grossman steals (1) 2nd base.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746655:2:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Guardians challenged (tag play), call on the field was upheld: Willi Castro steals (11) 2nd base.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745927:55:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Ha-Seong Kim steals (20) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747008:16:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Isiah Kiner-Falefa steals (2) 2nd base. Ernie Clement scores. Missed catch error by second baseman Gleyber Torres.,False,,,error,3B,3B,score,,False,1,1,744944:50:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Isiah Kiner-Falefa steals (2) 2nd base. Ernie Clement scores. Missed catch error by second baseman Gleyber Torres.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744944:50:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,J.T. Realmuto steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745588:25:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,JJ Bleday steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745783:86:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,JJ Bleday steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746830:23:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jack Suwinski steals (7) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745481:22:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jack Suwinski steals (9) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747174:65:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jackson Holliday steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746511:35:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jacob Young steals (28) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745542:72:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jake McCarthy steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747216:48:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jake McCarthy steals (15) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747170:6:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jake McCarthy steals (21) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745290:23:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Jake Meyers steals (2) 2nd base. Jake Meyers to 3rd. Jake Meyers advances to 3rd, on a throwing error by catcher Shea Langeliers.",False,,,error,1B,2B,3B,,False,1,1,746393:56:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Jake Meyers steals (2) 2nd base. Jake Meyers to 3rd. Jake Meyers advances to 3rd, on a throwing error by catcher Shea Langeliers.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746393:56:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jarren Duran steals (31) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746999:16:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jarren Duran steals (32) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746350:15:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jarren Duran steals (34) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746905:76:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jarren Duran steals (6) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745680:53:7
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jarren Duran steals (7) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746970:4:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jarren Duran steals (9) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746968:31:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jazz Chisholm Jr. steals (15) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746043:74:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jazz Chisholm Jr. steals (21) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746036:54:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jazz Chisholm Jr. steals (6) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745667:1:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jesús Sánchez steals (13) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746018:25:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jo Adell steals (12) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745638:17:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Joc Pederson steals (5) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746852:61:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Joey Loperfido steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746373:46:8
+play_event,action,stolen_base_2b,Stolen Base 2B,,Joey Ortiz steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745570:17:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Johan Rojas steals (10) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745577:50:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Johan Rojas steals (11) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746556:20:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Johan Rojas steals (15) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745559:38:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Johan Rojas steals (20) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745542:17:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Johan Rojas steals (6) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745588:34:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jonathan India steals (12) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746671:35:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jonny DeLuca steals (12) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745622:30:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jonny DeLuca steals (13) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745622:50:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jonny DeLuca steals (9) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745057:39:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jordan Beck steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746511:21:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jordan Westburg steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746242:3:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jorge Mateo steals (12) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745733:57:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jorge Mateo steals (13) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745637:68:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jorge Mateo steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746242:17:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jorge Mateo steals (6) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747036:55:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jose Altuve steals (19) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745540:18:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Jose Miranda steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745238:10:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Josh Lowe steals (12) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745057:66:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,José Caballero steals (42) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745040:66:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,José Ramírez steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746970:40:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,José Ramírez steals (23) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746600:49:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Julio Rodríguez steals (7) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745027:36:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Julio Rodríguez steals (8) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745915:75:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Junior Caminero steals (2) 2nd base. Josh Lowe steals (16) home.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745049:8:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Junior Caminero steals (2) 2nd base. Josh Lowe steals (16) home.,False,,,stolen_base_home,3B,3B,score,,False,1,1,745049:8:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Ketel Marte steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746126:39:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Kevin Newman steals (5) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747170:15:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Kevin Newman steals (6) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747164:59:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Kevin Pillar steals (2) 2nd base. Kevin Pillar to 3rd. Kevin Pillar advances to 3rd, on a throwing error by catcher J. T. Realmuto.",False,,,error,1B,2B,3B,,False,1,1,745588:14:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Kevin Pillar steals (2) 2nd base. Kevin Pillar to 3rd. Kevin Pillar advances to 3rd, on a throwing error by catcher J. T. Realmuto.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745588:14:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Korey Lee steals (6) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746416:11:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Lane Thomas steals (7) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745681:21:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Lawrence Butler steals (13) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744970:57:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Lawrence Butler steals (18) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745605:8:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Lawrence Butler steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745262:27:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Leody Taveras steals (22) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745605:30:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Luis Rengifo steals (19) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746131:3:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Luis Rengifo steals (22) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745647:37:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Luis Robert Jr. steals (23) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746416:55:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Marcus Semien steals (8) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745605:36:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Masataka Yoshida steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746350:49:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Masyn Winn steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745674:15:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Matt Chapman steals (15) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745368:36:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Matt Chapman steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745354:55:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Matt Wallner steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744980:71:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Max Schuemann steals (6) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745647:40:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Max Schuemann steals (7) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745639:60:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Michael A. Taylor steals (5) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745491:71:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Michael Siani steals (5) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745181:15:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Mookie Betts steals (13) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747156:59:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Nasim Nuñez steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744858:69:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Nasim Nuñez steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747170:74:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Nick Castellanos steals (5) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745542:26:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Nick Sogard steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747001:67:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Nolan Gorman steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745181:14:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Otto Lopez steals (8) 2nd base. Otto Lopez to 3rd. Otto Lopez advances to 3rd, on a throwing error by catcher Adley Rutschman.",False,,,error,1B,2B,3B,,False,1,1,746036:16:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Otto Lopez steals (8) 2nd base. Otto Lopez to 3rd. Otto Lopez advances to 3rd, on a throwing error by catcher Adley Rutschman.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746036:16:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Ozzie Albies steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745599:52:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Pablo Reyes steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746649:43:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Pavin Smith steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745290:59:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Rafael Devers steals (1) 2nd base. Jarren Duran steals (11) home.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745090:58:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Rafael Devers steals (1) 2nd base. Jarren Duran steals (11) home.,False,,,stolen_base_home,3B,3B,score,,False,1,1,745090:58:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Rangers challenged (tag play), call on the field was overturned: Leody Taveras steals (9) 2nd base.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747017:17:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Red Sox challenged (tag play), call on the field was overturned: Connor Wong steals (6) 2nd base.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744987:26:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Red Sox challenged (tag play), call on the field was overturned: Jarren Duran steals (33) 2nd base.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746905:21:9
+play_event,action,stolen_base_2b,Stolen Base 2B,,Reese McGuire steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746968:14:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Rob Refsnyder steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744987:41:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,Romy Gonzalez steals (6) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746524:12:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Romy Gonzalez steals (8) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746911:10:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Ryan Bliss steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745656:62:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Ryan Bliss steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745242:58:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Ryan Jeffers steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745876:63:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Ryan Kreidler steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745613:50:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Ryan Kreidler steals (5) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745613:66:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Ryan Mountcastle steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747045:46:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Sal Frelick steals (17) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747151:66:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Seiya Suzuki steals (10) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746852:24:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,Seth Brown steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746393:45:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Shea Langeliers steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745091:55:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Shohei Ohtani steals (29) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745636:1:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Shohei Ohtani steals (30) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745636:69:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Shohei Ohtani steals (43) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747156:17:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Starling Marte steals (9) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745819:62:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Steven Kwan steals (1) 2nd base. Steven Kwan to 3rd. Steven Kwan advances to 3rd, on a throwing error by catcher Shea Langeliers.",False,,,error,1B,2B,3B,,False,1,1,745682:35:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Steven Kwan steals (1) 2nd base. Steven Kwan to 3rd. Steven Kwan advances to 3rd, on a throwing error by catcher Shea Langeliers.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745682:35:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Taylor Ward steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746131:72:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Teoscar Hernández steals (9) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747156:62:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Thairo Estrada steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746968:61:7
+play_event,action,stolen_base_2b,Stolen Base 2B,,Travis Jankowski steals (10) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744970:86:7
+play_event,action,stolen_base_2b,Stolen Base 2B,,Travis Jankowski steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745905:73:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Travis Jankowski steals (8) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744980:36:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Trea Turner steals (10) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745589:39:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Trea Turner steals (12) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745558:71:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Trea Turner steals (13) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745877:2:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Trevor Story steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745040:54:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Twins challenged (tag play), call on the field was overturned: Carlos Santana steals (3) 2nd base.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745881:46:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Tyler Freeman steals (6) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746642:21:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Tyrone Taylor steals (8) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745783:74:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Victor Robles steals (13) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746926:3:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Whit Merrifield steals (10) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747097:57:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Whit Merrifield steals (9) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747097:9:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Willi Castro steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746800:46:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Willi Castro steals (5) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745915:32:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Wilyer Abreu steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746979:21:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Wilyer Abreu steals (7) 2nd base. Wilyer Abreu out at 3rd, catcher Ben Rortvedt to second baseman Brandon Lowe.",False,,,other_out,1B,2B,,3B,True,1,1,745090:56:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Wilyer Abreu steals (7) 2nd base. Wilyer Abreu out at 3rd, catcher Ben Rortvedt to second baseman Brandon Lowe.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745090:56:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Wilyer Abreu steals (8) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745695:35:5
+play_event,action,stolen_base_2b,Stolen Base 2B,,Wyatt Langford steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745027:16:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Wyatt Langford steals (13) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747152:3:6
+play_event,action,stolen_base_2b,Stolen Base 2B,,Wyatt Langford steals (14) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,747152:45:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Xavier Edwards steals (23) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746018:54:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Zach Neto steals (15) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745638:12:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Zach Neto steals (16) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745638:27:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Zack Gelof steals (11) 2nd base. Zack Gelof to 3rd. Zack Gelof advances to 3rd, on a throwing error by catcher James McCann.",False,,,error,1B,2B,3B,,False,1,1,745639:19:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,"Zack Gelof steals (11) 2nd base. Zack Gelof to 3rd. Zack Gelof advances to 3rd, on a throwing error by catcher James McCann.",False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745639:19:4
+play_event,action,stolen_base_2b,Stolen Base 2B,,Zack Gelof steals (16) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745622:55:3
+play_event,action,stolen_base_2b,Stolen Base 2B,,Zack Gelof steals (20) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744970:48:1
+play_event,action,stolen_base_2b,Stolen Base 2B,,Zack Gelof steals (21) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745613:34:2
+play_event,action,stolen_base_2b,Stolen Base 2B,,Zack Gelof steals (4) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746652:9:6
+play_event,action,stolen_base_3b,Stolen Base 3B,,Alek Thomas steals (1) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746126:13:8
+play_event,action,stolen_base_3b,Stolen Base 3B,,Braden Shewmake steals (3) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,745919:38:8
+play_event,action,stolen_base_3b,Stolen Base 3B,,Brandon Lowe steals (5) 3rd base. Christopher Morel steals (8) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745057:64:2
+play_event,action,stolen_base_3b,Stolen Base 3B,,Brandon Lowe steals (5) 3rd base. Christopher Morel steals (8) 2nd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,745057:64:2
+play_event,action,stolen_base_3b,Stolen Base 3B,,Brenton Doyle steals (13) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746556:56:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,Bryce Harper steals (7) 3rd base. Bryce Harper scores. Nick Castellanos to 2nd. Fielding error by shortstop Luis Vazquez. Throwing error by second baseman Nico Hoerner.,False,,,error,1B,1B,2B,,False,1,1,745527:41:4
+play_event,action,stolen_base_3b,Stolen Base 3B,,Bryce Harper steals (7) 3rd base. Bryce Harper scores. Nick Castellanos to 2nd. Fielding error by shortstop Luis Vazquez. Throwing error by second baseman Nico Hoerner.,False,,,error,2B,3B,score,,False,1,1,745527:41:4
+play_event,action,stolen_base_3b,Stolen Base 3B,,Bryce Harper steals (7) 3rd base. Bryce Harper scores. Nick Castellanos to 2nd. Fielding error by shortstop Luis Vazquez. Throwing error by second baseman Nico Hoerner.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,745527:41:4
+play_event,action,stolen_base_3b,Stolen Base 3B,,Ceddanne Rafaela steals (3) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746649:45:1
+play_event,action,stolen_base_3b,Stolen Base 3B,,Corbin Carroll steals (22) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,747156:74:4
+play_event,action,stolen_base_3b,Stolen Base 3B,,Daulton Varsho steals (10) 3rd base. Ernie Clement steals (8) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744901:44:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,Daulton Varsho steals (10) 3rd base. Ernie Clement steals (8) 2nd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,744901:44:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,Daulton Varsho steals (7) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,745651:57:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,David Hamilton steals (22) 3rd base. Tyler O'Neill steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746043:3:1
+play_event,action,stolen_base_3b,Stolen Base 3B,,David Hamilton steals (22) 3rd base. Tyler O'Neill steals (2) 2nd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746043:3:1
+play_event,action,stolen_base_3b,Stolen Base 3B,,David Hamilton steals (23) 3rd base. Tyler O'Neill steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746043:37:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,David Hamilton steals (23) 3rd base. Tyler O'Neill steals (3) 2nd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746043:37:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,Ernie Clement steals (1) 3rd base. Daulton Varsho steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,744944:33:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,Ernie Clement steals (1) 3rd base. Daulton Varsho steals (1) 2nd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,744944:33:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,Garrett Stubbs steals (3) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746556:37:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,Geraldo Perdomo steals (6) 3rd base. Luis Guillorme steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,746917:50:1
+play_event,action,stolen_base_3b,Stolen Base 3B,,Geraldo Perdomo steals (6) 3rd base. Luis Guillorme steals (3) 2nd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746917:50:1
+play_event,action,stolen_base_3b,Stolen Base 3B,,Gunnar Henderson steals (14) 3rd base. Gunnar Henderson scores. Throwing error by catcher Shea Langeliers.,False,,,error,2B,3B,score,,False,1,1,745639:3:2
+play_event,action,stolen_base_3b,Stolen Base 3B,,Gunnar Henderson steals (14) 3rd base. Gunnar Henderson scores. Throwing error by catcher Shea Langeliers.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,745639:3:2
+play_event,action,stolen_base_3b,Stolen Base 3B,,Jacob Young steals (5) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,745681:3:5
+play_event,action,stolen_base_3b,Stolen Base 3B,,Jake Bauers steals (12) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,747151:65:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,Jarren Duran steals (27) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746276:48:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,Jazz Chisholm Jr. steals (20) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746036:21:1
+play_event,action,stolen_base_3b,Stolen Base 3B,,Jazz Chisholm Jr. steals (23) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746929:74:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,Johan Rojas steals (16) 3rd base. Johan Rojas scores. Fielding error by third baseman Austin Riley.,False,,,error,2B,3B,score,,False,1,1,747097:58:1
+play_event,action,stolen_base_3b,Stolen Base 3B,,Johan Rojas steals (16) 3rd base. Johan Rojas scores. Fielding error by third baseman Austin Riley.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,747097:58:1
+play_event,action,stolen_base_3b,Stolen Base 3B,,Jorge Mateo steals (3) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746242:18:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,José Caballero steals (43) 3rd base. Taylor Walls steals (15) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745040:67:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,José Caballero steals (43) 3rd base. Taylor Walls steals (15) 2nd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,745040:67:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,José Ramírez steals (2) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746649:51:6
+play_event,action,stolen_base_3b,Stolen Base 3B,,José Ramírez steals (24) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746600:50:2
+play_event,action,stolen_base_3b,Stolen Base 3B,,Kyle Schwarber steals (1) 3rd base. Bryce Harper steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745599:8:5
+play_event,action,stolen_base_3b,Stolen Base 3B,,Kyle Schwarber steals (1) 3rd base. Bryce Harper steals (1) 2nd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,745599:8:5
+play_event,action,stolen_base_3b,Stolen Base 3B,,Luis Rengifo steals (20) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746131:3:9
+play_event,action,stolen_base_3b,Stolen Base 3B,,Manuel Margot steals (5) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,745865:9:1
+play_event,action,stolen_base_3b,Stolen Base 3B,,Michael A. Taylor steals (7) 3rd base. Andrew McCutchen steals (3) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745481:82:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,Michael A. Taylor steals (7) 3rd base. Andrew McCutchen steals (3) 2nd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,745481:82:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,Michael A. Taylor steals (8) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,747174:31:1
+play_event,action,stolen_base_3b,Stolen Base 3B,,Paul Goldschmidt steals (3) 3rd base. Alec Burleson steals (2) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745181:59:4
+play_event,action,stolen_base_3b,Stolen Base 3B,,Paul Goldschmidt steals (3) 3rd base. Alec Burleson steals (2) 2nd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,745181:59:4
+play_event,action,stolen_base_3b,Stolen Base 3B,,"Red Sox challenged (tag play), call on the field was overturned: Reese McGuire steals (3) 3rd base.",False,,,stolen_base_3b,2B,2B,3B,,False,1,1,745913:32:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,Romy Gonzalez steals (10) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746911:29:2
+play_event,action,stolen_base_3b,Stolen Base 3B,,Romy Gonzalez steals (9) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746911:10:4
+play_event,action,stolen_base_3b,Stolen Base 3B,,Shohei Ohtani steals (17) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746126:9:2
+play_event,action,stolen_base_3b,Stolen Base 3B,,Shohei Ohtani steals (31) 3rd base. Teoscar Hernández steals (5) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745636:70:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,Shohei Ohtani steals (31) 3rd base. Teoscar Hernández steals (5) 2nd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,745636:70:3
+play_event,action,stolen_base_3b,Stolen Base 3B,,Shohei Ohtani steals (32) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746116:38:6
+play_event,action,stolen_base_3b,Stolen Base 3B,,Taylor Walls steals (10) 3rd base. Alex Jackson steals (1) 2nd base.,False,,,stolen_base_2b,1B,1B,2B,,False,1,1,745049:15:4
+play_event,action,stolen_base_3b,Stolen Base 3B,,Taylor Walls steals (10) 3rd base. Alex Jackson steals (1) 2nd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,745049:15:4
+play_event,action,stolen_base_3b,Stolen Base 3B,,Trevor Story steals (5) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,745040:55:1
+play_event,action,stolen_base_3b,Stolen Base 3B,,Xavier Edwards steals (24) 3rd base.,False,,,stolen_base_3b,2B,2B,3B,,False,1,1,746018:55:1
+play_event,action,stolen_base_home,Stolen Base Home,,Jarren Duran steals (12) home.,False,,,stolen_base_home,3B,3B,score,,False,1,1,746785:18:2
+play_event,no_pitch,,,VC,Automatic Ball - Catcher Pitch Timer Violation,False,,,,,,,,,1,1,746963:8:0
+play_event,pickoff,,,1,Pickoff Attempt 1B,False,False,,pickoff_caught_stealing_2b,1B,1B,,1B,True,1,1,745895:63:2
+play_event,pickoff,,,1,Pickoff Attempt 1B,False,False,,pickoff_caught_stealing_2b,1B,1B,,2B,True,1,1,746310:3:5
+play_event,pickoff,,,1,Pickoff Attempt 1B,False,True,,strikeout,,,,1B,True,1,1,747045:9:12
+play_event,pickoff,,,2,Pickoff Attempt 2B,False,False,2.0,,,,,,,1,1,745558:51:3
+play_event,pickoff,,,2,Pickoff Attempt 2B,False,True,1.0,,,,,,,1,1,746649:28:3
+play_event,pickoff,,,3,Pickoff Attempt 3B,False,True,1.0,,,,,,,1,1,745527:70:3
+play_event,stepoff,,,PSO,Pitcher Step Off,False,False,3.0,,,,,,,1,1,747011:3:3

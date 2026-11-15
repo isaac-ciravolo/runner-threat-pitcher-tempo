@@ -1,0 +1,15 @@
+metric,value
+source_manifest_rows,212
+unique_games,211
+duplicate_games,1
+action_rows,1591
+pickoff_throws,857
+pitcher_pickoff_throws,801
+catcher_pickoff_throws,55
+step_offs,353
+steal_attempts,319
+opportunity_windows,12228
+windows_with_attempt,878
+windows_without_attempt,11350
+terminal_windows_without_pitch,315
+known_conflict_windows,0

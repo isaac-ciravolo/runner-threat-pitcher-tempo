@@ -1,0 +1,16 @@
+base_state,action_category,intervals_nonexclusive,median_start_to_start_seconds,median_end_to_end_seconds
+bases_empty,mound_visit,8,50.367000000000004,49.977000000000004
+bases_empty,other_nonpitch,3,41.931,45.32
+bases_empty,pickoff_throw_pitcher,1,168.359,169.518
+bases_empty,steal_attempt,4,37.474000000000004,35.663
+bases_empty,timeout,173,24.977,25.695
+bases_empty,timer_violation,2,38.204,38.4285
+runners_on,balk,1,44.376,44.855
+runners_on,disengagement_violation,1,86.064,85.876
+runners_on,mound_visit,15,59.419,62.127
+runners_on,other_nonpitch,23,35.204,34.031
+runners_on,pickoff_throw_catcher,9,24.967,23.429
+runners_on,pickoff_throw_pitcher,105,38.456,39.837
+runners_on,steal_attempt,44,35.120999999999995,34.2685
+runners_on,step_off,38,38.6065,40.1965
+runners_on,timeout,74,30.892000000000003,32.46

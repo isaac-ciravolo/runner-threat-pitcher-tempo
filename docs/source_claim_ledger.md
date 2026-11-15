@@ -1,6 +1,6 @@
 # Source and claim ledger
 
-Checked 2026-11-15. This ledger covers the feasibility audit and public-video validation setup. It does not establish an originality claim; the literature review remains pending.
+Checked 2026-11-15. This ledger covers the feasibility audit, public-video validation setup, aggregate tempo benchmark, and runner-control action audit. It does not establish an originality claim; the literature review remains pending.
 
 | Source | Claim used in this audit | Evidence type | Limitation / boundary |
 |---|---|---|---|
@@ -22,6 +22,13 @@ Checked 2026-11-15. This ledger covers the feasibility audit and public-video va
 | MLB public pitcher game-log endpoints for the six frozen pitcher IDs | Enumerated complete 2024 regular-season appearances and game IDs for the frozen benchmark population. | Six direct JSON responses, cached and checksummed. | Endpoint/schema stability is not guaranteed; appearance inclusion follows MLB's game-log response. |
 | MLB live feeds for the 182-game benchmark union | Supplied chronological events, timestamps, calls, and runner movements used for independent reconstruction of feed-side aggregate intervals. | 182 direct JSON responses, all successful, cached and checksummed. | Savant may derive from related MLB systems, so agreement is not independent measurement validation. |
 | Executed aggregate benchmark in `notebooks/03_aggregate_tempo_benchmark.ipynb` | Start-to-start medians were close but systematically high under documented public rules; the prespecified no-intervening-action sensitivity matched 11 of 12 counts exactly and all medians within 0.027 s. | Reproducible comparison of frozen Savant summaries with reconstructed public feeds. | The action exclusion is an inference from agreement, not a documented Savant rule; two Gallen runners-on counts remain unmatched. |
+| Deduplicated cached feed union in `notebooks/04_runner_control_action_audit.ipynb` | The 30-game audit and 182-game benchmark manifests contain 211 unique games; their one overlapping game has matching cached SHA-256 values. | Reproducible provenance and deduplication audit, executed 2026-11-15. | This union is selected for two prior audits, not a representative league-wide action sample. |
+| Explicit live-feed runner-control fields (`type`, `eventType`, `fromCatcher`, violation type, movements, and credits) | Support separate recorded action and outcome rows for pickoffs, step-offs, steals/caught stealing, balks, timer violations, and a disengagement violation. | Automated field mapping plus retained raw labels and movement provenance. | Schema representation does not establish action completeness; catcher identity is missing for safe-return catcher throws. |
+| [McCovey Chronicles Giants-Padres recap](https://www.mccoveychronicles.com/2024/9/8/24239502/mlb-final-giants-padres-9-8-2024-recap-tyler-fitzgerald-marco-luciano-matt-chapman) | Independently describes an eighth-inning Ryan Walker pickoff erasing the runner at first in queued game 745368. | Public narrative corroboration, checked 2026-11-15. | Does not name the runner or expose an event key; partial positive-label corroboration only. |
+| [MLB Game Story for game 746785](https://www.mlb.com/stories/game/746785) | Labels a highlight as Korey Lee picking off Rob Refsnyder after review. | Public positive-label corroboration, checked 2026-11-15. | Official MLB derivative is not independent of MLB's underlying systems and does not test completeness. |
+| [MLB Rays-Red Sox recap](https://www.mlb.com/news/rays-drop-second-consecutive-game-to-red-sox) | Describes Wilyer Abreu stealing second and then stepping off the bag, supporting the queued advance-then-out sequence. | Public narrative corroboration, checked 2026-11-15. | Does not expose the feed event key or complete scoring path; official MLB source is not independent. |
+| [StatMuse Cubs-Orioles game summary](https://www.statmuse.com/mlb/game/7-11-2024-chc-at-bal-230610) | Records Nico Hoerner advancing to second in queued game 747011. | Third-party public game summary, checked 2026-11-15. | Does not identify the disengagement-violation mechanism, which remains supported by explicit feed fields. |
+| Executed runner-control audit in `notebooks/04_runner_control_action_audit.ipynb` | Produced 1,591 action rows and 12,228 first-base-only windows; detailed runner-control actions join to 200 of 485 action-interrupted benchmark intervals. | Reproducible audit with focused tests and compact reviewed outputs. | Positive review is partial and negative-control absence remains unvalidated; no threat-tempo model was fit. |
 
 ## Claims deliberately not made
 
@@ -33,3 +40,6 @@ Checked 2026-11-15. This ledger covers the feasibility audit and public-video va
 - Access-limited archive metadata and edited highlights are not treated as successful video validation.
 - Aggregate agreement with Savant is not treated as independent release-timestamp validation or as passing the video gate.
 - The action-free sensitivity is not promoted to the primary definition merely because it fits the benchmark better.
+- A missing indexed public description is not treated as proof that a no-attempt window contains no action.
+- The two Zac Gallen count-gap intervals are not assigned identities without an event-level Savant benchmark.
+- Feed action representation is not treated as proof that every real pickoff, step-off, or runner decision is recorded.

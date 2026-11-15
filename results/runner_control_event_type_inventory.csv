@@ -1,0 +1,56 @@
+event_record_type,event_type,event_name,code,is_pitch,record_count,game_count,representative_description
+pitch,,,B,True,20974,211,Ball
+pitch,,,F,True,11292,211,Foul
+pitch,,,C,True,10112,211,Called Strike
+pitch,,,X,True,7047,211,"In play, out(s)"
+pitch,,,S,True,6610,211,Swinging Strike
+action,batter_timeout,Batter Timeout,,False,3041,211,Batter Timeout.
+pitch,,,D,True,2387,211,"In play, no out"
+action,pitching_substitution,Pitching Substitution,,False,1429,211,Pitching Change: Anthony Molina replaces Kyle Freeland.
+pitch,,,E,True,1376,211,"In play, run(s)"
+pitch,,,*B,True,1251,208,Ball In Dirt
+action,mound_visit,Mound Visit,,False,1246,211,Mound Visit.
+action,game_advisory,Game Advisory,,False,852,211,Status Change - Pre-Game
+pickoff,,,1,False,771,203,Pickoff Attempt 1B
+pitch,,,T,True,660,187,Foul Tip
+action,defensive_switch,Defensive Switch,,False,511,174,Blaze Alexander remains in the game as the shortstop.
+action,offensive_substitution,Offensive Substitution,,False,454,181,Offensive Substitution: Pinch-hitter Ryan Noda replaces Darell Hernaiz.
+pitch,,,W,True,378,172,Swinging Strike (Blocked)
+stepoff,,,PSO,False,353,154,Pitcher Step Off
+action,stolen_base_2b,Stolen Base 2B,,False,234,129,"Steven Kwan steals (1) 2nd base. Steven Kwan to 3rd. Steven Kwan advances to 3rd, on a throwing error by catcher Shea Langeliers."
+action,defensive_substitution,Defensive Sub,,False,203,123,"Defensive Substitution: Jake Cave replaces right fielder Charlie Blackmon, batting 1st, playing right field."
+no_pitch,,,VB,False,197,46,Automatic Ball - Intentional
+pitch,,,H,True,181,113,Hit By Pitch
+action,wild_pitch,Wild Pitch,,False,130,95,Wild pitch by pitcher Ross Stripling. Bo Naylor to 2nd.
+pitch,,,L,True,97,75,Foul Bunt
+action,runner_placed,Runner Placed On Base,,False,72,21,Enmanuel Valdez starts inning at 2nd base.
+pickoff,,,2,False,44,36,Pickoff Attempt 2B
+action,stolen_base_3b,Stolen Base 3B,,False,40,34,Kyle Schwarber steals (1) 3rd base. Bryce Harper steals (1) 2nd base.
+no_pitch,,,VP,False,38,37,Automatic Ball - Pitcher Pitch Timer Violation
+no_pitch,,,N,False,22,22,
+action,defensive_indiff,Defensive Indiff,,False,21,17,Whit Merrifield advances to 2nd on defensive indifference.
+action,passed_ball,Passed Ball,,False,21,21,Passed ball by catcher Alejandro Kirk. Gleyber Torres to 2nd.
+action,caught_stealing_2b,Caught Stealing 2B,,False,20,19,"Andrés Giménez caught stealing 2nd base, catcher Shea Langeliers to shortstop Nick Allen."
+pitch,,,M,True,17,17,Missed Bunt
+action,ejection,Ejection,,False,14,12,White Sox catching coach Drew Butera ejected by HP umpire James Hoye.
+action,balk,Balk,,False,12,12,"With Bo Naylor batting, Josh Naylor scores on a balk. Tyler Freeman advances to 2nd on a balk."
+pickoff,,,3,False,11,11,Pickoff Attempt 3B
+no_pitch,,,AC,False,10,10,Automatic Strike - Batter Pitch Timer Violation
+action,pickoff_1b,Pickoff 1B,,False,9,9,Pitcher Brennan Bernardino picks off Tyler Freeman at on throw to first baseman Triston Casas.
+action,pickoff_caught_stealing_2b,Pickoff Caught Stealing 2B,,False,8,7,"With Geraldo Perdomo batting, Jake McCarthy picked off and caught stealing 2nd base, shortstop Anthony Volpe."
+action,pickoff_error_1b,Pickoff Error 1B,,False,6,6,Throwing error by pitcher Lance Lynn on the pickoff attempt.
+pitch,,,P,True,5,5,Pitchout
+action,injury,Injury,,False,4,4,Athletics pitcher Joe Boyle left the game due to an injured back.
+action,other_out,Runner Out,,False,4,4,"Josh Smith out at 2nd, catcher Shea Langeliers to second baseman Zack Gelof."
+action,pickoff_error_2b,Pickoff Error 2B,,False,4,4,Throwing error by pitcher Dean Kremer on the pickoff attempt.
+action,caught_stealing_3b,Caught Stealing 3B,,False,3,3,"Twins challenged (tag play), call on the field was upheld: Willi Castro caught stealing 3rd base, catcher Korey Lee to third baseman Danny Mendick."
+action,caught_stealing_home,Caught Stealing Home,,False,2,2,"Bryce Harper caught stealing home, pitcher Patrick Corbin to first baseman Joey Gallo to second baseman Luis García Jr. to pitcher Patrick Corbin to third baseman Trey Lipscomb to catcher Keibert Ruiz to first baseman Joey Gallo. J.T. Realmuto to 2nd."
+action,error,Error,,False,2,2,"Athletics challenged (fair or foul in outfield), call on the field was upheld: Dropped foul pop error by left fielder Nick Gordon."
+action,pickoff_2b,Pickoff 2B,,False,2,2,"Mets challenged (tag play), call on the field was overturned: pitcher Jake Diekman picks off Kyle Schwarber at on throw to shortstop Francisco Lindor."
+action,forced_balk,Disengagement Violation,,False,1,1,"With Ian Happ batting, Nico Hoerner advances to 2nd on a disengagement violation."
+action,pickoff_3b,Pickoff 3B,,False,1,1,Catcher Jonah Heim picks off Tyler Soderstrom at on throw to third baseman Jonathan Ornelas.
+action,pickoff_error_3b,Pickoff Error 3B,,False,1,1,Throwing error by catcher Jose Trevino on the pickoff attempt. Jarren Duran scores.
+action,stolen_base_home,Stolen Base Home,,False,1,1,Jarren Duran steals (12) home.
+no_pitch,,,AB,False,1,1,Automatic Strike - Batter Timeout Violation
+no_pitch,,,VC,False,1,1,Automatic Ball - Catcher Pitch Timer Violation
+pitch,,,O,True,1,1,Foul Tip
