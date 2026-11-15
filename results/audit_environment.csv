@@ -1,0 +1,8 @@
+package,version,executed_utc
+Python,3.14.4,2026-11-15T20:40:45Z
+pandas,3.0.2,2026-11-15T20:40:45Z
+numpy,2.4.4,2026-11-15T20:40:45Z
+requests,2.34.0,2026-11-15T20:40:45Z
+jupyterlab,4.6.1,2026-11-15T20:40:45Z
+nbconvert,7.17.1,2026-11-15T20:40:45Z
+nbformat,5.10.4,2026-11-15T20:40:45Z

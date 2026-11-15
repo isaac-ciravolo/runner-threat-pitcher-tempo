@@ -1,0 +1,2 @@
+game_pk,official_date,at_bat_index,inning,half_inning,matchup_men_on_base,reconstructed_pa_start_bases,pa_start_outs,reconstructed_pa_end_bases,half_inning_ended,unresolved_movement_count,movement_anomaly_count,movement_anomalies,play_result_event_type,play_result_away_score,play_result_home_score,reconstructed_before_first_pitch,reconstructed_start_bucket,reconstructed_end_bucket,matchup_matches_start,matchup_matches_end
+746690,2024-07-09,38,4,bottom,Empty,1B+2B,2,empty,True,0,1,occupied destination 1B: 668715 replaced by 682829,force_out,4,5,1B+2B,RISP,Empty,False,True

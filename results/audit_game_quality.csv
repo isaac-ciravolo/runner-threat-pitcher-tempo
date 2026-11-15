@@ -1,0 +1,31 @@
+game_pk,official_date,period,away_team,home_team,venue,plate_appearances,events,pitches,nonpitch_events,missing_start_time,invalid_start_time,missing_end_time,invalid_end_time,duplicate_event_keys,nonincreasing_event_indexes,within_pa_negative_start_deltas,within_pa_nonpositive_start_deltas,global_negative_start_deltas,end_before_start,event_start_intervals,nonpositive_event_start_intervals,missing_event_start_intervals,unresolved_runner_movements,runner_movement_anomalies,missing_first_pitch_state,matchup_end_state_mismatches
+746409,2024-04-01,early,Toronto Blue Jays,Houston Astros,Minute Maid Park,67,248,220,28,0,0,0,0,0,0,0,0,0,0,153,0,0,0,0,0,0
+746900,2024-04-03,early,Colorado Rockies,Chicago Cubs,Wrigley Field,84,382,330,52,0,0,0,0,0,0,0,0,0,0,246,0,0,0,0,0,0
+745764,2024-04-05,early,Toronto Blue Jays,New York Yankees,Yankee Stadium,73,375,326,49,0,0,0,0,0,0,0,0,0,0,253,0,0,0,0,0,0
+746493,2024-04-07,early,Oakland Athletics,Detroit Tigers,Comerica Park,79,339,299,40,0,0,0,0,0,0,0,0,0,0,220,0,0,0,0,0,0
+746655,2024-04-10,early,Chicago White Sox,Cleveland Guardians,Progressive Field,87,376,293,83,0,0,0,0,0,0,0,0,0,0,207,0,0,0,0,1,0
+744944,2024-04-16,early,New York Yankees,Toronto Blue Jays,Rogers Centre,75,361,325,36,0,0,0,0,0,0,0,0,0,0,250,0,0,0,0,0,0
+746572,2024-04-21,early,Seattle Mariners,Colorado Rockies,Coors Field,78,322,290,32,0,0,0,0,0,0,0,0,0,0,212,0,0,0,0,0,0
+745919,2024-04-24,early,Chicago White Sox,Minnesota Twins,Target Field,74,334,284,50,0,0,0,0,0,0,0,1,0,0,210,0,0,0,0,0,0
+745027,2024-04-25,early,Seattle Mariners,Texas Rangers,Globe Life Field,68,313,270,43,0,0,0,0,0,0,0,0,0,0,202,0,0,0,0,0,0
+747211,2024-04-29,early,Los Angeles Dodgers,Arizona Diamondbacks,Chase Field,83,345,312,33,0,0,0,0,0,0,0,0,0,0,229,0,0,0,0,0,0
+745242,2024-06-16,middle,Texas Rangers,Seattle Mariners,T-Mobile Park,64,303,266,37,0,0,0,0,0,0,0,0,0,0,202,0,0,0,0,0,0
+746783,2024-06-18,middle,Houston Astros,Chicago White Sox,Guaranteed Rate Field,65,261,230,31,0,0,0,0,0,0,0,0,0,0,165,0,0,0,0,0,0
+746131,2024-06-21,middle,Los Angeles Angels,Los Angeles Dodgers,Dodger Stadium,76,341,275,66,0,0,0,0,0,0,0,0,0,0,199,0,0,0,0,0,0
+747101,2024-06-30,middle,Pittsburgh Pirates,Atlanta Braves,Truist Park,73,305,273,32,0,0,0,0,0,0,0,0,0,0,200,0,0,0,0,0,0
+746043,2024-07-04,middle,Boston Red Sox,Miami Marlins,loanDepot park,98,478,370,108,0,0,0,0,0,0,0,4,0,0,277,0,0,0,0,5,0
+745883,2024-07-07,middle,Houston Astros,Minnesota Twins,Target Field,71,328,275,53,0,0,0,0,0,0,0,1,0,0,204,0,0,0,0,0,0
+746690,2024-07-09,middle,Colorado Rockies,Cincinnati Reds,Great American Ball Park,86,378,333,45,0,0,0,0,0,0,0,0,0,0,247,0,0,0,1,0,0
+746452,2024-07-11,middle,Cleveland Guardians,Detroit Tigers,Comerica Park,75,313,279,34,0,0,0,0,0,0,0,0,0,0,204,0,0,0,0,0,0
+747012,2024-07-12,middle,New York Yankees,Baltimore Orioles,Oriole Park at Camden Yards,75,346,302,44,0,0,0,0,0,0,0,0,0,0,227,0,0,0,0,0,0
+745152,2024-07-13,middle,Chicago Cubs,St. Louis Cardinals,Busch Stadium,76,317,285,32,0,0,0,0,0,0,0,0,0,0,209,0,0,0,0,0,0
+745613,2024-09-07,late,Detroit Tigers,Oakland Athletics,Oakland Coliseum,71,309,265,44,0,0,0,0,0,0,0,0,0,0,194,0,0,0,0,0,0
+745368,2024-09-08,late,San Francisco Giants,San Diego Padres,Petco Park,77,360,308,52,0,0,0,0,0,0,0,1,0,0,231,0,0,0,0,0,0
+745214,2024-09-11,late,San Diego Padres,Seattle Mariners,T-Mobile Park,66,305,271,34,0,0,0,0,0,0,0,0,0,0,205,0,0,0,0,0,0
+745855,2024-09-13,late,Cincinnati Reds,Minnesota Twins,Target Field,71,293,256,37,0,0,0,0,0,0,0,0,0,0,185,0,0,0,0,0,0
+746828,2024-09-16,late,Oakland Athletics,Chicago Cubs,Wrigley Field,80,339,302,37,0,0,0,0,0,0,0,0,0,0,222,0,0,0,0,0,0
+744962,2024-09-19,late,Toronto Blue Jays,Texas Rangers,Globe Life Field,69,301,267,34,0,0,0,0,0,0,0,0,0,0,198,0,0,0,0,0,0
+745688,2024-09-24,late,Baltimore Orioles,New York Yankees,Yankee Stadium,74,367,317,50,0,0,0,0,0,0,0,0,0,0,243,0,0,0,0,0,0
+746495,2024-09-26,late,St. Louis Cardinals,Colorado Rockies,Coors Field,82,352,315,37,0,0,0,0,0,0,0,0,0,0,233,0,0,0,0,0,0
+745280,2024-09-27,late,St. Louis Cardinals,San Francisco Giants,Oracle Park,82,376,333,43,0,0,0,0,0,0,0,0,0,0,251,0,0,0,0,0,0
+746416,2024-09-29,late,Chicago White Sox,Detroit Tigers,Comerica Park,84,389,337,52,0,0,0,0,0,0,0,0,0,0,254,0,0,0,0,1,0

@@ -1,0 +1,22 @@
+action_category,event_record_type,event_type_display,event_name_display,events
+mound_visit,action,mound_visit,Mound Visit,176
+other_nonpitch,action,game_advisory,Game Advisory,119
+other_nonpitch,no_pitch,(missing),(missing),36
+other_nonpitch,action,wild_pitch,Wild Pitch,21
+other_nonpitch,action,stolen_base_2b,Stolen Base 2B,19
+other_nonpitch,action,runner_placed,Runner Placed On Base,10
+other_nonpitch,action,caught_stealing_2b,Caught Stealing 2B,5
+other_nonpitch,action,ejection,Ejection,5
+other_nonpitch,action,stolen_base_3b,Stolen Base 3B,5
+other_nonpitch,action,passed_ball,Passed Ball,3
+other_nonpitch,action,defensive_indiff,Defensive Indiff,2
+other_nonpitch,action,balk,Balk,1
+pickoff,pickoff,(missing),(missing),98
+pickoff,action,pickoff_1b,Pickoff 1B,1
+pickoff,action,pickoff_caught_stealing_2b,Pickoff Caught Stealing 2B,1
+step_off,stepoff,(missing),(missing),57
+substitution,action,pitching_substitution,Pitching Substitution,204
+substitution,action,defensive_switch,Defensive Switch,73
+substitution,action,offensive_substitution,Offensive Substitution,65
+substitution,action,defensive_substitution,Defensive Sub,35
+timeout,action,batter_timeout,Batter Timeout,412

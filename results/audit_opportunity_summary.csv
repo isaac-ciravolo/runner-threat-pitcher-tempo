@@ -1,0 +1,6 @@
+status,opportunity_class,opportunities
+next_pitch,caught_stealing,9
+next_pitch,ordinary_nonattempt,1171
+next_pitch,pickoff,56
+next_pitch,stolen_base,16
+no_next_pitch_after_later_action,pickoff,1
