@@ -1,0 +1,5 @@
+sample_role,search_status,candidate_records
+primary,inaccessible,83
+primary,not_found,7
+reserve,inaccessible,23
+reserve,not_found,1

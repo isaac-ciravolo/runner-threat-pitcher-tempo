@@ -1,6 +1,6 @@
 # Source and claim ledger
 
-Checked 2026-11-15. This ledger covers the feasibility audit only. It does not establish an originality claim; the literature review remains pending.
+Checked 2026-11-15. This ledger covers the feasibility audit and public-video validation setup. It does not establish an originality claim; the literature review remains pending.
 
 | Source | Claim used in this audit | Evidence type | Limitation / boundary |
 |---|---|---|---|
@@ -12,6 +12,10 @@ Checked 2026-11-15. This ledger covers the feasibility audit only. It does not e
 | [MLB Film Room launch description](https://www.mlb.com/news/mlb-film-room-launch) and [current Film Room](https://www.mlb.com/video) | MLB states that Film Room includes every MLB pitch since 2017 and provides searchable clips, making it a candidate manual-video source. | MLB article and current public search page. | Search is dynamically rendered; clip boundaries, frame stepping, and continuous pre-pitch coverage require manual testing. Availability can change. |
 | [MLB.TV archived-games help](https://www.mlb.com/live-stream-games/help-center/subscription-access-how-to-watch-mlbtv-on-android-mobile-devices) | MLB.TV provides archived games to subscribers. | MLB help documentation. | Subscription/login and blackout/access constraints make it unsuitable as the only reproducible public validation source. |
 | [MLB Game Story for game 746655](https://www.mlb.com/stories/game/746655) | Publicly corroborates Tanner Bibee's pickoff of Dominic Fletcher, the audited opportunity that ended without another pitch. | Indexed MLB Game Story. | Game Stories are selective highlights, not a complete pitch-level record or timing source. |
+| [MLB game-content response for game 746409](https://statsapi.mlb.com/api/v1/game/746409/content) | The same public content pattern returned metadata for all 30 audit games on 2026-11-15; the search found one full-inning-title item but no item matching a frozen candidate inning. | Direct responses, cached and checksummed in `data/video_content_download_ledger.csv`. | Titles and durations do not verify continuity; metadata search cannot establish release frames or elapsed time. |
+| [Full ninth inning of Ronel Blanco's no-hitter](https://www.mlb.com/video/full-9th-inning-of-ronel-blanco-s-no-hitter) | MLB metadata labels this public item as a 7:37 full ninth inning for audit game 746409. | MLB page plus playback metadata. | The sampled intervals from this game occur in innings 5 and 7. Playback and continuity were not visually inspected, so the item produced no annotation. |
+| MLB.TV archive metadata returned with the game-content responses | Archive entries existed for 106 frozen candidate records and indicated `freeGame=false`; they were logged as access-limited. | Automated metadata observation recorded in `data/video_availability_log.csv`. | This is not evidence that every user lacks lawful access, nor that footage is permanently unavailable; it cannot support a public reproducibility claim by itself. |
+| Public MLB condensed-game and highlight pages listed in `data/public_video_search_log.csv` | Several sampled games have publicly indexed edited video. | MLB and MLB-affiliated public pages. | Edited or condensed footage cannot validate elapsed time between releases across cuts and was not annotated. |
 
 ## Claims deliberately not made
 
@@ -19,3 +23,5 @@ Checked 2026-11-15. This ledger covers the feasibility audit only. It does not e
 - Recorded interruption labels are not assumed complete.
 - Official steals and caught stealing are not treated as every runner decision or attempt.
 - The audit does not establish novelty, causal effects, or pitcher-strategy recommendations.
+- A title containing “full inning” is not treated as verified continuity without visual inspection.
+- Access-limited archive metadata and edited highlights are not treated as successful video validation.

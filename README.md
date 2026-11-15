@@ -8,14 +8,14 @@ Under what conditions does additional attention to a baserunner prevent more exp
 The first study is narrower: **with a runner on first only, does independently estimated steal threat predict within-pitcher changes in tempo, and does the relationship persist in later games?**
 
 ## Status
-The first reproducible 30-game public-data feasibility audit is complete. The feed supports structural event and provisional opportunity reconstruction, but its timestamps are **not validated release times**. No runner-threat model or causal analysis has been fit. Originality remains provisional.
+The first reproducible 30-game public-data feasibility audit is complete, and the next public-video validation gate is implemented. The frozen sample contains 90 primary intervals and 24 reserves, but no sampled interval has a genuine usable video annotation yet. The gate is therefore **`validation_pending`**: feed timestamps are still **not validated release times**. No runner-threat model or causal analysis has been fit. Originality remains provisional.
 
-See the [data feasibility audit](docs/data_feasibility_audit.md), [sample manifest](data/audit_sample_manifest.csv), and [source/claim ledger](docs/source_claim_ledger.md). Raw MLB downloads remain local and ignored.
+See the [data feasibility audit](docs/data_feasibility_audit.md), [video protocol](docs/video_timing_validation_protocol.md), [validation status and manual next steps](docs/video_timing_validation_status.md), [sample manifest](data/audit_sample_manifest.csv), and [source/claim ledger](docs/source_claim_ledger.md). Raw MLB downloads remain local and ignored.
 
 ## First milestones
 1. Complete the focused literature review and citation tracing.
 2. ~~Audit public event timestamps, interruptions, and opportunity reconstruction.~~ Completed for the fixed 30-game feasibility sample.
-3. Validate approximately 100 stratified event-start intervals against public video before calling them release-to-release tempo.
+3. Validate the frozen stratified sample against public video before calling event-start intervals release-to-release tempo. Protocol and workflow implemented; genuine annotations pending.
 4. Construct a simple historical recorded-steal-attempt predictor.
 5. Test pitcher responses on a chronological held-out sample.
 
@@ -38,6 +38,17 @@ python -m unittest discover -s tests -v
 python -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=600 notebooks/01_data_audit.ipynb
 ```
 
+Prepare and run the public-video validation gate:
+
+```bash
+python scripts/prepare_video_validation.py
+python scripts/discover_public_video.py
+python -m unittest discover -s tests -v
+python -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=600 notebooks/02_video_timing_validation.ipynb
+```
+
+The discovery script is cache-aware. It logs unavailable, edited, access-limited, and unmatched sources rather than manufacturing annotations. Begin manual review with `results/manual_video_review_queue.csv`.
+
 On Windows, `py` can replace `python`. The fetch script is cache-aware and uses bounded retries. Exact package versions from the executed notebook are in `results/audit_environment.csv`.
 
 ## Layout
@@ -47,7 +58,7 @@ On Windows, `py` can replace `python`. The fetch script is cache-aware and uses 
 - `data/processed/`: local derived tables (ignored by Git)
 - `results/`: reviewed tables and figures
 - `scripts/`: reproducible sample retrieval and audit helpers
-- `tests/`: small state-reconstruction and interval-preservation checks
+- `tests/`: state-reconstruction, interval-preservation, blinding, joining, exclusion, and pending-gate checks
 
 ## Research safeguards
 Use public data only. Freeze predictors before the response interval; never define threat with the same tempo or defensive actions being explained. Include nonattempt opportunities and opportunities ending without another pitch. Separate predictive associations from causal claims. Release-to-release tempo is not set-hold duration or delivery time. Plate location is not target error. Keep raw data, credentials, and notebook outputs out of commits until reviewed.
