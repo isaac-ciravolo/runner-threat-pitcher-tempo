@@ -1,0 +1,10 @@
+base_state,action_category,pairs
+bases_empty,timeout,173
+bases_empty,other_nonpitch,9
+bases_empty,mound_visit,8
+bases_empty,pickoff,1
+runners_on,pickoff,114
+runners_on,timeout,74
+runners_on,other_nonpitch,67
+runners_on,step_off,38
+runners_on,mound_visit,15

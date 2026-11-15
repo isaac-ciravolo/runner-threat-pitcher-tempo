@@ -1,0 +1,5 @@
+timestamp_measure,base_state,pitcher_cells,median_signed_difference,median_absolute_discrepancy,maximum_absolute_discrepancy,median_count_difference,maximum_absolute_count_difference
+end_to_end,bases_empty,6,0.8692499999999983,0.8692499999999983,1.1480000000000015,32.5,42
+end_to_end,runners_on,6,1.1774999999999984,1.1774999999999984,1.6179999999999986,48.5,81
+start_to_start,bases_empty,6,0.09849999999999959,0.09849999999999959,0.1620000000000008,32.5,42
+start_to_start,runners_on,6,0.2834999999999983,0.2834999999999983,0.5240000000000009,48.5,81

@@ -1,0 +1,13 @@
+timestamp_measure,scenario,base_state,median_absolute_discrepancy,maximum_absolute_discrepancy,total_feed_intervals,total_savant_intervals
+end_to_end,at_most_30_seconds,bases_empty,0.7859999999999987,1.096,4328,4257
+end_to_end,at_most_30_seconds,runners_on,0.6914999999999978,0.9884999999999984,2152,2175
+end_to_end,no_intervening_actions,bases_empty,0.7035,1.0005000000000024,4257,4257
+end_to_end,no_intervening_actions,runners_on,0.7152499999999975,0.9989999999999988,2173,2175
+end_to_end,preceding_state_classification,bases_empty,0.8620000000000001,1.1480000000000015,4440,4257
+end_to_end,preceding_state_classification,runners_on,1.178749999999999,1.6179999999999986,2475,2175
+start_to_start,at_most_30_seconds,bases_empty,0.08325000000000049,0.1615000000000002,4389,4257
+start_to_start,at_most_30_seconds,runners_on,0.07174999999999976,0.08800000000000097,2203,2175
+start_to_start,no_intervening_actions,bases_empty,0.002500000000001279,0.016500000000000625,4257,4257
+start_to_start,no_intervening_actions,runners_on,0.0009999999999994458,0.026500000000000412,2173,2175
+start_to_start,preceding_state_classification,bases_empty,0.09749999999999925,0.1620000000000008,4440,4257
+start_to_start,preceding_state_classification,runners_on,0.290499999999998,0.5309999999999988,2475,2175

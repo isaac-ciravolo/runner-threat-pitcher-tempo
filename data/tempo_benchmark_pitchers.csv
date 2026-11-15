@@ -1,0 +1,7 @@
+selection_position,entity_id,entity_name,team_name,savant_total_eligible,savant_empty_count,savant_empty_median_seconds,savant_onbase_count,savant_onbase_median_seconds,is_qualified,selection_rule_version
+1,681867,"Criswell, Cooper",BOS,843,515,11.633,328,15.869,1,tempo-benchmark-v1
+23,641927,"Ober, Bailey",MIN,1115,824,13.802,291,20.413,1,tempo-benchmark-v1
+45,668678,"Gallen, Zac",AZ,1108,741,14.525,367,19.606,1,tempo-benchmark-v1
+67,544150,"Suárez, Albert",BAL,956,574,15.483,382,18.763,1,tempo-benchmark-v1
+89,687765,"Spence, Mitch",ATH,1027,680,16.421,347,19.776,1,tempo-benchmark-v1
+111,605400,"Nola, Aaron",PHI,1383,923,18.905,460,20.911,1,tempo-benchmark-v1

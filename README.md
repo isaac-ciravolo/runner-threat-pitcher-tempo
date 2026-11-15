@@ -8,9 +8,9 @@ Under what conditions does additional attention to a baserunner prevent more exp
 The first study is narrower: **with a runner on first only, does independently estimated steal threat predict within-pitcher changes in tempo, and does the relationship persist in later games?**
 
 ## Status
-The first reproducible 30-game public-data feasibility audit is complete, and the next public-video validation gate is implemented. The frozen sample contains 90 primary intervals and 24 reserves, but no sampled interval has a genuine usable video annotation yet. The gate is therefore **`validation_pending`**: feed timestamps are still **not validated release times**. No runner-threat model or causal analysis has been fit. Originality remains provisional.
+The first reproducible 30-game public-data feasibility audit is complete, the public-video validation gate is implemented, and a separate aggregate Baseball Savant benchmark has been executed. The aggregate benchmark closely reproduces Savant only in a prespecified action-free sensitivity, revealing a likely undocumented population rule that still needs investigation. The frozen video gate remains **`validation_pending`**: feed timestamps are still **not validated release times**. No runner-threat model or causal analysis has been fit. Originality remains provisional.
 
-See the [data feasibility audit](docs/data_feasibility_audit.md), [video protocol](docs/video_timing_validation_protocol.md), [validation status and manual next steps](docs/video_timing_validation_status.md), [sample manifest](data/audit_sample_manifest.csv), and [source/claim ledger](docs/source_claim_ledger.md). Raw MLB downloads remain local and ignored.
+See the [data feasibility audit](docs/data_feasibility_audit.md), [video protocol](docs/video_timing_validation_protocol.md), [validation status and manual next steps](docs/video_timing_validation_status.md), [aggregate benchmark report](docs/aggregate_tempo_benchmark_report.md), [sample manifest](data/audit_sample_manifest.csv), and [source/claim ledger](docs/source_claim_ledger.md). Raw MLB downloads remain local and ignored.
 
 ## First milestones
 1. Complete the focused literature review and citation tracing.
@@ -48,6 +48,16 @@ python -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreproces
 ```
 
 The discovery script is cache-aware. It logs unavailable, edited, access-limited, and unmatched sources rather than manufacturing annotations. Begin manual review with `results/manual_video_review_queue.csv`.
+
+Reproduce the aggregate Savant benchmark:
+
+```bash
+python scripts/fetch_tempo_benchmark.py
+python -m unittest discover -s tests -v
+python -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1200 notebooks/03_aggregate_tempo_benchmark.ipynb
+```
+
+The benchmark fetcher is cache-aware and uses the frozen pitcher list in `data/tempo_benchmark_pitchers.csv`. Its raw Savant responses, game logs, and feeds remain ignored.
 
 On Windows, `py` can replace `python`. The fetch script is cache-aware and uses bounded retries. Exact package versions from the executed notebook are in `results/audit_environment.csv`.
 

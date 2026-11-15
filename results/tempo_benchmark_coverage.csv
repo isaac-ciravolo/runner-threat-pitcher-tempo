@@ -1,0 +1,7 @@
+pitcher_id,pitcher_name,games,feed_pitch_events,actual_pitch_events,adjacent_actual_pitch_pairs,documented_rule_pairs,interrupted_documented_pairs,missing_start_intervals,nonpositive_start_intervals,missing_end_intervals,nonpositive_end_intervals,start_intervals_over_30,end_intervals_over_30
+681867,"Criswell, Cooper",26,1756,1756,1331,903,60,0,0,0,0,21,22
+641927,"Ober, Bailey",31,2696,2696,1986,1175,60,0,0,0,0,35,58
+668678,"Gallen, Zac",28,2502,2502,1881,1222,116,0,0,0,0,79,94
+544150,"Suárez, Albert",32,2234,2234,1669,1024,68,0,0,0,0,44,62
+687765,"Spence, Mitch",35,2481,2481,1826,1102,75,0,0,0,0,55,70
+605400,"Nola, Aaron",33,3189,3189,2365,1489,106,0,0,0,0,89,129
