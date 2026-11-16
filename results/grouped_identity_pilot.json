@@ -1,0 +1,9 @@
+{
+  "games": 263,
+  "windows": 14717,
+  "changed_opening_pitchers": 149,
+  "new_history_exclusions": 197,
+  "pilot_manifest_sha256": "184c4d58b8b1c5e6b6c2981774837b65889d284e6378003a328507400a814908",
+  "identity_script_sha256": "813076aed598a5a7123517c349fed19ecd18f89f2f9689aabd895a16bbfb09ff",
+  "all_response_cutoffs_strictly_earlier": true
+}

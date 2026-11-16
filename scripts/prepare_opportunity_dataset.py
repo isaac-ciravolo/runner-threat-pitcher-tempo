@@ -135,6 +135,10 @@ def build_disengagement_history(
             ]
             before = since_reset
             checked = pd.concat([pitcher_pickoffs, stepoffs, violations], ignore_index=True)
+            # Grouped outcomes share one effective event. Preserve source order
+            # so a step-off precedes its pickoff-outcome continuation.
+            if event_key_map:
+                checked = checked.sort_values(['event_index', 'action_id'])
             for action in checked.itertuples(index=False):
                 raw_number = pd.to_numeric(action.raw_disengagement_num, errors="coerce")
                 # Two cached plays encode a pickoff attempt in one event and its

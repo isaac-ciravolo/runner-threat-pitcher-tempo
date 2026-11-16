@@ -35,7 +35,7 @@ def process_game(task):
     require(frame.opening_catcher_id.notna().all(), 'Unresolved opening catcher')
     require(frame.known_state_conflict.eq(False).all(), 'Known state conflict')
     require(frame.unknown_action_classification_count.eq(0).all(), 'Unknown action classification')
-    require(metadata['raw_disengagement_mismatches'] == 0, 'Disengagement reconstruction mismatch')
+    require(metadata['raw_disengagement_mismatches'] == 0, f'Disengagement reconstruction mismatch: {row.game_pk}')
     assigned = [item for value in frame.response_action_ids.dropna() for item in str(value).split('|') if item]
     require(len(assigned) == len(set(assigned)), 'Action assigned to multiple windows')
     metadata['recorded_attempt_windows'] = int(frame.recorded_steal_attempt_indicator.sum())
@@ -59,11 +59,17 @@ def main(full=False, workers=4):
         # Deterministic ordinary games plus every initial exception game.
         initial = ROOT / 'results/grouped_event_inventory/runs/62333b29eb8a46c99df0a015758cc9cd/exceptions.csv'
         selected = set(pd.read_csv(initial).game_pk)
+        crosswalk = pd.read_csv(inventory.local / 'crosswalk.csv.gz')
+        selected.update(crosswalk.groupby(['season', 'event_type', 'parent_type'], dropna=False).head(1).game_pk)
         selected.update(manifests.sort_values('game_pk').groupby('season').head(4).game_pk)
-        selected.update([663178, 716404])
+        selected.update([663178, 716404, 718573])
         manifests = manifests[manifests.game_pk.isin(selected)]
     hashes = {name: sha256_file(ROOT / name) for name in SOURCES}
-    signature = hashlib.sha256(json.dumps(hashes, sort_keys=True).encode()).hexdigest()[:16]
+    # Selection/report changes do not change parsed rows. Parser dependencies
+    # and the cache schema identify reusable outputs; each file is verified.
+    cache_definition = {'schema': 1, 'parser_sources': {name: digest for name, digest in hashes.items()
+                                                       if name != 'scripts/rebuild_grouped_events.py'}}
+    signature = hashlib.sha256(json.dumps(cache_definition, sort_keys=True).encode()).hexdigest()[:16]
     cache = ROOT / 'data/processed/grouped_events/cache' / signature
     cache.mkdir(parents=True, exist_ok=True)
     label = 'grouped_event_rebuild' if full else 'grouped_event_pilot'

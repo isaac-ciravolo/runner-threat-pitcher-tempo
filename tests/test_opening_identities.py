@@ -39,7 +39,7 @@ class PitcherTimelineTests(unittest.TestCase):
                                   feature_cutoff_event_order=-1, close_event_order=2,
                                   attempt_history_eligible=True, recorded_steal_attempt_record_count=1,
                                   recorded_steal_outcome_class='recorded_success',
-                                  history_count_exclusion_reason='')])
+                                  history_count_exclusion_reason=float('nan'))])
         fixed, changed = repair_opening_identities(frame, feed)
         self.assertEqual(changed, 1)
         self.assertEqual(fixed.iloc[0].pitcher_id, 10)

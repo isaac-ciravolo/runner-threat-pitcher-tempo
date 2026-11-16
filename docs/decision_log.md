@@ -90,3 +90,7 @@ Recovered and inspected the Sloan PDF methods/references through its public down
 ## 2026-11-16: Correct opening pitcher identity before refitting
 
 Final PA matchup can reveal a later pitcher substitution. Independently reconstructed pitcher chronology for all 7,289 development feeds with zero unresolved final-PA checks. Freeze opening IDs at the exact cutoff and update pitcher/pinch-hitter history-attribution exclusions; preserve windows in prediction. Final-PA batter identity remains prohibited as a predictor. See opening_identity_audit_report.md. The identity pass must run before grouped histories and models.
+
+## 2026-11-16: Expanded grouped/identity integration gate
+
+The initial full run failed closed on a step-off/outcome ordering mismatch; preserve source order within effective groups. Joint integration also required separate original and group-end sequence fields so pre-first-event cutoffs do not advance into their response. The final 263-game pilot covers all observed grouping-type combinations, passes strict cutoffs for 14,717 windows and records 149 pitcher-ID changes plus 197 attribution exclusions. All 80 tests pass. Restart the full rebuild only from this corrected version.

@@ -9,6 +9,23 @@ from scripts.prepare_opportunity_dataset import (
 
 
 class OpportunityPreparationTests(unittest.TestCase):
+    def test_grouped_stepoff_precedes_pickoff_outcome(self):
+        events = pd.DataFrame([dict(game_pk=1, at_bat_index=0, event_index=1,
+                                    event_order=1, event_key='1:0:1')])
+        actions = pd.DataFrame([
+            dict(event_key='1:0:1', event_index=1, action_id='step', action_type='step_off',
+                 initiator_role='pitcher', raw_disengagement_num=1),
+            dict(event_key='1:0:1', event_index=2, action_id='outcome', action_type='pickoff_throw',
+                 initiator_role='pitcher', raw_disengagement_num=1),
+        ])
+        feed = {'gamePk': 1, 'liveData': {'plays': {'allPlays': [
+            {'about': {'atBatIndex': 0}, 'playEvents': [{'index': 1}, {'index': 2}], 'runners': []}]}}}
+        history, checks = build_disengagement_history(events, actions, [(pd.Series(), feed)],
+                                                       event_key_map={'1:0:2': '1:0:1'})
+        self.assertEqual(history.iloc[0].recorded_disengagements_since_reset_after_event, 1)
+        self.assertTrue(checks.raw_number_matches.all())
+        self.assertEqual(checks.counts_as_disengagement.tolist(), [True, False])
+
     def test_disengagement_history_deduplicates_outcome_continuation_and_resets(self):
         play = {
             "about": {"atBatIndex": 0},

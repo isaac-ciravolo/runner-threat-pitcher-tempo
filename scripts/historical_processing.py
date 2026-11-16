@@ -427,7 +427,7 @@ def build_game_opportunities(
             resets_prior: Any = 0 if season >= 2023 else pd.NA
         else:
             anchor = group.loc[group["event_order"].eq(open_order)].iloc[0]
-            cutoff_sequence = int(anchor["game_sequence"])
+            cutoff_sequence = int(anchor.get("group_end_game_sequence", anchor["game_sequence"]))
             if season >= 2023:
                 history = post_history.loc[anchor["event_key"]]
                 recorded_prior = int(

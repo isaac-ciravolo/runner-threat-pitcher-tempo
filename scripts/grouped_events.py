@@ -66,12 +66,13 @@ def collapse_outcome_groups(feed, events, actions):
     rows remain available in the raw cache and the returned key crosswalk.
     """
     result, action_result = events.copy(), actions.copy()
+    result['group_end_game_sequence'] = result.game_sequence
     key_map = {}
     by_key = result.set_index('event_key', drop=False)
     drop_indexes = []
     post_columns = ['bases_after', 'runner_1b_after', 'runner_2b_after', 'runner_3b_after',
                     'feed_count_balls', 'feed_count_strikes', 'feed_count_outs',
-                    'post_away_score', 'post_home_score', 'game_sequence']
+                    'post_away_score', 'post_home_score']
     for play in feed['liveData']['plays']['allPlays']:
         pa = play['about']['atBatIndex']
         mapping, unresolved = grouping_plan(play)
@@ -96,6 +97,7 @@ def collapse_outcome_groups(feed, events, actions):
             require(len(target_index) == 1, 'Nonunique effective event')
             for column in post_columns:
                 result.loc[target_index, column] = final[column]
+            result.loc[target_index, 'group_end_game_sequence'] = final.game_sequence
             drop_indexes.extend(child_rows.index.tolist())
             for child_key in children:
                 selected = action_result.event_key.eq(child_key)

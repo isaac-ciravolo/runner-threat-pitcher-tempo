@@ -71,6 +71,8 @@ class GroupingTests(unittest.TestCase):
         self.assertEqual(windows.iloc[0].steal_attempt_count, 1)
         self.assertTrue(windows.iloc[0].following_pitch_exists)
         self.assertEqual(grouped.iloc[0].bases_after, '2B')
+        self.assertEqual(grouped.iloc[0].game_sequence, 1)
+        self.assertEqual(grouped.iloc[0].group_end_game_sequence, 2)
         self.assertEqual(mapping, {'1:2:1': '1:2:0'})
         self.assertEqual(moved.iloc[0].action_id, 'raw-steal')
         self.assertEqual(moved.iloc[0].source_event_index, 1)

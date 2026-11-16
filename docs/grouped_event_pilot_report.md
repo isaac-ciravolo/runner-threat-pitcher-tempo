@@ -13,3 +13,11 @@ The first publication attempt failed because the paired local artifact directory
 Git now preserves exact bytes under results/ because published manifests hash byte content. Automatic line-ending conversion must not invalidate a checked-out run. Cached per-game tables are individually checksummed and remain local/ignored.
 
 This pilot clears full development reconstruction, not model validity. Rebuild all histories and re-evaluate the frozen models before restoring any prospective result. Timing, action-completeness, literature and 2025 gates remain unchanged.
+
+## Expanded integration gate
+
+The first full rebuild stopped at game 718573: grouping a step-off with its pickoff-outcome continuation exposed an action-type ordering bug in disengagement reconstruction. Grouped records now retain source event order, and a regression test verifies one disengagement rather than two. No failed full run was published.
+
+The joint identity check then exposed a pre-first-event cutoff error introduced by overwriting a grouped parent's sequence with its final child's sequence. Original sequence and group-end sequence now remain separate; only an after-group cutoff uses the latter. A regression test checks both values.
+
+The final expanded pilot, run 487a2bc8863e438ca57473dcfce8fe66, covers 263 games, including every observed season/event-type/parent-type grouping combination. All 14,717 windows pass grouped parsing and chronological identity application. The identity pass changes 149 opening-pitcher values and introduces 197 history-attribution exclusions, while retaining those prediction windows. Every response boundary is strictly later than its feature cutoff. Evidence is in results/grouped_identity_pilot.json. All 80 tests pass. This supersedes the initial pilot as the full-rebuild entry gate.

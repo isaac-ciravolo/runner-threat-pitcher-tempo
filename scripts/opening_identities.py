@@ -35,6 +35,8 @@ def pitcher_timeline(feed):
 def repair_opening_identities(frame, feed):
     snapshots, event_sequences, substitutions = pitcher_timeline(feed)
     result = frame.copy()
+    # An all-empty CSV column is inferred as float; make annotation writes explicit.
+    result['history_count_exclusion_reason'] = result.history_count_exclusion_reason.fillna('').astype('string')
     result['legacy_opening_pitcher_id'] = frame.pitcher_id
     names = {int(person['id']): person.get('fullName', str(person['id']))
              for person in feed['gameData']['players'].values()}
