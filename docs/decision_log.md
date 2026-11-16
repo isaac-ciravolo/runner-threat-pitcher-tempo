@@ -86,3 +86,7 @@ Freeze grouped_event_repair_protocol.md and inventory all 7,289 development feed
 ## 2026-11-16: Expanded full-text comparison during reconstruction
 
 Recovered and inspected the Sloan PDF methods/references through its public download link. Traced its pickoff component to the Powers project and inspected Downey/McGarrity's public 2015 data appendix, including a prior runner-quality predictor of pickoff response. This strengthens the restriction on novelty claims. Price and other full-text gaps remain unresolved. See closest_work_methods_audit.md and the checksummed literature provenance.
+
+## 2026-11-16: Correct opening pitcher identity before refitting
+
+Final PA matchup can reveal a later pitcher substitution. Independently reconstructed pitcher chronology for all 7,289 development feeds with zero unresolved final-PA checks. Freeze opening IDs at the exact cutoff and update pitcher/pinch-hitter history-attribution exclusions; preserve windows in prediction. Final-PA batter identity remains prohibited as a predictor. See opening_identity_audit_report.md. The identity pass must run before grouped histories and models.

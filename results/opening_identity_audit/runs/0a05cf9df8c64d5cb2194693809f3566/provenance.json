@@ -1,0 +1,14 @@
+{
+  "environment": {
+    "python": "3.14.4",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "sklearn": "1.8.0"
+  },
+  "verified_games": 7289,
+  "unresolved_games": 0,
+  "source_hashes": {
+    "scripts/opening_identities.py": "a9f7aa0d1ab7fb88dad8971a6f16058120338c766182beb2a718bea931a7c7ec",
+    "scripts/audit_opening_identities.py": "2db27fca7c4327b7b1a7a71f2b717d99a3938ecea0de58310f8549fde66e0f79"
+  }
+}
