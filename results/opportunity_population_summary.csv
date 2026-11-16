@@ -1,0 +1,31 @@
+metric,value,definition
+manifest_rows,212,source rows before game deduplication
+unique_cached_games,211,deduplicated game population
+feasibility_audit_games,30,schedule-stratified audit source
+tempo_benchmark_games,182,games containing appearances by six selected benchmark pitchers
+overlap_games,1,deduplicated overlap
+first_game_date,2024-03-28,cached development coverage
+last_game_date,2024-09-29,cached development coverage
+unique_dates,130,cached development coverage
+unique_teams,30,game participation
+unique_venues,30,cached development coverage
+unique_pitchers,461,window-opening identity
+unique_runners,461,window-opening identity
+opportunity_windows,12228,all frozen first-base-only windows
+recorded_pickoff_or_steal_windows,878,explicit combined label
+recorded_pickoff_windows,675,"pitcher, catcher, or unknown initiator"
+recorded_steal_windows,205,recorded steal attempt
+recorded_pickoff_and_steal_windows,2,both types in one window
+recorded_pitcher_pickoff_windows,651,primary future response
+recorded_catcher_pickoff_windows,25,separate response
+recorded_unknown_initiator_pickoff_windows,1,preserved unknown
+recorded_steal_attempt_windows,205,separate runner response
+recorded_no_pickoff_or_steal_windows,11350,"no recorded action, not confirmed absence"
+terminal_windows,315,retained without requiring a following pitch
+windows_with_following_pitch,11913,closure at next actual pitch
+pre_first_event_windows,3259,opens before first event/pitch
+runner_identity_change_windows,234,retained and flagged
+opening_catcher_missing_windows,12228,not inferred from final lineup
+incomplete_pre_game_runner_history_windows,12228,blocks threat modeling
+secondary_action_free_take_intervals,4584,secondary event-start sensitivity only
+interrupted_benchmark_intervals_without_mapped_runner_control,285,coarse nonpitch actions retained separately

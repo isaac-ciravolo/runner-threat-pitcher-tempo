@@ -5,19 +5,19 @@ Public-data baseball research for a potential SABR submission.
 ## Research question
 Under what conditions does additional attention to a baserunner prevent more expected runs than it costs against the batter?
 
-The first study is narrower: **with a runner on first only, does independently estimated steal threat predict within-pitcher changes in tempo, and does the relationship persist in later games?**
+The first feasible study is narrower: **with a runner on first only, does prospectively estimated recorded-steal threat improve prediction of a recorded pitcher pickoff in later games?** Event-start timing is a secondary analysis only if its independent validation gate passes.
 
 ## Status
-The first reproducible 30-game public-data feasibility audit is complete, the public-video validation gate is implemented, and a separate aggregate Baseball Savant benchmark has been executed. The aggregate benchmark closely reproduces Savant only in a prespecified action-free sensitivity, revealing a likely undocumented population rule that still needs investigation. The frozen video gate remains **`validation_pending`**: feed timestamps are still **not validated release times**. No runner-threat model or causal analysis has been fit. Originality remains provisional.
+The feasibility, aggregate Savant, and runner-control representation audits are complete. A one-row-per-window development table and leakage-audited exploratory plan are now frozen, but the 211 cached games are selective and lack complete pre-game runner histories. The aggregate benchmark closely reproduces Savant only in a prespecified action-free sensitivity, revealing a likely undocumented population rule. The frozen video gate remains **`validation_pending`**: feed timestamps are still **not validated release times**. No runner-threat, pitcher-response, timing-response, or causal model has been fit. Originality remains provisional in light of closely overlapping 2026 work.
 
-See the [data feasibility audit](docs/data_feasibility_audit.md), [video protocol](docs/video_timing_validation_protocol.md), [validation status and manual next steps](docs/video_timing_validation_status.md), [aggregate benchmark report](docs/aggregate_tempo_benchmark_report.md), [sample manifest](data/audit_sample_manifest.csv), and [source/claim ledger](docs/source_claim_ledger.md). Raw MLB downloads remain local and ignored.
+See the [data feasibility audit](docs/data_feasibility_audit.md), [video protocol](docs/video_timing_validation_protocol.md), [validation status and manual next steps](docs/video_timing_validation_status.md), [aggregate benchmark report](docs/aggregate_tempo_benchmark_report.md), [runner-control report](docs/runner_control_action_audit_report.md), [opportunity dataset report](docs/opportunity_dataset_report.md), [frozen exploratory plan](docs/exploratory_analysis_plan.md), and [source/claim ledger](docs/source_claim_ledger.md). Raw MLB downloads remain local and ignored.
 
 ## First milestones
-1. Complete the focused literature review and citation tracing.
+1. Continue full-text literature review and citation tracing; the closest public sources have been screened and broad novelty is not claimed.
 2. ~~Audit public event timestamps, interruptions, and opportunity reconstruction.~~ Completed for the fixed 30-game feasibility sample.
 3. Validate the frozen stratified sample against public video before calling event-start intervals release-to-release tempo. Protocol and workflow implemented; genuine annotations pending.
-4. Construct a simple historical recorded-steal-attempt predictor.
-5. Test pitcher responses on a chronological held-out sample.
+4. Collect the complete chronological frame and construct a forward historical recorded-steal-attempt predictor.
+5. Test recorded pitcher-pickoff responses on the locked later-season sample.
 
 See [the study plan](docs/study_plan.md) and [literature checklist](docs/literature_review.md).
 
@@ -58,6 +58,14 @@ python -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreproces
 ```
 
 The benchmark fetcher is cache-aware and uses the frozen pitcher list in `data/tempo_benchmark_pitchers.csv`. Its raw Savant responses, game logs, and feeds remain ignored.
+
+Reproduce the runner-control audit and opportunity preparation from the existing cache:
+
+```bash
+python -m unittest discover -s tests -v
+python -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1200 notebooks/04_runner_control_action_audit.ipynb
+python -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1200 notebooks/05_opportunity_dataset.ipynb
+```
 
 On Windows, `py` can replace `python`. The fetch script is cache-aware and uses bounded retries. Exact package versions from the executed notebook are in `results/audit_environment.csv`.
 

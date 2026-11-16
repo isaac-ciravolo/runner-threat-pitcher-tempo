@@ -1,0 +1,5 @@
+split,start_date,end_date,fit_parameters,tuning_allowed,use,game_separation,chronological_order
+history_only,2022-04-07,2022-10-05,False,False,pregame priors only; old rule environment retained as labeled history,whole_game,strict
+training,2023-03-30,2023-10-01,True,True,"fit baselines, regularized models, preprocessing, and shrinkage",whole_game,strict
+validation,2024-03-20,2024-09-30,False,True,select features and penalties; cached subset is already inspected,whole_game,strict
+final_test,2025-03-18,2025-09-28,False,False,locked one-time evaluation; whole games only,whole_game,strict

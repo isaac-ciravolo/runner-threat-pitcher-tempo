@@ -1,0 +1,8 @@
+priority,data,scope,reason,status
+1,Complete regular-season schedules and live feeds,2022 history plus every 2023-2025 regular-season game,"Build unbiased denominators and pre-game histories; preserve URLs, retrieval times, and checksums",required_before_modeling
+2,Chronological catcher identity,Starting defensive alignments plus every catcher substitution for collected games,Opening catcher cannot be inferred from the final lineup and is a planned context variable,required_before_catcher_adjustment
+3,Forward runner opportunity/attempt/success histories,All eligible windows dated strictly before each game,Generate leakage-safe attempt and conditional-success predictors with training-estimated shrinkage,required_before_modeling
+4,As-of player metadata,Handedness and roster/team identity available on each game date,Opening context and sparse/new-player handling,required_before_modeling
+5,Lagged Statcast sprint-speed snapshots,Prior-season value or documented pre-game snapshot only,Optional threat feature; final-season values would leak future information,optional_after_primary_baseline
+6,Expanded independent action review,Event-complete source or video sample for positive and no-recorded-action windows,Estimate label sensitivity where feasible; absence is currently unvalidated,recommended_for_interpretation
+7,Continuous video release annotations,Frozen video sample only,Required only for any release-tempo claim; not required for recorded-pickoff analysis,required_only_for_timing_secondary

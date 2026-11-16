@@ -4,7 +4,7 @@ Executed 2026-11-15 under the frozen [v1.1 protocol](runner_control_action_audit
 
 ## Result
 
-The public feed has explicit, usable representations for pitcher and catcher pickoff throws, step-offs, steal attempts and outcomes, balks, timer violations, and one disengagement violation. Event fields and runner movements can be linked without double-counting the same recorded act. Representation accuracy is **partially corroborated, but action completeness is unvalidated**. The results support auditing recorded actions; they do not establish that unrecorded attempts are absent.
+The public feed has explicit, usable representations for pitcher and catcher pickoff throws, step-offs, steal attempts and outcomes, balks, timer violations, and one disengagement violation. Event fields and runner movements can be linked with retained provenance. A later rule-state check identified two attempt/outcome continuation records with the same raw disengagement ordinal; they remain in the frozen action-row accounting and are flagged rather than silently merged. Representation accuracy is **partially corroborated, but action completeness is unvalidated**. The results support auditing recorded actions; they do not establish that unrecorded attempts are absent.
 
 The final recommendation is **investigate a specific measurement discrepancy**: identify Savant's undocumented interruption/population rule, especially for runners-on intervals, before using these event-start intervals for small threat-response effects. Do not begin threat-tempo modeling from this result.
 
@@ -23,7 +23,7 @@ The explicit mapping uses `playEvent.type`, `details.eventType`, `details.fromCa
 | Balk | 12 | all with base-runner advances |
 | Disengagement violation | 1 | explicit `forced_balk` + `pitcher_disengagement` schema |
 
-Among pickoff throws, 819 recorded safe returns without a movement, 17 direct pickoffs, 10 pickoff/caught-stealing outcomes, and 11 error advances. The 857 throws are event counts, while outcomes are attributes; a successful pickoff is not counted again as a separate action. Simultaneous runner paths are retained under one event or split into runner-specific steal attempts only when the movement evidence identifies distinct attempts.
+Among pickoff records, 819 recorded safe returns without a movement, 17 direct pickoffs, 10 pickoff/caught-stealing outcomes, and 11 error advances. The 857 rows are feed action-event records, not a guaranteed count of unique physical throws. In games 745821 and 747220, an attempt event is followed by a reviewed/outcome event carrying the same `disengagementNum`; the opportunity preparation preserves both rows but marks the latter as a continuation and increments disengagement state once. Binary pickoff-window accounting is unchanged. Simultaneous runner paths are retained under one event or split into runner-specific steal attempts only when the movement evidence identifies distinct attempts.
 
 Pitcher and runner identities are complete for all pickoff rows. Catcher identity is populated only when fielding credits support it: 6 of the 55 catcher-initiated pickoffs have an event-level catcher ID, while 49 safe-return throws expose `fromCatcher=true` but no catcher identity. Those names were not inferred from a final box-score lineup. Step-offs and timer violations correctly have no target-runner identity when no base-runner movement is attached.
 

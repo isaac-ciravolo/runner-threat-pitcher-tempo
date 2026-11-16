@@ -1,0 +1,11 @@
+category,windows,treatment,reason
+frozen_action_population,12228,retained,all first-base-only windows
+terminal_without_next_pitch,315,retained,later pitch is not an eligibility condition
+runner_identity_changed_within_window,234,flagged_for_model_review,occupancy window retained; opening runner no longer describes full exposure
+unknown_pickoff_initiator,1,preserved_separately,not coded as pitcher or catcher
+unknown_action_classification,0,preserved_separately,not silently coerced
+known_state_conflict,0,preserved_separately,game 746690 PA 38 contributes no windows
+opening_catcher_not_reconstructed,12228,missing_predictor,requires verified chronological defense reconstruction
+complete_pre_game_runner_history_unavailable,12228,blocks_threat_model,selective cache cannot provide denominators
+preliminary_structural_response_ineligible,235,not_dropped_from_table,identity/classification flags only
+secondary_action_free_take_interval,4584,secondary_subset,conditioning on no action can select on post-threat behavior

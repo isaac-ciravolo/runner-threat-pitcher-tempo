@@ -1,0 +1,18 @@
+check,passed,detail
+unique_opportunity_id,True,stable one-row key
+window_count,True,12228
+pickoff_window_identity,True,675
+steal_window_identity,True,205
+combined_window_identity,True,2
+union_window_identity,True,878
+action_assignments_match,True,no duplicate or missing action joins
+action_assignment_unique_across_windows,True,1008 assigned records
+terminal_windows_retained,True,315
+cutoff_event_order,True,all response orders exceed cutoff
+predictor_outcome_separation,True,history fields are pre-game placeholders
+incomplete_history_explicit,True,all selective-cache histories marked incomplete
+unknown_states_preserved,True,separate flags
+no_cached_final_test,True,cached games are development only
+split_integrity,True,nonoverlapping chronological periods
+population_summary_present,True,population artifact
+disengagement_raw_number_agreement,True,1126 comparable records

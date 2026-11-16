@@ -1,0 +1,1113 @@
+dimension,dimension_id,dimension_name,games,windows,recorded_pitcher_pickoff_windows,recorded_catcher_pickoff_windows,recorded_steal_windows,terminal_windows
+date,2024-03-28,2024-03-28,1,54,0,0,0,0
+date,2024-03-29,2024-03-29,1,67,9,0,3,4
+date,2024-03-30,2024-03-30,1,61,2,0,0,1
+date,2024-03-31,2024-03-31,1,30,1,0,0,1
+date,2024-04-01,2024-04-01,1,50,0,0,0,0
+date,2024-04-02,2024-04-02,2,135,7,0,2,3
+date,2024-04-03,2024-04-03,1,66,3,0,1,1
+date,2024-04-05,2024-04-05,2,152,7,0,2,3
+date,2024-04-07,2024-04-07,1,119,4,1,0,0
+date,2024-04-08,2024-04-08,2,109,8,0,1,1
+date,2024-04-09,2024-04-09,1,52,3,0,0,1
+date,2024-04-10,2024-04-10,2,129,13,0,2,4
+date,2024-04-13,2024-04-13,1,83,5,0,2,4
+date,2024-04-14,2024-04-14,3,179,13,0,1,1
+date,2024-04-15,2024-04-15,1,55,6,0,1,2
+date,2024-04-16,2024-04-16,2,113,4,0,1,1
+date,2024-04-17,2024-04-17,1,47,4,0,0,1
+date,2024-04-18,2024-04-18,1,61,6,0,1,2
+date,2024-04-20,2024-04-20,2,118,2,2,0,3
+date,2024-04-21,2024-04-21,3,163,13,0,5,5
+date,2024-04-22,2024-04-22,1,59,3,0,3,3
+date,2024-04-24,2024-04-24,2,114,6,0,1,4
+date,2024-04-25,2024-04-25,1,27,1,0,1,1
+date,2024-04-26,2024-04-26,4,179,13,0,2,4
+date,2024-04-28,2024-04-28,1,65,9,1,2,3
+date,2024-04-29,2024-04-29,1,55,2,0,0,0
+date,2024-04-30,2024-04-30,2,163,6,0,5,5
+date,2024-05-01,2024-05-01,1,59,2,0,0,0
+date,2024-05-03,2024-05-03,1,71,4,0,2,3
+date,2024-05-05,2024-05-05,3,155,9,1,2,7
+date,2024-05-07,2024-05-07,2,104,12,1,1,3
+date,2024-05-08,2024-05-08,2,99,8,0,2,4
+date,2024-05-10,2024-05-10,1,40,3,0,0,0
+date,2024-05-11,2024-05-11,2,58,7,0,2,3
+date,2024-05-12,2024-05-12,2,71,3,0,1,3
+date,2024-05-13,2024-05-13,1,69,3,0,4,5
+date,2024-05-14,2024-05-14,1,41,10,0,0,1
+date,2024-05-16,2024-05-16,1,74,10,0,1,1
+date,2024-05-17,2024-05-17,1,57,2,0,0,1
+date,2024-05-18,2024-05-18,3,217,13,0,3,4
+date,2024-05-19,2024-05-19,1,49,3,0,1,5
+date,2024-05-20,2024-05-20,1,58,5,0,3,3
+date,2024-05-21,2024-05-21,1,41,1,0,1,1
+date,2024-05-22,2024-05-22,2,142,4,0,1,4
+date,2024-05-24,2024-05-24,2,105,3,1,1,1
+date,2024-05-25,2024-05-25,2,145,10,0,3,4
+date,2024-05-27,2024-05-27,1,59,2,0,0,1
+date,2024-05-28,2024-05-28,1,59,3,0,0,0
+date,2024-05-29,2024-05-29,1,68,4,0,0,0
+date,2024-05-30,2024-05-30,1,51,2,0,3,3
+date,2024-05-31,2024-05-31,2,115,6,0,1,1
+date,2024-06-01,2024-06-01,1,53,3,0,2,2
+date,2024-06-04,2024-06-04,2,84,2,0,2,2
+date,2024-06-05,2024-06-05,2,125,9,0,4,6
+date,2024-06-07,2024-06-07,1,77,4,1,1,4
+date,2024-06-09,2024-06-09,2,99,3,0,1,2
+date,2024-06-11,2024-06-11,1,63,2,0,0,0
+date,2024-06-13,2024-06-13,1,94,1,0,0,0
+date,2024-06-14,2024-06-14,1,71,2,0,0,2
+date,2024-06-15,2024-06-15,1,81,3,0,1,1
+date,2024-06-16,2024-06-16,2,94,2,0,3,4
+date,2024-06-18,2024-06-18,3,162,9,0,1,3
+date,2024-06-20,2024-06-20,1,44,2,0,0,1
+date,2024-06-21,2024-06-21,1,50,8,0,2,3
+date,2024-06-22,2024-06-22,1,25,0,0,0,1
+date,2024-06-23,2024-06-23,1,67,4,0,1,1
+date,2024-06-24,2024-06-24,1,112,4,0,1,1
+date,2024-06-25,2024-06-25,1,52,5,0,0,1
+date,2024-06-28,2024-06-28,2,121,5,0,2,3
+date,2024-06-29,2024-06-29,2,104,7,0,1,4
+date,2024-06-30,2024-06-30,1,69,2,1,0,0
+date,2024-07-02,2024-07-02,1,65,3,0,1,2
+date,2024-07-04,2024-07-04,3,136,6,3,6,7
+date,2024-07-05,2024-07-05,2,102,7,0,4,4
+date,2024-07-07,2024-07-07,2,163,2,0,2,4
+date,2024-07-09,2024-07-09,2,117,7,0,0,3
+date,2024-07-10,2024-07-10,1,33,2,0,0,0
+date,2024-07-11,2024-07-11,3,118,8,0,1,2
+date,2024-07-12,2024-07-12,2,130,7,0,0,0
+date,2024-07-13,2024-07-13,2,103,1,0,1,1
+date,2024-07-14,2024-07-14,1,43,4,0,0,0
+date,2024-07-19,2024-07-19,1,68,1,0,1,1
+date,2024-07-20,2024-07-20,2,118,9,0,5,5
+date,2024-07-22,2024-07-22,1,50,1,2,1,1
+date,2024-07-23,2024-07-23,2,138,3,1,3,3
+date,2024-07-24,2024-07-24,1,42,2,0,1,4
+date,2024-07-26,2024-07-26,1,53,3,0,0,0
+date,2024-07-27,2024-07-27,1,84,2,1,2,2
+date,2024-07-28,2024-07-28,3,176,5,0,1,1
+date,2024-07-30,2024-07-30,2,91,4,1,2,3
+date,2024-07-31,2024-07-31,1,63,7,0,3,4
+date,2024-08-01,2024-08-01,1,61,3,0,0,1
+date,2024-08-03,2024-08-03,3,198,9,0,4,4
+date,2024-08-05,2024-08-05,3,171,14,1,3,4
+date,2024-08-06,2024-08-06,1,41,1,1,0,0
+date,2024-08-09,2024-08-09,2,64,5,0,2,3
+date,2024-08-10,2024-08-10,1,51,4,1,1,1
+date,2024-08-11,2024-08-11,1,42,4,0,2,2
+date,2024-08-15,2024-08-15,2,220,6,0,5,7
+date,2024-08-16,2024-08-16,2,151,16,0,6,8
+date,2024-08-17,2024-08-17,1,56,4,1,0,0
+date,2024-08-18,2024-08-18,1,53,4,0,3,4
+date,2024-08-20,2024-08-20,1,42,2,0,0,2
+date,2024-08-21,2024-08-21,3,141,7,0,3,4
+date,2024-08-24,2024-08-24,2,114,2,2,0,1
+date,2024-08-26,2024-08-26,1,50,1,0,0,0
+date,2024-08-27,2024-08-27,3,201,10,0,3,3
+date,2024-08-30,2024-08-30,2,115,4,0,3,4
+date,2024-09-01,2024-09-01,4,213,12,0,4,5
+date,2024-09-04,2024-09-04,2,130,7,0,4,7
+date,2024-09-06,2024-09-06,1,44,0,0,0,1
+date,2024-09-07,2024-09-07,4,234,7,0,7,7
+date,2024-09-08,2024-09-08,1,59,2,0,1,2
+date,2024-09-10,2024-09-10,2,113,8,0,4,4
+date,2024-09-11,2024-09-11,1,15,1,0,0,0
+date,2024-09-12,2024-09-12,2,86,1,0,2,3
+date,2024-09-13,2024-09-13,2,95,4,0,1,2
+date,2024-09-15,2024-09-15,1,93,8,1,2,2
+date,2024-09-16,2024-09-16,1,79,2,0,0,0
+date,2024-09-17,2024-09-17,2,136,9,1,3,3
+date,2024-09-18,2024-09-18,3,117,9,0,5,6
+date,2024-09-19,2024-09-19,1,49,1,0,1,2
+date,2024-09-20,2024-09-20,2,174,6,0,4,5
+date,2024-09-22,2024-09-22,1,63,4,0,0,0
+date,2024-09-23,2024-09-23,1,69,3,0,0,0
+date,2024-09-24,2024-09-24,3,186,12,0,4,5
+date,2024-09-25,2024-09-25,1,81,5,0,0,0
+date,2024-09-26,2024-09-26,1,55,3,0,0,1
+date,2024-09-27,2024-09-27,1,94,2,0,0,1
+date,2024-09-29,2024-09-29,4,220,9,0,4,7
+pitcher,640462,A.J. Puk,4,18,0,0,0,0
+pitcher,676879,Aaron Ashby,2,28,2,0,0,1
+pitcher,650644,Aaron Civale,1,38,1,0,0,0
+pitcher,605400,Aaron Nola,33,571,42,0,11,13
+pitcher,640470,Adbert Alzolay,1,13,0,0,0,0
+pitcher,605288,Adrian Houser,1,6,0,0,1,1
+pitcher,670970,Adrian Morejon,3,16,0,0,0,0
+pitcher,544150,Albert Suárez,25,468,33,1,9,13
+pitcher,679525,Alec Marsh,1,5,0,0,0,0
+pitcher,689690,Alek Jacob,1,8,0,0,0,0
+pitcher,666201,Alek Manoah,1,23,0,0,0,0
+pitcher,656412,Alex Faedo,2,23,0,1,0,0
+pitcher,656638,Alex Lange,3,14,1,0,0,0
+pitcher,681911,Alex Vesia,3,12,0,0,0,0
+pitcher,622072,Alex Wood,4,104,0,0,1,2
+pitcher,622065,Alex Young,1,17,0,0,0,0
+pitcher,664747,Alexis Díaz,1,3,0,0,0,0
+pitcher,669467,Andre Pallante,2,11,1,0,0,0
+pitcher,605177,Andrew Chafin,4,17,0,0,2,3
+pitcher,571760,Andrew Heaney,1,9,1,0,1,1
+pitcher,677053,Andrew Nardi,1,4,0,0,0,0
+pitcher,685314,Andrew Saalfrank,1,5,1,0,0,0
+pitcher,662253,Andrés Muñoz,1,6,0,0,0,0
+pitcher,683409,Angel Chivilli,2,8,1,0,0,0
+pitcher,672582,Angel Zerpa,1,7,0,0,0,0
+pitcher,607455,Anthony Banda,4,34,1,0,3,3
+pitcher,669622,Anthony Bender,4,36,0,0,0,0
+pitcher,683627,Anthony Molina,1,18,0,0,0,0
+pitcher,547973,Aroldis Chapman,1,4,0,0,0,0
+pitcher,613534,Austin Adams,8,36,0,0,2,2
+pitcher,596295,Austin Gomber,2,27,0,0,1,1
+pitcher,595978,Austin Hedges,1,3,0,0,0,0
+pitcher,608723,Austin Voth,2,10,0,0,0,0
+pitcher,681810,Austin Warren,1,15,0,0,0,0
+pitcher,663559,Bailey Falter,1,17,0,0,0,0
+pitcher,690544,Bailey Horn,1,5,0,0,0,0
+pitcher,641927,Bailey Ober,31,453,19,2,4,5
+pitcher,689225,Beau Brieske,3,15,0,0,0,0
+pitcher,676962,Ben Brown,1,10,0,0,0,0
+pitcher,621294,Ben Heller,1,7,0,0,0,0
+pitcher,594902,Ben Lively,1,8,2,0,0,0
+pitcher,605483,Blake Snell,1,27,0,1,1,1
+pitcher,670102,Bowden Francis,2,34,0,0,0,0
+pitcher,641745,Brad Keller,4,38,0,0,0,0
+pitcher,669620,Brady Basso,2,20,1,0,2,3
+pitcher,663903,Brady Singer,2,46,5,1,0,0
+pitcher,656232,Brandon Bielak,3,18,1,0,0,0
+pitcher,676714,Brandon Hughes,1,3,0,0,0,0
+pitcher,694297,Brandon Pfaadt,1,10,1,0,0,0
+pitcher,676428,Brant Hurter,2,35,1,0,1,1
+pitcher,666129,Braxton Garrett,1,16,0,0,0,0
+pitcher,678394,Brayan Bello,1,24,0,0,0,0
+pitcher,669724,Brenan Hanifee,3,10,0,0,0,0
+pitcher,663893,Brendon Little,2,14,1,0,0,0
+pitcher,657514,Brennan Bernardino,11,62,9,0,1,2
+pitcher,608718,Brent Suter,2,19,2,0,0,2
+pitcher,592779,Brock Stewart,2,13,3,0,1,2
+pitcher,650556,Bryan Abreu,3,8,0,0,2,2
+pitcher,641329,Bryan Baker,2,10,2,0,1,1
+pitcher,663773,Bryan Hoeing,2,7,0,0,0,1
+pitcher,687911,Bryan King,1,6,0,0,0,0
+pitcher,686826,Bryce Jarvis,5,22,0,0,1,1
+pitcher,682243,Bryce Miller,1,19,1,0,1,1
+pitcher,571656,Buck Farmer,2,13,0,0,0,0
+pitcher,572143,Burch Smith,4,33,0,0,0,0
+pitcher,700249,Cade Povich,1,20,2,0,0,0
+pitcher,671922,Cade Smith,4,38,1,0,0,0
+pitcher,615698,Cal Quantrill,3,52,7,0,2,2
+pitcher,657571,Caleb Ferguson,4,26,0,0,0,0
+pitcher,668873,Caleb Kilian,1,15,1,0,0,0
+pitcher,573204,Caleb Thielbar,5,36,0,0,1,1
+pitcher,676534,Calvin Faucher,1,3,0,0,0,0
+pitcher,592155,Cam Booser,4,19,0,0,0,0
+pitcher,666808,Camilo Doval,2,12,1,0,1,1
+pitcher,471911,Carlos Carrasco,2,48,4,0,1,3
+pitcher,608032,Carlos Estévez,3,13,0,0,1,1
+pitcher,672578,Carlos Hernández,1,9,0,0,0,0
+pitcher,607074,Carlos Rodón,3,55,2,0,0,0
+pitcher,669387,Carmen Mlodzinski,3,16,0,0,0,0
+pitcher,608334,Carson Fulmer,1,19,2,0,0,1
+pitcher,668984,Casey Legumina,1,15,1,0,0,0
+pitcher,663554,Casey Mize,2,63,2,0,2,2
+pitcher,643338,Chad Green,5,17,0,0,0,1
+pitcher,663767,Chase Shugart,1,16,0,0,0,0
+pitcher,605135,Chris Bassitt,2,10,0,0,0,0
+pitcher,606965,Chris Devenski,1,8,1,0,0,0
+pitcher,623167,Chris Flexen,1,24,2,0,0,0
+pitcher,455119,Chris Martin,7,38,2,0,1,3
+pitcher,519242,Chris Sale,1,14,0,0,0,0
+pitcher,608717,Chris Stratton,3,15,2,0,0,1
+pitcher,681035,Christian Scott,1,19,1,0,0,0
+pitcher,672335,Cionel Pérez,14,75,3,0,0,2
+pitcher,657376,Clarke Schmidt,1,18,0,0,0,1
+pitcher,605280,Clay Holmes,3,20,1,0,0,0
+pitcher,675989,Cody Bolton,1,4,0,0,0,0
+pitcher,674003,Cody Bradford,2,29,1,0,1,1
+pitcher,608344,Cole Irvin,5,60,1,0,0,0
+pitcher,666142,Cole Ragans,2,52,1,0,0,1
+pitcher,663485,Cole Sands,8,43,0,0,0,1
+pitcher,668390,Cole Winn,1,3,1,0,1,1
+pitcher,607067,Colin Rea,1,17,1,0,0,1
+pitcher,681882,Colin Selby,1,5,0,0,0,0
+pitcher,676092,Collin Snider,2,6,0,0,0,0
+pitcher,641401,Connor Brogdon,1,8,0,0,0,0
+pitcher,681867,Cooper Criswell,21,345,23,0,0,0
+pitcher,669203,Corbin Burnes,2,34,6,0,0,2
+pitcher,518886,Craig Kimbrel,9,34,7,0,4,5
+pitcher,669084,DL Hall,2,30,2,0,0,0
+pitcher,641712,Dakota Hudson,1,25,2,0,1,1
+pitcher,641540,Dane Dunning,1,6,0,0,0,0
+pitcher,543339,Daniel Hudson,1,3,0,0,0,0
+pitcher,663738,Daniel Lynch IV,1,8,2,0,0,0
+pitcher,543056,Danny Coulombe,2,7,0,0,0,0
+pitcher,666204,Dany Jiménez,1,6,0,0,0,0
+pitcher,670766,Darren McCaughan,1,7,1,0,0,0
+pitcher,701581,David Festa,1,37,2,0,1,1
+pitcher,502085,David Robertson,2,8,0,0,0,0
+pitcher,665152,Dean Kremer,4,61,3,0,2,2
+pitcher,665620,Deivi García,2,12,0,0,0,0
+pitcher,642701,Dennis Santana,2,13,0,0,0,0
+pitcher,571882,Derek Law,3,10,0,0,0,0
+pitcher,650895,Diego Castillo,1,7,0,0,0,0
+pitcher,622253,Dillon Tate,3,26,0,0,0,0
+pitcher,608678,Dominic Leone,2,14,1,0,1,1
+pitcher,656876,Drew Rasmussen,1,14,0,0,1,1
+pitcher,592767,Drew Smyly,2,10,1,0,1,1
+pitcher,571670,Dylan Floro,1,7,2,0,0,0
+pitcher,669276,Dylan Lee,2,10,0,0,0,0
+pitcher,687922,Easton Lucas,2,18,3,0,0,0
+pitcher,660825,Eduard Bazardo,2,7,0,0,0,0
+pitcher,621242,Edwin Díaz,1,8,0,0,1,1
+pitcher,670955,Edwin Uceta,1,9,2,0,0,0
+pitcher,669212,Eli Morgan,1,5,1,0,1,1
+pitcher,681871,Eli Villalobos,1,5,0,0,0,0
+pitcher,676106,Emerson Hancock,3,48,2,1,1,1
+pitcher,641941,Emilio Pagán,1,11,0,0,0,0
+pitcher,661403,Emmanuel Clase,2,9,0,0,0,0
+pitcher,660600,Enoli Paredes,1,3,0,0,1,1
+pitcher,660853,Enyel De Los Santos,2,11,1,0,0,0
+pitcher,607200,Erick Fedde,3,65,6,0,0,0
+pitcher,669062,Erik Miller,3,29,0,0,0,0
+pitcher,657024,Erik Swanson,2,6,0,0,1,1
+pitcher,681799,Ethan Roberts,1,25,0,0,0,0
+pitcher,623465,Evan Phillips,1,2,0,0,1,1
+pitcher,664285,Framber Valdez,4,77,1,0,1,2
+pitcher,593423,Frankie Montas,1,5,1,0,0,0
+pitcher,686642,Fraser Ellard,2,19,1,0,0,0
+pitcher,642547,Freddy Peralta,1,24,0,0,0,1
+pitcher,642100,Gabe Speier,4,12,1,0,1,1
+pitcher,664076,Garrett Cleavinger,1,5,0,0,0,0
+pitcher,676979,Garrett Crochet,4,78,5,1,2,3
+pitcher,668970,Gavin Hollowell,1,12,1,0,0,0
+pitcher,669923,George Kirby,1,10,1,0,0,0
+pitcher,622103,Gerardo Reyes,1,18,0,0,0,0
+pitcher,543037,Gerrit Cole,1,29,2,0,0,0
+pitcher,680880,Grant Holman,2,4,0,0,0,0
+pitcher,656550,Grant Holmes,2,17,0,0,0,0
+pitcher,680570,Grayson Rodriguez,2,66,3,0,0,1
+pitcher,669711,Greg Weissert,9,37,0,0,0,2
+pitcher,642397,Gregory Soto,6,34,0,1,0,1
+pitcher,656288,Griffin Canning,1,14,3,0,2,2
+pitcher,643377,Griffin Jax,10,66,0,0,0,2
+pitcher,681402,Gus Varland,2,19,1,0,0,1
+pitcher,650893,Génesis Cabrera,1,2,0,0,0,0
+pitcher,668968,Hans Crouse,1,6,2,0,1,1
+pitcher,806185,Hayden Birdsong,1,17,1,0,1,1
+pitcher,669713,Hayden Wesneski,1,13,0,0,0,0
+pitcher,663687,Hogan Harris,4,63,1,0,0,0
+pitcher,623211,Huascar Brazobán,1,2,0,0,0,0
+pitcher,528748,Humberto Castellanos,2,14,0,0,0,1
+pitcher,685801,Hunter Bigge,2,10,1,0,1,1
+pitcher,640451,Hunter Harvey,1,4,1,0,0,0
+pitcher,519326,Hunter Strickland,2,10,0,0,1,1
+pitcher,593576,Héctor Neris,1,5,0,0,0,0
+pitcher,643396,Isiah Kiner-Falefa,1,3,0,0,0,0
+pitcher,669372,J.T. Ginn,1,3,1,0,0,0
+pitcher,676664,JP Sears,3,71,0,0,1,1
+pitcher,656427,Jack Flaherty,5,114,6,0,0,0
+pitcher,686799,Jack Kochanowicz,1,24,0,0,1,1
+pitcher,680891,Jack Neely,1,1,0,0,0,0
+pitcher,671131,Jackson Rutledge,1,5,0,0,1,1
+pitcher,606930,Jacob Barnes,4,27,4,0,1,1
+pitcher,656641,Jacob Latz,3,11,0,0,0,0
+pitcher,657097,Jacob Webb,9,48,3,0,0,0
+pitcher,683568,Jairo Iriarte,1,14,0,0,0,0
+pitcher,656234,Jake Bird,2,7,0,0,0,0
+pitcher,664776,Jake Cousins,2,7,0,0,0,0
+pitcher,518617,Jake Diekman,1,8,0,0,0,0
+pitcher,663623,Jake Irvin,2,14,1,0,1,1
+pitcher,656222,Jalen Beeks,5,27,0,0,0,1
+pitcher,663704,James McArthur,1,10,2,0,0,1
+pitcher,572020,James Paxton,4,75,0,0,2,2
+pitcher,683003,Jared Jones,1,8,0,0,0,0
+pitcher,657649,Jared Koenig,1,1,0,0,0,0
+pitcher,592094,Jason Adam,2,8,1,0,1,1
+pitcher,671345,Jason Foley,4,25,1,0,1,1
+pitcher,543351,Jay Jackson,3,24,0,0,0,0
+pitcher,676105,Jeff Criswell,1,1,1,0,0,0
+pitcher,656546,Jeff Hoffman,8,49,1,0,0,1
+pitcher,605488,Jeffrey Springs,2,31,0,0,0,0
+pitcher,669093,Jeremiah Estrada,3,17,0,0,0,0
+pitcher,445926,Jesse Chavez,3,14,1,0,1,1
+pitcher,661395,Jhoan Duran,9,37,0,0,1,3
+pitcher,671212,Joe Boyle,3,59,3,0,1,2
+pitcher,682175,Joe Jacques,1,8,2,0,0,0
+pitcher,523260,Joe Kelly,2,27,1,0,0,0
+pitcher,686747,Joe La Sorsa,1,4,0,0,0,0
+pitcher,573009,Joe Mantiply,7,32,0,0,1,1
+pitcher,605397,Joe Musgrove,2,19,2,0,1,1
+pitcher,605452,Joe Ross,2,19,2,0,0,0
+pitcher,657746,Joe Ryan,2,14,1,1,0,1
+pitcher,606303,Joel Payamps,2,14,0,0,0,0
+pitcher,570257,Joely Rodríguez,1,8,0,0,0,0
+pitcher,676282,Joey Cantillo,1,9,1,0,0,0
+pitcher,683155,Joey Estes,1,6,0,0,0,0
+pitcher,666214,Joey Wentz,2,12,0,0,0,0
+pitcher,605154,John Brebbia,4,17,0,0,0,0
+pitcher,667463,John King,4,27,1,0,0,0
+pitcher,669111,John McMillon,1,9,0,0,0,0
+pitcher,607644,John Means,1,23,0,0,0,0
+pitcher,686563,Jonathan Cannon,4,91,4,0,1,3
+pitcher,663855,Jordan Hicks,1,29,3,0,1,1
+pitcher,673929,Jordan Leasure,2,10,0,0,0,0
+pitcher,543475,Jordan Lyles,1,3,0,0,0,0
+pitcher,605447,Jordan Romano,2,12,0,0,0,0
+pitcher,607179,Jordan Weems,1,2,0,0,1,1
+pitcher,696136,Jordan Wicks,1,27,3,0,0,0
+pitcher,660896,Jorge Alcala,3,13,0,0,2,2
+pitcher,605347,Jorge López,2,3,0,0,0,1
+pitcher,500779,Jose Quintana,2,37,1,0,1,1
+pitcher,676596,Josh Fleming,1,4,1,0,0,0
+pitcher,622250,Josh Sborz,2,12,1,0,0,0
+pitcher,622251,Josh Staumont,2,16,0,0,0,0
+pitcher,670174,Josh Winckowski,3,18,0,0,0,0
+pitcher,621237,José Alvarado,8,47,0,0,0,0
+pitcher,621244,José Berríos,2,38,2,0,2,2
+pitcher,676130,José Buttó,1,12,4,0,0,0
+pitcher,542585,José Cisnero,1,4,0,0,0,0
+pitcher,600917,José Leclerc,6,33,3,0,1,1
+pitcher,665896,José Marte,2,6,0,0,0,0
+pitcher,614179,José Ruiz,6,52,2,0,0,0
+pitcher,667755,José Soriano,1,6,0,0,0,0
+pitcher,660761,José Suarez,1,6,1,0,1,1
+pitcher,570632,José Ureña,2,29,0,0,1,2
+pitcher,687924,Julian Aguiar,1,17,2,0,0,0
+pitcher,605121,Justin Anderson,2,15,0,0,0,1
+pitcher,664875,Justin Lawrence,4,21,2,0,0,1
+pitcher,679885,Justin Martinez,8,53,3,0,0,1
+pitcher,686580,Justin Slaten,7,32,1,0,0,0
+pitcher,686993,Justin Sterner,1,11,0,0,0,0
+pitcher,434378,Justin Verlander,2,31,2,0,1,1
+pitcher,458677,Justin Wilson,3,24,1,0,0,0
+pitcher,669211,Keegan Akin,8,51,3,0,0,1
+pitcher,672456,Keider Montero,1,2,0,0,0,0
+pitcher,445276,Kenley Jansen,4,21,4,0,1,3
+pitcher,670046,Kenny Rosenberg,1,12,0,0,0,0
+pitcher,628317,Kenta Maeda,3,52,2,0,1,1
+pitcher,592332,Kevin Gausman,1,9,0,0,0,0
+pitcher,656464,Kevin Ginkel,11,59,4,0,2,2
+pitcher,643361,Kevin Herget,1,5,0,0,0,0
+pitcher,687330,Kevin Kelly,1,5,0,0,0,0
+pitcher,489446,Kirby Yates,2,18,2,0,1,1
+pitcher,665019,Kody Clemens,1,2,0,0,0,0
+pitcher,681892,Kody Funderburk,5,38,4,0,1,3
+pitcher,677958,Kumar Rocker,1,14,1,0,0,0
+pitcher,676710,Kutter Crawford,3,28,0,1,1,2
+pitcher,680694,Kyle Bradish,1,18,1,0,0,1
+pitcher,607536,Kyle Freeland,3,49,4,0,1,2
+pitcher,502043,Kyle Gibson,2,51,4,0,0,1
+pitcher,690986,Kyle Harrison,1,26,1,1,0,0
+pitcher,543294,Kyle Hendricks,1,16,3,0,0,0
+pitcher,681517,Kyle Leahy,2,10,0,0,0,1
+pitcher,666205,Kyle Muller,4,40,2,0,2,2
+pitcher,693312,Kyle Nicolas,4,21,0,0,0,1
+pitcher,667725,Kyle Tyler,2,42,2,2,1,1
+pitcher,669199,Lake Bachar,1,4,0,0,0,0
+pitcher,458681,Lance Lynn,3,57,1,0,0,1
+pitcher,694738,Landen Roupp,2,42,1,0,1,2
+pitcher,689017,Landon Knack,3,30,3,0,1,1
+pitcher,663531,Logan Allen,1,4,1,0,0,0
+pitcher,671106,Logan Allen,3,67,6,0,0,0
+pitcher,669302,Logan Gilbert,2,34,0,0,1,1
+pitcher,657277,Logan Webb,1,29,1,0,2,2
+pitcher,668674,Lucas Erceg,5,28,1,0,0,0
+pitcher,608371,Lucas Sims,3,15,1,0,0,1
+pitcher,622491,Luis Castillo,3,21,1,0,0,0
+pitcher,666818,Luis Frías,2,5,1,0,0,0
+pitcher,472610,Luis García,4,32,2,0,0,0
+pitcher,661563,Luis Gil,1,16,1,0,0,0
+pitcher,656814,Luis Ortiz,1,4,0,0,0,0
+pitcher,682847,Luis Ortiz,1,15,0,0,0,0
+pitcher,592426,Luke Jackson,2,9,0,0,0,0
+pitcher,596133,Luke Weaver,2,19,2,0,0,1
+pitcher,669022,MacKenzie Gore,1,14,2,0,2,2
+pitcher,655889,Manuel Rodríguez,1,6,0,0,0,0
+pitcher,573186,Marcus Stroman,1,15,0,0,0,0
+pitcher,527048,Martín Pérez,2,32,0,0,0,0
+pitcher,696131,Mason Black,1,23,1,0,0,0
+pitcher,669438,Mason Englert,1,12,0,0,0,0
+pitcher,695243,Mason Miller,7,57,2,0,1,1
+pitcher,598264,Matt Barnes,1,5,1,0,1,1
+pitcher,621199,Matt Bowman,5,27,0,0,0,0
+pitcher,670036,Matt Festa,1,8,1,0,1,1
+pitcher,571863,Matt Koch,1,4,0,0,0,0
+pitcher,519043,Matt Moore,3,14,4,0,1,1
+pitcher,669422,Matt Sauer,2,17,0,0,0,0
+pitcher,621381,Matt Strahm,6,34,0,0,0,1
+pitcher,669461,Matthew Liberatore,1,9,0,0,0,0
+pitcher,608331,Max Fried,5,71,3,0,1,1
+pitcher,676661,Max Lazar,1,14,0,0,0,0
+pitcher,453286,Max Scherzer,1,11,1,0,0,0
+pitcher,547184,Michael Kelly,3,26,0,0,0,0
+pitcher,650633,Michael King,2,28,3,0,0,0
+pitcher,656629,Michael Kopech,3,13,0,0,0,0
+pitcher,543859,Michael Tonkin,5,21,1,0,2,2
+pitcher,671305,Michel Otañez,6,35,2,0,1,2
+pitcher,612434,Miguel Castro,1,2,0,0,0,0
+pitcher,657508,Mike Baumann,2,18,1,0,0,0
+pitcher,571945,Miles Mikolas,3,48,2,0,0,0
+pitcher,656605,Mitch Keller,1,25,1,0,1,1
+pitcher,687765,Mitch Spence,33,490,27,0,13,18
+pitcher,680730,Mitchell Parker,1,19,2,0,0,0
+pitcher,663878,Nate Pearson,2,6,0,0,0,0
+pitcher,543135,Nathan Eovaldi,3,55,3,0,1,1
+pitcher,641482,Nestor Cortes,3,62,3,0,2,2
+pitcher,595897,Nick Burdi,1,3,0,0,0,0
+pitcher,666157,Nick Lodolo,2,14,2,0,0,1
+pitcher,607259,Nick Martinez,1,4,1,0,0,0
+pitcher,683232,Nick Mears,3,17,0,0,0,0
+pitcher,680897,Nick Nastrini,1,21,3,0,3,3
+pitcher,601713,Nick Pivetta,1,10,1,1,1,1
+pitcher,598286,Nick Ramirez,1,8,0,0,0,0
+pitcher,680704,Nick Sandlin,3,26,2,0,0,0
+pitcher,663989,Nick Vespi,2,17,1,0,0,0
+pitcher,663562,Noah Davis,2,29,0,0,0,0
+pitcher,689147,Orion Kerkering,9,60,1,0,1,1
+pitcher,674370,Osvaldo Bido,4,25,3,0,2,5
+pitcher,641154,Pablo López,1,9,1,0,0,0
+pitcher,571578,Patrick Corbin,2,56,7,0,2,2
+pitcher,663776,Patrick Sandoval,2,30,2,0,0,2
+pitcher,621112,Paul Blackburn,1,22,3,0,1,1
+pitcher,623149,Paul Sewald,3,10,0,0,0,1
+pitcher,658648,Pedro Avila,3,43,0,0,0,1
+pitcher,664126,Pete Fairbanks,1,3,0,0,0,0
+pitcher,663567,Peter Lambert,3,21,1,0,0,0
+pitcher,664208,Phil Maton,1,10,0,0,0,0
+pitcher,572955,Pierce Johnson,1,6,0,0,0,0
+pitcher,672860,Prelander Berroa,1,8,0,0,0,0
+pitcher,606160,Rafael Montero,1,5,0,0,1,1
+pitcher,628452,Raisel Iglesias,2,13,0,0,1,2
+pitcher,677976,Randy Dobnak,1,2,0,0,0,0
+pitcher,681190,Randy Vásquez,1,10,1,0,0,0
+pitcher,624133,Ranger Suarez,1,19,0,0,0,0
+pitcher,657585,Reed Garrett,2,12,0,0,0,0
+pitcher,681857,Reese Olson,2,34,1,1,0,0
+pitcher,672282,Reid Detmers,1,13,1,0,2,2
+pitcher,448179,Rich Hill,1,11,2,0,0,0
+pitcher,690916,Richard Fitts,1,34,1,0,0,0
+pitcher,663992,Richard Lovelady,2,8,0,0,0,0
+pitcher,676395,Robert Garcia,3,12,1,0,0,0
+pitcher,663158,Robert Suarez,1,1,0,0,0,0
+pitcher,682610,Roddery Muñoz,1,21,1,0,1,2
+pitcher,676760,Ron Marinaccio,1,6,2,0,1,1
+pitcher,669854,Ronel Blanco,1,19,0,0,0,0
+pitcher,678692,Ronny Henriquez,4,18,0,0,1,1
+pitcher,548389,Ross Stripling,4,65,6,0,1,2
+pitcher,518489,Ryan Brasier,1,1,0,0,0,0
+pitcher,681676,Ryan Fernandez,3,17,0,0,0,0
+pitcher,664854,Ryan Helsley,2,8,0,0,0,0
+pitcher,686752,Ryan Pepiot,1,8,0,0,0,0
+pitcher,519151,Ryan Pressly,3,12,0,0,0,0
+pitcher,657044,Ryan Thompson,3,16,1,0,1,1
+pitcher,676254,Ryan Walker,1,5,1,0,0,1
+pitcher,677960,Ryan Weathers,1,17,1,0,0,0
+pitcher,642232,Ryan Yarbrough,3,12,2,0,1,1
+pitcher,592773,Ryne Stanek,4,31,1,0,0,1
+pitcher,594580,Sam Moll,1,6,1,0,0,1
+pitcher,518397,Scott Alexander,6,33,1,0,1,1
+pitcher,605130,Scott Barlow,2,8,0,0,0,0
+pitcher,656240,Scott Blewett,2,21,1,0,0,0
+pitcher,543518,Scott McGough,4,27,1,0,0,0
+pitcher,674944,Sean Guenther,1,6,0,0,0,0
+pitcher,663546,Sean Hjelle,3,8,0,0,0,0
+pitcher,656794,Sean Newcomb,3,15,2,0,1,1
+pitcher,622554,Seranthony Domínguez,8,32,0,0,1,5
+pitcher,678020,Seth Halvorsen,1,1,0,0,0,0
+pitcher,607625,Seth Lugo,2,44,2,0,0,0
+pitcher,542888,Shawn Armstrong,1,3,0,0,0,0
+pitcher,684007,Shota Imanaga,1,27,1,0,0,0
+pitcher,680573,Simeon Woods Richardson,2,26,1,0,0,1
+pitcher,664350,Sixto Sánchez,1,10,0,0,0,0
+pitcher,543243,Sonny Gray,1,16,4,0,1,1
+pitcher,681293,Spencer Arrighetti,2,49,1,0,1,2
+pitcher,702352,Spencer Bivens,3,35,3,0,0,0
+pitcher,675921,Spencer Howard,1,21,2,0,0,0
+pitcher,680885,Spencer Schwellenbach,2,57,3,1,0,0
+pitcher,605513,Spencer Turnbull,2,3,0,0,0,1
+pitcher,663568,Stephen Kolek,1,3,0,0,0,0
+pitcher,571927,Steven Matz,1,6,0,0,0,0
+pitcher,595345,Steven Okert,5,34,1,0,0,1
+pitcher,621051,Steven Wilson,1,7,0,0,0,0
+pitcher,519008,T.J. McFarland,7,37,4,0,1,1
+pitcher,592836,Taijuan Walker,1,1,0,0,0,0
+pitcher,621383,Tanner Banks,2,13,0,0,1,1
+pitcher,676440,Tanner Bibee,3,44,11,0,2,3
+pitcher,656557,Tanner Houck,4,73,1,0,0,0
+pitcher,663432,Tanner Rainey,2,11,1,0,0,1
+pitcher,656945,Tanner Scott,2,6,0,0,0,0
+pitcher,669373,Tarik Skubal,1,9,0,0,0,0
+pitcher,642048,Tayler Saucedo,2,10,0,0,0,0
+pitcher,605463,Tayler Scott,1,11,1,0,1,1
+pitcher,573124,Taylor Rogers,5,43,1,0,2,2
+pitcher,600986,Thyago Vieira,2,13,2,0,0,1
+pitcher,682120,Tim Herrin,3,8,0,0,0,0
+pitcher,657612,Tim Hill,1,12,1,0,0,0
+pitcher,641835,Tim Mayza,2,9,0,0,0,0
+pitcher,676680,Tom Cosgrove,1,9,0,0,0,0
+pitcher,674072,Tommy Henry,1,10,0,0,0,0
+pitcher,592454,Tommy Kahnle,3,11,0,0,0,0
+pitcher,667297,Tommy Nance,1,2,1,0,0,0
+pitcher,663574,Tony Santillan,2,8,0,0,0,1
+pitcher,657053,Touki Toussaint,1,15,1,0,1,1
+pitcher,663423,Trent Thornton,2,16,0,0,0,0
+pitcher,656730,Trevor Megill,2,14,3,0,1,1
+pitcher,670950,Trevor Richards,4,21,0,0,0,0
+pitcher,669432,Trevor Rogers,1,13,0,0,0,0
+pitcher,592866,Trevor Williams,2,38,4,0,0,0
+pitcher,622259,Trey Wingenter,1,17,0,0,0,0
+pitcher,663941,Tristan Beck,1,3,0,0,0,0
+pitcher,621389,Ty Blach,1,23,1,1,1,1
+pitcher,680744,Ty Madden,1,23,1,0,0,0
+pitcher,542881,Tyler Anderson,2,59,3,1,1,1
+pitcher,595881,Tyler Beede,1,3,0,0,1,1
+pitcher,621053,Tyler Ferguson,7,76,4,0,0,1
+pitcher,607192,Tyler Glasnow,1,8,0,0,0,0
+pitcher,663947,Tyler Holton,2,19,2,0,0,0
+pitcher,641755,Tyler Kinley,1,6,1,0,0,0
+pitcher,554431,Tyler Matzek,1,4,0,0,0,0
+pitcher,663969,Tyler Phillips,1,2,0,0,0,0
+pitcher,643511,Tyler Rogers,1,2,0,0,0,0
+pitcher,624647,Victor González,2,12,1,0,0,0
+pitcher,680767,Victor Vodnik,2,12,0,0,0,0
+pitcher,657697,Vinny Nittoli,2,12,0,0,2,2
+pitcher,679156,Walter Pennington,3,31,0,0,0,0
+pitcher,694361,Will Klein,1,6,0,0,0,0
+pitcher,519293,Will Smith,1,1,0,0,0,0
+pitcher,676684,Will Vest,4,13,0,0,1,1
+pitcher,701542,Will Warren,1,19,0,1,0,0
+pitcher,684320,Yariel Rodríguez,2,43,3,0,0,0
+pitcher,622075,Yency Almonte,1,6,0,0,0,0
+pitcher,666974,Yennier Cano,12,72,7,0,2,2
+pitcher,554340,Yimi García,1,4,0,0,0,0
+pitcher,670990,Yohan Ramírez,3,18,3,0,0,0
+pitcher,673513,Yuki Matsui,2,8,2,0,0,0
+pitcher,628708,Yunior Marte,4,24,0,0,1,1
+pitcher,579328,Yusei Kikuchi,3,62,5,0,1,2
+pitcher,668678,Zac Gallen,27,473,54,5,5,8
+pitcher,683068,Zach Penrod,1,1,0,0,0,0
+pitcher,677161,Zack Kelly,6,42,2,0,3,3
+pitcher,641793,Zack Littell,3,39,1,0,0,0
+pitcher,668868,Zack Thompson,1,16,1,0,0,0
+pitching_team,Arizona Diamondbacks,Arizona Diamondbacks,30,776,69,5,10,16
+pitching_team,Atlanta Braves,Atlanta Braves,8,209,7,1,3,4
+pitching_team,Baltimore Orioles,Baltimore Orioles,38,1195,76,2,19,33
+pitching_team,Boston Red Sox,Boston Red Sox,32,942,49,2,10,19
+pitching_team,Chicago Cubs,Chicago Cubs,7,210,11,0,1,1
+pitching_team,Chicago White Sox,Chicago White Sox,12,455,26,1,8,13
+pitching_team,Cincinnati Reds,Cincinnati Reds,5,139,11,0,0,5
+pitching_team,Cleveland Guardians,Cleveland Guardians,11,340,30,0,5,9
+pitching_team,Colorado Rockies,Colorado Rockies,11,348,20,1,6,9
+pitching_team,Detroit Tigers,Detroit Tigers,14,480,18,2,6,7
+pitching_team,Houston Astros,Houston Astros,9,225,5,0,7,9
+pitching_team,Kansas City Royals,Kansas City Royals,7,217,14,1,0,3
+pitching_team,Los Angeles Angels,Los Angeles Angels,8,238,20,1,10,13
+pitching_team,Los Angeles Dodgers,Los Angeles Dodgers,8,215,7,0,6,6
+pitching_team,Miami Marlins,Miami Marlins,7,184,5,2,2,3
+pitching_team,Milwaukee Brewers,Milwaukee Brewers,4,155,10,0,2,5
+pitching_team,Minnesota Twins,Minnesota Twins,38,945,34,3,13,25
+pitching_team,New York Mets,New York Mets,4,146,8,0,3,5
+pitching_team,New York Yankees,New York Yankees,11,332,14,1,4,6
+pitching_team,Oakland Athletics,Oakland Athletics,43,1384,66,0,32,46
+pitching_team,Philadelphia Phillies,Philadelphia Phillies,35,948,46,0,16,25
+pitching_team,Pittsburgh Pirates,Pittsburgh Pirates,5,143,2,0,1,2
+pitching_team,San Diego Padres,San Diego Padres,6,136,8,0,1,2
+pitching_team,San Francisco Giants,San Francisco Giants,8,351,14,2,9,11
+pitching_team,Seattle Mariners,Seattle Mariners,12,230,7,1,4,4
+pitching_team,St. Louis Cardinals,St. Louis Cardinals,9,276,14,0,1,4
+pitching_team,Tampa Bay Rays,Tampa Bay Rays,8,195,6,0,3,3
+pitching_team,Texas Rangers,Texas Rangers,11,282,15,0,10,11
+pitching_team,Toronto Blue Jays,Toronto Blue Jays,13,304,13,0,4,6
+pitching_team,Washington Nationals,Washington Nationals,8,228,26,0,9,10
+runner,592450.0,Aaron Judge,10,71,3,0,0,0
+runner,668845.0,Aaron Schunk,1,11,0,0,0,0
+runner,647351.0,Abraham Toro,13,92,6,0,1,3
+runner,594807.0,Adam Duvall,3,19,0,0,0,0
+runner,624428.0,Adam Frazier,1,3,0,0,0,0
+runner,680718.0,Addison Barger,1,5,0,0,0,0
+runner,668939.0,Adley Rutschman,17,100,1,0,0,1
+runner,666969.0,Adolis García,4,21,0,0,0,0
+runner,680728.0,Adrian Del Castillo,1,1,0,0,0,0
+runner,676701.0,Alan Trejo,1,3,0,0,0,0
+runner,664761.0,Alec Bohm,16,91,4,1,1,2
+runner,676475.0,Alec Burleson,4,23,2,0,0,0
+runner,649557.0,Aledmys Díaz,1,3,0,0,0,0
+runner,672386.0,Alejandro Kirk,4,40,0,0,0,0
+runner,677950.0,Alek Thomas,1,1,0,0,0,0
+runner,608324.0,Alex Bregman,4,37,1,0,0,0
+runner,656577.0,Alex Jackson,2,13,0,1,0,0
+runner,666135.0,Alex Kirilloff,6,26,1,0,0,0
+runner,657077.0,Alex Verdugo,2,13,0,0,0,0
+runner,672744.0,Alexander Canario,1,2,0,0,0,0
+runner,643217.0,Andrew Benintendi,3,14,1,0,0,0
+runner,668800.0,Andrew Knizner,1,7,0,0,0,0
+runner,457705.0,Andrew McCutchen,4,21,1,0,0,0
+runner,683734.0,Andrew Vaughn,4,22,0,0,0,0
+runner,665926.0,Andrés Giménez,8,47,7,0,4,4
+runner,628451.0,Andy Ibáñez,2,14,0,0,1,1
+runner,681624.0,Andy Pages,2,18,0,0,0,0
+runner,543685.0,Anthony Rendon,1,13,0,0,0,1
+runner,519203.0,Anthony Rizzo,3,18,0,0,0,0
+runner,623993.0,Anthony Santander,19,134,4,0,0,3
+runner,683011.0,Anthony Volpe,5,24,4,0,2,2
+runner,605244.0,Aramis Garcia,1,7,0,0,0,0
+runner,669137.0,Armando Alvarez,2,16,1,0,0,0
+runner,605131.0,Austin Barnes,2,7,1,0,1,1
+runner,669720.0,Austin Hays,11,54,3,0,0,0
+runner,668885.0,Austin Martin,10,57,9,0,1,1
+runner,663586.0,Austin Riley,3,28,0,0,0,1
+runner,668853.0,Austin Shenton,1,1,0,0,0,0
+runner,596103.0,Austin Slater,3,22,2,1,1,1
+runner,669224.0,Austin Wells,2,15,0,0,0,0
+runner,592325.0,Ben Gamel,2,6,1,0,0,0
+runner,700250.0,Ben Rice,1,3,0,0,0,0
+runner,666163.0,Ben Rortvedt,2,19,2,0,0,0
+runner,677942.0,Blaze Alexander,5,42,1,0,1,1
+runner,666182.0,Bo Bichette,1,4,0,0,0,1
+runner,666310.0,Bo Naylor,5,26,2,0,1,2
+runner,666915.0,Bobby Dalbec,4,20,1,0,1,1
+runner,677951.0,Bobby Witt Jr.,3,15,3,0,0,0
+runner,669699.0,Braden Shewmake,1,6,0,0,0,0
+runner,543063.0,Brandon Crawford,1,8,0,0,0,0
+runner,592273.0,Brandon Drury,3,34,0,0,0,1
+runner,664040.0,Brandon Lowe,4,27,6,0,1,1
+runner,669016.0,Brandon Marsh,12,62,7,0,3,3
+runner,607043.0,Brandon Nimmo,1,6,0,0,0,0
+runner,677587.0,Brayan Rocchio,3,8,1,0,0,0
+runner,680977.0,Brendan Donovan,6,41,2,0,0,0
+runner,663898.0,Brendan Rodgers,4,19,1,0,0,1
+runner,667670.0,Brent Rooker,24,157,1,0,3,3
+runner,686668.0,Brenton Doyle,3,16,2,0,2,2
+runner,683146.0,Brett Baty,1,3,0,0,0,0
+runner,695391.0,Brett Harris,6,31,0,1,1,1
+runner,689172.0,Brett Wisely,1,9,1,0,0,0
+runner,661531.0,Brian Serven,1,1,0,0,0,0
+runner,668930.0,Brice Turang,3,26,2,1,1,1
+runner,686797.0,Brooks Lee,9,76,3,0,1,3
+runner,650559.0,Bryan De La Cruz,1,6,1,0,0,0
+runner,682868.0,Bryan Ramos,2,11,2,0,0,0
+runner,668804.0,Bryan Reynolds,3,35,1,0,0,0
+runner,547180.0,Bryce Harper,17,97,5,1,0,0
+runner,681082.0,Bryson Stott,23,136,11,1,8,9
+runner,621439.0,Byron Buxton,9,58,4,0,2,2
+runner,682928.0,CJ Abrams,4,19,4,0,0,1
+runner,663728.0,Cal Raleigh,1,7,1,0,0,0
+runner,621043.0,Carlos Correa,13,84,1,0,0,0
+runner,467793.0,Carlos Santana,17,102,0,0,3,3
+runner,608348.0,Carson Kelly,4,20,0,0,0,0
+runner,624415.0,Cavan Biggio,2,14,1,0,0,1
+runner,678882.0,Ceddanne Rafaela,14,71,3,0,2,4
+runner,656775.0,Cedric Mullins,13,55,7,0,8,8
+runner,453568.0,Charlie Blackmon,6,53,2,0,1,1
+runner,621035.0,Chris Taylor,3,15,1,0,0,0
+runner,542194.0,Christian Bethancourt,1,9,0,0,0,0
+runner,687952.0,Christian Encarnacion-Strand,2,19,1,0,0,1
+runner,543877.0,Christian Vázquez,8,33,0,0,0,0
+runner,572233.0,Christian Walker,14,95,2,0,0,0
+runner,666624.0,Christopher Morel,3,26,4,0,0,0
+runner,642020.0,Chuckie Robinson,2,9,0,0,0,0
+runner,641355.0,Cody Bellinger,1,4,0,0,0,0
+runner,690993.0,Colt Keith,7,51,0,0,0,0
+runner,681297.0,Colton Cowser,18,90,7,0,0,2
+runner,656582.0,Connor Joe,2,8,0,0,0,0
+runner,681393.0,Connor Norby,1,21,0,0,1,1
+runner,657136.0,Connor Wong,10,79,3,0,3,7
+runner,682998.0,Corbin Carroll,12,82,13,0,5,5
+runner,667452.0,Corey Julks,1,4,0,0,0,0
+runner,608369.0,Corey Seager,1,17,0,0,0,0
+runner,665506.0,Cristian Pache,3,25,3,0,0,0
+runner,663967.0,César Salazar,1,7,0,0,0,0
+runner,518934.0,DJ LeMahieu,2,15,0,0,0,0
+runner,682177.0,Daniel Schneemann,2,16,1,0,0,0
+runner,643376.0,Danny Jansen,4,40,0,0,0,0
+runner,621020.0,Dansby Swanson,4,19,2,0,1,1
+runner,687231.0,Darell Hernaiz,3,15,2,0,0,0
+runner,662139.0,Daulton Varsho,5,17,2,0,0,1
+runner,621311.0,David Dahl,1,13,1,0,0,0
+runner,681807.0,David Fry,2,19,0,0,1,1
+runner,666152.0,David Hamilton,9,42,12,4,4,4
+runner,444482.0,David Peralta,3,7,0,0,0,0
+runner,676914.0,Davis Schneider,2,7,0,0,0,0
+runner,673995.0,Davis Wendzel,1,2,0,0,0,0
+runner,663662.0,Daz Cameron,8,43,3,0,1,1
+runner,656537.0,Derek Hill,1,14,2,0,0,0
+runner,660636.0,Diego Castillo,1,2,0,0,0,0
+runner,666150.0,Dominic Fletcher,1,6,2,0,0,1
+runner,642086.0,Dominic Smith,5,49,0,0,0,0
+runner,456781.0,Donovan Solano,2,11,0,0,0,0
+runner,622268.0,Donovan Walton,1,9,1,0,0,0
+runner,686452.0,Drew Millas,1,6,0,0,0,0
+runner,666185.0,Dylan Carlson,3,19,1,0,0,0
+runner,686611.0,Dylan Crews,1,17,1,0,1,1
+runner,664238.0,Dylan Moore,3,9,1,0,1,1
+runner,592696.0,Eddie Rosario,2,4,0,0,0,0
+runner,624641.0,Edmundo Sosa,4,19,0,0,0,0
+runner,666397.0,Edouard Julien,6,54,3,1,1,1
+runner,658668.0,Edward Olivares,1,3,0,0,0,0
+runner,621458.0,Edwin Rios,1,11,0,0,0,0
+runner,660707.0,Elehuris Montero,1,10,0,0,0,0
+runner,553869.0,Elias Díaz,3,12,0,0,0,0
+runner,682829.0,Elly De La Cruz,1,1,0,0,0,0
+runner,650391.0,Eloy Jiménez,4,12,0,0,0,0
+runner,656896.0,Emmanuel Rivera,3,22,0,0,0,0
+runner,665839.0,Enmanuel Valdez,3,11,4,0,1,2
+runner,571771.0,Enrique Hernández,2,16,1,0,0,0
+runner,606992.0,Eric Haase,1,7,0,0,0,0
+runner,676391.0,Ernie Clement,5,29,1,0,0,0
+runner,665923.0,Esteury Ruiz,3,10,1,0,1,1
+runner,664314.0,Estevan Florial,2,5,0,0,1,1
+runner,553993.0,Eugenio Suárez,14,76,1,0,1,1
+runner,677649.0,Ezequiel Duran,3,22,0,0,0,0
+runner,678662.0,Ezequiel Tovar,7,50,6,0,0,0
+runner,596019.0,Francisco Lindor,3,23,4,0,1,2
+runner,518692.0,Freddie Freeman,3,9,0,0,0,0
+runner,666023.0,Freddy Fermin,4,28,0,0,1,2
+runner,672356.0,Gabriel Arias,1,6,0,0,0,0
+runner,672515.0,Gabriel Moreno,12,65,2,0,1,1
+runner,643265.0,Garrett Cooper,2,16,0,0,0,0
+runner,596117.0,Garrett Stubbs,6,54,3,0,0,1
+runner,666158.0,Gavin Lux,2,10,1,0,0,0
+runner,657757.0,Gavin Sheets,5,45,0,0,0,0
+runner,543807.0,George Springer,6,43,2,0,1,1
+runner,672695.0,Geraldo Perdomo,10,64,5,0,1,1
+runner,519317.0,Giancarlo Stanton,3,45,0,0,0,0
+runner,570482.0,Gio Urshela,8,43,0,0,0,0
+runner,650402.0,Gleyber Torres,7,56,0,0,0,2
+runner,687529.0,Grant McCray,1,10,3,0,2,2
+runner,665052.0,Griffin Conine,1,7,0,0,0,0
+runner,683002.0,Gunnar Henderson,24,188,19,0,0,1
+runner,673490.0,Ha-Seong Kim,2,7,1,0,1,1
+runner,671218.0,Heliot Ramos,1,6,1,0,0,0
+runner,680779.0,Henry Davis,1,9,0,0,0,0
+runner,677008.0,Heston Kjerstad,2,21,0,0,0,0
+runner,696100.0,Hunter Goodman,3,9,0,0,0,1
+runner,592669.0,Hunter Renfroe,1,9,0,0,0,0
+runner,664023.0,Ian Happ,2,16,1,0,0,0
+runner,545121.0,Ildemaro Vargas,3,21,3,0,0,0
+runner,686555.0,Isaac Collins,1,2,0,0,0,0
+runner,670623.0,Isaac Paredes,6,41,1,0,0,0
+runner,643396.0,Isiah Kiner-Falefa,3,15,3,0,0,0
+runner,671056.0,Iván Herrera,2,12,0,0,0,0
+runner,605204.0,J.D. Davis,5,52,0,0,0,0
+runner,502110.0,J.D. Martinez,2,17,0,0,0,0
+runner,641487.0,J.P. Crawford,3,21,0,0,0,1
+runner,592663.0,J.T. Realmuto,10,66,3,1,1,1
+runner,668709.0,JJ Bleday,18,108,6,1,1,2
+runner,690291.0,Jace Jung,1,1,0,0,0,0
+runner,607054.0,Jace Peterson,1,7,0,0,0,0
+runner,669261.0,Jack Suwinski,2,11,1,0,1,1
+runner,694192.0,Jackson Chourio,1,7,1,0,0,0
+runner,702616.0,Jackson Holliday,6,30,2,0,1,2
+runner,701538.0,Jackson Merrill,1,12,0,0,0,0
+runner,607732.0,Jacob Stallings,3,16,0,0,0,0
+runner,805779.0,Jacob Wilson,7,47,2,0,0,1
+runner,696285.0,Jacob Young,6,35,3,0,1,2
+runner,663330.0,Jahmai Jones,1,5,1,0,0,0
+runner,641343.0,Jake Bauers,1,1,0,0,0,0
+runner,669394.0,Jake Burger,1,1,0,0,0,0
+runner,595909.0,Jake Cave,2,13,1,0,0,1
+runner,630105.0,Jake Cronenworth,3,37,3,0,0,0
+runner,641584.0,Jake Fraley,1,9,1,0,0,0
+runner,664983.0,Jake McCarthy,10,38,4,0,2,3
+runner,676694.0,Jake Meyers,3,15,0,0,1,1
+runner,668670.0,Jake Rogers,1,4,0,0,0,0
+runner,543510.0,James McCann,5,21,0,0,0,0
+runner,695578.0,James Wood,2,18,2,0,1,1
+runner,642197.0,Jamie Westbrook,1,8,0,0,0,0
+runner,669707.0,Jared Triolo,2,14,1,0,0,0
+runner,672284.0,Jarred Kelenic,3,37,2,0,0,0
+runner,680776.0,Jarren Duran,14,116,14,0,6,7
+runner,518792.0,Jason Heyward,1,2,0,0,0,0
+runner,595879.0,Javier Báez,1,1,0,0,0,0
+runner,665862.0,Jazz Chisholm Jr.,6,30,3,1,3,3
+runner,600869.0,Jeimer Candelario,1,3,0,0,0,0
+runner,665161.0,Jeremy Peña,3,10,1,0,0,0
+runner,608385.0,Jesse Winker,4,24,0,0,0,0
+runner,660821.0,Jesús Sánchez,3,25,1,0,1,1
+runner,666176.0,Jo Adell,5,20,3,0,1,1
+runner,592626.0,Joc Pederson,12,73,2,0,1,2
+runner,663698.0,Joey Bart,3,29,1,0,0,0
+runner,608336.0,Joey Gallo,1,10,0,0,0,0
+runner,694388.0,Joey Loperfido,4,22,3,0,2,2
+runner,608841.0,Joey Meneses,3,26,1,0,0,0
+runner,687401.0,Joey Ortiz,2,18,2,0,1,1
+runner,679032.0,Johan Rojas,10,49,7,0,5,6
+runner,542932.0,Jon Berti,1,4,1,0,0,0
+runner,572138.0,Jon Singleton,4,31,0,0,0,0
+runner,681146.0,Jonah Bride,1,3,0,0,0,0
+runner,641680.0,Jonah Heim,1,3,0,0,0,0
+runner,682729.0,Jonatan Clase,1,5,0,0,0,0
+runner,666018.0,Jonathan Aranda,1,16,0,0,0,0
+runner,663697.0,Jonathan India,2,10,1,0,1,1
+runner,680716.0,Jonathan Ornelas,1,3,0,0,0,0
+runner,676356.0,Jonny DeLuca,4,20,2,0,3,3
+runner,687597.0,Jordan Beck,1,4,1,0,1,1
+runner,691023.0,Jordan Walker,1,6,0,0,0,0
+runner,676059.0,Jordan Westburg,7,38,5,0,1,2
+runner,622761.0,Jorge Mateo,9,42,7,0,4,4
+runner,593871.0,Jorge Polanco,3,8,0,0,0,0
+runner,624585.0,Jorge Soler,2,6,0,0,0,0
+runner,514888.0,Jose Altuve,5,34,3,0,1,1
+runner,669304.0,Jose F Miranda,17,114,0,0,2,4
+runner,645444.0,Jose Herrera,3,9,0,0,0,0
+runner,578428.0,Jose Iglesias,2,35,1,0,0,0
+runner,642350.0,Jose Siri,3,13,3,0,1,1
+runner,624431.0,Jose Trevino,1,1,0,0,0,0
+runner,605137.0,Josh Bell,10,73,1,0,0,0
+runner,673962.0,Josh Jung,1,1,0,0,0,0
+runner,666139.0,Josh Lowe,3,11,1,0,0,0
+runner,647304.0,Josh Naylor,6,45,2,0,0,1
+runner,668942.0,Josh Rojas,6,30,4,0,0,0
+runner,669701.0,Josh Smith,5,30,1,0,0,1
+runner,641943.0,Joshua Palacios,2,9,1,0,0,0
+runner,547989.0,José Abreu,1,5,0,0,0,0
+runner,640492.0,José Azócar,1,2,0,0,0,0
+runner,676609.0,José Caballero,5,24,4,0,2,2
+runner,665877.0,José Fermín,1,3,0,0,0,0
+runner,608070.0,José Ramírez,3,23,4,0,1,1
+runner,677588.0,José Tena,1,11,1,0,0,0
+runner,665742.0,Juan Soto,8,73,3,0,0,1
+runner,660766.0,Juan Yepez,1,2,0,0,0,0
+runner,677594.0,Julio Rodríguez,9,49,6,0,1,3
+runner,808982.0,Jung Hoo Lee,1,2,0,0,0,0
+runner,691406.0,Junior Caminero,2,23,0,0,0,0
+runner,595777.0,Jurickson Profar,3,14,1,0,0,0
+runner,679822.0,Justin Foscue,1,13,2,0,0,0
+runner,457759.0,Justin Turner,6,44,1,0,0,0
+runner,669234.0,Justyn-Henry Malloy,1,1,0,0,0,0
+runner,660688.0,Keibert Ruiz,1,6,0,0,0,1
+runner,681481.0,Kerry Carpenter,2,11,1,0,0,0
+runner,606466.0,Ketel Marte,16,91,4,0,1,1
+runner,595281.0,Kevin Kiermaier,1,11,2,0,0,0
+runner,621028.0,Kevin Newman,8,56,1,1,2,4
+runner,607680.0,Kevin Pillar,1,8,1,0,1,1
+runner,665019.0,Kody Clemens,2,9,0,0,0,0
+runner,686676.0,Korey Lee,3,26,0,0,1,1
+runner,592178.0,Kris Bryant,3,24,0,0,0,0
+runner,571657.0,Kyle Farmer,11,36,3,0,0,1
+runner,543309.0,Kyle Higashioka,1,4,0,0,0,0
+runner,664728.0,Kyle Isbel,3,8,0,0,0,0
+runner,700932.0,Kyle Manzardo,1,1,0,0,0,0
+runner,668832.0,Kyle McCann,6,22,0,0,0,0
+runner,656941.0,Kyle Schwarber,26,188,3,0,0,1
+runner,669065.0,Kyle Stowers,3,11,0,0,1,1
+runner,663656.0,Kyle Tucker,2,8,0,0,0,0
+runner,664774.0,LaMonte Wade Jr.,6,38,2,0,0,3
+runner,657041.0,Lane Thomas,2,13,1,0,0,0
+runner,663457.0,Lars Nootbaar,3,21,1,0,0,0
+runner,671732.0,Lawrence Butler,15,96,8,0,3,5
+runner,672820.0,Lenyn Sosa,3,12,0,0,0,0
+runner,677870.0,Leo Jiménez,2,13,2,0,0,0
+runner,665750.0,Leody Taveras,6,29,5,0,2,2
+runner,670869.0,Livan Soto,1,5,0,0,0,0
+runner,681351.0,Logan O'Hoppe,7,31,1,0,0,0
+runner,666971.0,Lourdes Gurriel Jr.,12,71,3,0,0,0
+runner,650333.0,Luis Arraez,3,8,0,0,0,0
+runner,669134.0,Luis Campusano,1,2,0,0,0,0
+runner,671277.0,Luis García Jr.,2,7,0,0,0,0
+runner,641645.0,Luis Guillorme,2,7,0,1,0,1
+runner,682641.0,Luis Matos,1,6,1,0,0,0
+runner,650859.0,Luis Rengifo,3,14,2,0,1,1
+runner,673357.0,Luis Robert Jr.,1,3,0,0,1,1
+runner,649966.0,Luis Urías,3,26,1,0,0,0
+runner,670042.0,Luke Raley,6,24,0,0,0,0
+runner,663897.0,Luke Williams,2,10,1,0,0,0
+runner,669004.0,MJ Melendez,3,10,2,0,0,0
+runner,672580.0,Maikel Garcia,2,7,0,0,0,0
+runner,592518.0,Manny Machado,3,19,1,0,0,0
+runner,622534.0,Manuel Margot,12,101,5,0,0,1
+runner,542303.0,Marcell Ozuna,3,18,0,0,0,0
+runner,543760.0,Marcus Semien,7,42,1,0,1,2
+runner,592192.0,Mark Canha,3,40,0,0,0,0
+runner,668901.0,Mark Vientos,1,1,0,0,0,0
+runner,807799.0,Masataka Yoshida,9,61,2,0,1,1
+runner,691026.0,Masyn Winn,3,19,0,0,1,1
+runner,656305.0,Matt Chapman,1,4,0,0,1,1
+runner,621566.0,Matt Olson,2,34,1,0,0,0
+runner,663837.0,Matt Vierling,7,67,0,0,0,2
+runner,670242.0,Matt Wallner,6,21,1,0,1,1
+runner,643289.0,Mauricio Dubón,2,17,2,0,0,0
+runner,596146.0,Max Kepler,14,79,1,0,0,0
+runner,571970.0,Max Muncy,2,18,0,0,0,0
+runner,680474.0,Max Schuemann,15,93,10,1,2,5
+runner,572191.0,Michael A. Taylor,2,11,0,0,1,1
+runner,683737.0,Michael Busch,3,22,1,0,0,0
+runner,624424.0,Michael Conforto,7,46,1,0,0,0
+runner,671739.0,Michael Harris II,2,5,1,0,0,0
+runner,680737.0,Michael Helman,1,2,1,0,0,0
+runner,672279.0,Michael Siani,4,34,1,0,1,2
+runner,669911.0,Michael Toglia,1,6,0,0,0,0
+runner,666160.0,Mickey Moniak,1,5,0,0,0,1
+runner,665804.0,Miguel Amaya,1,2,0,0,0,0
+runner,609280.0,Miguel Andujar,8,50,0,0,0,1
+runner,593934.0,Miguel Sanó,1,9,0,0,0,0
+runner,678246.0,Miguel Vargas,3,29,1,0,0,1
+runner,643565.0,Mike Tauchman,1,18,1,0,0,0
+runner,545361.0,Mike Trout,2,22,0,0,1,1
+runner,573262.0,Mike Yastrzemski,6,25,2,0,0,1
+runner,670156.0,Miles Mastrobuoni,3,13,1,0,0,0
+runner,641598.0,Mitch Garver,1,6,0,0,0,0
+runner,571745.0,Mitch Haniger,4,7,1,0,0,0
+runner,605141.0,Mookie Betts,2,12,2,0,1,1
+runner,664702.0,Myles Straw,1,3,0,0,0,0
+runner,683083.0,Nasim Nuñez,1,2,0,0,1,1
+runner,664770.0,Nathan Lukes,2,12,1,0,0,0
+runner,663993.0,Nathaniel Lowe,2,20,0,0,0,0
+runner,605113.0,Nick Ahmed,4,30,1,0,0,0
+runner,669397.0,Nick Allen,4,51,4,0,0,0
+runner,592206.0,Nick Castellanos,17,94,2,0,1,2
+runner,663743.0,Nick Fortes,1,5,0,0,0,0
+runner,693304.0,Nick Gonzales,2,24,1,0,0,0
+runner,624503.0,Nick Gordon,2,16,1,0,1,1
+runner,679845.0,Nick Loftin,1,6,0,0,0,0
+runner,669222.0,Nick Senzel,2,19,2,0,0,2
+runner,686765.0,Nick Sogard,2,14,1,0,1,1
+runner,670032.0,Nicky Lopez,5,32,4,0,0,1
+runner,663538.0,Nico Hoerner,6,50,3,0,0,1
+runner,682622.0,Noelvi Marte,2,3,0,0,0,0
+runner,571448.0,Nolan Arenado,4,44,0,0,0,0
+runner,669357.0,Nolan Gorman,3,16,0,0,1,1
+runner,666134.0,Nolan Jones,2,7,1,0,0,0
+runner,694384.0,Nolan Schanuel,6,56,1,0,0,0
+runner,665833.0,Oneil Cruz,3,17,0,1,0,0
+runner,606115.0,Orlando Arcia,7,46,1,0,0,0
+runner,693049.0,Oscar Colás,1,10,1,0,0,0
+runner,665828.0,Oswaldo Cabrera,3,13,1,0,0,0
+runner,672640.0,Otto Lopez,4,18,2,1,1,1
+runner,645277.0,Ozzie Albies,4,22,2,0,0,0
+runner,622569.0,Pablo Reyes,2,11,0,0,1,1
+runner,678009.0,Parker Meadows,4,10,1,0,0,0
+runner,672275.0,Patrick Bailey,4,27,0,0,0,0
+runner,621550.0,Patrick Wisdom,1,1,0,0,0,0
+runner,657557.0,Paul DeJong,4,22,1,0,0,0
+runner,502671.0,Paul Goldschmidt,4,15,0,0,0,0
+runner,656976.0,Pavin Smith,4,31,1,0,1,1
+runner,624413.0,Pete Alonso,2,29,0,0,0,0
+runner,691718.0,Pete Crow-Armstrong,1,1,0,0,0,0
+runner,646240.0,Rafael Devers,16,113,0,1,0,0
+runner,665561.0,Rafael Marchán,1,9,0,0,0,0
+runner,657656.0,Ramón Laureano,2,9,2,0,0,0
+runner,602104.0,Ramón Urías,13,79,3,0,0,1
+runner,545341.0,Randal Grichuk,6,32,2,0,0,1
+runner,668227.0,Randy Arozarena,3,22,4,0,0,1
+runner,624512.0,Reese McGuire,8,52,2,0,1,2
+runner,656555.0,Rhys Hoskins,2,18,1,0,0,0
+runner,656180.0,Riley Adams,1,7,0,0,0,0
+runner,682985.0,Riley Greene,9,67,4,0,0,1
+runner,608701.0,Rob Refsnyder,10,109,4,1,0,1
+runner,543257.0,Robbie Grossman,3,27,2,0,1,1
+runner,663853.0,Romy Gonzalez,9,49,4,1,3,3
+runner,660670.0,Ronald Acuña Jr.,1,3,0,0,0,0
+runner,642133.0,Rowdy Tellez,1,1,0,0,0,0
+runner,668904.0,Royce Lewis,6,52,2,0,0,0
+runner,669208.0,Ryan Bliss,2,4,0,0,2,2
+runner,680777.0,Ryan Jeffers,12,57,1,0,0,2
+runner,668952.0,Ryan Kreidler,1,10,1,0,2,2
+runner,663630.0,Ryan McKenna,2,6,0,0,0,0
+runner,641857.0,Ryan McMahon,8,57,0,0,0,1
+runner,663624.0,Ryan Mountcastle,12,50,0,0,1,1
+runner,676116.0,Ryan Noda,4,41,1,0,0,0
+runner,656811.0,Ryan O'Hearn,17,92,2,0,0,1
+runner,686217.0,Sal Frelick,1,3,0,0,1,1
+runner,521692.0,Salvador Perez,4,36,0,0,0,0
+runner,656541.0,Sam Hilliard,1,4,0,0,0,0
+runner,669289.0,Santiago Espinal,2,8,1,0,0,0
+runner,669221.0,Sean Murphy,2,8,0,0,0,0
+runner,664874.0,Seby Zavala,1,8,0,0,0,0
+runner,673548.0,Seiya Suzuki,3,27,2,0,1,1
+runner,664913.0,Seth Brown,10,57,2,0,1,2
+runner,669127.0,Shea Langeliers,11,56,1,0,0,0
+runner,660271.0,Shohei Ohtani,4,21,4,0,2,2
+runner,687462.0,Spencer Horwitz,5,19,2,0,0,0
+runner,668715.0,Spencer Steer,3,10,1,0,0,1
+runner,679529.0,Spencer Torkelson,4,32,0,0,0,0
+runner,516782.0,Starling Marte,2,5,0,0,1,1
+runner,680757.0,Steven Kwan,6,24,4,0,1,1
+runner,670770.0,TJ Friedl,1,4,0,0,0,0
+runner,670764.0,Taylor Walls,2,2,0,0,0,0
+runner,621493.0,Taylor Ward,5,56,1,0,1,1
+runner,606192.0,Teoscar Hernández,4,16,2,0,0,0
+runner,642731.0,Thairo Estrada,2,12,0,0,1,1
+runner,695336.0,Thomas Saggese,1,4,0,0,0,0
+runner,641313.0,Tim Anderson,1,11,1,0,0,0
+runner,502054.0,Tommy Pham,1,3,0,0,0,0
+runner,621512.0,Tomás Nido,1,4,0,0,0,0
+runner,608671.0,Travis Jankowski,3,19,2,0,3,3
+runner,518595.0,Travis d'Arnaud,1,13,0,0,0,0
+runner,607208.0,Trea Turner,15,110,15,0,3,4
+runner,663616.0,Trevor Larnach,10,34,0,0,0,1
+runner,596115.0,Trevor Story,3,9,0,0,1,1
+runner,663550.0,Trey Cabbage,2,10,1,0,0,0
+runner,702358.0,Trey Lipscomb,2,15,1,0,1,1
+runner,700242.0,Trey Sweeney,1,3,0,0,0,0
+runner,656484.0,Tristan Gray,1,9,0,0,0,0
+runner,671213.0,Triston Casas,6,81,1,0,0,0
+runner,571466.0,Tucker Barnhart,1,18,0,0,0,0
+runner,664034.0,Ty France,3,9,0,0,0,0
+runner,666149.0,Tyler Fitzgerald,1,5,0,0,0,0
+runner,671289.0,Tyler Freeman,3,37,5,0,1,2
+runner,623168.0,Tyler Heineman,1,7,0,0,0,0
+runner,663527.0,Tyler Nevin,8,36,2,0,0,0
+runner,641933.0,Tyler O'Neill,8,47,0,0,0,0
+runner,691016.0,Tyler Soderstrom,7,53,3,0,0,0
+runner,663886.0,Tyler Stephenson,1,28,0,0,0,0
+runner,642180.0,Tyler Wade,2,9,2,0,0,1
+runner,621438.0,Tyrone Taylor,2,29,4,0,1,1
+runner,645302.0,Victor Robles,4,16,1,0,1,2
+runner,687363.0,Victor Scott II,1,5,1,0,0,1
+runner,660644.0,Vidal Bruján,1,6,0,0,0,0
+runner,665489.0,Vladimir Guerrero Jr.,7,49,3,1,0,0
+runner,672761.0,Wenceel Pérez,4,32,6,0,0,1
+runner,642215.0,Weston Wilson,2,8,1,0,0,0
+runner,593160.0,Whit Merrifield,7,48,2,0,1,3
+runner,666181.0,Will Benson,2,13,3,0,0,0
+runner,686823.0,Will Brennan,3,10,2,0,0,1
+runner,669257.0,Will Smith,1,6,1,0,0,0
+runner,695238.0,Will Wagner,1,3,0,0,0,0
+runner,650489.0,Willi Castro,23,115,10,1,2,3
+runner,661388.0,William Contreras,3,29,0,0,0,0
+runner,575929.0,Willson Contreras,3,27,0,0,0,0
+runner,642715.0,Willy Adames,1,6,1,0,0,0
+runner,527038.0,Wilmer Flores,2,7,0,0,0,0
+runner,677800.0,Wilyer Abreu,10,68,3,0,3,4
+runner,694671.0,Wyatt Langford,6,49,6,0,2,2
+runner,593428.0,Xander Bogaerts,1,5,0,0,0,1
+runner,669364.0,Xavier Edwards,2,12,2,0,1,1
+runner,673237.0,Yainer Diaz,5,50,0,0,0,0
+runner,650490.0,Yandy Díaz,5,26,1,0,0,0
+runner,670541.0,Yordan Alvarez,4,25,0,0,0,0
+runner,701305.0,Zach Dezenzo,1,4,0,0,0,1
+runner,656716.0,Zach McKinstry,6,41,2,0,0,0
+runner,687263.0,Zach Neto,5,22,2,0,1,1
+runner,680869.0,Zack Gelof,14,67,10,0,4,5
+venue,32,American Family Field,2,128,6,0,1,3
+venue,1,Angel Stadium,4,254,13,1,7,9
+venue,2889,Busch Stadium,4,299,12,0,3,6
+venue,15,Chase Field,16,925,57,3,11,16
+venue,3289,Citi Field,3,234,15,0,5,8
+venue,2681,Citizens Bank Park,18,1000,61,1,23,34
+venue,2394,Comerica Park,7,522,20,1,3,4
+venue,19,Coors Field,6,396,23,1,7,10
+venue,22,Dodger Stadium,3,127,10,0,6,7
+venue,3,Fenway Park,16,1060,55,2,19,24
+venue,5325,Globe Life Field,6,298,15,0,9,12
+venue,2602,Great American Ball Park,4,232,17,0,1,7
+venue,4,Guaranteed Rate Field,5,286,13,1,1,4
+venue,7,Kauffman Stadium,4,191,11,1,1,4
+venue,2392,Minute Maid Park,5,271,11,0,7,10
+venue,3309,Nationals Park,3,173,11,0,4,5
+venue,10,Oakland Coliseum,20,1153,57,0,30,39
+venue,2395,Oracle Park,3,215,7,1,3,7
+venue,2,Oriole Park at Camden Yards,19,1099,75,2,15,26
+venue,31,PNC Park,2,139,2,0,2,3
+venue,2680,Petco Park,3,146,8,0,1,4
+venue,5,Progressive Field,7,419,41,0,9,14
+venue,14,Rogers Centre,5,242,13,1,3,5
+venue,680,T-Mobile Park,6,209,10,0,3,6
+venue,3312,Target Field,20,1091,40,5,11,24
+venue,12,Tropicana Field,5,239,14,1,6,6
+venue,4705,Truist Park,3,168,5,1,2,2
+venue,17,Wrigley Field,4,259,17,0,3,3
+venue,3313,Yankee Stadium,5,293,8,0,3,7
+venue,4169,loanDepot park,3,160,4,3,6,6
