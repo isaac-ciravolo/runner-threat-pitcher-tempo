@@ -74,3 +74,7 @@ Reviewed accessible Powers methods and validation sections; logged failed full-t
 ## 2026-11-16: Conditional-success denominator gate
 
 Audited all 413,081 corrected windows and 6,636 recorded attempts. One runner-change attribution exclusion; no ambiguous/multiple attempt windows. Existing success categories include advance-then-out and error advances, so internal consistency does not establish official stolen-base credit. Preserve existing artifacts and require event/movement review before fitting this separate target. See conditional_success_audit_report.md.
+
+## 2026-11-16: Suspend prospective claims after within-play timing audit
+
+Explicit source links associate 6,477 of 6,636 recorded attempts with a pitch at/before the existing feature cutoff. A corroborating runnerGoing example demonstrates retrospective target assignment. Prior between-game chronology validation did not cover this. Preserve all artifacts, suspend the prospective interpretation of attempt/threat/response findings, and repair grouped pitch outcomes and base states before refitting. See action_pitch_link_audit_report.md.

@@ -1,5 +1,7 @@
 # Runner Threat + Pitcher Tempo
 
+**Current research gate (2026-11-16):** The [action-to-pitch audit](docs/action_pitch_link_audit_report.md) found a within-play prediction-boundary error. Existing attempt, threat and response results are retained but cannot support prospective claims pending reconstruction and refitting. 2025 remains closed.
+
 Public-data baseball research for a potential SABR submission.
 
 ## Research question

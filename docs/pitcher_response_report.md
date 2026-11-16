@@ -1,5 +1,7 @@
 # Recorded pitcher-pickoff response results
 
+**Superseding audit, 2026-11-16:** Prospective interpretation is suspended. See action_pitch_link_audit_report.md: the input threat target assigns pitch-associated steal records after their physical pitch. Metrics below describe the archived implementation, not a validated prospective result.
+
 Executed 2026-11-16 under the frozen response protocol. Forward runner threat improves recorded-pickoff prediction in previously inspected 2024 development games beyond the specified opening context and regularized pitcher/catcher identity terms. This is incremental predictive association, not evidence that throwing over prevents runs or that runner threat causes a response.
 
 ## Population and design
