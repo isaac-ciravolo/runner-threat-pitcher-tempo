@@ -57,3 +57,25 @@ Regression tests cover source mismatches, duplicate/missing games, modified timi
 ## Completed regression check
 
 All 62 repository tests pass. The source-snapshot validator accepts all 413,081 existing opportunity rows against the audited feeds, dispositions and eligible manifests. A full chronology-v2 forward run was executed under `data/processed/audit_fix_validation/`, using the new staging, validation, manifest and completion-pointer workflow. Its 276,594-row training score file (211,818 scored rows), 136,487 development predictions, selected calibration policy and seven compact CSV tables match the prior run exactly. Current environment metadata was verified independently. Original research outputs were not replaced. The validation run and detailed verification JSON remain ignored local artifacts.
+
+## Corrected completed-play pipeline
+
+The grouped reconstruction uses separate G2 opportunity IDs and immutable run roots. Raw responses are independently checked against event order and explicit action links before history construction. Opening pitcher identities use ordered substitutions. History verification compares incremental counts with independent batch sums over games whose information was available strictly before the prediction game's cutoff.
+
+The baseline, forward and response entry points reuse the frozen statistical specifications with verified grouped inputs. Response fitting requires the forward run's input hashes to match its own opportunity hashes; matching IDs alone is insufficient. Result publication checks complete model/partition coverage and bootstrap output. A separate verifier reloads model bundles and recomputes metrics from saved keyed predictions. Code hashes and input/run manifests identify each handoff.
+
+Commands from the repository root, in order:
+
+```powershell
+python -m scripts.rebuild_grouped_events --full --workers 8
+python -m scripts.grouped_histories
+python -m scripts.execute_forward_threat_notebook notebooks/10_grouped_reconstruction.ipynb
+python -m scripts.grouped_models baseline
+python -m scripts.verify_grouped_models baseline
+python -m scripts.grouped_models forward
+python -m scripts.verify_grouped_models forward
+python -m scripts.grouped_models response
+python -m scripts.verify_grouped_models response
+```
+
+Audit and commit each completed stage before proceeding. The implementation audit passes 86 tests, including stale input/score snapshots, strictly earlier history availability, retrospective action links and duplicated response assignment. Full-run findings are reported separately only after execution. These checks do not establish independent action completeness, release-time measurement, novelty or causal identification.

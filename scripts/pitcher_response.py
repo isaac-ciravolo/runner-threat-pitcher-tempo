@@ -1,6 +1,7 @@
 """Frozen recorded pitcher-pickoff response analysis; no 2025 access."""
 import json
 import warnings
+from pathlib import Path
 import joblib
 import numpy as np
 import pandas as pd
@@ -46,7 +47,12 @@ def fit(train, threat=None, depth=False):
 
 def validate(paths):
     m=pd.read_csv(paths.results/'metrics.csv')
-    require(len(m)==24,'Incomplete model results')
+    expected={(split,variant,model)
+              for split in ['diagnostic_2023','development_2024']
+              for variant in ['primary','calibrated_threat','history_depth','known_initiator']
+              for model in ['constant','context','context_threat']}
+    require(len(m)==len(expected) and set(zip(m.split,m.variant,m.model))==expected,
+            'Incomplete or duplicated model results')
     require(np.isfinite(m[['log_loss','brier','average_precision']]).all().all(),'Invalid metrics')
     for (split,variant),g in m.groupby(['split','variant']):
         require(g.n.nunique()==1 and g.attempts.nunique()==1,'Unmatched comparison populations')
@@ -58,15 +64,35 @@ def validate(paths):
             require(g.n.sum()==row.n and g.events.sum()==row.attempts,'Calibration/subgroup accounting mismatch')
     for name in ['bootstrap.csv','calibration.csv','subgroups.csv','sample_flow.csv','provenance.json']:
         require((paths.results/name).is_file(),f'Missing {name}')
+    bootstrap=pd.read_csv(paths.results/'bootstrap.csv')
+    bootstrap_keys={(split,variant,cluster,metric)
+                    for split,variant,_model in expected
+                    for cluster in ['game_pk','pitcher_id','runner_id']
+                    for metric in ['log_loss','brier','average_precision']}
+    require(len(bootstrap)==len(bootstrap_keys)
+            and set(zip(bootstrap.split,bootstrap.variant,bootstrap.cluster,bootstrap.metric))==bootstrap_keys,
+            'Incomplete bootstrap comparisons')
+    require(np.isfinite(bootstrap[['delta','lower','upper']]).all().all()
+            and bootstrap.lower.le(bootstrap.upper).all(),'Invalid bootstrap intervals')
 
-def main():
+def main(*, input_dir=None, verified_hashes=None, forward_results=None, forward_local=None,
+         output_dir=None, local_dir=None, definition_provenance=None):
     require(not (ROOT/'data/historical_feed_manifest_2025.csv').exists(),'2025 remains closed')
-    source=resolve_run(ROOT/'results/forward_threat_v2',ROOT/'data/processed/forward_threat_v2')
-    provenance=json.loads((ROOT/'results/chronology_repair/repaired_provenance.json').read_text())
+    source=resolve_run(forward_results or ROOT/'results/forward_threat_v2',
+                       forward_local or ROOT/'data/processed/forward_threat_v2')
+    inputs=Path(input_dir) if input_dir is not None else ROOT/'data/processed/chronology_repair'
+    if verified_hashes is None:
+        expected=json.loads((ROOT/'results/chronology_repair/repaired_provenance.json').read_text())['repaired_input_hashes']
+    else:
+        expected=dict(verified_hashes)
+    forward_provenance=json.loads((source.results/'provenance.json').read_text(encoding='utf-8'))
+    for year in (2023,2024):
+        require(forward_provenance['hashes'][str(year)] == expected[str(year)],
+                f'Threat scores use a different opportunity snapshot: {year}')
     frames={}; hashes={}
     for year in (2023,2024):
-        path=ROOT/f'data/processed/chronology_repair/opportunities_{year}.csv.gz'
-        hashes[str(year)]=verify_hash(path,provenance['repaired_input_hashes'][str(year)])
+        path=inputs/f'opportunities_{year}.csv.gz'
+        hashes[str(year)]=verify_hash(path,expected[str(year)])
         frame=pd.read_csv(path,low_memory=False)
         score_path=source.local/('training_forward_scores.csv.gz' if year==2023 else 'development_2024_scores.csv.gz')
         scores=pd.read_csv(score_path)
@@ -82,7 +108,8 @@ def main():
     require(end.lt(pd.Timestamp('2024-01-01',tz='UTC')).all(),'Unavailable final training games')
     split=pd.Timestamp('2023-07-01',tz='UTC')
     partitions=[('diagnostic_2023',train[end.lt(split)],train[start.ge(split)]),('development_2024',train,test)]
-    stage=StagedRun(ROOT/'results/pitcher_response',ROOT/'data/processed/pitcher_response')
+    stage=StagedRun(output_dir or ROOT/'results/pitcher_response',
+                    local_dir or ROOT/'data/processed/pitcher_response')
     out,local=stage.paths.results,stage.paths.local
     rows=[]; bins=[]; subgroups=[]; uncertainty=[]; flow=[]
     variants=[('primary','raw',False,False),('calibrated_threat','prospective_calibrated',False,False),('history_depth','raw',True,False),('known_initiator','raw',False,True)]
@@ -126,7 +153,8 @@ def main():
             print(split_name,variant,'completed',flush=True)
     for name,data in [('metrics',rows),('calibration',bins),('subgroups',subgroups),('bootstrap',uncertainty),('sample_flow',flow)]: pd.DataFrame(data).to_csv(out/f'{name}.csv',index=False)
     hashes['protocol']=sha256_file(ROOT/'docs/pitcher_response_protocol.md'); hashes['script']=sha256_file(__file__)
-    (out/'provenance.json').write_text(json.dumps(dict(hashes=hashes,environment=current_environment()),indent=2)+'\n')
+    (out/'provenance.json').write_text(json.dumps(dict(hashes=hashes,environment=current_environment(),
+        definition_provenance=dict(definition_provenance or {})),indent=2)+'\n')
     completed=stage.publish(validate)
     print('Published:',completed)
     return completed

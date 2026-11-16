@@ -78,15 +78,24 @@ def calibration(y, p):
     m = LogisticRegression(C=1e10, max_iter=2000).fit(z.reshape(-1,1), y)
     return m.intercept_[0], m.coef_[0,0]
 
-def main():
-    OUT.mkdir(exist_ok=True); LOCAL.mkdir(exist_ok=True)
+def main(*, input_dir=None, output_dir=None, local_dir=None, verified_hashes=None,
+         use_availability=False, definition_provenance=None):
+    from scripts.artifact_runs import StagedRun
+    from scripts.pipeline_validation import verify_hash
+    require((output_dir is None) == (local_dir is None), 'Specify both result and local artifact roots')
+    inputs = Path(input_dir) if input_dir is not None else ROOT / 'data/processed/historical/development'
+    stage = StagedRun(Path(output_dir), Path(local_dir)) if output_dir is not None else None
+    out, local = (stage.paths.results, stage.paths.local) if stage else (OUT, LOCAL)
+    out.mkdir(exist_ok=True); local.mkdir(exist_ok=True)
     spec = ROOT / 'docs/recorded_attempt_baseline_spec.md'
     provenance = {'spec_sha256': hashlib.sha256(spec.read_bytes()).hexdigest(), 'inputs': {},
                   'python': platform.python_version(), 'pandas': pd.__version__, 'numpy': np.__version__, 'sklearn': sklearn.__version__}
     require(not (ROOT / 'data/historical_feed_manifest_2025.csv').exists(), "Validation failed: not (ROOT / 'data/historical_feed_manifest_2025.csv').exists()")
     frames = []
     for year in (2022,2023,2024):
-        path = ROOT / f'data/processed/historical/development/opportunities_{year}.csv.gz'
+        path = inputs / f'opportunities_{year}.csv.gz'
+        if verified_hashes is not None:
+            verify_hash(path, verified_hashes[str(year)])
         provenance['inputs'][str(year)] = hashlib.sha256(path.read_bytes()).hexdigest()
         d = pd.read_csv(path, low_memory=False)
         require(d.season.eq(year).all() and d.opportunity_id.is_unique, 'Validation failed: d.season.eq(year).all() and d.opportunity_id.is_unique')
@@ -98,11 +107,11 @@ def main():
     data = pd.concat(frames, ignore_index=True)
     flow = data.groupby('season').agg(windows=('opportunity_id','size'), games=('game_pk','nunique'), attempts=(LABEL,'sum'), terminal=('terminal_window','sum'), runner_change=('runner_identity_changed_within_window','sum'), history_eligible=('attempt_history_eligible','sum'))
     flow['excluded_model_rows'] = 0; flow['attempt_rate'] = flow.attempts / flow.windows
-    flow.to_csv(OUT / 'sample_flow.csv')
-    data.groupby('season')[NUM + CAT].agg(lambda v: v.isna().sum()).to_csv(OUT / 'context_missingness.csv')
+    flow.to_csv(out / 'sample_flow.csv')
+    data.groupby('season')[NUM + CAT].agg(lambda v: v.isna().sum()).to_csv(out / 'context_missingness.csv')
     train = data[data.season.le(2023)]
     start = pd.to_datetime(train.feed_game_start_utc, utc=True, format='mixed')
-    end = pd.to_datetime(train.feed_completion_time_utc, utc=True, format='mixed')
+    end = pd.to_datetime(train.history_available_after_utc if use_availability else train.feed_completion_time_utc, utc=True, format='mixed')
     cutoff = pd.Timestamp('2023-07-01', tz='UTC')
     require(end.lt(pd.Timestamp('2024-01-01', tz='UTC')).all(), "Validation failed: end.lt(pd.Timestamp('2024-01-01', tz='UTC')).all()")
     partitions = [('chronological_training_diagnostic', train[end.lt(cutoff)], train[start.ge(cutoff)]), ('heldout_2024', train, data[data.season.eq(2024)])]
@@ -118,7 +127,7 @@ def main():
             intercept, slope = calibration(y,p)
             rows.append(dict(split=split, model=name, fit_n=len(fitting), fit_attempts=int(fitting[LABEL].sum()), n=len(y), attempts=int(y.sum()), prevalence=float(y.mean()), mean_prediction=float(p.mean()), calibration_intercept=intercept, calibration_slope=slope, **metrics(y,p)))
             if split == 'heldout_2024':
-                joblib.dump(model, LOCAL / f'{name}.joblib')
+                joblib.dump(model, local / f'{name}.joblib')
             table = pd.DataFrame({'y':y,'p':p,'bin':pd.cut(p,BINS,include_lowest=True)})
             for b,g in table.groupby('bin',observed=False):
                 bins.append(dict(split=split,model=name,bin=str(b),n=len(g),attempts=int(g.y.sum()),mean_prediction=g.p.mean(),observed_rate=g.y.mean()))
@@ -127,7 +136,7 @@ def main():
                 for value in sorted(values.unique()):
                     mask = values.eq(value).to_numpy()
                     groups.append(dict(split=split,model=name,subgroup=axis,value=value,n=int(mask.sum()),attempts=int(y[mask].sum()),mean_prediction=float(p[mask].mean()),observed_rate=float(y[mask].mean())))
-        predictions.to_csv(LOCAL / f'{split}_predictions.csv.gz',index=False)
+        predictions.to_csv(local / f'{split}_predictions.csv.gz',index=False)
         codes, games = pd.factorize(scoring.game_pk)
         rng = np.random.default_rng(20261115)
         draws = {name:[] for name in MODELS}
@@ -141,9 +150,14 @@ def main():
                 low, high = np.quantile(a[:,j],[.025,.975]); dl,dh = np.quantile(a[:,j]-base[:,j],[.025,.975])
                 intervals.append(dict(split=split,model=name,metric=metric,lower=low,upper=high,delta_vs_constant_lower=dl,delta_vs_constant_upper=dh))
     for filename, records in [('metrics',rows),('calibration',bins),('subgroups',groups),('game_bootstrap',intervals)]:
-        pd.DataFrame(records).to_csv(OUT / f'{filename}.csv',index=False)
-    (OUT / 'provenance.json').write_text(json.dumps(provenance,indent=2)+'\n')
+        pd.DataFrame(records).to_csv(out / f'{filename}.csv',index=False)
+    provenance['definition_provenance'] = dict(definition_provenance or {})
+    provenance['script_sha256'] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+    (out / 'provenance.json').write_text(json.dumps(provenance,indent=2)+'\n')
     print(pd.DataFrame(rows).to_string(index=False))
+    if stage:
+        from scripts.validate_baseline_run import validate_baseline_run
+        return stage.publish(validate_baseline_run)
 
 if __name__ == '__main__':
     main()
