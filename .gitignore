@@ -10,3 +10,7 @@ data/raw/*
 data/processed/*
 !data/processed/.gitkeep
 .DS_Store
+
+# Unpublished forward runs and atomic pointer temporary files
+results/**/.staging/
+results/**/.current_run.json.*.tmp

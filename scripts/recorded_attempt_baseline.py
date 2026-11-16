@@ -1,4 +1,5 @@
 """Frozen recorded-attempt baseline; run python -m scripts.recorded_attempt_baseline."""
+from scripts.pipeline_validation import require
 from pathlib import Path
 import hashlib
 import json
@@ -39,7 +40,7 @@ def features(d, variant, prevalence):
     for block in blocks:
         n = d[f'runner_prior_{block}_eligible_opportunities']
         a = d[f'runner_prior_{block}_attempted_opportunities']
-        assert n.notna().all() and a.notna().all() and (a <= n).all()
+        require(n.notna().all() and a.notna().all() and (a <= n).all(), 'Validation failed: n.notna().all() and a.notna().all() and (a <= n).all()')
         x[block + '_log_exposure'] = np.log1p(n)
         x[block + '_rate'] = (a + 100 * prevalence) / (n + 100)
         x[block + '_cold'] = n.eq(0).astype(int)
@@ -82,17 +83,17 @@ def main():
     spec = ROOT / 'docs/recorded_attempt_baseline_spec.md'
     provenance = {'spec_sha256': hashlib.sha256(spec.read_bytes()).hexdigest(), 'inputs': {},
                   'python': platform.python_version(), 'pandas': pd.__version__, 'numpy': np.__version__, 'sklearn': sklearn.__version__}
-    assert not (ROOT / 'data/historical_feed_manifest_2025.csv').exists()
+    require(not (ROOT / 'data/historical_feed_manifest_2025.csv').exists(), "Validation failed: not (ROOT / 'data/historical_feed_manifest_2025.csv').exists()")
     frames = []
     for year in (2022,2023,2024):
         path = ROOT / f'data/processed/historical/development/opportunities_{year}.csv.gz'
         provenance['inputs'][str(year)] = hashlib.sha256(path.read_bytes()).hexdigest()
         d = pd.read_csv(path, low_memory=False)
-        assert d.season.eq(year).all() and d.opportunity_id.is_unique
+        require(d.season.eq(year).all() and d.opportunity_id.is_unique, 'Validation failed: d.season.eq(year).all() and d.opportunity_id.is_unique')
         for c in ['history_frozen_before_game', 'runner_history_coverage_complete_since_2022_start', 'game_chronology_available']:
-            assert d[c].eq(True).all(), c
-        assert d.known_state_conflict.eq(False).all() and d.unknown_action_classification_count.eq(0).all()
-        assert d[LABEL].eq(d.recorded_steal_attempt_record_count.gt(0)).all()
+            require(d[c].eq(True).all(), c)
+        require(d.known_state_conflict.eq(False).all() and d.unknown_action_classification_count.eq(0).all(), 'Validation failed: d.known_state_conflict.eq(False).all() and d.unknown_action_classification_count.eq(0).all()')
+        require(d[LABEL].eq(d.recorded_steal_attempt_record_count.gt(0)).all(), 'Validation failed: d[LABEL].eq(d.recorded_steal_attempt_record_count.gt(0)).all()')
         frames.append(d)
     data = pd.concat(frames, ignore_index=True)
     flow = data.groupby('season').agg(windows=('opportunity_id','size'), games=('game_pk','nunique'), attempts=(LABEL,'sum'), terminal=('terminal_window','sum'), runner_change=('runner_identity_changed_within_window','sum'), history_eligible=('attempt_history_eligible','sum'))
@@ -103,7 +104,7 @@ def main():
     start = pd.to_datetime(train.feed_game_start_utc, utc=True, format='mixed')
     end = pd.to_datetime(train.feed_completion_time_utc, utc=True, format='mixed')
     cutoff = pd.Timestamp('2023-07-01', tz='UTC')
-    assert end.lt(pd.Timestamp('2024-01-01', tz='UTC')).all()
+    require(end.lt(pd.Timestamp('2024-01-01', tz='UTC')).all(), "Validation failed: end.lt(pd.Timestamp('2024-01-01', tz='UTC')).all()")
     partitions = [('chronological_training_diagnostic', train[end.lt(cutoff)], train[start.ge(cutoff)]), ('heldout_2024', train, data[data.season.eq(2024)])]
     rows, bins, groups, intervals = [], [], [], []
     for split, fitting, scoring in partitions:

@@ -123,3 +123,7 @@ No pitcher-response model has been fit. 2025 remains closed. Raw and prospective
 ## Corrected chronology handoff
 
 The [chronology repair report](docs/chronology_repair_report.md) supersedes the v1 threat handoff. All 7,289 cached feeds passed checksum review; corrected histories change 1,253 windows across 55 games. Separate v2 outputs restore the 61 quarantined rows and supply 211,818 prospective training scores. Raw probabilities remain selected. See the [executed audit notebook](notebooks/08_chronology_repair.ipynb) and [frozen pitcher-response protocol](docs/pitcher_response_protocol.md). Conservative rain buffers and anomalous timestamp treatment remain explicit qualifications; 2025 stays closed.
+
+## Pipeline integrity
+
+Forward runs now publish versioned results and models through a single completion pointer. Use `scripts.artifact_runs.resolve_run` to locate the latest validated run; flat filenames remain archived legacy snapshots. See [validation, publication and provenance](docs/pipeline_integrity.md) for the reader API and failure behavior. Rebuilds enforce the audited source snapshot, and runtime integrity gates remain active under Python optimization.

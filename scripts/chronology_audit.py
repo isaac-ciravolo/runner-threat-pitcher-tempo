@@ -1,4 +1,5 @@
 """Audit cached public-feed chronology without downloading or inspecting 2025."""
+from scripts.pipeline_validation import require
 from pathlib import Path
 from datetime import datetime
 import hashlib,json
@@ -46,9 +47,9 @@ def main():
         manifest=pd.read_csv(ROOT/f'data/historical_feed_manifest_{year}.csv')
         for r in manifest[manifest.feed_eligible.eq(True)].itertuples(index=False):
             path=ROOT/r.cache_path; raw=path.read_bytes()
-            assert hashlib.sha256(raw).hexdigest()==r.sha256, r.game_pk
+            require(hashlib.sha256(raw).hexdigest()==r.sha256, r.game_pk)
             feed=json.loads(raw)
-            assert feed['gamePk']==r.game_pk
+            require(feed['gamePk']==r.game_pk, "Validation failed: feed['gamePk'] == r.game_pk")
             rows.append(dict(season=year,game_pk=r.game_pk,source_sha256=r.sha256,scheduled_start=r.scheduled_start_utc,old_start=r.feed_game_start_utc,old_completion=r.feed_completion_time_utc,**audit_feed(feed)))
             if len(rows)%500==0: print('Audited',len(rows),'cached feeds',flush=True)
     df=pd.DataFrame(rows)

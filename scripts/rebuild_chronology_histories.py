@@ -1,4 +1,6 @@
 """Rebuild histories from validated game-level timing dispositions."""
+from scripts.pipeline_validation import require
+from scripts.source_snapshot import validate_source_snapshot
 import hashlib,json
 from pathlib import Path
 import numpy as np
@@ -12,21 +14,27 @@ def main():
     LOCAL.mkdir(exist_ok=True)
     audit=pd.read_csv(OUT/'game_chronology_audit.csv')
     disposition=pd.read_csv(OUT/'timing_dispositions.csv').set_index('game_pk')
-    assert len(audit)==7289 and audit.resolved_bounds.all()
-    assert set(audit.game_pk)==set(disposition.index)
-    assert disposition.status.eq('resolved').all()
+    require(len(audit)==7289 and audit.resolved_bounds.all(), 'Validation failed: len(audit) == 7289 and audit.resolved_bounds.all()')
+    require(set(audit.game_pk)==set(disposition.index), 'Validation failed: set(audit.game_pk) == set(disposition.index)')
+    require(disposition.status.eq('resolved').all(), "Validation failed: disposition.status.eq('resolved').all()")
     frames=[]; original_hashes={}
     for year in (2022,2023,2024):
         path=ROOT/f'data/processed/historical/development/opportunities_{year}.csv.gz'
         original_hashes[str(year)]=hashlib.sha256(path.read_bytes()).hexdigest()
         frames.append(pd.read_csv(path,low_memory=False))
     original=pd.concat(frames,ignore_index=True)
+    manifests=pd.concat([
+        pd.read_csv(ROOT/f'data/historical_feed_manifest_{year}.csv')
+        for year in (2022,2023,2024)
+    ], ignore_index=True)
+    validate_source_snapshot(original, audit, disposition.reset_index(),
+                             manifests[manifests.feed_eligible.eq(True)])
     groups={int(k):g for k,g in original.groupby('game_pk',sort=False)}
-    assert set(groups)==set(disposition.index)
+    require(set(groups)==set(disposition.index), 'Validation failed: set(groups) == set(disposition.index)')
     state=ForwardHistoryState(); rebuilt=[]; changes=[]
     disposition['freeze']=pd.to_datetime(disposition.freeze_time,utc=True,format='mixed')
     disposition['available']=pd.to_datetime(disposition.available_after,utc=True,format='mixed')
-    assert (disposition.freeze<disposition.available).all()
+    require((disposition.freeze<disposition.available).all(), 'Validation failed: (disposition.freeze < disposition.available).all()')
     for pk,row in disposition.sort_values(['freeze','game_pk']).iterrows():
         old=groups[int(pk)]
         state.release_completed_before(row.freeze)
@@ -46,7 +54,7 @@ def main():
         numeric=[c for c in history_columns if c.startswith('runner_prior_')]
         changed=(old[numeric].to_numpy()!=new[numeric].to_numpy()).any(axis=1)
         changes.append(dict(season=int(old.season.iloc[0]),game_pk=int(pk),n=len(old),changed_history_rows=int(changed.sum()),changed_start_rows=int(old.feed_game_start_utc.ne(row.freeze.isoformat()).sum()),max_abs_opportunity_change=int(np.abs(old.runner_prior_all_regimes_eligible_opportunities-new.runner_prior_all_regimes_eligible_opportunities).max())))
-        assert new.opportunity_id.tolist()==old.opportunity_id.tolist()
+        require(new.opportunity_id.tolist()==old.opportunity_id.tolist(), 'Validation failed: new.opportunity_id.tolist() == old.opportunity_id.tolist()')
         rebuilt.append(new)
         if len(rebuilt)%1000==0: print('Rebuilt histories for',len(rebuilt),'games',flush=True)
         state.queue_game(season=int(old.season.iloc[0]),completion_time=row.available,frame=new)
