@@ -1,0 +1,17 @@
+{
+  "selected_policy": "identity",
+  "selection_raw": {
+    "log_loss": 0.07135533855495531,
+    "brier": 0.01593620139623858,
+    "average_precision": 0.08895877028396804
+  },
+  "selection_calibrated": {
+    "log_loss": 0.07140211478357392,
+    "brier": 0.01585778737294823,
+    "average_precision": 0.08867658399119058
+  },
+  "final_calibration_n": 138862,
+  "final_calibration_attempts": 2377,
+  "final_intercept": -0.27411917615902276,
+  "final_slope": 0.9089931407445644
+}

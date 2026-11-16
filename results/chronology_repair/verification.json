@@ -1,0 +1,12 @@
+{
+  "total_windows": 413081,
+  "unique_games": 7289,
+  "independent_reference_games": 34,
+  "independent_history_equalities": 5364,
+  "reloaded_training_scores": 211818,
+  "reloaded_development_scores": 136487,
+  "restored_game_716404_windows": 61,
+  "history_invariants_passed": true,
+  "score_accounting_passed": true,
+  "test_season_opened": false
+}

@@ -32,21 +32,26 @@ def training_mask(d,origin):
 def calibration_pool(scores,origin,year):
     return scores[scores.completion.lt(origin)&scores.season.eq(year)&scores.raw.notna()]
 
-def main():
+def main(*, input_dir=None, output_dir=None, local_dir=None, verified_hashes=None, use_availability=False):
+    global OUT, LOCAL
+    if output_dir is not None: OUT=Path(output_dir)
+    if local_dir is not None: LOCAL=Path(local_dir)
+    input_dir=Path(input_dir) if input_dir is not None else ROOT/'data/processed/historical/development'
     OUT.mkdir(exist_ok=True); LOCAL.mkdir(exist_ok=True)
     assert not (ROOT/'data/historical_feed_manifest_2025.csv').exists()
     hashes={}
     frames=[]
     baseline=json.loads((ROOT/'results/recorded_attempt_baseline/provenance.json').read_text())
+    expected_hashes=verified_hashes if verified_hashes is not None else baseline['inputs']
     for year in (2022,2023):
-        path=ROOT/f'data/processed/historical/development/opportunities_{year}.csv.gz'
+        path=input_dir/f'opportunities_{year}.csv.gz'
         hashes[str(year)]=hashlib.sha256(path.read_bytes()).hexdigest()
-        assert hashes[str(year)]==baseline['inputs'][str(year)]
+        assert hashes[str(year)]==expected_hashes[str(year)]
         frames.append(pd.read_csv(path,low_memory=False))
     d=pd.concat(frames,ignore_index=True)
     for c in ['history_frozen_before_game','runner_history_coverage_complete_since_2022_start','game_chronology_available']: assert d[c].eq(True).all()
     d['start']=pd.to_datetime(d.feed_game_start_utc,utc=True,format='mixed')
-    d['completion']=pd.to_datetime(d.feed_completion_time_utc,utc=True,format='mixed')
+    d['completion']=pd.to_datetime(d['history_available_after_utc'] if use_availability else d.feed_completion_time_utc,utc=True,format='mixed')
     scores=d[['opportunity_id','game_pk','season',LABEL,'start','completion','terminal_window','runner_identity_changed_within_window','recorded_disengagements_at_open','runner_prior_all_regimes_eligible_opportunities']].copy()
     scores['raw']=np.nan; scores['prospective_calibrated']=np.nan
     scores['origin']=''; scores['calibration_status']='warmup_no_prediction'
@@ -82,9 +87,9 @@ def main():
     decision=dict(selected_policy=policy,selection_raw=raw,selection_calibrated=calibrated,final_calibration_n=len(final_pool),final_calibration_attempts=int(final_pool[LABEL].sum()),final_intercept=float(final_cal.intercept_[0]),final_slope=float(final_cal.coef_[0,0]))
     (OUT/'policy.json').write_text(json.dumps(decision,indent=2)+'\n')
     # Selection is saved before any 2024 table is read in this stage.
-    path=ROOT/'data/processed/historical/development/opportunities_2024.csv.gz'
+    path=input_dir/'opportunities_2024.csv.gz'
     hashes['2024']=hashlib.sha256(path.read_bytes()).hexdigest()
-    assert hashes['2024']==baseline['inputs']['2024']
+    assert hashes['2024']==expected_hashes['2024']
     test=pd.read_csv(path,low_memory=False)
     base=fit(d[~invalid],'separate_history')
     p=predict(base,test)

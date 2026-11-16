@@ -1,0 +1,22 @@
+{
+  "hashes": {
+    "2022": "7b8667d16ba4bb571653c62a26cd79bc0cf61da3d988cd4de140907f507ad8e6",
+    "2023": "0468e49b9eefb72fb6f3149cfdf201d53ba3b679cc8489d7b9ac76ecef2be833",
+    "2024": "1622a43c5aff29c8294540a5e807b38be4adde686baad50fc21fbbb87e6d3e39",
+    "protocol": "9e50bcaeb17f8ec0b7291e78bb1dfc1b4785232d64cdeb33eeb6956047c91535",
+    "script": "f25364d495436ec40a7050e2bede5c2280a682d566521368af39abd1ad99d308"
+  },
+  "environment": {
+    "python": "3.14.4",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "sklearn": "1.8.0"
+  },
+  "chronology_version": "event_bounds_v2",
+  "history_availability_field": "history_available_after_utc",
+  "repair_hashes": {
+    "docs/chronology_repair_protocol.md": "ca4ee00a5443fc60af62afeec84341af530cc592626811e639605892b3418fba",
+    "docs/chronology_timing_dispositions.md": "70378ece8accb595e1887751d493c2aa27279e75e01aadcfd2e7a07889e7cf98",
+    "results/chronology_repair/repaired_provenance.json": "758d898420ee980a8ef23edeeeddb4c0646d7a7d977eacc6c206e7ab006acc2b"
+  }
+}

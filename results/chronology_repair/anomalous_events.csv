@@ -1,0 +1,13 @@
+game_pk,inning,pa,type,event,start,end,is_pitch,description
+718707,8,60,no_pitch,,2023-04-05T03:54:46.757Z,2023-04-05T03:54:42.572Z,False,Automatic Ball - Pitcher Pitch Timer Violation
+718683,9,65,no_pitch,,2023-04-07T04:35:41.997Z,2023-04-07T04:35:37.620Z,False,Automatic Ball - Pitcher Pitch Timer Violation
+718576,5,43,no_pitch,,2023-04-15T21:43:08.399Z,2023-04-15T21:43:04.688Z,False,Automatic Ball - Pitcher Pitch Timer Violation
+718316,2,20,no_pitch,,2023-05-04T22:54:49.867Z,2023-05-04T22:54:48.247Z,False,Automatic Ball - Pitcher Pitch Timer Violation
+718137,7,52,no_pitch,,2023-05-18T00:34:39.833Z,2023-05-18T00:34:38.474Z,False,Automatic Ball - Pitcher Pitch Timer Violation
+718120,6,42,no_pitch,,2023-05-20T00:13:06.679Z,2023-05-20T00:12:58.887Z,False,Automatic Ball - Pitcher Pitch Timer Violation
+717201,7,57,no_pitch,,2023-07-30T18:06:28.877Z,2023-07-30T18:06:11.076Z,False,Automatic Ball - Pitcher Pitch Timer Violation
+717000,3,18,no_pitch,,2023-08-14T23:23:42.126Z,2023-08-14T23:23:35.698Z,False,Automatic Ball - Pitcher Pitch Timer Violation
+716695,5,32,no_pitch,,2023-09-06T23:42:09.162Z,2023-09-06T23:42:06.682Z,False,Automatic Ball - Pitcher Pitch Timer Violation
+745520,7,57,pitch,,2024-09-14T04:20:00.917Z,2024-09-14T04:20:12.917Z,True,"In play, out(s)"
+747132,4,26,no_pitch,,2024-04-25T00:15:01.689Z,2024-04-25T00:14:58.869Z,False,Automatic Ball - Pitcher Pitch Timer Violation
+746948,7,57,no_pitch,,2024-06-13T01:13:32.847Z,2024-06-13T01:13:25.137Z,False,Automatic Strike - Batter Pitch Timer Violation

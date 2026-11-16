@@ -65,3 +65,7 @@ The executed `scripts/recorded_attempt_baseline.py` and `results/recorded_attemp
 ## Forward calibration evidence, 2026-11-15
 
 Monthly forward scores cover 211,811 training windows after warmup and chronology quarantine. Training-only selection retains identity calibration; 2024 improvement does not override it. Game 716404 reveals an incomplete prior chronology gate because the header uses a resumption timestamp. See docs/forward_threat_report.md. No causal, action-completeness or novelty claim follows.
+
+## Chronology-v2 evidence, 2026-11-15
+
+Checksum-verified audit of all 7,289 cached development feeds identifies 25 timing edge cases and 303 schedule edge games. The repaired histories preserve labels and change 1,253 rows across 55 games, verified against independent batch sums for 34 games. The corrected threat handoff supplies 211,818 training scores. See docs/chronology_repair_report.md. Availability remains a retrospective proxy with declared conservative exceptions, not a verified real-time publication timestamp. The official source for game 716404's disposition is [MLB](https://www.mlb.com/amp/news/marlins-mets-suspended-game-will-not-be-played.html); cached original/resumption metadata and retained innings are separate feed evidence. No causal or novelty claim follows.

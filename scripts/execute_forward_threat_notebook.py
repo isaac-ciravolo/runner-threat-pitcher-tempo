@@ -4,14 +4,14 @@ Avoid Windows subprocess kernel-launch stalls; preserve streams and rich output.
 Run this script as a fresh Python process from the repository root.
 """
 from pathlib import Path
-import os
+import os, sys
 os.environ["IPYTHONDIR"] = str(Path("data/processed/test_tmp/ipython").resolve())
 os.environ["PYDEVD_DISABLE_FILE_VALIDATION"] = "1"
 import nbformat
 from IPython.core.interactiveshell import InteractiveShell
 from IPython.utils.capture import capture_output
 
-path=Path('notebooks/07_forward_threat_calibration.ipynb')
+path=Path(sys.argv[1]) if len(sys.argv)>1 else Path('notebooks/07_forward_threat_calibration.ipynb')
 nb=nbformat.read(path,as_version=4)
 shell=InteractiveShell.instance()
 try:

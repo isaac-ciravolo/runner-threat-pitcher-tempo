@@ -119,3 +119,7 @@ python scripts/execute_forward_threat_notebook.py
 ```
 
 No pitcher-response model has been fit. 2025 remains closed. Raw and prospectively recalibrated training scores are stored separately; do not backfill training scores using a later-selected calibration policy.
+
+## Corrected chronology handoff
+
+The [chronology repair report](docs/chronology_repair_report.md) supersedes the v1 threat handoff. All 7,289 cached feeds passed checksum review; corrected histories change 1,253 windows across 55 games. Separate v2 outputs restore the 61 quarantined rows and supply 211,818 prospective training scores. Raw probabilities remain selected. See the [executed audit notebook](notebooks/08_chronology_repair.ipynb) and [frozen pitcher-response protocol](docs/pitcher_response_protocol.md). Conservative rain buffers and anomalous timestamp treatment remain explicit qualifications; 2025 stays closed.

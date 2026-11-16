@@ -1,0 +1,6 @@
+season,scored,calibration_status,n,games,attempts,terminal,runner_change
+2022,False,warmup_no_prediction,64776,1139,844,1496,1336
+2022,True,insufficient_prior_attempts_or_nonattempts,21858,392,261,470,450
+2022,True,logistic_recalibration,51098,899,692,1169,983
+2023,True,insufficient_prior_attempts_or_nonattempts,24602,425,407,669,450
+2023,True,logistic_recalibration,114260,2005,1970,3159,2102
