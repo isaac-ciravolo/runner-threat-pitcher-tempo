@@ -1,5 +1,12 @@
 # Smallest defensible study
 
+## Current execution status (2026-11-16)
+
+The operational first study is the recorded pitcher-pickoff prediction question in the README and frozen response protocol, amended by `grouped_event_repair_protocol.md`. Timing and causal run trade-offs remain later gates. The original opportunity definition failed the action-to-pitch audit; archived results cannot support prospective claims. G3 reconstruction, independently checked histories and corrected baseline/forward fits are complete. The corrected response comparison is complete without new development tuning; see `grouped_response_report.md` for uncertainty, calibration and limits.
+
+The 229-window G3 action-video queue has zero annotations. Full-text novelty review is incomplete. The conditional-outcome source review is complete, but conditional success and expected-run fitting remain deferred under the repair amendment. A future credited-SB model must be distinguished from completed-play survival. The 2025 feed holdout remains closed and requires separate explicit authorization to open.
+
+
 ## Scope and estimand
 Among regular-season opportunities with a runner on first and second/third empty, estimate the adjusted association between prospectively estimated recorded-steal-attempt threat and pitcher response. The long-term runner-versus-batter run trade-off is a separate, later question.
 

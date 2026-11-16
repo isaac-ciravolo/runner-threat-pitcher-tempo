@@ -1,6 +1,6 @@
 # Runner Threat + Pitcher Tempo
 
-**Current research gate (2026-11-16):** The [action-to-pitch audit](docs/action_pitch_link_audit_report.md) found a within-play prediction-boundary error. Existing attempt, threat and response results are retained but cannot support prospective claims pending reconstruction and refitting. 2025 remains closed.
+**Current research gate (2026-11-16):** The G3 completed-play reconstruction and histories pass all-game source checks and independent history validation. Corrected baseline, forward-threat and pitcher-response fits are verified. The original within-play results remain withdrawn. 2025 remains closed.
 
 Public-data baseball research for a potential SABR submission.
 
@@ -10,16 +10,22 @@ Under what conditions does additional attention to a baserunner prevent more exp
 The first feasible study is narrower: **with a runner on first only, does prospectively estimated recorded-steal threat improve prediction of a recorded pitcher pickoff in later games?** Event-start timing is a secondary analysis only if its independent validation gate passes.
 
 ## Status
-The feasibility, aggregate Savant, runner-control representation, and historical-data audits are complete. The public 2022–2024 development pipeline covers all 7,289 eligible completed games and produces 413,081 first-base-only windows with chronological catcher assignments and forward-only runner counts; 2025 remains schedule-only and locked. The aggregate benchmark closely reproduces Savant only in a prespecified action-free sensitivity, revealing a likely undocumented population rule. The frozen video gate remains **`validation_pending`**: feed timestamps are still **not validated release times**. The initial recorded-steal-attempt baseline has been fit on 2022–2023 and evaluated with fixed choices on 2024. Opening context and runner histories improve prediction over training prevalence, but high predicted probabilities remain overconfident. The frozen recorded-pickoff response comparison is complete; no timing-response or causal model has been fit. Originality remains provisional in light of closely overlapping 2026 work.
+The corrected development pipeline covers 7,289 games and 403,611 first-base-only windows from 2022–2024, including 8,141 recorded-attempt windows. It groups linked outcome annotations with their parent event, recovers explicit runner movement evidence, and freezes pitcher identities and histories before each response. Independent history checks pass 5,562 equalities across 35 reference games.
+
+The corrected recorded-attempt baseline and monthly forward scores are verified. Training-only recalibration improves 2024 development calibration, but high-probability overconfidence remains. The frozen pitcher-response comparison is complete: adding raw forward threat reduces 2024 development log loss by 4.58%, with improvement across the prespecified sensitivities. Response calibration still shows overconfidence. All findings remain predictive associations with recorded feed events.
+
+Video validation is pending: the updated blinded review sample contains 229 unreviewed windows and zero genuine annotations. Feed event timestamps are not validated release times. Conditional success and expected-run work remain deferred under the repair amendment. The outcome audit distinguishes SB/CS credit, error-assisted advancement and subsequent outs. Originality remains provisional; closest-work methods and access limitations are documented.
+
+Current evidence: [history audit](docs/grouped_history_report.md), [attempt baseline](docs/grouped_baseline_report.md), [forward scoring](docs/grouped_forward_report.md), [pitcher response](docs/grouped_response_report.md), [conditional-outcome review](docs/grouped_success_report.md), [video readiness](docs/grouped_video_readiness.md), and [code audit](docs/grouped_code_audit.md). Earlier reports remain archived with superseded-definition notices.
 
 See the [data feasibility audit](docs/data_feasibility_audit.md), [video protocol](docs/video_timing_validation_protocol.md), [validation status and manual next steps](docs/video_timing_validation_status.md), [aggregate benchmark report](docs/aggregate_tempo_benchmark_report.md), [runner-control report](docs/runner_control_action_audit_report.md), [opportunity dataset report](docs/opportunity_dataset_report.md), [historical pipeline report](docs/historical_pipeline_report.md), [frozen exploratory plan](docs/exploratory_analysis_plan.md), and [source/claim ledger](docs/source_claim_ledger.md). Raw MLB downloads remain local and ignored.
 
-## First milestones
-1. Continue full-text literature review and citation tracing; the closest public sources have been screened and broad novelty is not claimed.
-2. ~~Audit public event timestamps, interruptions, and opportunity reconstruction.~~ Completed for the fixed 30-game feasibility sample.
-3. Validate the frozen stratified sample against public video before calling event-start intervals release-to-release tempo. Protocol and workflow implemented; genuine annotations pending.
-4. Complete: collect the chronological frame and execute the initial recorded-attempt baseline. Monthly forward training threat scores are available; freeze the response-stage protocol before fitting pitcher-response models.
-5. Test recorded pitcher-pickoff responses on the locked later-season sample.
+## Research gates
+1. Continue full-text literature review and citation tracing before any novelty claim.
+2. Completed: full G3 reconstruction, opening identities, independent histories and corrected attempt/forward fits.
+3. Completed: frozen recorded pitcher-pickoff response comparison, all sensitivities, saved-model verification and reviewed reports.
+4. Annotate the frozen video sample and assess missingness and agreement before action-completeness or release-tempo claims.
+5. Freeze the full final-test policy after the measurement and literature review. Opening 2025 feeds still requires separate authorization; this workflow does not unlock them.
 
 See [the study plan](docs/study_plan.md) and [literature checklist](docs/literature_review.md).
 
@@ -82,9 +88,28 @@ python -m scripts.historical_processing all
 python -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1200 notebooks/06_historical_data_quality.ipynb
 ```
 
-Collection and per-game parsing are resumable. The development commands default to 2022–2024. The separate 2025 feed command requires `--allow-test-data` and remains unauthorized until the final-test policy is frozen.
+Collection and per-game parsing are resumable. The development commands default to 2022–2024. The separate 2025 feed command requires `--allow-test-data` and remains unauthorized until the final-test policy is frozen and Isaac explicitly authorizes opening it.
 
 On Windows, `py` can replace `python`. The fetch script is cache-aware and uses bounded retries. Exact package versions from the executed notebook are in `results/audit_environment.csv`.
+
+## Corrected G3 analysis
+
+From the repository root, with the verified local 2022–2024 source cache and reconstruction artifacts available:
+
+```bash
+python -m scripts.grouped_histories
+python -m scripts.grouped_models baseline
+python -m scripts.verify_grouped_models baseline
+python -m scripts.grouped_models forward
+python -m scripts.verify_grouped_models forward
+python -m scripts.grouped_models response
+python -m scripts.verify_grouped_models response
+python -m scripts.audit_grouped_success
+python -m scripts.prepare_grouped_video_queue
+python -m unittest discover -s tests -q
+```
+
+Review each stage before proceeding. Notebooks 10–13 read checksum-verified current runs; execute them with `python -m scripts.execute_forward_threat_notebook notebooks/<name>.ipynb`. The immutable result manifests bind local model bundles and predictions to their published tables. Local raw feeds and processed prediction tables are intentionally not committed. Full reconstruction and its validation prerequisites are documented in the [repair amendment](docs/grouped_event_repair_protocol.md); future caches include the migration driver in their dependency signature.
 
 ## Layout
 - `docs/`: study design, literature review, and decisions

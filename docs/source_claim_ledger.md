@@ -1,5 +1,21 @@
 # Source and claim ledger
 
+## Corrected G3 evidence (2026-11-16)
+
+These entries supersede the archived predictive claims below. They are project results, not external novelty evidence.
+
+| Evidence | Supported claim | Remaining limitation |
+|---|---|---|
+| `grouped_history_report.md` and immutable history run `897435bbc46547bd92d05fde705d8f89` | 403,611 windows across 7,289 games; all-game response coverage and 5,562 independent history equalities pass. | Feed consistency and chronology do not establish video ground truth. |
+| `grouped_baseline_report.md` | Frozen context plus runner histories improves 2024 development attempt prediction; high-probability calibration remains overconfident. | Development data, recorded attempts and observed defensive strategies; no causal or final-test claim. |
+| `grouped_forward_report.md` | Monthly earlier-origin scores and training-selected recalibration pass saved-bundle verification. | Selection-period log-loss uncertainty crosses zero; recalibration is not independent evidence of behavioral mechanism. |
+| `grouped_response_report.md` | Raw forward threat reduces 2024 development response log loss by 4.58%; all frozen sensitivities and separate cluster intervals favor improvement. | Inspected development data; response calibration remains overconfident; no causal or final-test claim. |
+| `grouped_success_report.md` | All 8,141 attempt records are accounted for; 13 reviewed cases distinguish SB/CS credits, error-assisted advances and subsequent outs. | Coarse success is neither credited SB nor full closure survival; conditional fitting remains deferred. |
+| `grouped_video_readiness.md` | 229 windows in 54 strata are prepared with a separate blinded annotation sheet. | Zero genuine annotations; no action-completeness or release-time validation. |
+| `grouped_code_audit.md` | 105 tests pass; model verification and future migration-cache lineage were hardened. | Passing tests cannot certify research validity or novelty. |
+
+
+
 **Superseded prediction boundary (2026-11-16):** The archived results below use the earlier within-play window definition. The action-to-pitch audit invalidated its prospective interpretation. Preserve these records for provenance; use the grouped-event reconstruction and subsequent verified reports for current findings. Between-game chronology checks alone do not repair within-play leakage.
 
 Checked 2026-11-15. This ledger covers the feasibility audit, public-video validation setup, aggregate tempo benchmark, runner-control action audit, opportunity-dataset preparation, and historical development pipeline. It does not establish an originality claim; the targeted prior-work review still requires full reference tracing before submission.
