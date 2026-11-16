@@ -66,3 +66,7 @@ Prior baseline/forward milestone committed as dbd03f1. Audit all 7,289 cached el
 ## 2026-11-16: Executed frozen pitcher-response analysis
 
 Executed the primary and three prespecified sensitivities without 2024 tuning. Positive incremental prediction is reported with game/pitcher/runner bootstrap intervals and explicit noncausal limits. Prepared 179 unreviewed video windows with inclusion probabilities. Reviewed tests, reloads, provenance, notebook and count accounting before commit; 2025 remains closed.
+
+## 2026-11-16: Closest-work methods audit
+
+Reviewed accessible Powers methods and validation sections; logged failed full-text access for other closest works. See closest_work_methods_audit.md. Originality remains unresolved; do not promote abstract checks to full-text review. No analysis definition changed.
