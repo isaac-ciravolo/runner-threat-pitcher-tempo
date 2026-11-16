@@ -118,3 +118,7 @@ Preserve original defensive actions and recover runner-specific movement evidenc
 ## 2026-11-16: Full G3 reconstruction completes
 
 Verified all 7,289 game outputs: 403,611 windows, 8,141 attempt windows and 26,639 recorded pitcher-pickoff windows. Fully reparse 1,695 affected games and reuse only the independently verified unaffected transformation. Preserve old G2 outputs. Proceed to full raw-response coverage, opening identities and independent history rebuilding before any corrected fit.
+
+## 2026-11-16: G3 histories pass independent validation
+
+The complete history run passes 5,562 independent equalities across 35 reference games and all-game raw response coverage. Correct 3,754 opening pitcher assignments; remove 5,391 additional history contributions without dropping prediction windows. Commit reviewed notebook 10 and immutable artifacts before refitting frozen models. Keep 2025 closed.
