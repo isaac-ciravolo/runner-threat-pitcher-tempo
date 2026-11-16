@@ -1,0 +1,16 @@
+{
+  "environment": {
+    "python": "3.14.4",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "sklearn": "1.8.0"
+  },
+  "inputs": {
+    "2022": "7b8667d16ba4bb571653c62a26cd79bc0cf61da3d988cd4de140907f507ad8e6",
+    "2023": "0468e49b9eefb72fb6f3149cfdf201d53ba3b679cc8489d7b9ac76ecef2be833",
+    "2024": "1622a43c5aff29c8294540a5e807b38be4adde686baad50fc21fbbb87e6d3e39"
+  },
+  "spec_sha256": "5e5dcc4014b37a774ce8f3c6398d2da87bc7ef11d5f15a47c37384b2471c1753",
+  "source_sha256": "91879bc9f23a125dd5ff252d7919b112ff9913a3086d1659d943e03db43e075e",
+  "parent_provenance_sha256": "758d898420ee980a8ef23edeeeddb4c0646d7a7d977eacc6c206e7ab006acc2b"
+}

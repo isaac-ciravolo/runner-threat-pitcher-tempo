@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "run_id": "a1c78511e1f340b2a34ae464ddad479a",
+  "files": {
+    "results": {
+      "provenance.json": "72a11624b55fea57fa91ab5006d1781f19df04d658e86f7fb73fd4d9236def71",
+      "sample_flow.csv": "c3198c6ce18c7a29c416bed427aa435f5af9b5818f107ab79bce9fd74d1cc05f"
+    },
+    "local": {
+      "attempt_review.csv.gz": "a4eb4f193c6e11c2dfff6df0f5a273b55fafdef26a615a14a176fae37fbbacba"
+    }
+  }
+}

@@ -70,3 +70,7 @@ Executed the primary and three prespecified sensitivities without 2024 tuning. P
 ## 2026-11-16: Closest-work methods audit
 
 Reviewed accessible Powers methods and validation sections; logged failed full-text access for other closest works. See closest_work_methods_audit.md. Originality remains unresolved; do not promote abstract checks to full-text review. No analysis definition changed.
+
+## 2026-11-16: Conditional-success denominator gate
+
+Audited all 413,081 corrected windows and 6,636 recorded attempts. One runner-change attribution exclusion; no ambiguous/multiple attempt windows. Existing success categories include advance-then-out and error advances, so internal consistency does not establish official stolen-base credit. Preserve existing artifacts and require event/movement review before fitting this separate target. See conditional_success_audit_report.md.

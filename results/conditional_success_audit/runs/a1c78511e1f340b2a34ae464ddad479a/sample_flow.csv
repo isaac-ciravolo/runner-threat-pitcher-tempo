@@ -1,0 +1,4 @@
+season,windows,attempts,terminal_attempts,recorded_success,recorded_unsuccessful,not_recorded_attempt,binary_history_eligible,binary_attribution_excluded,unresolved_or_multiple
+2022,137732,1797,1797,1554,243,135935,1796,1,0
+2023,138862,2377,2377,2081,296,136485,2377,0,0
+2024,136487,2462,2462,2161,301,134025,2462,0,0
