@@ -114,3 +114,7 @@ The complete movement-reason reconciliation matches SB/CS for all 151,791 player
 ## 2026-11-16: G3 movement completion passes the expanded gate
 
 Preserve original defensive actions and recover runner-specific movement evidence, including 18 shared defensive/runner records. The 293-game joint pilot and independent 60-game unaffected-cache equivalence pass; 102 tests pass. Use verified migration only outside the complete affected-game inventory. Rebuild histories and refit frozen models only after the full G3 source-coverage checks pass.
+
+## 2026-11-16: Full G3 reconstruction completes
+
+Verified all 7,289 game outputs: 403,611 windows, 8,141 attempt windows and 26,639 recorded pitcher-pickoff windows. Fully reparse 1,695 affected games and reuse only the independently verified unaffected transformation. Preserve old G2 outputs. Proceed to full raw-response coverage, opening identities and independent history rebuilding before any corrected fit.

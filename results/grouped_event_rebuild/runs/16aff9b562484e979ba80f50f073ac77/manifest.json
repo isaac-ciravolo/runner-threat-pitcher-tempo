@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "run_id": "16aff9b562484e979ba80f50f073ac77",
+  "files": {
+    "results": {
+      "games.csv": "08b4b2d637a6be7fb9a316f4b4743ac00194452d3fa76d3aa744c441774fcc2a",
+      "provenance.json": "940e3e6446f9e2f455aa305b1e26aa0b8b4092b6c79fdd83eaef90a658c24113",
+      "summary.csv": "3ca408da1306b50674b56083f20e067c340fc4ea66c459470dc28d3974844d05"
+    },
+    "local": {
+      "cache_index.csv": "ecbe7be2382df8a9c3df3883aa805f01e3732666a3c44374d6645498c85500c9"
+    }
+  }
+}
