@@ -130,3 +130,7 @@ Frozen G3 baseline fits pass saved-model and metric reload checks. Preserve exac
 ## 2026-11-16: Corrected forward scoring verified
 
 All monthly/final saved predictions and metrics pass reload verification. The unchanged training-only rule chooses logistic recalibration; report uncertainty and residual overconfidence. Proceed to frozen pitcher-response comparison without tuning on 2024. Configure whitespace checking to recognize preserved CRLF result artifacts without changing their hashed bytes.
+
+## 2026-11-16: G3 label review and blinded video queue
+
+Audit all 8,141 attempts and retain 168 attribution exclusions. Inspect 13 source cases distinguishing error-assisted advancement, SB credit and subsequent outs; defer a generic success fit. Freeze 229 unreviewed video windows in 54 strata and a label-blinded annotation sheet. No video annotation or causal validation is claimed.

@@ -1,0 +1,11 @@
+{
+  "parent_manifest_sha256": "de5ca77192ce7aed19e9c4c495605b8f2246d125e196678de60961637f7f4035",
+  "script_sha256": "275259b58a3ab3204d5fa0c8be014fece947c20a4767e712c84e90e3270b9d3a",
+  "fitting_performed": false,
+  "protocol_sha256": "c7cf03e01bf087f9a3cecc0c18feb63e21e42cc9abf75c81518cc0e234d84c1d",
+  "helper_sha256": {
+    "conditional_success_audit.py": "91879bc9f23a125dd5ff252d7919b112ff9913a3086d1659d943e03db43e075e",
+    "scoring_credit_audit.py": "4d088405b594e17d7b5bcbc50d83bcc2c0effc761f8c3fd8f78b3f24e9c21d42"
+  },
+  "interpretation": "source credit reasons for the opening runner; path out is not a full closure-state label"
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "run_id": "f85c06883bf544f98296dcc0766c05e6",
+  "files": {
+    "results": {
+      "annotation_sheet.csv": "6fc1d1a25bb1efe182a80df810a10e5706c13ec5397d8a69fa870bd36038b633",
+      "provenance.json": "70138faa79bfdba5672c450839027b23bc984e6b38a99cc0d9ed7aae453dc066",
+      "review_queue.csv": "8de5927c54e20c6a6e7362928f9f0fbabda5388fdef03ff745d7d96e016305d4"
+    },
+    "local": {
+      "stratum_population.csv": "918305c0a74ab46cd0c662cade4a9de0d6a47539c6ba30a0c718d330b3b920ee"
+    }
+  }
+}

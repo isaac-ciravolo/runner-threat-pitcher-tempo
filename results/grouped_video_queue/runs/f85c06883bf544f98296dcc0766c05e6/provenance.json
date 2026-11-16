@@ -1,0 +1,18 @@
+{
+  "parent_manifest_sha256": "de5ca77192ce7aed19e9c4c495605b8f2246d125e196678de60961637f7f4035",
+  "script_sha256": "26801d4560725392ef99cafdcf12c51d6e8d8eccf678596b5d67c734bff1750c",
+  "seed": 20261115,
+  "strata": [
+    "season",
+    "recorded_pitcher_pickoff_indicator",
+    "recorded_catcher_pickoff_indicator",
+    "recorded_unknown_pickoff_indicator",
+    "terminal_window",
+    "open_timing",
+    "action_interruption",
+    "movement_evidence_action"
+  ],
+  "selected": 229,
+  "population": 268639,
+  "genuine_annotations": 0
+}
