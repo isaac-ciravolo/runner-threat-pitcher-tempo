@@ -1,0 +1,15 @@
+season,target,available,selected_games
+2022,seeded_random_games,True,3
+2022,doubleheader,True,1
+2022,suspended_or_resumed,True,1
+2023,seeded_random_games,True,3
+2023,doubleheader,True,1
+2023,suspended_or_resumed,True,1
+2024,seeded_random_games,True,3
+2024,doubleheader,True,1
+2024,suspended_or_resumed,True,1
+2024,catcher_and_pitcher_substitution|defensive_switch,True,1
+2024,pinch_runner,True,1
+2024,multiple_pickoffs|terminal_opportunity,True,1
+2024,repeated_pickoff_ordinal_review_outcome,True,1
+2024,pickoff_caught_stealing_continuation,True,1

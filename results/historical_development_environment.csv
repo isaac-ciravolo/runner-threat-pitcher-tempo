@@ -1,0 +1,7 @@
+item,value
+python,3.14.4
+pandas,3.0.2
+numpy,2.4.4
+parser_version,historical_processing_v1.1
+dataset_scope,development
+video_gate,validation_pending

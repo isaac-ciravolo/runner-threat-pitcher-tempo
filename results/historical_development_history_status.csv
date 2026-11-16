@@ -1,0 +1,4 @@
+season,cold_start_windows,observed_zero_attempt_windows,observed_prior_attempt_windows,incomplete_history_windows,opportunities,dataset_scope
+2022,4167,56822,76743,0,137732,development
+2023,728,29837,108297,0,138862,development
+2024,630,18056,117801,0,136487,development

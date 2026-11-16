@@ -1,0 +1,4 @@
+season,split_role,scheduled_regular_season_game_pks,feed_eligible_completed_games,completed_or_reused_feeds,eligible_missing_or_not_attempted,eligible_quarantined,excluded_schedule_games,excluded_quarantined_responses,bytes
+2022,history_only,2430,2430,2430,0,0,0,0,1929493195
+2023,training,2430,2430,2430,0,0,0,0,1950284248
+2024,validation_development,2430,2429,2429,0,0,1,1,1939337279

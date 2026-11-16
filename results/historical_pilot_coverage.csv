@@ -1,0 +1,4 @@
+season,split_role,scheduled_eligible_games,processed_games,missing_games,quarantined_games,events,pitches,opportunities,terminal_windows,catcher_assigned_windows,unknown_action_windows,known_state_conflict_windows,attempt_history_eligible_windows,conditional_success_history_eligible_windows,pitcher_pickoff_windows,steal_attempt_windows,catcher_changed_assignment_windows,cold_start_windows,incomplete_history_windows,observed_zero_attempt_windows,observed_prior_attempt_windows,catcher_assignment_rate,cold_start_rate,incomplete_history_rate,dataset_scope
+2022,history_only,24,24,0,0,7993,7188,1409,20,1409,0,0,1373,11,108,11,31,0,1409,0,0,1.0,0.0,1.0,pilot
+2023,training,25,25,0,0,8445,7482,1505,30,1505,0,0,1476,20,83,20,34,0,1505,0,0,1.0,0.0,1.0,pilot
+2024,validation_development,12,12,0,0,4136,3588,748,24,748,0,0,734,15,60,15,26,0,748,0,0,1.0,0.0,1.0,pilot

@@ -1,0 +1,5 @@
+run_started_utc,run_finished_utc,wall_seconds,seasons,pilot,refresh,pace_seconds,targets,network_responses,verified_cache_reuses,failed,quarantined,bytes_available,retry_problems
+2026-11-16T00:32:52Z,2026-11-16T00:33:35Z,42.988,2022|2023|2024,True,False,0.25,61,56,5,0,0,49428270,
+2026-11-16T00:37:28Z,2026-11-16T00:37:40Z,12.107,2022|2023|2024,True,False,0.25,61,0,61,0,0,49428270,
+2026-11-16T00:38:18Z,2026-11-16T01:51:53Z,4415.199,2022|2023|2024,False,False,0.25,7290,7023,267,0,3,5819114722,
+2026-11-16T01:53:15Z,2026-11-16T01:53:17Z,1.64,2022|2023|2024,False,False,0.25,2,2,0,0,0,1184456,True

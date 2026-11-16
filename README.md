@@ -8,9 +8,9 @@ Under what conditions does additional attention to a baserunner prevent more exp
 The first feasible study is narrower: **with a runner on first only, does prospectively estimated recorded-steal threat improve prediction of a recorded pitcher pickoff in later games?** Event-start timing is a secondary analysis only if its independent validation gate passes.
 
 ## Status
-The feasibility, aggregate Savant, and runner-control representation audits are complete. A one-row-per-window development table and leakage-audited exploratory plan are now frozen, but the 211 cached games are selective and lack complete pre-game runner histories. The aggregate benchmark closely reproduces Savant only in a prespecified action-free sensitivity, revealing a likely undocumented population rule. The frozen video gate remains **`validation_pending`**: feed timestamps are still **not validated release times**. No runner-threat, pitcher-response, timing-response, or causal model has been fit. Originality remains provisional in light of closely overlapping 2026 work.
+The feasibility, aggregate Savant, runner-control representation, and historical-data audits are complete. The public 2022–2024 development pipeline covers all 7,289 eligible completed games and produces 413,081 first-base-only windows with chronological catcher assignments and forward-only runner counts; 2025 remains schedule-only and locked. The aggregate benchmark closely reproduces Savant only in a prespecified action-free sensitivity, revealing a likely undocumented population rule. The frozen video gate remains **`validation_pending`**: feed timestamps are still **not validated release times**. No runner-threat, pitcher-response, timing-response, or causal model has been fit. Originality remains provisional in light of closely overlapping 2026 work.
 
-See the [data feasibility audit](docs/data_feasibility_audit.md), [video protocol](docs/video_timing_validation_protocol.md), [validation status and manual next steps](docs/video_timing_validation_status.md), [aggregate benchmark report](docs/aggregate_tempo_benchmark_report.md), [runner-control report](docs/runner_control_action_audit_report.md), [opportunity dataset report](docs/opportunity_dataset_report.md), [frozen exploratory plan](docs/exploratory_analysis_plan.md), and [source/claim ledger](docs/source_claim_ledger.md). Raw MLB downloads remain local and ignored.
+See the [data feasibility audit](docs/data_feasibility_audit.md), [video protocol](docs/video_timing_validation_protocol.md), [validation status and manual next steps](docs/video_timing_validation_status.md), [aggregate benchmark report](docs/aggregate_tempo_benchmark_report.md), [runner-control report](docs/runner_control_action_audit_report.md), [opportunity dataset report](docs/opportunity_dataset_report.md), [historical pipeline report](docs/historical_pipeline_report.md), [frozen exploratory plan](docs/exploratory_analysis_plan.md), and [source/claim ledger](docs/source_claim_ledger.md). Raw MLB downloads remain local and ignored.
 
 ## First milestones
 1. Continue full-text literature review and citation tracing; the closest public sources have been screened and broad novelty is not claimed.
@@ -66,6 +66,21 @@ python -m unittest discover -s tests -v
 python -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1200 notebooks/04_runner_control_action_audit.ipynb
 python -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1200 notebooks/05_opportunity_dataset.ipynb
 ```
+
+Build or resume the chronological 2022–2024 development frame:
+
+```bash
+python -m scripts.historical_collection schedules
+python -m scripts.historical_collection pilot-manifest
+python -m scripts.historical_collection collect --pilot
+python -m scripts.historical_processing all --pilot
+python -m scripts.historical_collection collect
+python -m scripts.historical_collection status
+python -m scripts.historical_processing all
+python -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1200 notebooks/06_historical_data_quality.ipynb
+```
+
+Collection and per-game parsing are resumable. The development commands default to 2022–2024. The separate 2025 feed command requires `--allow-test-data` and remains unauthorized until the final-test policy is frozen.
 
 On Windows, `py` can replace `python`. The fetch script is cache-aware and uses bounded retries. Exact package versions from the executed notebook are in `results/audit_environment.csv`.
 

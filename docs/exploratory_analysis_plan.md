@@ -40,6 +40,8 @@ Historical runner, pitcher, batter, catcher, and team features must be generated
 - recency/season indicators estimated only from prior games;
 - an explicit pooled-new-player value and history-availability indicator.
 
+Keep raw runner-history counts in two rule-environment blocks: 2022 (pre-disengagement limit) and 2023 onward. The first modeling task must compare (a) prior-year history plus accumulated newer-rule history with (b) newer-rule history only. This is a planned validation comparison, not permission to tune on 2024 repeatedly or to pool the regimes as a stationary rate.
+
 Shrinkage strength, preprocessing, feature selection, and any missing-value rules are learned in training data only. Final-season totals, later-game values, response-window actions, and the observed interval are prohibited. A season-level Statcast attribute such as sprint speed is optional only as a prior-season value or a reproducible as-of-game snapshot; a completed current-season value is not allowed.
 
 Catcher identity remains missing until starting defensive alignments and every substitution are reconstructed chronologically. Do not infer the opening catcher from a final box-score lineup. The primary pitcher-pickoff model may be evaluated without a catcher term if this omission is declared in advance; catcher-adjusted or catcher-specific claims must wait.
@@ -83,7 +85,7 @@ Do not call these intervals release tempo, use them to detect small within-pitch
 
 The current table is ready for schema review, accounting checks, and collection planning. It is not ready for threat modeling because every one of its 12,228 rows lacks a complete pre-game runner history and its selection is not representative.
 
-A recorded-pitcher-pickoff model may proceed after the complete 2022-2025 frame is collected, histories are generated forward, schedule/feed completeness checks pass, action-assignment checks pass, and all modeling choices above are frozen before the 2025 test is opened. Video validation is not a prerequisite for that action model. Timing analysis remains deferred unless its independent gate passes.
+A recorded-steal-attempt baseline may proceed after the complete 2022-2024 development frame is collected, histories are generated forward, schedule/feed completeness checks pass, and the 2024 evaluation policy is fixed. The first threat milestone may use attempt probability alone; conditional success remains a separate later target. The 2025 feeds stay unopened until preprocessing, model, calibration, and refitting policies are frozen. During eventual chronological 2025 evaluation, historical counts may update only from earlier games demonstrably completed before the next test game begins; model parameters and tuning choices may not update from test outcomes. Video validation is not a prerequisite for the recorded-action model. Timing analysis remains deferred unless its independent gate passes.
 
 ## Prior-work boundary
 
