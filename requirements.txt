@@ -3,3 +3,4 @@ numpy
 requests
 jupyterlab
 matplotlib
+scikit-learn

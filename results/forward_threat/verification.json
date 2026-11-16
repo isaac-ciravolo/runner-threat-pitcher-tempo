@@ -1,0 +1,10 @@
+{
+  "repository_tests_passed": 37,
+  "notebook_code_cells_executed": 6,
+  "notebook_errors": 0,
+  "reloaded_forward_predictions_verified": 211811,
+  "reloaded_development_predictions_verified": 136487,
+  "selected_policy": "identity",
+  "quarantined_rows": 61,
+  "2025_feed_manifest_exists": false
+}

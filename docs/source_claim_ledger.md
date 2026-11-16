@@ -57,3 +57,11 @@ Checked 2026-11-15. This ledger covers the feasibility audit, public-video valid
 - Feed action representation is not treated as proof that every real pickoff, step-off, or runner decision is recorded.
 - The selective 211-game opportunity table is not treated as league-representative, model-ready, or an untouched test set.
 - The project does not claim to be the first modern steal, pickoff-limit, runner-threat, or pitcher-response study.
+
+## Initial baseline evidence, 2026-11-15
+
+The executed `scripts/recorded_attempt_baseline.py` and `results/recorded_attempt_baseline/` support improved 2024 recorded-attempt prediction from frozen opening-time context and completion-time-aware runner histories relative to pooled training prevalence. High-score calibration is imperfect. This is a predictive benchmark, not a novelty, causal, action-completeness or strategy claim. Existing closest-work comparisons remain provisional pending full-text tracing. See `docs/recorded_attempt_baseline_report.md`.
+
+## Forward calibration evidence, 2026-11-15
+
+Monthly forward scores cover 211,811 training windows after warmup and chronology quarantine. Training-only selection retains identity calibration; 2024 improvement does not override it. Game 716404 reveals an incomplete prior chronology gate because the header uses a resumption timestamp. See docs/forward_threat_report.md. No causal, action-completeness or novelty claim follows.

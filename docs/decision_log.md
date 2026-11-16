@@ -50,3 +50,11 @@
 | 2026-11-15 | Pass the historical-data gate for the initial attempt baseline | All 7,289 eligible development games processed, all 413,081 windows have a chronological catcher, all history coverage is resolved since the 2022 boundary, and all chunked invariants pass | Ready to freeze and fit the initial recorded-steal-attempt baseline; no model fit in this task and 2025 remains locked |
 
 Record changes before inspecting affected outcomes. No analysis choices are preregistered merely by appearing in this repository.
+
+## 2026-11-15: Initial recorded-attempt baseline freeze
+User-directed deviation: 2022 joins 2023 for fitting; 2024 receives fixed evaluation with no tuning. See recorded_attempt_baseline_spec.md for the pre-fit denominator, predictor allowlist, two history variants, identity calibration and uncertainty policy. Preserve all original windows, including runner changes, while history counting keeps its stricter attribution rules.
+
+## 2026-11-15: Forward threat and calibration stage
+Freeze docs/forward_threat_protocol.md before execution. Preserve the primary separate-history model; monthly completion-aware fits produce raw and prospectively calibrated scores. Same-era earlier out-of-sample scores train calibration. July–October 2023 chooses only the subsequent calibration policy. 2024 is previously inspected development data; 2025 stays closed. April–June 2022 is explicit unscored warmup.
+
+Forward-stage gate found 61 rows in game 716404 with completion before reported start. Quarantine those rows from fitting/scoring; preserve them in audit output. Refit final baseline excluding them. Original baseline artifacts remain unchanged; their temporal validation is now known to be incomplete. See protocol amendment.

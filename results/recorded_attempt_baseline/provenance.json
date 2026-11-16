@@ -1,0 +1,12 @@
+{
+  "spec_sha256": "83f016bcab6c5111c9fc39ee1618cf45625f50c231fe4041cce47fad41de1d10",
+  "inputs": {
+    "2022": "6262a9193d0bd61ff74c23489f6defadc88bec95707141754a2bd740eb597ef7",
+    "2023": "cecf0c6a99189357d00fa1e419fbe0b2586193ba4f1dac5a4061ec6d66d13aae",
+    "2024": "516689561984dd7221c580333347ce6b4bcdfcc1baf8fb6861c732198a323cbe"
+  },
+  "python": "3.14.4",
+  "pandas": "3.0.2",
+  "numpy": "2.4.4",
+  "sklearn": "1.8.0"
+}

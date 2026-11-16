@@ -1,0 +1,89 @@
+split,model,subgroup,value,n,attempts,mean_prediction,observed_rate
+chronological_training_diagnostic,constant,disengagements,0,63043,741,0.014532313623560895,0.01175388227083102
+chronological_training_diagnostic,constant,disengagements,1,5687,361,0.014532313623560897,0.06347810796553544
+chronological_training_diagnostic,constant,disengagements,2,435,57,0.014532313623560897,0.1310344827586207
+chronological_training_diagnostic,constant,history_depth,"(-1.0, 0.0]",406,8,0.014532313623560897,0.019704433497536946
+chronological_training_diagnostic,constant,history_depth,"(0.0, 50.0]",3180,67,0.014532313623560897,0.021069182389937106
+chronological_training_diagnostic,constant,history_depth,"(200.0, inf]",57243,913,0.014532313623560894,0.01594954841640026
+chronological_training_diagnostic,constant,history_depth,"(50.0, 200.0]",8336,171,0.014532313623560897,0.020513435700575816
+chronological_training_diagnostic,constant,terminal,False,67274,0,0.014532313623560899,0.0
+chronological_training_diagnostic,constant,terminal,True,1891,1159,0.014532313623560895,0.6129032258064516
+chronological_training_diagnostic,constant,runner_change,False,67898,1159,0.0145323136235609,0.01706972223040443
+chronological_training_diagnostic,constant,runner_change,True,1267,0,0.014532313623560899,0.0
+chronological_training_diagnostic,context,disengagements,0,63043,741,0.012357226196007707,0.01175388227083102
+chronological_training_diagnostic,context,disengagements,1,5687,361,0.057796949729266675,0.06347810796553544
+chronological_training_diagnostic,context,disengagements,2,435,57,0.1779284390442181,0.1310344827586207
+chronological_training_diagnostic,context,history_depth,"(-1.0, 0.0]",406,8,0.017436732712190053,0.019704433497536946
+chronological_training_diagnostic,context,history_depth,"(0.0, 50.0]",3180,67,0.018781784607377866,0.021069182389937106
+chronological_training_diagnostic,context,history_depth,"(200.0, inf]",57243,913,0.016895567535484535,0.01594954841640026
+chronological_training_diagnostic,context,history_depth,"(50.0, 200.0]",8336,171,0.018134401895769703,0.020513435700575816
+chronological_training_diagnostic,context,terminal,False,67274,0,0.016660452346844955,0.0
+chronological_training_diagnostic,context,terminal,True,1891,1159,0.034009235318794705,0.6129032258064516
+chronological_training_diagnostic,context,runner_change,False,67898,1159,0.017181325538125257,0.01706972223040443
+chronological_training_diagnostic,context,runner_change,True,1267,0,0.014640168730749551,0.0
+chronological_training_diagnostic,post_history,disengagements,0,63043,741,0.012683050032674564,0.01175388227083102
+chronological_training_diagnostic,post_history,disengagements,1,5687,361,0.07138960258366805,0.06347810796553544
+chronological_training_diagnostic,post_history,disengagements,2,435,57,0.18634378129244553,0.1310344827586207
+chronological_training_diagnostic,post_history,history_depth,"(-1.0, 0.0]",406,8,0.014808725650401446,0.019704433497536946
+chronological_training_diagnostic,post_history,history_depth,"(0.0, 50.0]",3180,67,0.019310725371332035,0.021069182389937106
+chronological_training_diagnostic,post_history,history_depth,"(200.0, inf]",57243,913,0.0177570240677693,0.01594954841640026
+chronological_training_diagnostic,post_history,history_depth,"(50.0, 200.0]",8336,171,0.02432149231756474,0.020513435700575816
+chronological_training_diagnostic,post_history,terminal,False,67274,0,0.017456310525730226,0.0
+chronological_training_diagnostic,post_history,terminal,True,1891,1159,0.059372767666557975,0.6129032258064516
+chronological_training_diagnostic,post_history,runner_change,False,67898,1159,0.01868022974171864,0.01706972223040443
+chronological_training_diagnostic,post_history,runner_change,True,1267,0,0.014427386710516436,0.0
+chronological_training_diagnostic,separate_history,disengagements,0,63043,741,0.012675145053560528,0.01175388227083102
+chronological_training_diagnostic,separate_history,disengagements,1,5687,361,0.06403869912677228,0.06347810796553544
+chronological_training_diagnostic,separate_history,disengagements,2,435,57,0.16576754008247005,0.1310344827586207
+chronological_training_diagnostic,separate_history,history_depth,"(-1.0, 0.0]",406,8,0.017285356558888604,0.019704433497536946
+chronological_training_diagnostic,separate_history,history_depth,"(0.0, 50.0]",3180,67,0.021457561418160336,0.021069182389937106
+chronological_training_diagnostic,separate_history,history_depth,"(200.0, inf]",57243,913,0.01709752708912229,0.01594954841640026
+chronological_training_diagnostic,separate_history,history_depth,"(50.0, 200.0]",8336,171,0.02176217469363711,0.020513435700575816
+chronological_training_diagnostic,separate_history,terminal,False,67274,0,0.01688008313649137,0.0
+chronological_training_diagnostic,separate_history,terminal,True,1891,1159,0.05276859786204353,0.6129032258064516
+chronological_training_diagnostic,separate_history,runner_change,False,67898,1159,0.017930731669238763,0.01706972223040443
+chronological_training_diagnostic,separate_history,runner_change,True,1267,0,0.014139946806212762,0.0
+heldout_2024,constant,disengagements,0,123708,1534,0.015090710572174374,0.012400168137873056
+heldout_2024,constant,disengagements,1,11761,779,0.01509071057217437,0.06623586429725363
+heldout_2024,constant,disengagements,2,1018,149,0.015090710572174372,0.14636542239685657
+heldout_2024,constant,history_depth,"(-1.0, 0.0]",630,16,0.015090710572174376,0.025396825396825397
+heldout_2024,constant,history_depth,"(0.0, 50.0]",4705,117,0.015090710572174372,0.024867162592986186
+heldout_2024,constant,history_depth,"(200.0, inf]",118630,2011,0.015090710572174372,0.016951867149962066
+heldout_2024,constant,history_depth,"(50.0, 200.0]",12522,318,0.015090710572174372,0.02539530426449449
+heldout_2024,constant,terminal,False,132576,0,0.015090710572174372,0.0
+heldout_2024,constant,terminal,True,3911,2462,0.015090710572174372,0.6295065200715929
+heldout_2024,constant,runner_change,False,133955,2462,0.01509071057217437,0.018379306483520586
+heldout_2024,constant,runner_change,True,2532,0,0.015090710572174372,0.0
+heldout_2024,context,disengagements,0,123708,1534,0.01204972818194385,0.012400168137873056
+heldout_2024,context,disengagements,1,11761,779,0.058198081917941756,0.06623586429725363
+heldout_2024,context,disengagements,2,1018,149,0.18088666504381332,0.14636542239685657
+heldout_2024,context,history_depth,"(-1.0, 0.0]",630,16,0.01885848430800359,0.025396825396825397
+heldout_2024,context,history_depth,"(0.0, 50.0]",4705,117,0.01915728926201711,0.024867162592986186
+heldout_2024,context,history_depth,"(200.0, inf]",118630,2011,0.01706358992391329,0.016951867149962066
+heldout_2024,context,history_depth,"(50.0, 200.0]",12522,318,0.018606330986883766,0.02539530426449449
+heldout_2024,context,terminal,False,132576,0,0.0167227202931413,0.0
+heldout_2024,context,terminal,True,3911,2462,0.036365807926342024,0.6295065200715929
+heldout_2024,context,runner_change,False,133955,2462,0.017323227496089617,0.018379306483520586
+heldout_2024,context,runner_change,True,2532,0,0.01529427375384679,0.0
+heldout_2024,post_history,disengagements,0,123708,1534,0.011946404936908576,0.012400168137873056
+heldout_2024,post_history,disengagements,1,11761,779,0.06588504410065468,0.06623586429725363
+heldout_2024,post_history,disengagements,2,1018,149,0.17299471106260123,0.14636542239685657
+heldout_2024,post_history,history_depth,"(-1.0, 0.0]",630,16,0.015853178879381775,0.025396825396825397
+heldout_2024,post_history,history_depth,"(0.0, 50.0]",4705,117,0.021899252432524483,0.024867162592986186
+heldout_2024,post_history,history_depth,"(200.0, inf]",118630,2011,0.016878303675140722,0.016951867149962066
+heldout_2024,post_history,history_depth,"(50.0, 200.0]",12522,318,0.02504007595381186,0.02539530426449449
+heldout_2024,post_history,terminal,False,132576,0,0.016634770982777585,0.0
+heldout_2024,post_history,terminal,True,3911,2462,0.05714065038401758,0.6295065200715929
+heldout_2024,post_history,runner_change,False,133955,2462,0.01786151055947196,0.018379306483520586
+heldout_2024,post_history,runner_change,True,2532,0,0.014300882492317504,0.0
+heldout_2024,separate_history,disengagements,0,123708,1534,0.012222536475887554,0.012400168137873056
+heldout_2024,separate_history,disengagements,1,11761,779,0.0632137539760312,0.06623586429725363
+heldout_2024,separate_history,disengagements,2,1018,149,0.1596914016506454,0.14636542239685657
+heldout_2024,separate_history,history_depth,"(-1.0, 0.0]",630,16,0.016523585494586567,0.025396825396825397
+heldout_2024,separate_history,history_depth,"(0.0, 50.0]",4705,117,0.022586729263212073,0.024867162592986186
+heldout_2024,separate_history,history_depth,"(200.0, inf]",118630,2011,0.016954515470413756,0.016951867149962066
+heldout_2024,separate_history,history_depth,"(50.0, 200.0]",12522,318,0.02316353293813858,0.02539530426449449
+heldout_2024,separate_history,terminal,False,132576,0,0.016672672206915738,0.0
+heldout_2024,separate_history,terminal,True,3911,2462,0.05309438998913244,0.6295065200715929
+heldout_2024,separate_history,runner_change,False,133955,2462,0.017783215719379922,0.018379306483520586
+heldout_2024,separate_history,runner_change,True,2532,0,0.014177601920229085,0.0
