@@ -106,3 +106,7 @@ Before choosing a conditional-success target, freeze an all-base-state event-tag
 ## 2026-11-16: Preserve an outside-population raw disengagement discrepancy
 
 Game 746241/PA18 has raw counter 3 versus reconstructed 1 after advancement and contributes no first-only window. It was already present in original metadata. Freeze the exact source/action/count disposition, retain the mismatch, and reject any population impact or other discrepancy. Expanded pilot and regression tests pass; resume full reconstruction using unchanged parser caches.
+
+## 2026-11-16: Movement reasons reconcile credit and expose missing actions
+
+The complete movement-reason reconciliation matches SB/CS for all 151,791 player/game rows, unlike standalone event tags. Source game 663178/PA6 demonstrates an omitted pitch-attached caught stealing. Preserve the reconciliation artifacts and suspend corrected model fitting until the action parser incorporates explicit movement evidence with attribution and timing checks. Matching MLB's own box score is internal consistency, not independent video validation.

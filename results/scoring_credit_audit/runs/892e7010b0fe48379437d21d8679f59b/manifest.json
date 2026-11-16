@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "run_id": "892e7010b0fe48379437d21d8679f59b",
+  "files": {
+    "results": {
+      "disagreements.csv": "80b97a02efe7f78ed6c353b199b64743a1415887021608f8ed764bbd14e58d23",
+      "event_vocabulary.csv": "50c4412f16bc2eddded842b5fafaa6a11f8ed4690568c5a65a64965043cf7882",
+      "exceptions.csv": "d8268338b9caa3704700eeb46e6fcf4b4adc1ad8f05fa7cbad4df37f9056a2ab",
+      "provenance.json": "ff6658b278d97a18f65a3142328ba2843f63362ddafa923553794ba41da63361",
+      "source_hashes.csv": "0579d262f41bf8b560b305124817d606c3da3e0ef7c0007d9081a17c73a6e77d",
+      "summary.csv": "0460b393fe3923750febc8edf946da91fdd3c37487d436cc3356bd37cdcac775"
+    },
+    "local": {
+      "player_game_reconciliation.csv.gz": "8225b7f03495ac53ba9bede571e8078f2778466e785806f9afc043389cf33f2b"
+    }
+  }
+}

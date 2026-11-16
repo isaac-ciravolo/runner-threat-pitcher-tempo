@@ -1,0 +1,24 @@
+{
+  "environment": {
+    "python": "3.14.4",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "sklearn": "1.8.0"
+  },
+  "source_sha256": "4d088405b594e17d7b5bcbc50d83bcc2c0effc761f8c3fd8f78b3f24e9c21d42",
+  "protocol_sha256": "d61d95d6293237e98b6548740151d779b6549b7d44f529c8a47dc0afe9877aba",
+  "sb_tags": [
+    "stolen_base_2b",
+    "stolen_base_3b",
+    "stolen_base_home"
+  ],
+  "cs_tags": [
+    "caught_stealing_2b",
+    "caught_stealing_3b",
+    "caught_stealing_home",
+    "pickoff_caught_stealing_2b",
+    "pickoff_caught_stealing_3b",
+    "pickoff_caught_stealing_home"
+  ],
+  "independent_source_validation": false
+}
