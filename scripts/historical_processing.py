@@ -384,20 +384,24 @@ def _pre2023_disengagement_count(
 
 
 def build_game_opportunities(
-    manifest_row: pd.Series, feed: dict[str, Any], *, group_linked_outcomes: bool = False
+    manifest_row: pd.Series, feed: dict[str, Any], *, group_linked_outcomes: bool = False,
+    include_movement_evidence: bool = False,
 ) -> tuple[pd.DataFrame, dict[str, Any]]:
     game_pk = int(manifest_row["game_pk"])
     season = int(manifest_row["season"])
     loaded = [(parser_manifest_row(manifest_row), feed)]
     events, states = extract_events(loaded)
     sources = source_frame(manifest_row)
-    actions, _vocabulary, _inventory = build_action_audit(loaded, events, sources)
+    actions, _vocabulary, _inventory = build_action_audit(
+        loaded, events, sources, include_movement_evidence=include_movement_evidence)
     event_key_map = {}
     parser_version = PARSER_VERSION
     if group_linked_outcomes:
         from scripts.grouped_events import collapse_outcome_groups
         events, actions, event_key_map = collapse_outcome_groups(feed, events, actions)
         parser_version = 'historical_processing_v2_grouped'
+        if include_movement_evidence:
+            parser_version = 'historical_processing_v3_movement'
     windows = build_opportunity_windows(events, actions, states)
     catcher_timeline = build_catcher_timeline(feed, events)
     event_groups = {
@@ -582,10 +586,14 @@ def build_game_opportunities(
     table = pd.DataFrame(rows)
     if group_linked_outcomes and len(table):
         table['legacy_anchor_id'] = table['opportunity_id']
-        table['opportunity_id'] = table['opportunity_id'].str.replace('W-', 'G2-', n=1)
+        prefix = 'G3-' if include_movement_evidence else 'G2-'
+        table['opportunity_id'] = table['opportunity_id'].str.replace('W-', prefix, n=1)
         table['event_boundary_version'] = 'completed_linked_play_v2'
+        if include_movement_evidence:
+            table['action_evidence_version'] = 'runner_movement_v3'
     metadata = {
         "parser_version": parser_version,
+        "movement_evidence_actions": int(actions.mapping_rule.eq('explicit runner movement reason at existing event').sum()),
         "grouped_outcome_records": len(event_key_map),
         "game_pk": game_pk,
         "season": season,

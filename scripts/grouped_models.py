@@ -12,6 +12,7 @@ def main(stage):
     provenance = json.loads((histories.results / 'provenance.json').read_text())
     require(provenance['independent_history_equalities'] > 0, 'Independent history audit required')
     definition = {'event_boundary_version': 'completed_linked_play_v2',
+                  'action_evidence_version': 'runner_movement_v3',
                   'history_availability_field': 'history_available_after_utc',
                   'grouped_history_manifest_sha256': sha256_file(histories.results / 'manifest.json'),
                   'repair_protocol_sha256': sha256_file(ROOT / 'docs/grouped_event_repair_protocol.md'),

@@ -45,6 +45,7 @@ def main():
     rebuilt = resolve_run(ROOT / 'results/grouped_event_rebuild', ROOT / 'data/processed/grouped_event_rebuild')
     metadata = pd.read_csv(rebuilt.results / 'games.csv')
     require(len(metadata) == 7289 and metadata.game_pk.is_unique, 'Incomplete full rebuild')
+    require(metadata.parser_version.eq('historical_processing_v3_movement').all(), 'Movement completion required before histories')
     audit_path = ROOT / 'results/chronology_repair/game_chronology_audit.csv'
     timing_path = ROOT / 'results/chronology_repair/timing_dispositions.csv'
     audit = pd.read_csv(audit_path)
@@ -100,7 +101,7 @@ def main():
         if index % 1000 == 0:
             print(f'Built grouped histories for {index}/7289 games', flush=True)
     data = pd.concat(finished, ignore_index=True)
-    require(data.opportunity_id.is_unique and data.opportunity_id.str.startswith('G2-').all(), 'Versioned key mismatch')
+    require(data.opportunity_id.is_unique and data.opportunity_id.str.startswith('G3-').all(), 'Versioned key mismatch')
     for suffix in SUFFIXES:
         require(data[f'runner_prior_all_regimes_{suffix}'].eq(
             data[f'runner_prior_pre_2023_{suffix}'] + data[f'runner_prior_post_2023_{suffix}']).all(), 'Era accounting')

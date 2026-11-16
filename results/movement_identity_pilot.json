@@ -1,0 +1,17 @@
+{
+  "pilot_manifest_sha256": "093bd84051ec2e0460695435227a5d29e410fc5f50b53b1c421cd9b4ab81c4ad",
+  "counts": {
+    "windows": 16258,
+    "response_actions": 1932,
+    "explicit_links": 537,
+    "attempts": 401,
+    "eligible_movement_checks": 486,
+    "outside_risk_movements": 331,
+    "identity_changes": 164,
+    "additional_history_exclusions": 221
+  },
+  "source_sha256": {
+    "opening_identities.py": "813076aed598a5a7123517c349fed19ecd18f89f2f9689aabd895a16bbfb09ff",
+    "verify_response_boundaries.py": "161294b4c70c04d26a0485dec25f1a7d4ca939a4caf78575041109155b5161c1"
+  }
+}

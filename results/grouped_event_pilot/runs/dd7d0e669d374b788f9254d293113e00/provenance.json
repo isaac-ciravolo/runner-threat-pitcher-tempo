@@ -1,0 +1,25 @@
+{
+  "environment": {
+    "python": "3.14.4",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "sklearn": "1.8.0"
+  },
+  "source_hashes": {
+    "scripts/rebuild_grouped_events.py": "7a9aef68c31a591a0cf6bd56290f50d75bef5282ef744068424c51a0dca6b36f",
+    "scripts/grouped_events.py": "a4ab248cf2fd8f2272fbdef1e9e6cd23d957464ed227340f02e960cb7e66bbd5",
+    "scripts/historical_processing.py": "9ca0ca3e8d63031f1250616c5f2ccf39f51465ebd99c54df869e0a85b0f1f2c7",
+    "scripts/audit_feeds.py": "b40038ff4b345625fc2f08e9d97305d7b628c5893a0e3b86dda4286954b646f5",
+    "scripts/runner_control_audit.py": "08bcf3b6f4e02b006c6d43f73483dc7dcd89ef05ca3fa99d5e1d7993cdb505e8",
+    "scripts/prepare_opportunity_dataset.py": "809d111853ffe55fb7b7fe6f01c449ef67e591113e266e11fc8b6433845c60d5",
+    "scripts/movement_evidence.py": "12aa36320cd3e037b764185d03781186f47e201c9ceaccec1b01e7028317433a"
+  },
+  "cache_signature": "2fdc6fa2465f95d2",
+  "spec_sha256": "997c4907fd8e3944e71bea14d87dfeeaa3c09937a756bfff85a17bece6d3b1ea",
+  "inventory_manifest_sha256": "2b5d514c0cf083b5408d86d6ff0460701995ccdad60a3b56b036ee1b5fe7ff90",
+  "games": 276,
+  "full_development_rebuild": false,
+  "movement_complete": true,
+  "unaffected_parent_manifest_sha256": "1d414af139b2d9a4d69d34b0ce669a67a0e3ddd05a935b856b7493b3c01b29c2",
+  "movement_inventory_manifest_sha256": "ea08d2063567a6f3a8b68c4d7784c64bc54038ac3f4209161c216a9e0a9e99ad"
+}

@@ -249,6 +249,7 @@ def build_action_audit(
     loaded: list[tuple[pd.Series, dict[str, Any]]],
     events: pd.DataFrame,
     sources: pd.DataFrame,
+    *, include_movement_evidence: bool = False,
 ) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """Return tidy action rows plus candidate vocabulary and event-type inventories."""
     event_lookup = events.set_index("event_key", drop=False)
@@ -274,6 +275,19 @@ def build_action_audit(
                 index = event.get("index")
                 tied = movements_by_index.get(index, [])
                 action_type, initiator, mapping_rule, confidence = _mapping_for_event(event)
+                from_movement = False
+                if include_movement_evidence and action_type is None:
+                    from scripts.movement_evidence import movement_evidence
+                    from scripts.pipeline_validation import require
+                    kinds, paths = movement_evidence(tied)
+                    require(len(kinds) <= 1, f'Mixed movement action classes: {game_pk}/{pa}/{index}')
+                    if kinds:
+                        action_type = next(iter(kinds))
+                        initiator = {'steal_attempt': 'runner', 'balk': 'pitcher'}.get(action_type)
+                        mapping_rule = 'explicit runner movement reason at existing event'
+                        confidence = 'high'
+                        tied = paths
+                        from_movement = True
                 inventory_rows.append(
                     {
                         "game_pk": game_pk,
@@ -354,6 +368,8 @@ def build_action_audit(
                         action_type, movement_set
                     )
                     suffix = f"r{subindex}" if len(movement_sets) > 1 else "e"
+                    if from_movement:
+                        suffix = 'm' + suffix
                     source = source_lookup.loc[game_pk]
                     action_rows.append(
                         {
@@ -413,6 +429,31 @@ def build_action_audit(
                             "known_state_conflict": game_pk == CONFLICT_GAME and pa == CONFLICT_PA,
                         }
                     )
+
+                # A pickoff/step-off and a steal outcome can share one raw event.
+                # Preserve the defensive action and add the runner action once.
+                if include_movement_evidence and action_type in {'pickoff_throw', 'step_off'}:
+                    from scripts.movement_evidence import movement_action_type
+                    steal_actors = {_value(item, 'details', 'runner', 'id') for item in tied
+                                    if movement_action_type(_value(item, 'details', 'movementReason')) == 'steal_attempt'}
+                    actor_paths = [item for item in tied if _value(item, 'details', 'runner', 'id') in steal_actors]
+                    for path in _movement_groups(actor_paths):
+                        actor = _value(path[0], 'details', 'runner', 'id')
+                        from scripts.pipeline_validation import require
+                        require(actor is not None, 'Movement steal lacks actor identity')
+                        outcome, runner_out, safe_return, advance, error, no_movement = _outcome('steal_attempt', path)
+                        supplement = action_rows[-1].copy()
+                        supplement.update(
+                            action_id=f'A-{game_pk}-{pa}-{int(index)}-ms{actor}',
+                            action_type='steal_attempt', initiator_role='runner',
+                            runner_id=actor, runner_name=people.get(int(actor)),
+                            target_base=_base_from_suffix(_value(path[0], 'details', 'eventType')),
+                            outcome_type=outcome, runner_out=runner_out, safe_return=safe_return,
+                            runner_advance=advance, error_flag=error, no_recorded_movement=no_movement,
+                            movement_event_types=_joined(_value(item, 'details', 'eventType') for item in path),
+                            mapping_rule='explicit runner movement reason at existing event',
+                            identity_confidence='high', classification_confidence='high')
+                        action_rows.append(supplement)
 
             # Runner movements with no classified play event remain explicit candidates.
             for index, movements in movements_by_index.items():

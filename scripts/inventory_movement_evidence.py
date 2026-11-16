@@ -26,13 +26,14 @@ def main():
             for item in play.get('runners', []):
                 movements.setdefault(item.get('details', {}).get('playIndex'), []).append(item)
             for event in play.get('playEvents', []):
-                if _mapping_for_event(event)[0] is not None:
-                    continue
+                mapped = _mapping_for_event(event)[0]
                 kinds, paths = movement_evidence(movements.get(event['index'], []))
+                kinds = kinds - {mapped}
                 if kinds:
                     records.append(dict(game_pk=row.game_pk, season=row.season,
                                         at_bat_index=play['about']['atBatIndex'], event_index=event['index'],
                                         record_type=event.get('type'), is_pitch=event.get('isPitch', False),
+                                        mapped_action_type=mapped,
                                         action_types='|'.join(sorted(kinds)),
                                         actors=len({item['details']['runner']['id'] for item in paths})))
         if index % 1000 == 0:

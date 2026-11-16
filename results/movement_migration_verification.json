@@ -1,0 +1,377 @@
+{
+  "parent_manifest_sha256": "1d414af139b2d9a4d69d34b0ce669a67a0e3ddd05a935b856b7493b3c01b29c2",
+  "inventory_manifest_sha256": "247a9d49d658e14496dcd0bb238cb4367aee417bfe3b4f94f5490e73eb18e25d",
+  "source_hashes": {
+    "scripts/rebuild_grouped_events.py": "4897f82228bdb3c4cf87f284d61f296a1dd8142cf868ee7f441d800b93b99a94",
+    "scripts/grouped_events.py": "a4ab248cf2fd8f2272fbdef1e9e6cd23d957464ed227340f02e960cb7e66bbd5",
+    "scripts/historical_processing.py": "9ca0ca3e8d63031f1250616c5f2ccf39f51465ebd99c54df869e0a85b0f1f2c7",
+    "scripts/audit_feeds.py": "b40038ff4b345625fc2f08e9d97305d7b628c5893a0e3b86dda4286954b646f5",
+    "scripts/runner_control_audit.py": "9da5b3a2d90f0312b47b59a043fd59a6586512e37c6ae0a23ba8a2d3eb5babb1",
+    "scripts/prepare_opportunity_dataset.py": "809d111853ffe55fb7b7fe6f01c449ef67e591113e266e11fc8b6433845c60d5",
+    "scripts/movement_evidence.py": "12aa36320cd3e037b764185d03781186f47e201c9ceaccec1b01e7028317433a"
+  },
+  "games": 60,
+  "windows": 3256,
+  "checks": [
+    {
+      "game_pk": 661153,
+      "season": 2022,
+      "windows": 55,
+      "columns": 77
+    },
+    {
+      "game_pk": 663423,
+      "season": 2022,
+      "windows": 50,
+      "columns": 77
+    },
+    {
+      "game_pk": 662358,
+      "season": 2022,
+      "windows": 39,
+      "columns": 77
+    },
+    {
+      "game_pk": 661182,
+      "season": 2022,
+      "windows": 43,
+      "columns": 77
+    },
+    {
+      "game_pk": 661371,
+      "season": 2022,
+      "windows": 35,
+      "columns": 77
+    },
+    {
+      "game_pk": 661814,
+      "season": 2022,
+      "windows": 76,
+      "columns": 77
+    },
+    {
+      "game_pk": 662771,
+      "season": 2022,
+      "windows": 74,
+      "columns": 77
+    },
+    {
+      "game_pk": 661299,
+      "season": 2022,
+      "windows": 47,
+      "columns": 77
+    },
+    {
+      "game_pk": 661795,
+      "season": 2022,
+      "windows": 53,
+      "columns": 77
+    },
+    {
+      "game_pk": 661616,
+      "season": 2022,
+      "windows": 52,
+      "columns": 77
+    },
+    {
+      "game_pk": 661783,
+      "season": 2022,
+      "windows": 53,
+      "columns": 77
+    },
+    {
+      "game_pk": 661147,
+      "season": 2022,
+      "windows": 66,
+      "columns": 77
+    },
+    {
+      "game_pk": 662883,
+      "season": 2022,
+      "windows": 70,
+      "columns": 77
+    },
+    {
+      "game_pk": 661597,
+      "season": 2022,
+      "windows": 68,
+      "columns": 77
+    },
+    {
+      "game_pk": 662276,
+      "season": 2022,
+      "windows": 66,
+      "columns": 77
+    },
+    {
+      "game_pk": 662900,
+      "season": 2022,
+      "windows": 54,
+      "columns": 77
+    },
+    {
+      "game_pk": 662238,
+      "season": 2022,
+      "windows": 48,
+      "columns": 77
+    },
+    {
+      "game_pk": 663024,
+      "season": 2022,
+      "windows": 50,
+      "columns": 77
+    },
+    {
+      "game_pk": 662559,
+      "season": 2022,
+      "windows": 67,
+      "columns": 77
+    },
+    {
+      "game_pk": 661328,
+      "season": 2022,
+      "windows": 48,
+      "columns": 77
+    },
+    {
+      "game_pk": 716543,
+      "season": 2023,
+      "windows": 35,
+      "columns": 77
+    },
+    {
+      "game_pk": 718440,
+      "season": 2023,
+      "windows": 63,
+      "columns": 77
+    },
+    {
+      "game_pk": 716896,
+      "season": 2023,
+      "windows": 67,
+      "columns": 77
+    },
+    {
+      "game_pk": 717201,
+      "season": 2023,
+      "windows": 49,
+      "columns": 77
+    },
+    {
+      "game_pk": 716900,
+      "season": 2023,
+      "windows": 66,
+      "columns": 77
+    },
+    {
+      "game_pk": 717459,
+      "season": 2023,
+      "windows": 65,
+      "columns": 77
+    },
+    {
+      "game_pk": 718271,
+      "season": 2023,
+      "windows": 52,
+      "columns": 77
+    },
+    {
+      "game_pk": 718498,
+      "season": 2023,
+      "windows": 58,
+      "columns": 77
+    },
+    {
+      "game_pk": 717885,
+      "season": 2023,
+      "windows": 72,
+      "columns": 77
+    },
+    {
+      "game_pk": 718280,
+      "season": 2023,
+      "windows": 76,
+      "columns": 77
+    },
+    {
+      "game_pk": 717955,
+      "season": 2023,
+      "windows": 44,
+      "columns": 77
+    },
+    {
+      "game_pk": 717580,
+      "season": 2023,
+      "windows": 64,
+      "columns": 77
+    },
+    {
+      "game_pk": 716689,
+      "season": 2023,
+      "windows": 55,
+      "columns": 77
+    },
+    {
+      "game_pk": 717403,
+      "season": 2023,
+      "windows": 48,
+      "columns": 77
+    },
+    {
+      "game_pk": 716791,
+      "season": 2023,
+      "windows": 74,
+      "columns": 77
+    },
+    {
+      "game_pk": 718334,
+      "season": 2023,
+      "windows": 51,
+      "columns": 77
+    },
+    {
+      "game_pk": 717806,
+      "season": 2023,
+      "windows": 53,
+      "columns": 77
+    },
+    {
+      "game_pk": 716829,
+      "season": 2023,
+      "windows": 52,
+      "columns": 77
+    },
+    {
+      "game_pk": 717638,
+      "season": 2023,
+      "windows": 69,
+      "columns": 77
+    },
+    {
+      "game_pk": 717456,
+      "season": 2023,
+      "windows": 63,
+      "columns": 77
+    },
+    {
+      "game_pk": 744839,
+      "season": 2024,
+      "windows": 84,
+      "columns": 77
+    },
+    {
+      "game_pk": 745992,
+      "season": 2024,
+      "windows": 48,
+      "columns": 77
+    },
+    {
+      "game_pk": 746025,
+      "season": 2024,
+      "windows": 55,
+      "columns": 77
+    },
+    {
+      "game_pk": 744866,
+      "season": 2024,
+      "windows": 62,
+      "columns": 77
+    },
+    {
+      "game_pk": 744922,
+      "season": 2024,
+      "windows": 51,
+      "columns": 77
+    },
+    {
+      "game_pk": 746586,
+      "season": 2024,
+      "windows": 14,
+      "columns": 77
+    },
+    {
+      "game_pk": 746278,
+      "season": 2024,
+      "windows": 55,
+      "columns": 77
+    },
+    {
+      "game_pk": 746276,
+      "season": 2024,
+      "windows": 71,
+      "columns": 77
+    },
+    {
+      "game_pk": 746731,
+      "season": 2024,
+      "windows": 50,
+      "columns": 77
+    },
+    {
+      "game_pk": 746391,
+      "season": 2024,
+      "windows": 37,
+      "columns": 77
+    },
+    {
+      "game_pk": 746098,
+      "season": 2024,
+      "windows": 47,
+      "columns": 77
+    },
+    {
+      "game_pk": 746082,
+      "season": 2024,
+      "windows": 48,
+      "columns": 77
+    },
+    {
+      "game_pk": 745351,
+      "season": 2024,
+      "windows": 43,
+      "columns": 77
+    },
+    {
+      "game_pk": 745661,
+      "season": 2024,
+      "windows": 44,
+      "columns": 77
+    },
+    {
+      "game_pk": 745881,
+      "season": 2024,
+      "windows": 49,
+      "columns": 77
+    },
+    {
+      "game_pk": 745277,
+      "season": 2024,
+      "windows": 61,
+      "columns": 77
+    },
+    {
+      "game_pk": 745017,
+      "season": 2024,
+      "windows": 23,
+      "columns": 77
+    },
+    {
+      "game_pk": 745579,
+      "season": 2024,
+      "windows": 16,
+      "columns": 77
+    },
+    {
+      "game_pk": 745607,
+      "season": 2024,
+      "windows": 52,
+      "columns": 77
+    },
+    {
+      "game_pk": 747061,
+      "season": 2024,
+      "windows": 56,
+      "columns": 77
+    }
+  ]
+}

@@ -25,3 +25,9 @@ The final expanded pilot, run 487a2bc8863e438ca57473dcfce8fe66, covers 263 games
 ## Outside-population raw counter discrepancy
 
 The subsequent full run stopped on game 746241/PA18, also flagged in the archived original processing metadata. Raw review confirmed a feed counter of 3 versus a rule-based count of 1 after an advancement, with zero first-only windows anywhere in that PA. Retain the mismatch and its exact, fail-closed disposition. The 264-game pilot (fa40810c5a394dc59096cd20ca9cd1a5) adds this game; its 31 eligible windows outside PA18 pass independent response and opening-identity checks. See results/disengagement_disposition_audit.json. No parser dependency or existing cached table changed.
+
+## Movement-complete G3 pilot
+
+The expanded inventory identifies 1,923 omitted action records in 1,695 games, including 18 runner actions sharing an already classified defensive event. The 293-game pilot a84ee3177dee4ab98e587ce8efe7137b covers every such shared event, all newly recovered pickoff cases, prior grouping exceptions and ordinary cases. All 16,258 windows pass independent boundaries and opening identities: 1,932 response actions, 401 attempt records and 486 eligible movement-coverage checks. The identity pass changes 164 opening pitchers and adds 221 history exclusions.
+
+A seeded 20-game-per-season sample of unaffected games was fully reparsed: all columns match migrated G2 tables exactly across 3,256 windows after version/ID normalization. The full driver refuses migration without matching source, parent and inventory hashes in this verification. All 102 tests pass. These gates permit full G3 reconstruction; they do not promote model findings or clear external measurement validation.

@@ -32,3 +32,23 @@ class ResponseBoundaryTests(unittest.TestCase):
         frame, feed = self.fixture()
         with self.assertRaisesRegex(ValidationError, 'assigned twice'):
             verify_response_boundaries(pd.concat([frame, frame]), feed)
+
+    def test_pitch_attached_movement_has_its_own_source_check(self):
+        frame, feed = self.fixture()
+        play = feed['liveData']['plays']['allPlays'][0]
+        play['playEvents'] = play['playEvents'][:1]
+        play['runners'] = [{'details': {'playIndex': 0, 'movementReason': 'r_caught_stealing_2b'}}]
+        frame.loc[0, 'response_action_ids'] = 'A-1-0-0-me'
+        self.assertEqual(verify_response_boundaries(frame, feed)['attempts'], 1)
+        play['runners'][0]['details']['movementReason'] = 'r_adv_play'
+        with self.assertRaisesRegex(ValidationError, 'Attempt record accounting'):
+            verify_response_boundaries(frame, feed)
+
+    def test_unlabeled_eligible_movement_blocks_promotion(self):
+        frame, feed = self.fixture()
+        frame.loc[0, 'response_action_ids'] = ''
+        frame.loc[0, 'recorded_steal_attempt_record_count'] = 0
+        feed['liveData']['plays']['allPlays'][0]['runners'] = [
+            {'details': {'playIndex': 0, 'movementReason': 'r_caught_stealing_2b'}}]
+        with self.assertRaisesRegex(ValidationError, 'missing from response'):
+            verify_response_boundaries(frame, feed)

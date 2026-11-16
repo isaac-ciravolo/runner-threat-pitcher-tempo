@@ -110,3 +110,7 @@ Game 746241/PA18 has raw counter 3 versus reconstructed 1 after advancement and 
 ## 2026-11-16: Movement reasons reconcile credit and expose missing actions
 
 The complete movement-reason reconciliation matches SB/CS for all 151,791 player/game rows, unlike standalone event tags. Source game 663178/PA6 demonstrates an omitted pitch-attached caught stealing. Preserve the reconciliation artifacts and suspend corrected model fitting until the action parser incorporates explicit movement evidence with attribution and timing checks. Matching MLB's own box score is internal consistency, not independent video validation.
+
+## 2026-11-16: G3 movement completion passes the expanded gate
+
+Preserve original defensive actions and recover runner-specific movement evidence, including 18 shared defensive/runner records. The 293-game joint pilot and independent 60-game unaffected-cache equivalence pass; 102 tests pass. Use verified migration only outside the complete affected-game inventory. Rebuild histories and refit frozen models only after the full G3 source-coverage checks pass.
