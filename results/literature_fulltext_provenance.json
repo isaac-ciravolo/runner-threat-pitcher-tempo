@@ -1,0 +1,20 @@
+{
+  "source": "Sloan conference full paper",
+  "url": "https://cdn.prod.website-files.com/68d6be744d7efccc2207f571/699f0e3e80001764ac31e6ff_The%20Pitcher%27s%20Dilemma_%20A%20Game-Theoretical%20Model%20of%20Pickoffs%20and%20Stolen%20Bases.pdf",
+  "cache_path": "data/raw/literature/melville_sloan.pdf",
+  "sha256": "318aa4854487a9deea8ee5863d4ee937d0f6f4908e4d03b0e22c8dc91e7a046a",
+  "bytes": 1320947,
+  "cache_written_utc": "2026-11-16T05:31:41.536777+00:00",
+  "pages": 24,
+  "reviewed_sections": [
+    "1",
+    "2.2",
+    "2.3",
+    "2.4",
+    "2.5",
+    "3",
+    "References"
+  ],
+  "review_scope": "methods and references, not independent replication",
+  "model_environment_unchanged": true
+}

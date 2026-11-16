@@ -82,3 +82,7 @@ Explicit source links associate 6,477 of 6,636 recorded attempts with a pitch at
 ## 2026-11-16: Completed-play grouping repair pilot
 
 Freeze grouped_event_repair_protocol.md and inventory all 7,289 development feeds. Group exact-linked outcome records and associated catcher throws at completed-play boundaries; retain two outside-risk-set missing links explicitly. The 161-game pilot removes 281 artificial windows while preserving 179 attempts and 637 pitcher-pickoff windows. Audit passed and new G2 identifiers prevent accidental old-score joins. Full reconstruction and history verification must precede refitting. Preserve exact result-file bytes in Git for manifest portability.
+
+## 2026-11-16: Expanded full-text comparison during reconstruction
+
+Recovered and inspected the Sloan PDF methods/references through its public download link. Traced its pickoff component to the Powers project and inspected Downey/McGarrity's public 2015 data appendix, including a prior runner-quality predictor of pickoff response. This strengthens the restriction on novelty claims. Price and other full-text gaps remain unresolved. See closest_work_methods_audit.md and the checksummed literature provenance.
