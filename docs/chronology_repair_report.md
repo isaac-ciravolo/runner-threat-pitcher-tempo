@@ -1,5 +1,7 @@
 # Chronology repair and response-stage readiness
 
+**Superseded prediction boundary (2026-11-16):** The archived results below use the earlier within-play window definition. The action-to-pitch audit invalidated its prospective interpretation. Preserve these records for provenance; use the grouped-event reconstruction and subsequent verified reports for current findings. Between-game chronology checks alone do not repair within-play leakage.
+
 Completed 2026-11-15 after committing the prior milestone as `dbd03f1`. The chronology defect was broader than the original 61-row quarantine: repaired histories differ in 1,253 windows across 55 games. The repair preserves all 413,081 opportunity IDs, labels, action attribution, catcher assignments and eligibility rules. Original tables and results remain unchanged; corrected data and models occupy separate paths.
 
 ## Audit and timing decisions

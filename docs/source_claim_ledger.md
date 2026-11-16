@@ -1,5 +1,7 @@
 # Source and claim ledger
 
+**Superseded prediction boundary (2026-11-16):** The archived results below use the earlier within-play window definition. The action-to-pitch audit invalidated its prospective interpretation. Preserve these records for provenance; use the grouped-event reconstruction and subsequent verified reports for current findings. Between-game chronology checks alone do not repair within-play leakage.
+
 Checked 2026-11-15. This ledger covers the feasibility audit, public-video validation setup, aggregate tempo benchmark, runner-control action audit, opportunity-dataset preparation, and historical development pipeline. It does not establish an originality claim; the targeted prior-work review still requires full reference tracing before submission.
 
 | Source | Claim used in this audit | Evidence type | Limitation / boundary |
@@ -69,3 +71,7 @@ Monthly forward scores cover 211,811 training windows after warmup and chronolog
 ## Chronology-v2 evidence, 2026-11-15
 
 Checksum-verified audit of all 7,289 cached development feeds identifies 25 timing edge cases and 303 schedule edge games. The repaired histories preserve labels and change 1,253 rows across 55 games, verified against independent batch sums for 34 games. The corrected threat handoff supplies 211,818 training scores. See docs/chronology_repair_report.md. Availability remains a retrospective proxy with declared conservative exceptions, not a verified real-time publication timestamp. The official source for game 716404's disposition is [MLB](https://www.mlb.com/amp/news/marlins-mets-suspended-game-will-not-be-played.html); cached original/resumption metadata and retained innings are separate feed evidence. No causal or novelty claim follows.
+
+## Closest-work corrections, 2026-11-16
+
+The reviewed Sloan methods overlap in strategic pickoff/steal modeling; Downey/McGarrity's 2015 public appendix already includes runner quality in a pickoff-response analysis. Turocy's author-posted 2014 revision directly models runner threat, defensive attention and batter performance. These findings restrict, rather than establish, novelty. See [versioned full-text evidence and access gaps](closest_work_methods_audit.md). No modern causal or actionable strategy result follows from these comparisons.

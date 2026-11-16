@@ -1,5 +1,7 @@
 # Initial recorded-steal-attempt baseline
 
+**Superseded prediction boundary (2026-11-16):** The archived results below use the earlier within-play window definition. The action-to-pitch audit invalidated its prospective interpretation. Preserve these records for provenance; use the grouped-event reconstruction and subsequent verified reports for current findings. Between-game chronology checks alone do not repair within-play leakage.
+
 Executed 2026-11-15 from checkpoint `4af9c1d`. Opening-time context and completion-time-aware runner histories improve recorded-attempt prediction in 2024 relative to pooled training prevalence. The primary separate-history model is not well calibrated across the entire probability range. These results support continued predictive research, not a recommendation to increase or decrease pitcher attention.
 
 ## Checkpoint and sample

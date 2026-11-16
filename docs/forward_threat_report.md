@@ -1,5 +1,7 @@
 # Forward threat and calibration results
 
+**Superseded prediction boundary (2026-11-16):** The archived results below use the earlier within-play window definition. The action-to-pitch audit invalidated its prospective interpretation. Preserve these records for provenance; use the grouped-event reconstruction and subsequent verified reports for current findings. Between-game chronology checks alone do not repair within-play leakage.
+
 Executed 2026-11-15. Monthly forward prediction produced 211,811 scored training windows. Recalibration did not meet the frozen training-period adoption rule, so the selected policy remains identity (raw probabilities). This is a useful negative finding: simple recalibration cannot be assumed to improve both scoring rules prospectively. The scores are now available for a separately frozen pitcher-response analysis; they are not calibrated strategic recommendations.
 
 ## Protocol and population
