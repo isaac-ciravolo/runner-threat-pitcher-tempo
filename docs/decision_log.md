@@ -122,3 +122,7 @@ Verified all 7,289 game outputs: 403,611 windows, 8,141 attempt windows and 26,6
 ## 2026-11-16: G3 histories pass independent validation
 
 The complete history run passes 5,562 independent equalities across 35 reference games and all-game raw response coverage. Correct 3,754 opening pitcher assignments; remove 5,391 additional history contributions without dropping prediction windows. Commit reviewed notebook 10 and immutable artifacts before refitting frozen models. Keep 2025 closed.
+
+## 2026-11-16: Corrected baseline verified
+
+Frozen G3 baseline fits pass saved-model and metric reload checks. Preserve exact CSV prediction floats during independent metric verification because average precision is tie-sensitive. Document development calibration overconfidence and retain unchanged forward-scoring specifications; 2025 remains closed.

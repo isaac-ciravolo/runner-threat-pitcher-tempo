@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "run_id": "1a46c4a2ee9b44d6901f6e197448659d",
+  "files": {
+    "results": {
+      "calibration.csv": "8b7e2701d61a62373921b6608fac199dbc21972eacfbaf2f9867f3f46105a838",
+      "context_missingness.csv": "3df1971e4a959231920d03eb5d138e8bae410722208d6042589e7172a3dd6b78",
+      "game_bootstrap.csv": "d004af0b12c1666017d0f9515487290bca5ea0dc6360e6dc9e69c5bf2af470a5",
+      "metrics.csv": "f689579d7461437aa332fb17b56d1aaaaa1dd9faadbc87d9bddce8d75ab119c9",
+      "provenance.json": "1a935e60e9018a852e9b79b8605e9b3f927a59d740c04d1577648b3b6b18dd72",
+      "sample_flow.csv": "e7dfbb7b049606fa3dd1f407523b9181636353f6702c4bb60fba4fc0c0148152",
+      "subgroups.csv": "a05045e6262baa9cfd5a61411c109517e2f48c753ed2838af76f83c94a52773c"
+    },
+    "local": {
+      "chronological_training_diagnostic_predictions.csv.gz": "c4096f864afdd8f382c8463192b75ce3ae15c55a19a93a44536fb3a428b04c56",
+      "constant.joblib": "2ff72a21857937e79c636cbe529fc7dc2295ee94406982af9f7d77a0b40fdf11",
+      "context.joblib": "c9539a5e83e7c52ff8fb1a186e98de5ce9f8e4dfd11198930fb44675446aaed9",
+      "heldout_2024_predictions.csv.gz": "321e382670210f523c767317e5d255d7896bf60982bb10a7b55074205b2616ac",
+      "post_history.joblib": "cb3868afb9c471e2cf863a73429002203617ed98bc70f8d29998d828d6e32242",
+      "separate_history.joblib": "ba68a8070e2075b6c42f3adae8221c4a81fd915c426ce1c78bf62c7d45689003"
+    }
+  }
+}

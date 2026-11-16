@@ -30,7 +30,7 @@ def main(stage):
             comparisons += 1
 
     if stage == 'forward':
-        scores = pd.read_csv(run.local / 'training_forward_scores.csv.gz')
+        scores = pd.read_csv(run.local / 'training_forward_scores.csv.gz', float_precision='round_trip')
         require(set(scores.opportunity_id) == set(data[data.season.le(2023)].index), 'Training score coverage')
         for origin, group in scores[scores.raw.notna()].groupby('origin'):
             bundle = joblib.load(run.local / f'model_{pd.Timestamp(origin):%Y_%m}.joblib')
@@ -40,7 +40,7 @@ def main(stage):
             np.testing.assert_allclose(p, group.raw, rtol=1e-12, atol=1e-14)
             np.testing.assert_allclose(q, group.prospective_calibrated, rtol=1e-12, atol=1e-14)
             reloaded += len(group)
-        development = pd.read_csv(run.local / 'development_2024_scores.csv.gz')
+        development = pd.read_csv(run.local / 'development_2024_scores.csv.gz', float_precision='round_trip')
         require(set(development.opportunity_id) == set(data[data.season.eq(2024)].index), 'Development coverage')
         bundle = joblib.load(run.local / 'final_bundle.joblib')
         p = predict(bundle['base'], data.loc[development.opportunity_id])
@@ -69,7 +69,7 @@ def main(stage):
             TARGET = LABEL
         for row in table.to_dict('records'):
             stem = row['split'] + ('_' + row['variant'] if stage == 'response' else '')
-            saved = pd.read_csv(run.local / f'{stem}_predictions.csv.gz')
+            saved = pd.read_csv(run.local / f'{stem}_predictions.csv.gz', float_precision='round_trip')
             frame = data.loc[saved.opportunity_id]
             require(np.array_equal(saved[TARGET].to_numpy(), frame[TARGET].to_numpy()), 'Saved target mismatch')
             compare_metrics(row, saved[row['model']], saved[TARGET])
