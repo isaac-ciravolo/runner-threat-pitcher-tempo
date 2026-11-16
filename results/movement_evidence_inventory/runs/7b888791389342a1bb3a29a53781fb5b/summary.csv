@@ -1,0 +1,13 @@
+season,record_type,is_pitch,action_types,records,games
+2022,action,False,pickoff_throw,1,1
+2022,action,False,steal_attempt,1,1
+2022,no_pitch,False,pickoff_throw,2,2
+2022,no_pitch,False,steal_attempt,20,20
+2022,pitch,True,steal_attempt,547,490
+2023,action,False,steal_attempt,1,1
+2023,no_pitch,False,steal_attempt,17,17
+2023,pitch,True,steal_attempt,611,529
+2024,no_pitch,False,pickoff_throw,2,2
+2024,no_pitch,False,steal_attempt,22,22
+2024,pitch,True,pickoff_throw,2,2
+2024,pitch,True,steal_attempt,679,605

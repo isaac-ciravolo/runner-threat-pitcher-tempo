@@ -1,0 +1,12 @@
+{
+  "environment": {
+    "python": "3.14.4",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "sklearn": "1.8.0"
+  },
+  "script_sha256": "e9c849f3209db0bf946535952511c290c89c7cf824b6a7ecd788c15166c8b280",
+  "helper_sha256": "12aa36320cd3e037b764185d03781186f47e201c9ceaccec1b01e7028317433a",
+  "games": 7289,
+  "classifier_sha256": "ec654d47289444f8006d23615be358a1f9085e0ddef0598bd1f367bc89758a21"
+}
