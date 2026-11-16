@@ -1,0 +1,2 @@
+# Published research manifests hash exact bytes; preserve their line endings.
+results/** -text

@@ -78,3 +78,7 @@ Audited all 413,081 corrected windows and 6,636 recorded attempts. One runner-ch
 ## 2026-11-16: Suspend prospective claims after within-play timing audit
 
 Explicit source links associate 6,477 of 6,636 recorded attempts with a pitch at/before the existing feature cutoff. A corroborating runnerGoing example demonstrates retrospective target assignment. Prior between-game chronology validation did not cover this. Preserve all artifacts, suspend the prospective interpretation of attempt/threat/response findings, and repair grouped pitch outcomes and base states before refitting. See action_pitch_link_audit_report.md.
+
+## 2026-11-16: Completed-play grouping repair pilot
+
+Freeze grouped_event_repair_protocol.md and inventory all 7,289 development feeds. Group exact-linked outcome records and associated catcher throws at completed-play boundaries; retain two outside-risk-set missing links explicitly. The 161-game pilot removes 281 artificial windows while preserving 179 attempts and 637 pitcher-pickoff windows. Audit passed and new G2 identifiers prevent accidental old-score joins. Full reconstruction and history verification must precede refitting. Preserve exact result-file bytes in Git for manifest portability.

@@ -1,0 +1,16 @@
+{
+  "environment": {
+    "python": "3.14.4",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "sklearn": "1.8.0"
+  },
+  "spec_sha256": "6f0115b5d39e0884945948442a6b63648a8c27fcb28b04326f15ab119cbacee0",
+  "source_hashes": {
+    "scripts/inventory_grouped_events.py": "81c5f63e9112280be36f22565080a86630dd6a0edd71bf53523cfdd1d71967bb",
+    "scripts/grouped_events.py": "d82efb8c07a510074f3e89ad353de3a3cbcf99b58178f13aeb0bae92cb5bc433"
+  },
+  "games": 7289,
+  "mapped_records": 18530,
+  "exceptions": 2
+}

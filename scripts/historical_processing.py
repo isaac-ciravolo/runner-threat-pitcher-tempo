@@ -384,7 +384,7 @@ def _pre2023_disengagement_count(
 
 
 def build_game_opportunities(
-    manifest_row: pd.Series, feed: dict[str, Any]
+    manifest_row: pd.Series, feed: dict[str, Any], *, group_linked_outcomes: bool = False
 ) -> tuple[pd.DataFrame, dict[str, Any]]:
     game_pk = int(manifest_row["game_pk"])
     season = int(manifest_row["season"])
@@ -392,6 +392,12 @@ def build_game_opportunities(
     events, states = extract_events(loaded)
     sources = source_frame(manifest_row)
     actions, _vocabulary, _inventory = build_action_audit(loaded, events, sources)
+    event_key_map = {}
+    parser_version = PARSER_VERSION
+    if group_linked_outcomes:
+        from scripts.grouped_events import collapse_outcome_groups
+        events, actions, event_key_map = collapse_outcome_groups(feed, events, actions)
+        parser_version = 'historical_processing_v2_grouped'
     windows = build_opportunity_windows(events, actions, states)
     catcher_timeline = build_catcher_timeline(feed, events)
     event_groups = {
@@ -403,7 +409,7 @@ def build_game_opportunities(
     disengagement_checks = pd.DataFrame()
     if season >= 2023:
         post_history, disengagement_checks = build_disengagement_history(
-            events, actions, loaded
+            events, actions, loaded, event_key_map=event_key_map
         )
         post_history = post_history.set_index("event_key")
 
@@ -570,12 +576,17 @@ def build_game_opportunities(
             "source_url": manifest_row["source_url"],
             "source_retrieved_utc": manifest_row["retrieved_utc"],
             "source_sha256": manifest_row["sha256"],
-            "parser_version": PARSER_VERSION,
+            "parser_version": parser_version,
         }
         rows.append(row)
     table = pd.DataFrame(rows)
+    if group_linked_outcomes and len(table):
+        table['legacy_anchor_id'] = table['opportunity_id']
+        table['opportunity_id'] = table['opportunity_id'].str.replace('W-', 'G2-', n=1)
+        table['event_boundary_version'] = 'completed_linked_play_v2'
     metadata = {
-        "parser_version": PARSER_VERSION,
+        "parser_version": parser_version,
+        "grouped_outcome_records": len(event_key_map),
         "game_pk": game_pk,
         "season": season,
         "feed_sha256": str(manifest_row["sha256"]),

@@ -96,9 +96,16 @@ def build_disengagement_history(
     events: pd.DataFrame,
     actions: pd.DataFrame,
     loaded: list[tuple[pd.Series, dict[str, Any]]],
+    event_key_map: dict[str, str] | None = None,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Reconstruct recorded pitcher disengagement history within each PA."""
     advances = _advancement_events(loaded)
+    if event_key_map:
+        grouped_advances: dict[str, bool] = {}
+        for key, advanced in advances.items():
+            effective = event_key_map.get(key, key)
+            grouped_advances[effective] = grouped_advances.get(effective, False) or advanced
+        advances = grouped_advances
     action_groups = {
         key: frame.sort_values("action_id")
         for key, frame in actions.groupby("event_key", sort=False)
