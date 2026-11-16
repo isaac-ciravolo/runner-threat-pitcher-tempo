@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://tturocy.github.io/papers/theft-20140822.pdf",
+    "cache_path": "data/raw/literature/turocy_theft_2014.pdf",
+    "sha256": "b730fb4d3b36d987acd5af9f29d0d1f7bc5e5ff4a59ffadb8a3e14a8d75e2868",
+    "bytes": 201625,
+    "pages": 17,
+    "cache_written_utc": "2026-11-16T05:52:42.583971+00:00",
+    "review_scope": "Title page visually verified; sections 3.1 and 3.2 and theoretical framing read"
+  },
+  {
+    "url": "https://tturocy.github.io/papers/runest.pdf",
+    "cache_path": "data/raw/literature/turocy_speed_2003.pdf",
+    "sha256": "485dcd343145299a78796d52b6b45621ac7a21d0beded1aa6e5679273abff564",
+    "bytes": 217744,
+    "pages": 11,
+    "cache_written_utc": "2026-11-16T05:52:45.195709+00:00",
+    "review_scope": "Title page and abstract visually verified only; text extraction is garbled, methods not reviewed"
+  }
+]

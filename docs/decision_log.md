@@ -94,3 +94,7 @@ Final PA matchup can reveal a later pitcher substitution. Independently reconstr
 ## 2026-11-16: Expanded grouped/identity integration gate
 
 The initial full run failed closed on a step-off/outcome ordering mismatch; preserve source order within effective groups. Joint integration also required separate original and group-end sequence fields so pre-first-event cutoffs do not advance into their response. The final 263-game pilot covers all observed grouping-type combinations, passes strict cutoffs for 14,717 windows and records 149 pitcher-ID changes plus 197 attribution exclusions. All 80 tests pass. Restart the full rebuild only from this corrected version.
+
+## 2026-11-16: Trace defensive-attention mechanism to earlier work
+
+Inspected the author's 2014 revision of Turocy's inspection-game paper, including the batter-performance analysis, and recorded the distinct 2003 speed manuscript without claiming a methods review of its garbled extraction. The runner-threat/attention/batter mechanism has direct precedent. Preserve version-specific citations and narrow the eventual contribution claim; originality remains open.
