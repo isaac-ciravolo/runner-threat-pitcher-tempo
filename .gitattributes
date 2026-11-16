@@ -1,2 +1,5 @@
 # Published research manifests hash exact bytes; preserve their line endings.
-results/** -text
+results/** -text whitespace=cr-at-eol
+
+# Matplotlib SVG path data includes insignificant trailing spaces.
+results/grouped_calibration_figures/*.svg -whitespace

@@ -126,3 +126,7 @@ The complete history run passes 5,562 independent equalities across 35 reference
 ## 2026-11-16: Corrected baseline verified
 
 Frozen G3 baseline fits pass saved-model and metric reload checks. Preserve exact CSV prediction floats during independent metric verification because average precision is tie-sensitive. Document development calibration overconfidence and retain unchanged forward-scoring specifications; 2025 remains closed.
+
+## 2026-11-16: Corrected forward scoring verified
+
+All monthly/final saved predictions and metrics pass reload verification. The unchanged training-only rule chooses logistic recalibration; report uncertainty and residual overconfidence. Proceed to frozen pitcher-response comparison without tuning on 2024. Configure whitespace checking to recognize preserved CRLF result artifacts without changing their hashed bytes.

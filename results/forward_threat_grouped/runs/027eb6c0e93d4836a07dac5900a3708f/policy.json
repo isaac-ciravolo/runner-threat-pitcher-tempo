@@ -1,0 +1,17 @@
+{
+  "selected_policy": "logistic_recalibration",
+  "selection_raw": {
+    "log_loss": 0.09334178391413965,
+    "brier": 0.020188975454143745,
+    "average_precision": 0.0609075797681551
+  },
+  "selection_calibrated": {
+    "log_loss": 0.09325480768286597,
+    "brier": 0.020041135021113415,
+    "average_precision": 0.06075111007340774
+  },
+  "final_calibration_n": 135536,
+  "final_calibration_attempts": 2875,
+  "final_intercept": -0.4769236669706446,
+  "final_slope": 0.8602076290385069
+}

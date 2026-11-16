@@ -50,7 +50,7 @@ def main(stage):
         selected = q if bundle['selected_policy'] == 'logistic_recalibration' else p
         np.testing.assert_allclose(selected, development.selected_probability, rtol=1e-12, atol=1e-14)
         reloaded += len(development)
-        selection = pd.to_datetime(scores.start, utc=True).ge(pd.Timestamp('2023-07-01', tz='UTC'))
+        selection = pd.to_datetime(scores.start, utc=True, format='ISO8601').ge(pd.Timestamp('2023-07-01', tz='UTC'))
         groups = {'forward_2022': scores[scores.season.eq(2022) & scores.raw.notna()],
                   'forward_2023': scores[scores.season.eq(2023) & scores.raw.notna()],
                   'selection_2023': scores[selection & scores.raw.notna()],

@@ -1,0 +1,10 @@
+{
+  "stage": "forward",
+  "run_id": "027eb6c0e93d4836a07dac5900a3708f",
+  "manifest_sha256": "92fcc4f4da5a5849dc6f2bbe15f060941351b065d4c2fd0620fca3299f3059c7",
+  "history_manifest_sha256": "de5ca77192ce7aed19e9c4c495605b8f2246d125e196678de60961637f7f4035",
+  "verifier_sha256": "983588039079ea1a1111e0fdd7cc4cbb070d0b948249c17bdca96e028c95de8d",
+  "reloaded_predictions": 340156,
+  "independently_recomputed_metrics": 24,
+  "test_season_opened": false
+}

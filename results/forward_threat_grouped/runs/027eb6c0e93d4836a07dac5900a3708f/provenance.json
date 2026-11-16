@@ -1,0 +1,32 @@
+{
+  "hashes": {
+    "2022": "c4b296bf71b682bcf401be318a773ff74284c1ab6710a32381e2a533a13595d8",
+    "2023": "41681fb627ff765f08cbb694056b40f95aad3177efa76030d6c66a197594cabe",
+    "2024": "31b331a09922115fa5014b77f6514ef921cc334c31317542cb92bd45f3462526",
+    "protocol": "9e50bcaeb17f8ec0b7291e78bb1dfc1b4785232d64cdeb33eeb6956047c91535",
+    "script": "2f2ec195699e7fa05faffffb0d3beb9a6f7b5be3236c9c4644887a89a6d92652"
+  },
+  "environment": {
+    "python": "3.14.4",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "sklearn": "1.8.0"
+  },
+  "baseline_environment": {
+    "python": "3.14.4",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "sklearn": "1.8.0"
+  },
+  "event_boundary_version": "completed_linked_play_v2",
+  "action_evidence_version": "runner_movement_v3",
+  "history_availability_field": "history_available_after_utc",
+  "grouped_history_manifest_sha256": "de5ca77192ce7aed19e9c4c495605b8f2246d125e196678de60961637f7f4035",
+  "repair_protocol_sha256": "529c1e0ba498876148ccfd6c0ed2dcf02439c125b0936a9caa7fed2fae3aec0e",
+  "implementation_sha256": {
+    "grouped_models.py": "6aa609cbbe9a76ac7e092aeeb276229c71202569400d3a2befadda7a33739e3a",
+    "recorded_attempt_baseline.py": "947dead252a3f28b1466aa8b3c70e9efd4ab3c5c5b27f96e2c3f019edd1dc8cd",
+    "forward_threat.py": "2f2ec195699e7fa05faffffb0d3beb9a6f7b5be3236c9c4644887a89a6d92652",
+    "pitcher_response.py": "33bf39c863e64d909234567e32149318143a69d4b13ae0bab1c4d17e484abd58"
+  }
+}

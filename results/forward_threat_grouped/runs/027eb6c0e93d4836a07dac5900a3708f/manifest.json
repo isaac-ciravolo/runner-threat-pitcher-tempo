@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "run_id": "027eb6c0e93d4836a07dac5900a3708f",
+  "files": {
+    "results": {
+      "calibration.csv": "e78ff504b13002f0e8b59c7351da026cdfc5a91656a1197fc4048f72d87b0ed5",
+      "chronology_quarantine.csv": "a76a3c2243f73217eaf0eea56488bf487a8037299296415694c217a80193c6b8",
+      "metrics.csv": "b1fa9dd973fa1ab62ebb13d3f50b128f7c49cdfe63fa550dbae2dd5b19db5ce9",
+      "origins.csv": "d4536c1c9c23489a11f7e2ab3c0531bd046ece96cb3ef6e65bde3a567713ff6f",
+      "paired_bootstrap.csv": "90e12538f708e433869daa7819a653ef4da371a18988c5a2d815e127c98f438a",
+      "policy.json": "07d141749b21652db1b792bba7215f3af7d49b4d3d7fc6862d799a1638492fa7",
+      "provenance.json": "cb34eda7d46bf943054fc1e7a8542b1d1f2e5311de0b27719d17f5a660bbb0c6",
+      "sample_flow.csv": "29d2ad85a03601a56639afe26e33a68dbb2af69fe325ffb2981a488bb954e49c",
+      "subgroups.csv": "adb1dab49367fcda7155469a42457f81aa19f1777fe371d6b0ee07a61daef93b"
+    },
+    "local": {
+      "development_2024_scores.csv.gz": "2c87923aba2346e00e8d6ee2a32b1240ad3ff605e1ba20eadc2bba480045c0c4",
+      "final_bundle.joblib": "d6e38e6744bc38cc2521be1e4563415cd898cfde515944dd6874e8ed2ddc1820",
+      "model_2022_07.joblib": "6064d3ca867fc7cb401c297aaec94fbcf1319677d2b3de05bb51df3ebc88db12",
+      "model_2022_08.joblib": "8851180d103a48845035ea62546cb28ddd851e651383e979afe2c56a6d7e2eae",
+      "model_2022_09.joblib": "287fca2f3c90fea0a455e554dc52ee132ec8633502d8fa41b466da1d63de90cd",
+      "model_2022_10.joblib": "07878810899c610a9cf69779958a3b47f951ee165e291194ae13ecf09dde16b8",
+      "model_2023_03.joblib": "0481bf759866463ec12270a4076a1bf19fc5400e6c432eabf24dcbd836133584",
+      "model_2023_04.joblib": "5f0a06e434f97d56f743b15bb55d58a2bac1b743132d128b714e6d60abe7fa80",
+      "model_2023_05.joblib": "e662e3fad396c0533039e78402796b80d0b09edd97a679c21d5d55d8ef13407c",
+      "model_2023_06.joblib": "525e9a68e964942bf960b496f95c311293f1164f8bd7ae03a0a3c63166cd6c21",
+      "model_2023_07.joblib": "5586f62c61df566ae00a0d3c6f50abdefc983445f82f18013cde1d3099986f9a",
+      "model_2023_08.joblib": "a71151453d07e83188e9374f76a81795088b71d3bccc998c3e6ac50eb0d7a2b0",
+      "model_2023_09.joblib": "6fb255660100e308f6465078f2ce2d46ba5f567f71c72eb6a06b26c5ead1b809",
+      "model_2023_10.joblib": "e3428a99d0c07fb71382750396ef741ee3a8c81da0a0442c5a293ae511447a64",
+      "training_forward_scores.csv.gz": "aed4caa3f154445450899bec4d21d8f0784faeca2d27b3f76244055ec04f398f"
+    }
+  }
+}

@@ -17,7 +17,7 @@ def main(stage):
         'baseline': ('recorded_attempt_grouped', 'heldout_2024', ['context', 'separate_history'],
                      ['Context', 'Context + runner histories'], 'Recorded steal attempts'),
         'forward': ('forward_threat_grouped', 'development_2024', ['raw', 'prospective_calibrated'],
-                    ['Raw forward threat', 'Training-fitted recalibration candidate'], 'Recorded steal attempts'),
+                    ['Raw forward threat', 'Recalibrated forward threat'], 'Recorded steal attempts'),
         'response': ('pitcher_response_grouped', 'development_2024', ['context', 'context_threat'],
                      ['Context', 'Context + forward threat'], 'Recorded pitcher pickoffs'),
     }
