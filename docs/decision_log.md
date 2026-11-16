@@ -102,3 +102,7 @@ Inspected the author's 2014 revision of Turocy's inspection-game paper, includin
 ## 2026-11-16: Freeze source scoring-credit reconciliation
 
 Before choosing a conditional-success target, freeze an all-base-state event-tag versus per-player box-score reconciliation. Keep error variants and pickoff-caught-stealing distinctions explicit. This is internal source consistency only and cannot clear video/action-completeness gates. No model or historical label changes follow automatically.
+
+## 2026-11-16: Preserve an outside-population raw disengagement discrepancy
+
+Game 746241/PA18 has raw counter 3 versus reconstructed 1 after advancement and contributes no first-only window. It was already present in original metadata. Freeze the exact source/action/count disposition, retain the mismatch, and reject any population impact or other discrepancy. Expanded pilot and regression tests pass; resume full reconstruction using unchanged parser caches.

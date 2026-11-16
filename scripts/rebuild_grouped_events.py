@@ -17,6 +17,32 @@ SOURCES = ['scripts/rebuild_grouped_events.py', 'scripts/grouped_events.py',
            'scripts/runner_control_audit.py', 'scripts/prepare_opportunity_dataset.py']
 
 
+def validate_disengagement_disposition(checks, frame):
+    """Allow only the reviewed raw-counter discrepancy outside every risk window."""
+    bad = checks[checks.raw_number_available & checks.raw_number_matches.eq(False)]
+    require(len(bad) == 1, 'Unreviewed disengagement discrepancy')
+    row = bad.iloc[0]
+    require(row.action_id == 'A-746241-18-5-e' and row.raw_disengagement_num == 3
+            and row.reconstructed_disengagement_num == 1,
+            'Unreviewed disengagement discrepancy')
+    require(not frame.at_bat_index.eq(18).any(), 'Disengagement discrepancy affects eligible windows')
+    return '746241_PA18_no_first_only_window_raw3_reconstructed1'
+
+
+def audit_disengagement_disposition(row, feed, frame):
+    from scripts.historical_processing import parser_manifest_row, source_frame
+    from scripts.audit_feeds import extract_events
+    from scripts.runner_control_audit import build_action_audit
+    from scripts.grouped_events import collapse_outcome_groups
+    from scripts.prepare_opportunity_dataset import build_disengagement_history
+    loaded = [(parser_manifest_row(row), feed)]
+    events, _ = extract_events(loaded)
+    actions, _, _ = build_action_audit(loaded, events, source_frame(row))
+    events, actions, keys = collapse_outcome_groups(feed, events, actions)
+    _, checks = build_disengagement_history(events, actions, loaded, event_key_map=keys)
+    return validate_disengagement_disposition(checks, frame)
+
+
 def process_game(task):
     record, directory = task
     row = pd.Series(record)
@@ -28,6 +54,9 @@ def process_game(task):
         metadata = json.loads(marker.read_text())
         require(metadata['feed_sha256'] == row.sha256, 'Cached source mismatch')
         verify_hash(target, metadata['output_sha256'])
+        if metadata['raw_disengagement_mismatches']:
+            metadata['disengagement_disposition'] = audit_disengagement_disposition(
+                row, json.loads(path.read_bytes()), pd.read_csv(target, low_memory=False))
         return metadata
     feed = json.loads(path.read_bytes())
     frame, metadata = build_game_opportunities(row, feed, group_linked_outcomes=True)
@@ -35,7 +64,8 @@ def process_game(task):
     require(frame.opening_catcher_id.notna().all(), 'Unresolved opening catcher')
     require(frame.known_state_conflict.eq(False).all(), 'Known state conflict')
     require(frame.unknown_action_classification_count.eq(0).all(), 'Unknown action classification')
-    require(metadata['raw_disengagement_mismatches'] == 0, f'Disengagement reconstruction mismatch: {row.game_pk}')
+    if metadata['raw_disengagement_mismatches']:
+        metadata['disengagement_disposition'] = audit_disengagement_disposition(row, feed, frame)
     assigned = [item for value in frame.response_action_ids.dropna() for item in str(value).split('|') if item]
     require(len(assigned) == len(set(assigned)), 'Action assigned to multiple windows')
     metadata['recorded_attempt_windows'] = int(frame.recorded_steal_attempt_indicator.sum())
@@ -62,7 +92,7 @@ def main(full=False, workers=4):
         crosswalk = pd.read_csv(inventory.local / 'crosswalk.csv.gz')
         selected.update(crosswalk.groupby(['season', 'event_type', 'parent_type'], dropna=False).head(1).game_pk)
         selected.update(manifests.sort_values('game_pk').groupby('season').head(4).game_pk)
-        selected.update([663178, 716404, 718573])
+        selected.update([663178, 716404, 718573, 746241])
         manifests = manifests[manifests.game_pk.isin(selected)]
     hashes = {name: sha256_file(ROOT / name) for name in SOURCES}
     # Selection/report changes do not change parsed rows. Parser dependencies

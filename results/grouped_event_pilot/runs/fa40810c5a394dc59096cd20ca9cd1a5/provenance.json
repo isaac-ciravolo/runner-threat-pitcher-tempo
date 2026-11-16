@@ -1,0 +1,21 @@
+{
+  "environment": {
+    "python": "3.14.4",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "sklearn": "1.8.0"
+  },
+  "source_hashes": {
+    "scripts/rebuild_grouped_events.py": "4c1b52e25e2178e54ca1228e966d6eca006dfc86f0c923259e41d132d937c8d9",
+    "scripts/grouped_events.py": "a4ab248cf2fd8f2272fbdef1e9e6cd23d957464ed227340f02e960cb7e66bbd5",
+    "scripts/historical_processing.py": "e2ceddf8e7674004cd16dc18acd3c70bf574d929b6f0a1a9d4ae80f76c75c103",
+    "scripts/audit_feeds.py": "b40038ff4b345625fc2f08e9d97305d7b628c5893a0e3b86dda4286954b646f5",
+    "scripts/runner_control_audit.py": "ec654d47289444f8006d23615be358a1f9085e0ddef0598bd1f367bc89758a21",
+    "scripts/prepare_opportunity_dataset.py": "809d111853ffe55fb7b7fe6f01c449ef67e591113e266e11fc8b6433845c60d5"
+  },
+  "cache_signature": "0e55c8067573d64d",
+  "spec_sha256": "51ca37a991d0bafa56832c2a83262d0f5d835cd200cfc526163b04f50206bf78",
+  "inventory_manifest_sha256": "2b5d514c0cf083b5408d86d6ff0460701995ccdad60a3b56b036ee1b5fe7ff90",
+  "games": 264,
+  "full_development_rebuild": false
+}

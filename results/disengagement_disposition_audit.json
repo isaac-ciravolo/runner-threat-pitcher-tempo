@@ -1,0 +1,14 @@
+{
+  "game_pk": 746241,
+  "pilot_manifest_sha256": "2314bc14a650351e6e02301e1438dbf9bb76bf15bbc28e0c144c43d99cf5253c",
+  "raw_source_sha256": "52a174849e0bdb155f612a43f361d81a0f9b84cc7beed494e2791271c86b0c38",
+  "disposition": "746241_PA18_no_first_only_window_raw3_reconstructed1",
+  "pa18_windows": 0,
+  "pitcher_identity_changes": 0,
+  "boundary_checks": {
+    "windows": 31,
+    "response_actions": 3,
+    "explicit_links": 1,
+    "attempts": 1
+  }
+}
