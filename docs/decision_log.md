@@ -138,3 +138,7 @@ Audit all 8,141 attempts and retain 168 attribution exclusions. Inspect 13 sourc
 ## 2026-11-16: Harden future migration cache lineage
 
 Include the reconstruction driver in cache schema 3 because it owns data-transforming migration logic, and preserve immediate migration source checksums. Three regression tests pass alongside the full 105-test suite. This changes future cache reuse, not published G3 data or fitted models.
+
+## 2026-11-16: Corrected response comparison verified
+
+Complete all frozen G3 response variants. Raw threat reduces development log loss by 4.58%; all prespecified log-loss sensitivities and one-way dependence intervals favor improvement. Retain calibration overconfidence and noncausal limits. Independently reload 1,602,582 predictions and reproduce 72 metrics; review notebook and calibration figure before commit. Old response findings remain withdrawn. Video and closest-work gates remain open; 2025 stays closed.

@@ -1,0 +1,361 @@
+split,variant,model,subgroup,value,n,events,mean_prediction,observed_rate
+diagnostic_2023,primary,constant,disengagements,0,61593,3308,0.05688627184092555,0.05370740181514133
+diagnostic_2023,primary,constant,disengagements,1,5255,281,0.05688627184092556,0.05347288296860133
+diagnostic_2023,primary,constant,disengagements,2,375,9,0.05688627184092555,0.024
+diagnostic_2023,primary,constant,history_depth,"(-1.0, 0.0]",399,35,0.05688627184092555,0.08771929824561403
+diagnostic_2023,primary,constant,history_depth,"(0.0, 50.0]",3184,214,0.05688627184092555,0.06721105527638191
+diagnostic_2023,primary,constant,history_depth,"(200.0, inf]",55048,2849,0.056886271840925554,0.051754832146490334
+diagnostic_2023,primary,constant,history_depth,"(50.0, 200.0]",8592,500,0.056886271840925554,0.05819366852886406
+diagnostic_2023,primary,constant,terminal,False,66983,3412,0.056886271840925554,0.050938297777047906
+diagnostic_2023,primary,constant,terminal,True,240,186,0.05688627184092555,0.775
+diagnostic_2023,primary,constant,runner_change,False,65961,3532,0.056886271840925554,0.05354679280180713
+diagnostic_2023,primary,constant,runner_change,True,1262,66,0.05688627184092555,0.05229793977812995
+diagnostic_2023,primary,constant,unseen_pitcher,False,59814,3277,0.05688627184092555,0.05478650483164477
+diagnostic_2023,primary,constant,unseen_pitcher,True,7409,321,0.05688627184092555,0.04332568497772979
+diagnostic_2023,primary,constant,unseen_catcher,False,62160,3371,0.05688627184092555,0.05423101673101673
+diagnostic_2023,primary,constant,unseen_catcher,True,5063,227,0.05688627184092555,0.044835078016985976
+diagnostic_2023,primary,context,disengagements,0,61593,3308,0.057904253454657176,0.05370740181514133
+diagnostic_2023,primary,context,disengagements,1,5255,281,0.043060965427385765,0.05347288296860133
+diagnostic_2023,primary,context,disengagements,2,375,9,0.027977956325620057,0.024
+diagnostic_2023,primary,context,history_depth,"(-1.0, 0.0]",399,35,0.04899443786614969,0.08771929824561403
+diagnostic_2023,primary,context,history_depth,"(0.0, 50.0]",3184,214,0.05529792924407309,0.06721105527638191
+diagnostic_2023,primary,context,history_depth,"(200.0, inf]",55048,2849,0.05709213118670401,0.051754832146490334
+diagnostic_2023,primary,context,history_depth,"(50.0, 200.0]",8592,500,0.05410250989156357,0.05819366852886406
+diagnostic_2023,primary,context,terminal,False,66983,3412,0.05652950193982867,0.050938297777047906
+diagnostic_2023,primary,context,terminal,True,240,186,0.06982567308406275,0.775
+diagnostic_2023,primary,context,runner_change,False,65961,3532,0.05660657517162885,0.05354679280180713
+diagnostic_2023,primary,context,runner_change,True,1262,66,0.05502970291593419,0.05229793977812995
+diagnostic_2023,primary,context,unseen_pitcher,False,59814,3277,0.05765343418018644,0.05478650483164477
+diagnostic_2023,primary,context,unseen_pitcher,True,7409,321,0.04788652691618944,0.04332568497772979
+diagnostic_2023,primary,context,unseen_catcher,False,62160,3371,0.057166983058032014,0.05423101673101673
+diagnostic_2023,primary,context,unseen_catcher,True,5063,227,0.049333225970462,0.044835078016985976
+diagnostic_2023,primary,context_threat,disengagements,0,61593,3308,0.059537967814763844,0.05370740181514133
+diagnostic_2023,primary,context_threat,disengagements,1,5255,281,0.05027100239881733,0.05347288296860133
+diagnostic_2023,primary,context_threat,disengagements,2,375,9,0.03132480062992595,0.024
+diagnostic_2023,primary,context_threat,history_depth,"(-1.0, 0.0]",399,35,0.05667441312812206,0.08771929824561403
+diagnostic_2023,primary,context_threat,history_depth,"(0.0, 50.0]",3184,214,0.0712379232554914,0.06721105527638191
+diagnostic_2023,primary,context_threat,history_depth,"(200.0, inf]",55048,2849,0.056672360286845955,0.051754832146490334
+diagnostic_2023,primary,context_threat,history_depth,"(50.0, 200.0]",8592,500,0.06679565199055583,0.05819366852886406
+diagnostic_2023,primary,context_threat,terminal,False,66983,3412,0.05845206226613794,0.050938297777047906
+diagnostic_2023,primary,context_threat,terminal,True,240,186,0.11561867785016597,0.775
+diagnostic_2023,primary,context_threat,runner_change,False,65961,3532,0.058793944864177196,0.05354679280180713
+diagnostic_2023,primary,context_threat,runner_change,True,1262,66,0.051454494667801304,0.05229793977812995
+diagnostic_2023,primary,context_threat,unseen_pitcher,False,59814,3277,0.05932676263962621,0.05478650483164477
+diagnostic_2023,primary,context_threat,unseen_pitcher,True,7409,321,0.05324227141721616,0.04332568497772979
+diagnostic_2023,primary,context_threat,unseen_catcher,False,62160,3371,0.058984788705018824,0.05423101673101673
+diagnostic_2023,primary,context_threat,unseen_catcher,True,5063,227,0.05462147018621113,0.044835078016985976
+diagnostic_2023,calibrated_threat,constant,disengagements,0,61593,3308,0.05688627184092555,0.05370740181514133
+diagnostic_2023,calibrated_threat,constant,disengagements,1,5255,281,0.05688627184092556,0.05347288296860133
+diagnostic_2023,calibrated_threat,constant,disengagements,2,375,9,0.05688627184092555,0.024
+diagnostic_2023,calibrated_threat,constant,history_depth,"(-1.0, 0.0]",399,35,0.05688627184092555,0.08771929824561403
+diagnostic_2023,calibrated_threat,constant,history_depth,"(0.0, 50.0]",3184,214,0.05688627184092555,0.06721105527638191
+diagnostic_2023,calibrated_threat,constant,history_depth,"(200.0, inf]",55048,2849,0.056886271840925554,0.051754832146490334
+diagnostic_2023,calibrated_threat,constant,history_depth,"(50.0, 200.0]",8592,500,0.056886271840925554,0.05819366852886406
+diagnostic_2023,calibrated_threat,constant,terminal,False,66983,3412,0.056886271840925554,0.050938297777047906
+diagnostic_2023,calibrated_threat,constant,terminal,True,240,186,0.05688627184092555,0.775
+diagnostic_2023,calibrated_threat,constant,runner_change,False,65961,3532,0.056886271840925554,0.05354679280180713
+diagnostic_2023,calibrated_threat,constant,runner_change,True,1262,66,0.05688627184092555,0.05229793977812995
+diagnostic_2023,calibrated_threat,constant,unseen_pitcher,False,59814,3277,0.05688627184092555,0.05478650483164477
+diagnostic_2023,calibrated_threat,constant,unseen_pitcher,True,7409,321,0.05688627184092555,0.04332568497772979
+diagnostic_2023,calibrated_threat,constant,unseen_catcher,False,62160,3371,0.05688627184092555,0.05423101673101673
+diagnostic_2023,calibrated_threat,constant,unseen_catcher,True,5063,227,0.05688627184092555,0.044835078016985976
+diagnostic_2023,calibrated_threat,context,disengagements,0,61593,3308,0.057904253454657176,0.05370740181514133
+diagnostic_2023,calibrated_threat,context,disengagements,1,5255,281,0.043060965427385765,0.05347288296860133
+diagnostic_2023,calibrated_threat,context,disengagements,2,375,9,0.027977956325620057,0.024
+diagnostic_2023,calibrated_threat,context,history_depth,"(-1.0, 0.0]",399,35,0.04899443786614969,0.08771929824561403
+diagnostic_2023,calibrated_threat,context,history_depth,"(0.0, 50.0]",3184,214,0.05529792924407309,0.06721105527638191
+diagnostic_2023,calibrated_threat,context,history_depth,"(200.0, inf]",55048,2849,0.05709213118670401,0.051754832146490334
+diagnostic_2023,calibrated_threat,context,history_depth,"(50.0, 200.0]",8592,500,0.05410250989156357,0.05819366852886406
+diagnostic_2023,calibrated_threat,context,terminal,False,66983,3412,0.05652950193982867,0.050938297777047906
+diagnostic_2023,calibrated_threat,context,terminal,True,240,186,0.06982567308406275,0.775
+diagnostic_2023,calibrated_threat,context,runner_change,False,65961,3532,0.05660657517162885,0.05354679280180713
+diagnostic_2023,calibrated_threat,context,runner_change,True,1262,66,0.05502970291593419,0.05229793977812995
+diagnostic_2023,calibrated_threat,context,unseen_pitcher,False,59814,3277,0.05765343418018644,0.05478650483164477
+diagnostic_2023,calibrated_threat,context,unseen_pitcher,True,7409,321,0.04788652691618944,0.04332568497772979
+diagnostic_2023,calibrated_threat,context,unseen_catcher,False,62160,3371,0.057166983058032014,0.05423101673101673
+diagnostic_2023,calibrated_threat,context,unseen_catcher,True,5063,227,0.049333225970462,0.044835078016985976
+diagnostic_2023,calibrated_threat,context_threat,disengagements,0,61593,3308,0.059775705621849175,0.05370740181514133
+diagnostic_2023,calibrated_threat,context_threat,disengagements,1,5255,281,0.04735238034841351,0.05347288296860133
+diagnostic_2023,calibrated_threat,context_threat,disengagements,2,375,9,0.028000271766597928,0.024
+diagnostic_2023,calibrated_threat,context_threat,history_depth,"(-1.0, 0.0]",399,35,0.05705813778100936,0.08771929824561403
+diagnostic_2023,calibrated_threat,context_threat,history_depth,"(0.0, 50.0]",3184,214,0.07028173796856287,0.06721105527638191
+diagnostic_2023,calibrated_threat,context_threat,history_depth,"(200.0, inf]",55048,2849,0.05679324053492906,0.051754832146490334
+diagnostic_2023,calibrated_threat,context_threat,history_depth,"(50.0, 200.0]",8592,500,0.06613179019746758,0.05819366852886406
+diagnostic_2023,calibrated_threat,context_threat,terminal,False,66983,3412,0.05844042825443375,0.050938297777047906
+diagnostic_2023,calibrated_threat,context_threat,terminal,True,240,186,0.11077788018003283,0.775
+diagnostic_2023,calibrated_threat,context_threat,runner_change,False,65961,3532,0.05875331692189031,0.05354679280180713
+diagnostic_2023,calibrated_threat,context_threat,runner_change,True,1262,66,0.052039904536558386,0.05229793977812995
+diagnostic_2023,calibrated_threat,context_threat,unseen_pitcher,False,59814,3277,0.059340859048767985,0.05478650483164477
+diagnostic_2023,calibrated_threat,context_threat,unseen_pitcher,True,7409,321,0.05286648047873327,0.04332568497772979
+diagnostic_2023,calibrated_threat,context_threat,unseen_catcher,False,62160,3371,0.05900005182245951,0.05423101673101673
+diagnostic_2023,calibrated_threat,context_threat,unseen_catcher,True,5063,227,0.054050696370898765,0.044835078016985976
+diagnostic_2023,history_depth,constant,disengagements,0,61593,3308,0.05688627184092555,0.05370740181514133
+diagnostic_2023,history_depth,constant,disengagements,1,5255,281,0.05688627184092556,0.05347288296860133
+diagnostic_2023,history_depth,constant,disengagements,2,375,9,0.05688627184092555,0.024
+diagnostic_2023,history_depth,constant,history_depth,"(-1.0, 0.0]",399,35,0.05688627184092555,0.08771929824561403
+diagnostic_2023,history_depth,constant,history_depth,"(0.0, 50.0]",3184,214,0.05688627184092555,0.06721105527638191
+diagnostic_2023,history_depth,constant,history_depth,"(200.0, inf]",55048,2849,0.056886271840925554,0.051754832146490334
+diagnostic_2023,history_depth,constant,history_depth,"(50.0, 200.0]",8592,500,0.056886271840925554,0.05819366852886406
+diagnostic_2023,history_depth,constant,terminal,False,66983,3412,0.056886271840925554,0.050938297777047906
+diagnostic_2023,history_depth,constant,terminal,True,240,186,0.05688627184092555,0.775
+diagnostic_2023,history_depth,constant,runner_change,False,65961,3532,0.056886271840925554,0.05354679280180713
+diagnostic_2023,history_depth,constant,runner_change,True,1262,66,0.05688627184092555,0.05229793977812995
+diagnostic_2023,history_depth,constant,unseen_pitcher,False,59814,3277,0.05688627184092555,0.05478650483164477
+diagnostic_2023,history_depth,constant,unseen_pitcher,True,7409,321,0.05688627184092555,0.04332568497772979
+diagnostic_2023,history_depth,constant,unseen_catcher,False,62160,3371,0.05688627184092555,0.05423101673101673
+diagnostic_2023,history_depth,constant,unseen_catcher,True,5063,227,0.05688627184092555,0.044835078016985976
+diagnostic_2023,history_depth,context,disengagements,0,61593,3308,0.06015841523911531,0.05370740181514133
+diagnostic_2023,history_depth,context,disengagements,1,5255,281,0.044883387146053284,0.05347288296860133
+diagnostic_2023,history_depth,context,disengagements,2,375,9,0.028759439625566045,0.024
+diagnostic_2023,history_depth,context,history_depth,"(-1.0, 0.0]",399,35,0.06638466649305812,0.08771929824561403
+diagnostic_2023,history_depth,context,history_depth,"(0.0, 50.0]",3184,214,0.07573128819488598,0.06721105527638191
+diagnostic_2023,history_depth,context,history_depth,"(200.0, inf]",55048,2849,0.05640505394932468,0.051754832146490334
+diagnostic_2023,history_depth,context,history_depth,"(50.0, 200.0]",8592,500,0.0674328381970734,0.05819366852886406
+diagnostic_2023,history_depth,context,terminal,False,66983,3412,0.05873216557044672,0.050938297777047906
+diagnostic_2023,history_depth,context,terminal,True,240,186,0.0746983863737241,0.775
+diagnostic_2023,history_depth,context,runner_change,False,65961,3532,0.05881722705700361,0.05354679280180713
+diagnostic_2023,history_depth,context,runner_change,True,1262,66,0.057322619039549626,0.05229793977812995
+diagnostic_2023,history_depth,context,unseen_pitcher,False,59814,3277,0.05977745548424657,0.05478650483164477
+diagnostic_2023,history_depth,context,unseen_pitcher,True,7409,321,0.05081057319479048,0.04332568497772979
+diagnostic_2023,history_depth,context,unseen_catcher,False,62160,3371,0.05938348210622446,0.05423101673101673
+diagnostic_2023,history_depth,context,unseen_catcher,True,5063,227,0.051492595578118555,0.044835078016985976
+diagnostic_2023,history_depth,context_threat,disengagements,0,61593,3308,0.06103724410758498,0.05370740181514133
+diagnostic_2023,history_depth,context_threat,disengagements,1,5255,281,0.051758257958586094,0.05347288296860133
+diagnostic_2023,history_depth,context_threat,disengagements,2,375,9,0.03194549470110834,0.024
+diagnostic_2023,history_depth,context_threat,history_depth,"(-1.0, 0.0]",399,35,0.07674211045886142,0.08771929824561403
+diagnostic_2023,history_depth,context_threat,history_depth,"(0.0, 50.0]",3184,214,0.08802480485556805,0.06721105527638191
+diagnostic_2023,history_depth,context_threat,history_depth,"(200.0, inf]",55048,2849,0.05612138945178307,0.051754832146490334
+diagnostic_2023,history_depth,context_threat,history_depth,"(50.0, 200.0]",8592,500,0.07485740865093085,0.05819366852886406
+diagnostic_2023,history_depth,context_threat,terminal,False,66983,3412,0.05993820935333929,0.050938297777047906
+diagnostic_2023,history_depth,context_threat,terminal,True,240,186,0.11914627203767394,0.775
+diagnostic_2023,history_depth,context_threat,runner_change,False,65961,3532,0.06029224144209957,0.05354679280180713
+diagnostic_2023,history_depth,context_threat,runner_change,True,1262,66,0.052693854707953305,0.05229793977812995
+diagnostic_2023,history_depth,context_threat,unseen_pitcher,False,59814,3277,0.060826560978185014,0.05478650483164477
+diagnostic_2023,history_depth,context_threat,unseen_pitcher,True,7409,321,0.054684338514591514,0.04332568497772979
+diagnostic_2023,history_depth,context_threat,unseen_catcher,False,62160,3371,0.060528252775382624,0.05423101673101673
+diagnostic_2023,history_depth,context_threat,unseen_catcher,True,5063,227,0.05550068929211588,0.044835078016985976
+diagnostic_2023,known_initiator,constant,disengagements,0,61590,3305,0.056859205776173316,0.053661308654002274
+diagnostic_2023,known_initiator,constant,disengagements,1,5254,280,0.056859205776173316,0.053292729349067376
+diagnostic_2023,known_initiator,constant,disengagements,2,375,9,0.05685920577617331,0.024
+diagnostic_2023,known_initiator,constant,history_depth,"(-1.0, 0.0]",399,35,0.0568592057761733,0.08771929824561403
+diagnostic_2023,known_initiator,constant,history_depth,"(0.0, 50.0]",3184,214,0.05685920577617331,0.06721105527638191
+diagnostic_2023,known_initiator,constant,history_depth,"(200.0, inf]",55047,2848,0.0568592057761733,0.05173760604574273
+diagnostic_2023,known_initiator,constant,history_depth,"(50.0, 200.0]",8589,497,0.05685920577617331,0.05786471067644662
+diagnostic_2023,known_initiator,constant,terminal,False,66983,3412,0.05685920577617331,0.050938297777047906
+diagnostic_2023,known_initiator,constant,terminal,True,236,182,0.05685920577617331,0.7711864406779662
+diagnostic_2023,known_initiator,constant,runner_change,False,65957,3528,0.05685920577617331,0.05348939460557636
+diagnostic_2023,known_initiator,constant,runner_change,True,1262,66,0.0568592057761733,0.05229793977812995
+diagnostic_2023,known_initiator,constant,unseen_pitcher,False,59811,3274,0.05685920577617331,0.054739094815334975
+diagnostic_2023,known_initiator,constant,unseen_pitcher,True,7408,320,0.05685920577617331,0.04319654427645788
+diagnostic_2023,known_initiator,constant,unseen_catcher,False,62156,3367,0.05685920577617331,0.05417015251946715
+diagnostic_2023,known_initiator,constant,unseen_catcher,True,5063,227,0.0568592057761733,0.044835078016985976
+diagnostic_2023,known_initiator,context,disengagements,0,61590,3305,0.0578138490397769,0.053661308654002274
+diagnostic_2023,known_initiator,context,disengagements,1,5254,280,0.04303157677478375,0.053292729349067376
+diagnostic_2023,known_initiator,context,disengagements,2,375,9,0.027892517385027692,0.024
+diagnostic_2023,known_initiator,context,history_depth,"(-1.0, 0.0]",399,35,0.04895237472236562,0.08771929824561403
+diagnostic_2023,known_initiator,context,history_depth,"(0.0, 50.0]",3184,214,0.05518907620377177,0.06721105527638191
+diagnostic_2023,known_initiator,context,history_depth,"(200.0, inf]",55047,2848,0.05701318168509647,0.05173760604574273
+diagnostic_2023,known_initiator,context,history_depth,"(50.0, 200.0]",8589,497,0.0539811307937385,0.05786471067644662
+diagnostic_2023,known_initiator,context,terminal,False,66983,3412,0.05644438563657402,0.050938297777047906
+diagnostic_2023,known_initiator,context,terminal,True,236,182,0.06986558330220743,0.7711864406779662
+diagnostic_2023,known_initiator,context,runner_change,False,65957,3528,0.05652154519034877,0.05348939460557636
+diagnostic_2023,known_initiator,context,runner_change,True,1262,66,0.05492155676238073,0.05229793977812995
+diagnostic_2023,known_initiator,context,unseen_pitcher,False,59811,3274,0.05758419554382349,0.054739094815334975
+diagnostic_2023,known_initiator,context,unseen_pitcher,True,7408,320,0.04766930900139469,0.04319654427645788
+diagnostic_2023,known_initiator,context,unseen_catcher,False,62156,3367,0.057082932283937,0.05417015251946715
+diagnostic_2023,known_initiator,context,unseen_catcher,True,5063,227,0.04923085556262502,0.044835078016985976
+diagnostic_2023,known_initiator,context_threat,disengagements,0,61590,3305,0.0595204799381988,0.053661308654002274
+diagnostic_2023,known_initiator,context_threat,disengagements,1,5254,280,0.05037164761116988,0.053292729349067376
+diagnostic_2023,known_initiator,context_threat,disengagements,2,375,9,0.03129852146441904,0.024
+diagnostic_2023,known_initiator,context_threat,history_depth,"(-1.0, 0.0]",399,35,0.0576065799378778,0.08771929824561403
+diagnostic_2023,known_initiator,context_threat,history_depth,"(0.0, 50.0]",3184,214,0.07112609866945022,0.06721105527638191
+diagnostic_2023,known_initiator,context_threat,history_depth,"(200.0, inf]",55047,2848,0.056664703627706856,0.05173760604574273
+diagnostic_2023,known_initiator,context_threat,history_depth,"(50.0, 200.0]",8589,497,0.06678117095573244,0.05786471067644662
+diagnostic_2023,known_initiator,context_threat,terminal,False,66983,3412,0.05844371865198352,0.050938297777047906
+diagnostic_2023,known_initiator,context_threat,terminal,True,236,182,0.11661158909362618,0.7711864406779662
+diagnostic_2023,known_initiator,context_threat,runner_change,False,65957,3528,0.058786238545891815,0.05348939460557636
+diagnostic_2023,known_initiator,context_threat,runner_change,True,1262,66,0.0514199728371802,0.05229793977812995
+diagnostic_2023,known_initiator,context_threat,unseen_pitcher,False,59811,3274,0.05932168986989707,0.054739094815334975
+diagnostic_2023,known_initiator,context_threat,unseen_pitcher,True,7408,320,0.053208200416238374,0.04319654427645788
+diagnostic_2023,known_initiator,context_threat,unseen_catcher,False,62156,3367,0.05898027545790164,0.05417015251946715
+diagnostic_2023,known_initiator,context_threat,unseen_catcher,True,5063,227,0.0545680308375614,0.044835078016985976
+development_2024,primary,constant,disengagements,0,121377,6984,0.0551809113445874,0.057539731580118145
+development_2024,primary,constant,disengagements,1,10870,635,0.05518091134458742,0.05841766329346826
+development_2024,primary,constant,disengagements,2,856,16,0.055180911344587406,0.018691588785046728
+development_2024,primary,constant,history_depth,"(-1.0, 0.0]",618,47,0.05518091134458742,0.07605177993527508
+development_2024,primary,constant,history_depth,"(0.0, 50.0]",4671,334,0.05518091134458741,0.07150503104260329
+development_2024,primary,constant,history_depth,"(200.0, inf]",114991,6303,0.0551809113445874,0.05481298536407197
+development_2024,primary,constant,history_depth,"(50.0, 200.0]",12823,951,0.05518091134458741,0.07416361225922172
+development_2024,primary,constant,terminal,False,132576,7220,0.0551809113445874,0.05445932898865556
+development_2024,primary,constant,terminal,True,527,415,0.0551809113445874,0.7874762808349146
+development_2024,primary,constant,runner_change,False,130571,7508,0.0551809113445874,0.0575012828269677
+development_2024,primary,constant,runner_change,True,2532,127,0.05518091134458741,0.050157977883096366
+development_2024,primary,constant,unseen_pitcher,False,110292,6447,0.055180911344587406,0.05845392231530845
+development_2024,primary,constant,unseen_pitcher,True,22811,1188,0.05518091134458741,0.05208013677611679
+development_2024,primary,constant,unseen_catcher,False,124285,7144,0.055180911344587406,0.05748079011948345
+development_2024,primary,constant,unseen_catcher,True,8818,491,0.05518091134458741,0.055681560444545246
+development_2024,primary,context,disengagements,0,121377,6984,0.05597382149603035,0.057539731580118145
+development_2024,primary,context,disengagements,1,10870,635,0.04254511616525354,0.05841766329346826
+development_2024,primary,context,disengagements,2,856,16,0.028379488043350182,0.018691588785046728
+development_2024,primary,context,history_depth,"(-1.0, 0.0]",618,47,0.05225430230005933,0.07605177993527508
+development_2024,primary,context,history_depth,"(0.0, 50.0]",4671,334,0.05309804804516525,0.07150503104260329
+development_2024,primary,context,history_depth,"(200.0, inf]",114991,6303,0.05478969577537529,0.05481298536407197
+development_2024,primary,context,history_depth,"(50.0, 200.0]",12823,951,0.0545938343646967,0.07416361225922172
+development_2024,primary,context,terminal,False,132576,7220,0.054678565121613974,0.05445932898865556
+development_2024,primary,context,terminal,True,527,415,0.06001392152181399,0.7874762808349146
+development_2024,primary,context,runner_change,False,130571,7508,0.05472232817499012,0.0575012828269677
+development_2024,primary,context,runner_change,True,2532,127,0.05353225674109573,0.050157977883096366
+development_2024,primary,context,unseen_pitcher,False,110292,6447,0.05590646471448511,0.05845392231530845
+development_2024,primary,context,unseen_pitcher,True,22811,1188,0.048864888865683076,0.05208013677611679
+development_2024,primary,context,unseen_catcher,False,124285,7144,0.05512608721450071,0.05748079011948345
+development_2024,primary,context,unseen_catcher,True,8818,491,0.04868984313346214,0.055681560444545246
+development_2024,primary,context_threat,disengagements,0,121377,6984,0.057058661355674604,0.057539731580118145
+development_2024,primary,context_threat,disengagements,1,10870,635,0.046330859665294453,0.05841766329346826
+development_2024,primary,context_threat,disengagements,2,856,16,0.027735396460554288,0.018691588785046728
+development_2024,primary,context_threat,history_depth,"(-1.0, 0.0]",618,47,0.060828391422192214,0.07605177993527508
+development_2024,primary,context_threat,history_depth,"(0.0, 50.0]",4671,334,0.07050660375976386,0.07150503104260329
+development_2024,primary,context_threat,history_depth,"(200.0, inf]",114991,6303,0.05372635234111114,0.05481298536407197
+development_2024,primary,context_threat,history_depth,"(50.0, 200.0]",12823,951,0.07080962404914758,0.07416361225922172
+development_2024,primary,context_threat,terminal,False,132576,7220,0.055854290685116686,0.05445932898865556
+development_2024,primary,context_threat,terminal,True,527,415,0.09113594199178522,0.7874762808349146
+development_2024,primary,context_threat,runner_change,False,130571,7508,0.0561425160473963,0.0575012828269677
+development_2024,primary,context_threat,runner_change,True,2532,127,0.04833436827611353,0.050157977883096366
+development_2024,primary,context_threat,unseen_pitcher,False,110292,6447,0.05730693563433586,0.05845392231530845
+development_2024,primary,context_threat,unseen_pitcher,True,22811,1188,0.049645808527356595,0.05208013677611679
+development_2024,primary,context_threat,unseen_catcher,False,124285,7144,0.05634374694078479,0.05748079011948345
+development_2024,primary,context_threat,unseen_catcher,True,8818,491,0.05106424299889591,0.055681560444545246
+development_2024,calibrated_threat,constant,disengagements,0,121377,6984,0.0551809113445874,0.057539731580118145
+development_2024,calibrated_threat,constant,disengagements,1,10870,635,0.05518091134458742,0.05841766329346826
+development_2024,calibrated_threat,constant,disengagements,2,856,16,0.055180911344587406,0.018691588785046728
+development_2024,calibrated_threat,constant,history_depth,"(-1.0, 0.0]",618,47,0.05518091134458742,0.07605177993527508
+development_2024,calibrated_threat,constant,history_depth,"(0.0, 50.0]",4671,334,0.05518091134458741,0.07150503104260329
+development_2024,calibrated_threat,constant,history_depth,"(200.0, inf]",114991,6303,0.0551809113445874,0.05481298536407197
+development_2024,calibrated_threat,constant,history_depth,"(50.0, 200.0]",12823,951,0.05518091134458741,0.07416361225922172
+development_2024,calibrated_threat,constant,terminal,False,132576,7220,0.0551809113445874,0.05445932898865556
+development_2024,calibrated_threat,constant,terminal,True,527,415,0.0551809113445874,0.7874762808349146
+development_2024,calibrated_threat,constant,runner_change,False,130571,7508,0.0551809113445874,0.0575012828269677
+development_2024,calibrated_threat,constant,runner_change,True,2532,127,0.05518091134458741,0.050157977883096366
+development_2024,calibrated_threat,constant,unseen_pitcher,False,110292,6447,0.055180911344587406,0.05845392231530845
+development_2024,calibrated_threat,constant,unseen_pitcher,True,22811,1188,0.05518091134458741,0.05208013677611679
+development_2024,calibrated_threat,constant,unseen_catcher,False,124285,7144,0.055180911344587406,0.05748079011948345
+development_2024,calibrated_threat,constant,unseen_catcher,True,8818,491,0.05518091134458741,0.055681560444545246
+development_2024,calibrated_threat,context,disengagements,0,121377,6984,0.05597382149603035,0.057539731580118145
+development_2024,calibrated_threat,context,disengagements,1,10870,635,0.04254511616525354,0.05841766329346826
+development_2024,calibrated_threat,context,disengagements,2,856,16,0.028379488043350182,0.018691588785046728
+development_2024,calibrated_threat,context,history_depth,"(-1.0, 0.0]",618,47,0.05225430230005933,0.07605177993527508
+development_2024,calibrated_threat,context,history_depth,"(0.0, 50.0]",4671,334,0.05309804804516525,0.07150503104260329
+development_2024,calibrated_threat,context,history_depth,"(200.0, inf]",114991,6303,0.05478969577537529,0.05481298536407197
+development_2024,calibrated_threat,context,history_depth,"(50.0, 200.0]",12823,951,0.0545938343646967,0.07416361225922172
+development_2024,calibrated_threat,context,terminal,False,132576,7220,0.054678565121613974,0.05445932898865556
+development_2024,calibrated_threat,context,terminal,True,527,415,0.06001392152181399,0.7874762808349146
+development_2024,calibrated_threat,context,runner_change,False,130571,7508,0.05472232817499012,0.0575012828269677
+development_2024,calibrated_threat,context,runner_change,True,2532,127,0.05353225674109573,0.050157977883096366
+development_2024,calibrated_threat,context,unseen_pitcher,False,110292,6447,0.05590646471448511,0.05845392231530845
+development_2024,calibrated_threat,context,unseen_pitcher,True,22811,1188,0.048864888865683076,0.05208013677611679
+development_2024,calibrated_threat,context,unseen_catcher,False,124285,7144,0.05512608721450071,0.05748079011948345
+development_2024,calibrated_threat,context,unseen_catcher,True,8818,491,0.04868984313346214,0.055681560444545246
+development_2024,calibrated_threat,context_threat,disengagements,0,121377,6984,0.05598545616777745,0.057539731580118145
+development_2024,calibrated_threat,context_threat,disengagements,1,10870,635,0.04432716950131527,0.05841766329346826
+development_2024,calibrated_threat,context_threat,disengagements,2,856,16,0.026136603114211718,0.018691588785046728
+development_2024,calibrated_threat,context_threat,history_depth,"(-1.0, 0.0]",618,47,0.05972793830881621,0.07605177993527508
+development_2024,calibrated_threat,context_threat,history_depth,"(0.0, 50.0]",4671,334,0.06869397362558785,0.07150503104260329
+development_2024,calibrated_threat,context_threat,history_depth,"(200.0, inf]",114991,6303,0.05266347274388655,0.05481298536407197
+development_2024,calibrated_threat,context_threat,history_depth,"(50.0, 200.0]",12823,951,0.06909063144733361,0.07416361225922172
+development_2024,calibrated_threat,context_threat,terminal,False,132576,7220,0.054708918215199215,0.05445932898865556
+development_2024,calibrated_threat,context_threat,terminal,True,527,415,0.0881716066852666,0.7874762808349146
+development_2024,calibrated_threat,context_threat,runner_change,False,130571,7508,0.05498163988266459,0.0575012828269677
+development_2024,calibrated_threat,context_threat,runner_change,True,2532,127,0.047609903989726574,0.050157977883096366
+development_2024,calibrated_threat,context_threat,unseen_pitcher,False,110292,6447,0.056147154270138784,0.05845392231530845
+development_2024,calibrated_threat,context_threat,unseen_pitcher,True,22811,1188,0.0485280802796563,0.05208013677611679
+development_2024,calibrated_threat,context_threat,unseen_catcher,False,124285,7144,0.055192831618094636,0.05748079011948345
+development_2024,calibrated_threat,context_threat,unseen_catcher,True,8818,491,0.049888285367032714,0.055681560444545246
+development_2024,history_depth,constant,disengagements,0,121377,6984,0.0551809113445874,0.057539731580118145
+development_2024,history_depth,constant,disengagements,1,10870,635,0.05518091134458742,0.05841766329346826
+development_2024,history_depth,constant,disengagements,2,856,16,0.055180911344587406,0.018691588785046728
+development_2024,history_depth,constant,history_depth,"(-1.0, 0.0]",618,47,0.05518091134458742,0.07605177993527508
+development_2024,history_depth,constant,history_depth,"(0.0, 50.0]",4671,334,0.05518091134458741,0.07150503104260329
+development_2024,history_depth,constant,history_depth,"(200.0, inf]",114991,6303,0.0551809113445874,0.05481298536407197
+development_2024,history_depth,constant,history_depth,"(50.0, 200.0]",12823,951,0.05518091134458741,0.07416361225922172
+development_2024,history_depth,constant,terminal,False,132576,7220,0.0551809113445874,0.05445932898865556
+development_2024,history_depth,constant,terminal,True,527,415,0.0551809113445874,0.7874762808349146
+development_2024,history_depth,constant,runner_change,False,130571,7508,0.0551809113445874,0.0575012828269677
+development_2024,history_depth,constant,runner_change,True,2532,127,0.05518091134458741,0.050157977883096366
+development_2024,history_depth,constant,unseen_pitcher,False,110292,6447,0.055180911344587406,0.05845392231530845
+development_2024,history_depth,constant,unseen_pitcher,True,22811,1188,0.05518091134458741,0.05208013677611679
+development_2024,history_depth,constant,unseen_catcher,False,124285,7144,0.055180911344587406,0.05748079011948345
+development_2024,history_depth,constant,unseen_catcher,True,8818,491,0.05518091134458741,0.055681560444545246
+development_2024,history_depth,context,disengagements,0,121377,6984,0.05790641905277299,0.057539731580118145
+development_2024,history_depth,context,disengagements,1,10870,635,0.044700255633520196,0.05841766329346826
+development_2024,history_depth,context,disengagements,2,856,16,0.030008578628146296,0.018691588785046728
+development_2024,history_depth,context,history_depth,"(-1.0, 0.0]",618,47,0.07030575315675824,0.07605177993527508
+development_2024,history_depth,context,history_depth,"(0.0, 50.0]",4671,334,0.07127332062372684,0.07150503104260329
+development_2024,history_depth,context,history_depth,"(200.0, inf]",114991,6303,0.054537737412757435,0.05481298536407197
+development_2024,history_depth,context,history_depth,"(50.0, 200.0]",12823,951,0.0695914332446221,0.07416361225922172
+development_2024,history_depth,context,terminal,False,132576,7220,0.05662151580425375,0.05445932898865556
+development_2024,history_depth,context,terminal,True,527,415,0.06343921849286188,0.7874762808349146
+development_2024,history_depth,context,runner_change,False,130571,7508,0.05667860089066519,0.0575012828269677
+development_2024,history_depth,context,runner_change,True,2532,127,0.05509674190973103,0.050157977883096366
+development_2024,history_depth,context,unseen_pitcher,False,110292,6447,0.05783576255530298,0.05845392231530845
+development_2024,history_depth,context,unseen_pitcher,True,22811,1188,0.050908098008022776,0.05208013677611679
+development_2024,history_depth,context,unseen_catcher,False,124285,7144,0.05706348830311448,0.05748079011948345
+development_2024,history_depth,context,unseen_catcher,True,8818,491,0.050799603499421864,0.055681560444545246
+development_2024,history_depth,context_threat,disengagements,0,121377,6984,0.05805452370724682,0.057539731580118145
+development_2024,history_depth,context_threat,disengagements,1,10870,635,0.04716245312956199,0.05841766329346826
+development_2024,history_depth,context_threat,disengagements,2,856,16,0.02813834019753012,0.018691588785046728
+development_2024,history_depth,context_threat,history_depth,"(-1.0, 0.0]",618,47,0.07778191291599841,0.07605177993527508
+development_2024,history_depth,context_threat,history_depth,"(0.0, 50.0]",4671,334,0.07794239253522438,0.07150503104260329
+development_2024,history_depth,context_threat,history_depth,"(200.0, inf]",114991,6303,0.053933512151783415,0.05481298536407197
+development_2024,history_depth,context_threat,history_depth,"(50.0, 200.0]",12823,951,0.07558446347828704,0.07416361225922172
+development_2024,history_depth,context_threat,terminal,False,132576,7220,0.05683070550571191,0.05445932898865556
+development_2024,history_depth,context_threat,terminal,True,527,415,0.0926728569576073,0.7874762808349146
+development_2024,history_depth,context_threat,runner_change,False,130571,7508,0.05712368907252217,0.0575012828269677
+development_2024,history_depth,context_threat,runner_change,True,2532,127,0.04918207063729446,0.050157977883096366
+development_2024,history_depth,context_threat,unseen_pitcher,False,110292,6447,0.058409558168473735,0.05845392231530845
+development_2024,history_depth,context_threat,unseen_pitcher,True,22811,1188,0.05002495371639196,0.05208013677611679
+development_2024,history_depth,context_threat,unseen_catcher,False,124285,7144,0.057327147806120415,0.05748079011948345
+development_2024,history_depth,context_threat,unseen_catcher,True,8818,491,0.051975691047657785,0.055681560444545246
+development_2024,known_initiator,constant,disengagements,0,121368,6975,0.055139490441160184,0.05746984378089776
+development_2024,known_initiator,constant,disengagements,1,10870,635,0.0551394904411602,0.05841766329346826
+development_2024,known_initiator,constant,disengagements,2,856,16,0.055139490441160184,0.018691588785046728
+development_2024,known_initiator,constant,history_depth,"(-1.0, 0.0]",618,47,0.05513949044116019,0.07605177993527508
+development_2024,known_initiator,constant,history_depth,"(0.0, 50.0]",4671,334,0.05513949044116019,0.07150503104260329
+development_2024,known_initiator,constant,history_depth,"(200.0, inf]",114983,6295,0.055139490441160184,0.05474722350260473
+development_2024,known_initiator,constant,history_depth,"(50.0, 200.0]",12822,950,0.055139490441160184,0.07409140539697395
+development_2024,known_initiator,constant,terminal,False,132575,7219,0.05513949044116018,0.0544521968696964
+development_2024,known_initiator,constant,terminal,True,519,407,0.055139490441160184,0.7842003853564548
+development_2024,known_initiator,constant,runner_change,False,130562,7499,0.055139490441160184,0.057436313781957994
+development_2024,known_initiator,constant,runner_change,True,2532,127,0.055139490441160184,0.050157977883096366
+development_2024,known_initiator,constant,unseen_pitcher,False,110285,6440,0.05513949044116019,0.058394160583941604
+development_2024,known_initiator,constant,unseen_pitcher,True,22809,1186,0.05513949044116019,0.05199701872068043
+development_2024,known_initiator,constant,unseen_catcher,False,124276,7135,0.05513949044116019,0.05741253339341466
+development_2024,known_initiator,constant,unseen_catcher,True,8818,491,0.055139490441160184,0.055681560444545246
+development_2024,known_initiator,context,disengagements,0,121368,6975,0.05614617006925974,0.05746984378089776
+development_2024,known_initiator,context,disengagements,1,10870,635,0.042538200522417205,0.05841766329346826
+development_2024,known_initiator,context,disengagements,2,856,16,0.02824126802140366,0.018691588785046728
+development_2024,known_initiator,context,history_depth,"(-1.0, 0.0]",618,47,0.05245565110289867,0.07605177993527508
+development_2024,known_initiator,context,history_depth,"(0.0, 50.0]",4671,334,0.05325961665426232,0.07150503104260329
+development_2024,known_initiator,context,history_depth,"(200.0, inf]",114983,6295,0.05493805763870438,0.05474722350260473
+development_2024,known_initiator,context,history_depth,"(50.0, 200.0]",12822,950,0.05481026289394129,0.07409140539697395
+development_2024,known_initiator,context,terminal,False,132575,7219,0.05483485053000495,0.0544521968696964
+development_2024,known_initiator,context,terminal,True,519,407,0.060082514557813854,0.7842003853564548
+development_2024,known_initiator,context,runner_change,False,130562,7499,0.0548794475062489,0.057436313781957994
+development_2024,known_initiator,context,runner_change,True,2532,127,0.05361086443919545,0.050157977883096366
+development_2024,known_initiator,context,unseen_pitcher,False,110285,6440,0.05601924991331022,0.058394160583941604
+development_2024,known_initiator,context,unseen_pitcher,True,22809,1186,0.04922750481746213,0.05199701872068043
+development_2024,known_initiator,context,unseen_catcher,False,124276,7135,0.05528168359643713,0.05741253339341466
+development_2024,known_initiator,context,unseen_catcher,True,8818,491,0.0488462943343265,0.055681560444545246
+development_2024,known_initiator,context_threat,disengagements,0,121368,6975,0.05661016072679734,0.05746984378089776
+development_2024,known_initiator,context_threat,disengagements,1,10870,635,0.045805506143304586,0.05841766329346826
+development_2024,known_initiator,context_threat,disengagements,2,856,16,0.02721301167067096,0.018691588785046728
+development_2024,known_initiator,context_threat,history_depth,"(-1.0, 0.0]",618,47,0.06143307574744779,0.07605177993527508
+development_2024,known_initiator,context_threat,history_depth,"(0.0, 50.0]",4671,334,0.06984633361110056,0.07150503104260329
+development_2024,known_initiator,context_threat,history_depth,"(200.0, inf]",114983,6295,0.053292934844757237,0.05474722350260473
+development_2024,known_initiator,context_threat,history_depth,"(50.0, 200.0]",12822,950,0.07018115617638898,0.07409140539697395
+development_2024,known_initiator,context_threat,terminal,False,132575,7219,0.0553991564546287,0.0544521968696964
+development_2024,known_initiator,context_threat,terminal,True,519,407,0.09117342945154876,0.7842003853564548
+development_2024,known_initiator,context_threat,runner_change,False,130562,7499,0.05568450985271182,0.057436313781957994
+development_2024,known_initiator,context_threat,runner_change,True,2532,127,0.04801785208056649,0.050157977883096366
+development_2024,known_initiator,context_threat,unseen_pitcher,False,110285,6440,0.05672986577990029,0.058394160583941604
+development_2024,known_initiator,context_threat,unseen_pitcher,True,22809,1186,0.04977898765055247,0.05199701872068043
+development_2024,known_initiator,context_threat,unseen_catcher,False,124276,7135,0.05582048126875542,0.05741253339341466
+development_2024,known_initiator,context_threat,unseen_catcher,True,8818,491,0.051566800487855016,0.055681560444545246

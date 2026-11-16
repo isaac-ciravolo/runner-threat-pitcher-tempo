@@ -1,0 +1,10 @@
+{
+  "stage": "response",
+  "run_id": "b2820b3352964af2a1209119a6521136",
+  "manifest_sha256": "d927bc7633029a5621518cfb0e9934ce795c983dd4a0a798a2860183c67e6192",
+  "history_manifest_sha256": "de5ca77192ce7aed19e9c4c495605b8f2246d125e196678de60961637f7f4035",
+  "verifier_sha256": "983588039079ea1a1111e0fdd7cc4cbb070d0b948249c17bdca96e028c95de8d",
+  "reloaded_predictions": 1602582,
+  "independently_recomputed_metrics": 72,
+  "test_season_opened": false
+}
