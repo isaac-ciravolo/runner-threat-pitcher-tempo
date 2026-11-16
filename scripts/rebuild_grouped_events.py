@@ -18,6 +18,12 @@ SOURCES = ['scripts/rebuild_grouped_events.py', 'scripts/grouped_events.py',
            'scripts/movement_evidence.py']
 
 
+def cache_signature(hashes, movement_complete):
+    # The driver contains migration and validation logic, so it is a dependency too.
+    definition = {'schema': 3, 'movement_complete': movement_complete, 'sources': hashes}
+    return hashlib.sha256(json.dumps(definition, sort_keys=True).encode()).hexdigest()[:16]
+
+
 def migrate_unaffected(frame):
     require(frame.opportunity_id.str.startswith('G2-').all(), 'Migration requires G2 source rows')
     result = frame.copy()
@@ -77,7 +83,9 @@ def process_game(task):
         frame = migrate_unaffected(pd.read_csv(parent_path, low_memory=False))
         metadata = {key: value for key, value in parent_record.items() if pd.notna(value)}
         metadata.update(parser_version='historical_processing_v3_movement', movement_evidence_actions=0,
-                        output_generation='verified_unaffected_G2_migration')
+                        output_generation='verified_unaffected_G2_migration',
+                        migration_source_path=parent_record['output_path'],
+                        migration_source_sha256=parent_record['output_sha256'])
     else:
         frame, metadata = build_game_opportunities(row, feed, group_linked_outcomes=True,
                                                    include_movement_evidence=movement_complete)
@@ -143,12 +151,7 @@ def main(full=False, workers=4, movement_complete=False):
                 and proof['parent_manifest_sha256'] == parent_manifest
                 and proof['inventory_manifest_sha256'] == sha256_file(movement_inventory.results / 'manifest.json'),
                 'Unaffected cache migration has not passed independent equivalence checks')
-    # Selection/report changes do not change parsed rows. Parser dependencies
-    # and the cache schema identify reusable outputs; each file is verified.
-    cache_definition = {'schema': 2, 'movement_complete': movement_complete,
-                        'parser_sources': {name: digest for name, digest in hashes.items()
-                                                       if name != 'scripts/rebuild_grouped_events.py'}}
-    signature = hashlib.sha256(json.dumps(cache_definition, sort_keys=True).encode()).hexdigest()[:16]
+    signature = cache_signature(hashes, movement_complete)
     cache = ROOT / 'data/processed/grouped_events/cache' / signature
     cache.mkdir(parents=True, exist_ok=True)
     label = 'grouped_event_rebuild' if full else 'grouped_event_pilot'

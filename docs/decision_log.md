@@ -134,3 +134,7 @@ All monthly/final saved predictions and metrics pass reload verification. The un
 ## 2026-11-16: G3 label review and blinded video queue
 
 Audit all 8,141 attempts and retain 168 attribution exclusions. Inspect 13 source cases distinguishing error-assisted advancement, SB credit and subsequent outs; defer a generic success fit. Freeze 229 unreviewed video windows in 54 strata and a label-blinded annotation sheet. No video annotation or causal validation is claimed.
+
+## 2026-11-16: Harden future migration cache lineage
+
+Include the reconstruction driver in cache schema 3 because it owns data-transforming migration logic, and preserve immediate migration source checksums. Three regression tests pass alongside the full 105-test suite. This changes future cache reuse, not published G3 data or fitted models.
