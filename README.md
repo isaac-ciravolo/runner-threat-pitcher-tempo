@@ -8,7 +8,7 @@ Under what conditions does additional attention to a baserunner prevent more exp
 The first feasible study is narrower: **with a runner on first only, does prospectively estimated recorded-steal threat improve prediction of a recorded pitcher pickoff in later games?** Event-start timing is a secondary analysis only if its independent validation gate passes.
 
 ## Status
-The feasibility, aggregate Savant, runner-control representation, and historical-data audits are complete. The public 2022–2024 development pipeline covers all 7,289 eligible completed games and produces 413,081 first-base-only windows with chronological catcher assignments and forward-only runner counts; 2025 remains schedule-only and locked. The aggregate benchmark closely reproduces Savant only in a prespecified action-free sensitivity, revealing a likely undocumented population rule. The frozen video gate remains **`validation_pending`**: feed timestamps are still **not validated release times**. The initial recorded-steal-attempt baseline has been fit on 2022–2023 and evaluated with fixed choices on 2024. Opening context and runner histories improve prediction over training prevalence, but high predicted probabilities remain overconfident. No pitcher-response, timing-response, or causal model has been fit. Originality remains provisional in light of closely overlapping 2026 work.
+The feasibility, aggregate Savant, runner-control representation, and historical-data audits are complete. The public 2022–2024 development pipeline covers all 7,289 eligible completed games and produces 413,081 first-base-only windows with chronological catcher assignments and forward-only runner counts; 2025 remains schedule-only and locked. The aggregate benchmark closely reproduces Savant only in a prespecified action-free sensitivity, revealing a likely undocumented population rule. The frozen video gate remains **`validation_pending`**: feed timestamps are still **not validated release times**. The initial recorded-steal-attempt baseline has been fit on 2022–2023 and evaluated with fixed choices on 2024. Opening context and runner histories improve prediction over training prevalence, but high predicted probabilities remain overconfident. The frozen recorded-pickoff response comparison is complete; no timing-response or causal model has been fit. Originality remains provisional in light of closely overlapping 2026 work.
 
 See the [data feasibility audit](docs/data_feasibility_audit.md), [video protocol](docs/video_timing_validation_protocol.md), [validation status and manual next steps](docs/video_timing_validation_status.md), [aggregate benchmark report](docs/aggregate_tempo_benchmark_report.md), [runner-control report](docs/runner_control_action_audit_report.md), [opportunity dataset report](docs/opportunity_dataset_report.md), [historical pipeline report](docs/historical_pipeline_report.md), [frozen exploratory plan](docs/exploratory_analysis_plan.md), and [source/claim ledger](docs/source_claim_ledger.md). Raw MLB downloads remain local and ignored.
 
@@ -118,7 +118,7 @@ python -m scripts.forward_threat
 python scripts/execute_forward_threat_notebook.py
 ```
 
-No pitcher-response model has been fit. 2025 remains closed. Raw and prospectively recalibrated training scores are stored separately; do not backfill training scores using a later-selected calibration policy.
+The first recorded-pickoff response analysis is complete. 2025 remains closed. Raw and prospectively recalibrated training scores are stored separately; do not backfill training scores using a later-selected calibration policy.
 
 ## Corrected chronology handoff
 
@@ -127,3 +127,7 @@ The [chronology repair report](docs/chronology_repair_report.md) supersedes the 
 ## Pipeline integrity
 
 Forward runs now publish versioned results and models through a single completion pointer. Use `scripts.artifact_runs.resolve_run` to locate the latest validated run; flat filenames remain archived legacy snapshots. See [validation, publication and provenance](docs/pipeline_integrity.md) for the reader API and failure behavior. Rebuilds enforce the audited source snapshot, and runtime integrity gates remain active under Python optimization.
+
+## Recorded pitcher response
+
+See the [executed response report](docs/pitcher_response_report.md) and [QA notebook](notebooks/09_pitcher_response.ipynb). Forward threat improves 2024 recorded-pickoff prediction, with explicit dependence sensitivities and measurement limits. The 179-window video queue remains unreviewed; 2025 remains closed.

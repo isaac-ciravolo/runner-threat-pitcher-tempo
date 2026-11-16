@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "run_id": "8b9c6cf125544cb6a7614f21ae250b80",
+  "files": {
+    "results": {
+      "bootstrap.csv": "4541244df50f3f195fc128e645f432fd2c91ffb80e7be2bc33161bf57173729a",
+      "calibration.csv": "4eaa9569e15ce7261acd4bdaf097df62a089567eec357534db24edfe5d38a714",
+      "metrics.csv": "f73ee5027e67168e94c4a2e776ce77ba1c5e1d15d6a34d34c1ffde6b0bc18ac9",
+      "provenance.json": "6baaaaa2408d4518500c6e646ec9d6460a52ba5e4ab0f493f888592204de41a3",
+      "sample_flow.csv": "386fe17d37d02f4c035335ca2c6befb3990437036df0466e1f41b581dc2e14c0",
+      "subgroups.csv": "f064f3ab96fc273df4026559f6a3ac6f858552a73f6443b721ad555ae020d92a"
+    },
+    "local": {
+      "development_2024_calibrated_threat_context.joblib": "edaff7326c751a07562280c7e15ccdb4c5b1b349e1141191650ba414a07b9429",
+      "development_2024_calibrated_threat_context_threat.joblib": "dab2036ca88dbaad156d21fd90e05c88e9f424968bb16049afa635edc38d3de4",
+      "development_2024_calibrated_threat_predictions.csv.gz": "3a98f88ffecbfa2eb34850969404436545e085131cd12a6c1a0121f6ca5c4726",
+      "development_2024_history_depth_context.joblib": "26b2774ad41596e13c39d8cd188b7a9bb1d9032defa80b7ae8ee6ad1b6788078",
+      "development_2024_history_depth_context_threat.joblib": "35e186ddb578213812f5d53c986d4bcebbcfd6c32645fb475f5b28975610a3a0",
+      "development_2024_history_depth_predictions.csv.gz": "a077481a0101945f05586311ff6fe17cd8efc0daede6a1506adb6f9de3d2a333",
+      "development_2024_known_initiator_context.joblib": "d814e03b3e64bff039b626484deed160ff2dc0bb94ce574e842af86064eb6e98",
+      "development_2024_known_initiator_context_threat.joblib": "bfdb5dad02a594e25701b9b031db49990bf9310d6b32a16f44f0b18e28232b15",
+      "development_2024_known_initiator_predictions.csv.gz": "97799cda49ac86f1f927746afae31b51e6d750f3ac9bb5e5c5b4cea0a35e2196",
+      "development_2024_primary_context.joblib": "edaff7326c751a07562280c7e15ccdb4c5b1b349e1141191650ba414a07b9429",
+      "development_2024_primary_context_threat.joblib": "f352d7f4a4791a0cea1c94f0746753ab47210f34a890c003b8633e97785a0ced",
+      "development_2024_primary_predictions.csv.gz": "5fd2d9ff701b999648e03e15e4f3fd46b5c9ef594f0d4ca9ce44b9682696de5f",
+      "diagnostic_2023_calibrated_threat_context.joblib": "cea63b1a5b4c73a0a88d37904c2b97d55761e18df517a0b550039f066ee8f748",
+      "diagnostic_2023_calibrated_threat_context_threat.joblib": "b0ea5d4dd7a0ac7b0db9ed1271a2ecb2c9b726ef084f1b7ebe1945531f1a16dc",
+      "diagnostic_2023_calibrated_threat_predictions.csv.gz": "d95169be7bdbc460323c6a7d3a9adb71d308802c02bc8acd7ca3f66adddfd54e",
+      "diagnostic_2023_history_depth_context.joblib": "332a559705e4daead990faa9b2e53af8d8c517bf7064fa1dbed3fec7b5603782",
+      "diagnostic_2023_history_depth_context_threat.joblib": "9ab8795e0a47ff7f115a6d4b8b541eb5c25df259d375750a2913f1d5c6a64a7c",
+      "diagnostic_2023_history_depth_predictions.csv.gz": "501411b56106ac48527b7ab38a711a568be18f5039930dcea24838fe39103a41",
+      "diagnostic_2023_known_initiator_context.joblib": "c32bbe4dae4c10f0cca1543f04451459a56a5b4bff6b11911d0af30669d5bb77",
+      "diagnostic_2023_known_initiator_context_threat.joblib": "877d3ec90e7834f0389cfc550a4e2fa7d2f9f2a38df7b6c29d606730aa24a222",
+      "diagnostic_2023_known_initiator_predictions.csv.gz": "0bfb1441b4942288e77ad4b3361033425b481f9783c9b9187034d0aee9f87ad8",
+      "diagnostic_2023_primary_context.joblib": "cea63b1a5b4c73a0a88d37904c2b97d55761e18df517a0b550039f066ee8f748",
+      "diagnostic_2023_primary_context_threat.joblib": "38af04d164dc425565ccfb8e4934b41dd5d27a4045ae0a3a208f3056e655cb12",
+      "diagnostic_2023_primary_predictions.csv.gz": "376d29fc97d1cc06754892bd6fcac27c45cce196567e2d70bedac7da27ef6d2a"
+    }
+  }
+}

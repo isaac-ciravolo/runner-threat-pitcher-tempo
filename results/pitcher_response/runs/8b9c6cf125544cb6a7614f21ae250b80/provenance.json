@@ -1,0 +1,16 @@
+{
+  "hashes": {
+    "2023": "0468e49b9eefb72fb6f3149cfdf201d53ba3b679cc8489d7b9ac76ecef2be833",
+    "scores_2023": "09876edb02650efd1d4d9c8b3d356cc86c9b12a52bec28aeb378308fdc7246b7",
+    "2024": "1622a43c5aff29c8294540a5e807b38be4adde686baad50fc21fbbb87e6d3e39",
+    "scores_2024": "7b9fb50ba36ac4bbba956fc98e86c2de5790f7bf3df1fb4927c4a389a0012431",
+    "protocol": "be0f8db1f3a46edaf71f263b006e9e9d524d0c7e4c1c83ccf908963ef2771391",
+    "script": "95d64b055c46d911c5fa49182935b3c527fd6fec6aabc8b89fb73545b0cfbbfa"
+  },
+  "environment": {
+    "python": "3.14.4",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "sklearn": "1.8.0"
+  }
+}

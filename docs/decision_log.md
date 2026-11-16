@@ -62,3 +62,7 @@ Forward-stage gate found 61 rows in game 716404 with completion before reported 
 ## 2026-11-15: Chronology-v2 audit and response-stage freeze
 
 Prior baseline/forward milestone committed as dbd03f1. Audit all 7,289 cached eligible feeds with manifest checksum verification, including 303 schedule edge games. Freeze event-based conservative game cutoffs and explicit history-availability dispositions before rebuilding. Preserve v1 data/results and labels; rebuild separately. Restore game 716404 only with its original-day cutoff and delayed final-disposition availability. Record rain-buffer assumptions and the isolated far-future pitch timestamp without inventing precise timing. Reuse the frozen threat model and training-only calibration rule; 2024 remains development, 2025 closed. Freeze docs/pitcher_response_protocol.md before any response-model fit. The primary response training year is 2023 under the current disengagement rule, with 2022 retained for threat/history construction.
+
+## 2026-11-16: Executed frozen pitcher-response analysis
+
+Executed the primary and three prespecified sensitivities without 2024 tuning. Positive incremental prediction is reported with game/pitcher/runner bootstrap intervals and explicit noncausal limits. Prepared 179 unreviewed video windows with inclusion probabilities. Reviewed tests, reloads, provenance, notebook and count accounting before commit; 2025 remains closed.
