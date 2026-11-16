@@ -98,3 +98,7 @@ The initial full run failed closed on a step-off/outcome ordering mismatch; pres
 ## 2026-11-16: Trace defensive-attention mechanism to earlier work
 
 Inspected the author's 2014 revision of Turocy's inspection-game paper, including the batter-performance analysis, and recorded the distinct 2003 speed manuscript without claiming a methods review of its garbled extraction. The runner-threat/attention/batter mechanism has direct precedent. Preserve version-specific citations and narrow the eventual contribution claim; originality remains open.
+
+## 2026-11-16: Freeze source scoring-credit reconciliation
+
+Before choosing a conditional-success target, freeze an all-base-state event-tag versus per-player box-score reconciliation. Keep error variants and pickoff-caught-stealing distinctions explicit. This is internal source consistency only and cannot clear video/action-completeness gates. No model or historical label changes follow automatically.
