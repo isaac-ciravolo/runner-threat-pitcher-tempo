@@ -1,5 +1,7 @@
 # Public-video timing validation status
 
+**2026-11-16 feasibility update:** Isaac reports that available scrubbing controls are too coarse for practical annotation. Preserve the unreviewed sample; the gate remains pending and timing analysis is deferred. Continue the narrower recorded-action study under [the no-video validation amendment](no_video_validation_amendment.md).
+
 Status checked 2026-11-15. The protocol, sample, annotation workflow, analysis code, and decision gate are implemented. The timing gate is **`validation_pending`** because no frozen candidate has a genuine usable video annotation.
 
 ## Implemented

@@ -24,7 +24,7 @@ See the [data feasibility audit](docs/data_feasibility_audit.md), [video protoco
 1. Continue full-text literature review and citation tracing before any novelty claim.
 2. Completed: full G3 reconstruction, opening identities, independent histories and corrected attempt/forward fits.
 3. Completed: frozen recorded pitcher-pickoff response comparison, all sensitivities, saved-model verification and reviewed reports.
-4. Annotate the frozen video sample and assess missingness and agreement before action-completeness or release-tempo claims.
+4. Current next step: [cross-source coverage/reconciliation and measurement-error sensitivity](docs/no_video_validation_amendment.md). Available video controls make annotation impractical; retain the unreviewed sample and defer release-tempo and action-completeness claims.
 5. Freeze the full final-test policy after the measurement and literature review. Opening 2025 feeds still requires separate authorization; this workflow does not unlock them.
 
 See [the study plan](docs/study_plan.md) and [literature checklist](docs/literature_review.md).

@@ -1,0 +1,23 @@
+# Validation amendment when usable video controls are unavailable
+
+Date: 2026-11-16. Isaac reports that available video scrubbing is too coarse for practical annotation. This amendment records a feasibility constraint after the corrected development models were inspected; it is not preregistration and does not change a failed or pending measurement gate into a pass.
+
+## Scope
+
+Continue the narrow prediction study of feed-recorded pitcher pickoffs. Describe the outcome as a recorded action, not every actual throw or defensive attention. Keep release-to-release tempo deferred: no amount of feed agreement or model accuracy establishes that event timestamps mark release. Retain the original timing protocol and 229-window action sample, with zero annotations. Precise release annotation and broad action recognition are distinct tasks; coarse playback may occasionally support positive-action corroboration, but missing footage cannot verify a negative window.
+
+## Replacement work sequence
+
+1. **Audit external representation coverage before comparison.** Pilot Retrosheet pitch/event sequences for 2022–2024 on a deterministic sample spanning seasons and the existing challenge cases. Check coverage, game/player identifiers, substitutions, catcher throws, repeated or cumulative pitch strings across interrupted plate appearances, and missing sequences. Freeze alignment rules before inspecting model-related disagreement. Scale only after the pilot passes. The first deliverable is a coverage and discrepancy report, not a new fitted model.
+2. **Reconcile actions and populations.** Compare base occupancy, pitcher identity, steal/CS credit and pitcher-versus-catcher pickoff records at aligned boundaries. Report missing/unmatched/ambiguous records separately and discrepancies by season and action representation. Use game or PA counts only as coarse diagnostics; aggregate agreement cannot certify the opening-window labels. Existing all-game SB/CS reconciliation remains useful but cannot validate unsuccessful throw-over completeness.
+3. **Audit disagreements without model scores.** Review source event sequences and text, blinded to threat scores and predicted gains where feasible. Preserve both source versions and classify parser errors, definition differences and unresolved source disagreement. A second reviewer would improve this audit but is not claimed unless actually involved. Documentation from the same underlying provider remains internal evidence.
+4. **Freeze a measurement-error sensitivity protocol before executing it.** Keep the current primary result unchanged. Evaluate specified false-positive/false-negative scenarios, including errors concentrated in high-threat windows and recovered movement records. Report when the paired log-loss advantage disappears. Distinguish evaluation-label perturbation with models fixed from training-label perturbation requiring chronological refitting. Report assumed rates, seeds and whole-game dependence; scenario rates are not measured error estimates, and robustness is not proof of correctness. Restrict all work to 2022–2024.
+5. **Report explicitly narrower claims.** Publish source lineage, coverage, unresolved discrepancies, sensitivity results and the lack of independent video validation together. Retain the closest-work review and final-test policy gates. No claim of release tempo, complete observed behavior, causal response or runs prevented is authorized. 2025 remains closed pending separate authorization.
+
+## Primary sources checked
+
+- [Retrosheet event-file specification](https://www.retrosheet.org/eventfile.htm): pitch sequences encode pickoff throws; missing sequence data and interruptions require explicit handling.
+- [Retrosheet fall 2024 release](https://www.retrosheet.org/fall2024release.html): explicitly credits MLB for providing 2024 data and describes conversion to Retrosheet event format. Treat this as cross-representation validation, not independent observation.
+- [Baseball Savant pitch-tempo definition](https://baseballsavant.mlb.com/leaderboard/pitch-tempo): official release-to-release aggregate tempo is a contextual benchmark. The project's earlier aggregate comparison does not establish event-level release alignment or first-only population equivalence.
+
+A small accessible video subset may later corroborate individual events without frame-level timing, but selective clips cannot replace the frozen probability sample or establish sensitivity/specificity. Better playback controls would help only if lawful usable footage also covers the relevant continuous interval. Do not make tool acquisition a prerequisite for the narrower recorded-action study.

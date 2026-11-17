@@ -142,3 +142,7 @@ Include the reconstruction driver in cache schema 3 because it owns data-transfo
 ## 2026-11-16: Corrected response comparison verified
 
 Complete all frozen G3 response variants. Raw threat reduces development log loss by 4.58%; all prespecified log-loss sensitivities and one-way dependence intervals favor improvement. Retain calibration overconfidence and noncausal limits. Independently reload 1,602,582 predictions and reproduce 72 metrics; review notebook and calibration figure before commit. Old response findings remain withdrawn. Video and closest-work gates remain open; 2025 stays closed.
+
+## 2026-11-16: Adapt validation to unavailable video controls
+
+Isaac reports coarse scrubbing makes annotation impractical. Defer release timing and retain zero video annotations. Continue the narrower feed-recorded pickoff study with a prespecified source-coverage pilot, reconciliation and measurement-error sensitivity. Retrosheet's 2024 release credits MLB as its source, so agreement is cross-representation evidence rather than independent ground truth. No models or thresholds change in this amendment; 2025 remains closed.
